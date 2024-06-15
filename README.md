@@ -1,7 +1,7 @@
 [Data Pipeline](../data-pipeline/)
 # UN Goal Timelines
 
-[Data Commons Goals Built (dist)](dist/) and [Src files showing Javascript (docs)](docs/)
+[Our Built Data Commons (dist)](dist/) and [Our UnBuilt src files (docs)](docs/)
 
 [Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Widen screen to explore root of 17 UN Goals
 

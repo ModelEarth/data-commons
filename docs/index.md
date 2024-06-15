@@ -6,27 +6,7 @@ After clicking the link above, widen your browser to explore the navigation on t
 
 Our javascript [Feed Player](/feed/view/#feed=gdc) loads and displays data from the Google Data Commons API.
 
-TO DO: Pull a simplified hierarchy from Google consisting of timeline data feeds. [GDC Python API samples](https://docs.datacommons.org/tutorials/)
-One of our UX goals is to avoid deep [hierarchy levels](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase&sv=sdg%2FSI_POV_EMP1.AGE--Y15T24) by using simple [navigation filters](#geoview=countries) instead.
-
-Identify titles for data with country timelines in the [UN Data Commons (unstats.un.org)](https://unstats.un.org/UNSDWebsite/undatacommons/sdgs) created by Google.
-
-[Our Air and Climate section](air) has sample Python and an [emissions timeline chart](/data-commons/dist/air/emissions/emission.html).
-Check out how we use titles with the API call for our upcoming [Forest Coverage timeline](conservation).
-
-In [Google's Statistical Variable Explorer](https://datacommons.org/tools/statvar) you can filter by date and location on more than 10,000 statistical variables.
-
-
-Here are our two CoLabs for the Google Data Commons API:
-1. [GDC-API-Caller CoLab](https://colab.research.google.com/drive/1phXc8z9IwmG9w83JTU4pXRv6XAV9a8BB?usp=sharing) - Directly calls the Google Data Commons API<!--Anna-->  
-2. [GDC-Parameters CoLab](https://colab.research.google.com/drive/1mZC2Pn4oKau9Sz1Q16_qnOK7Tai09uEo?usp=sharing) - Sends parameters to our caller, then works with fetched json data<!--Paul-->
-
-<!--
-Copy the GDC-Parameters CoLab and rename it in your goal folder: GDC-Parameters-Air, etc.
--->
-
-TO DO: Call the python CoLabs from Javascript in a webpage using REST.
-
+<span class="floatright">
 ## Goal Visualization
 
 The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four subsets of goal 9: Innovation.
@@ -53,6 +33,29 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four sub
 20. [High Speed Internet](internet)
 21. [Expanding Livable Zones](space)
 <br><br>
+</span>
+
+TO DO: Pull a simplified hierarchy from Google consisting of timeline data feeds. [GDC Python API samples](https://docs.datacommons.org/tutorials/)
+One of our UX goals is to avoid deep [hierarchy levels](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase&sv=sdg%2FSI_POV_EMP1.AGE--Y15T24) by using simple [navigation filters](#geoview=countries) instead.
+
+Identify titles for data with country timelines in the [UN Data Commons (unstats.un.org)](https://unstats.un.org/UNSDWebsite/undatacommons/sdgs) created by Google.
+
+[Our Air and Climate section](air) has sample Python and an [emissions timeline chart](/data-commons/dist/air/emissions/emission.html).
+Check out how we use titles with the API call for our upcoming [Forest Coverage timeline](conservation).
+
+In [Google's Statistical Variable Explorer](https://datacommons.org/tools/statvar) you can filter by date and location on more than 10,000 statistical variables.
+
+
+Here are our two CoLabs for the Google Data Commons API:
+1. [GDC-API-Caller CoLab](https://colab.research.google.com/drive/1phXc8z9IwmG9w83JTU4pXRv6XAV9a8BB?usp=sharing) - Directly calls the Google Data Commons API<!--Anna-->  
+2. [GDC-Parameters CoLab](https://colab.research.google.com/drive/1mZC2Pn4oKau9Sz1Q16_qnOK7Tai09uEo?usp=sharing) - Sends parameters to our caller, then works with fetched json data<!--Paul-->
+
+<!--
+Copy the GDC-Parameters CoLab and rename it in your goal folder: GDC-Parameters-Air, etc.
+-->
+
+TO DO: Call the python CoLabs from Javascript in a webpage using REST.
+
 
 [The Python Data Loaders](https://docs.datacommons.org/tutorials/) require running in advance.  
 We're using Javascript to load in real-time using a single timeline widget.

@@ -20,7 +20,6 @@ import "./_observablehq/client.js";
 <nav>
 <div>Contents</div>
 <ol>
-<li class="observablehq-secondary-link"><a href="#goal-visualization">Goal Visualization</a></li>
 <li class="observablehq-secondary-link"><a href="#commands">Commands</a></li>
 </ol>
 </nav>
@@ -32,22 +31,8 @@ import "./_observablehq/client.js";
 <p>We're automating multi-country timelines using <a href="https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&amp;d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase">Google's UN Goals Data</a>.<br>
 After clicking the link above, widen your browser to explore the navigation on the left.</p>
 <p>Our javascript <a href="/feed/view/#feed=gdc">Feed Player</a> loads and displays data from the Google Data Commons API.</p>
-<p>TO DO: Pull a simplified hierarchy from Google consisting of timeline data feeds. <a href="https://docs.datacommons.org/tutorials/">GDC Python API samples</a>
-One of our UX goals is to avoid deep <a href="https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&amp;d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase&amp;sv=sdg%2FSI_POV_EMP1.AGE--Y15T24">hierarchy levels</a> by using simple <a href="#geoview=countries">navigation filters</a> instead.</p>
-<p>Identify titles for data with country timelines in the <a href="https://unstats.un.org/UNSDWebsite/undatacommons/sdgs">UN Data Commons (unstats.un.org)</a> created by Google.</p>
-<p><a href="air">Our Air and Climate section</a> has sample Python and an <a href="/data-commons/dist/air/emissions/emission">emissions timeline chart</a>.
-Check out how we use titles with the API call for our upcoming <a href="conservation">Forest Coverage timeline</a>.</p>
-<p>In <a href="https://datacommons.org/tools/statvar">Google's Statistical Variable Explorer</a> you can filter by date and location on more than 10,000 statistical variables.</p>
-<p>Here are our two CoLabs for the Google Data Commons API:</p>
-<ol>
-<li><a href="https://colab.research.google.com/drive/1phXc8z9IwmG9w83JTU4pXRv6XAV9a8BB?usp=sharing">GDC-API-Caller CoLab</a> - Directly calls the Google Data Commons API<!--Anna--></li>
-<li><a href="https://colab.research.google.com/drive/1mZC2Pn4oKau9Sz1Q16_qnOK7Tai09uEo?usp=sharing">GDC-Parameters CoLab</a> - Sends parameters to our caller, then works with fetched json data<!--Paul--></li>
-</ol>
-<!--
-Copy the GDC-Parameters CoLab and rename it in your goal folder: GDC-Parameters-Air, etc.
--->
-<p>TO DO: Call the python CoLabs from Javascript in a webpage using REST.</p>
-<h2 id="goal-visualization" tabindex="-1"><a class="observablehq-header-anchor" href="#goal-visualization">Goal Visualization</a></h2>
+<span class="floatright">
+## Goal Visualization
 <p>The <a href="/data-pipeline/international/">UN's seventeen 30-year goals</a>, plus four subsets of goal 9: Innovation.</p>
 <ol>
 <li><a href="jobs">Great Jobs</a></li>
@@ -71,8 +56,24 @@ Copy the GDC-Parameters CoLab and rename it in your goal folder: GDC-Parameters-
 <li><a href="transit">Fast Reliable Transit</a></li>
 <li><a href="internet">High Speed Internet</a></li>
 <li><a href="space">Expanding Livable Zones</a>
-<br><br></li>
+<br><br>
+</li>
 </ol>
+<p>TO DO: Pull a simplified hierarchy from Google consisting of timeline data feeds. <a href="https://docs.datacommons.org/tutorials/">GDC Python API samples</a>
+One of our UX goals is to avoid deep <a href="https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&amp;d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase&amp;sv=sdg%2FSI_POV_EMP1.AGE--Y15T24">hierarchy levels</a> by using simple <a href="#geoview=countries">navigation filters</a> instead.</p>
+<p>Identify titles for data with country timelines in the <a href="https://unstats.un.org/UNSDWebsite/undatacommons/sdgs">UN Data Commons (unstats.un.org)</a> created by Google.</p>
+<p><a href="air">Our Air and Climate section</a> has sample Python and an <a href="/data-commons/dist/air/emissions/emission">emissions timeline chart</a>.
+Check out how we use titles with the API call for our upcoming <a href="conservation">Forest Coverage timeline</a>.</p>
+<p>In <a href="https://datacommons.org/tools/statvar">Google's Statistical Variable Explorer</a> you can filter by date and location on more than 10,000 statistical variables.</p>
+<p>Here are our two CoLabs for the Google Data Commons API:</p>
+<ol>
+<li><a href="https://colab.research.google.com/drive/1phXc8z9IwmG9w83JTU4pXRv6XAV9a8BB?usp=sharing">GDC-API-Caller CoLab</a> - Directly calls the Google Data Commons API<!--Anna--></li>
+<li><a href="https://colab.research.google.com/drive/1mZC2Pn4oKau9Sz1Q16_qnOK7Tai09uEo?usp=sharing">GDC-Parameters CoLab</a> - Sends parameters to our caller, then works with fetched json data<!--Paul--></li>
+</ol>
+<!--
+Copy the GDC-Parameters CoLab and rename it in your goal folder: GDC-Parameters-Air, etc.
+-->
+<p>TO DO: Call the python CoLabs from Javascript in a webpage using REST.</p>
 <p><a href="https://docs.datacommons.org/tutorials/">The Python Data Loaders</a> require running in advance.<br>
 We're using Javascript to load in real-time using a single timeline widget.</p>
 <p>TO DO: Find a means to load DCID and property in JavaScript. Handle different JSON structures, which is not an issue when using the Python libraries, as can be seen in this <a href="https://colab.research.google.com/github/datacommonsorg/api-python/blob/master/notebooks/analyzing_census_data.ipynb">CoLab&nbsp;for&nbsp;Census&nbsp;Data</a>.</p>
@@ -156,7 +157,7 @@ When running "yarn build" the content of the docs folder is built into the dist 
 Try using the deploy.js sample Mike Bostock posted:
 <a href="https://github.com/observablehq/framework/discussions/1030">https://github.com/observablehq/framework/discussions/1030</a></p>
 <p><a href="../">Our Setup Notes</a> &nbsp;|&nbsp; <a href="/feed/view/#feed=gdc">Feed Player</a></p>
-</main>
+</span></main>
 <footer id="observablehq-footer">
 <div><style>#observablehq-footer{margin-top:40px;border-top:1px solid #ccc;padding-top:10px;}</style>Built with <a href="https://observablehq.com" target="_blank">Observable</a> and <a href="https://DataCommons.org" target="_blank">Google Data Commons</a> by our <a href="/projects/">Model.earth Project Team</a>.</div>
 </footer>
