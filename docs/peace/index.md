@@ -2,4 +2,4 @@
 
 # Peace and Justice
 
-Goal . 
+Goal .
