@@ -2,4 +2,4 @@
 
 # Clean Water
 
-Goal 6. Clean Water and Sanitation
+Goal 6. Abundant Clean Water and Sanitation
