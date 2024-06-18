@@ -80,9 +80,11 @@ For more, see <https://observablehq.com/framework/getting-started>.
 
 ## Project structure
 
-In our project, folders for components and data reside in multiple "goal" folders:
+In our project, folders for components and data reside in multiple "goal" folders.
+Add the [localsite repo](https://github.com/modelearth/localsite/) external to the [data-commons repo](https://github.com/modelearth/data-commons/). Your [webroot setup](https://model.earth/localsite/start/steps/) with 2 folders:
 
 ```ini
+localsite
 data-commons
 ├─ README.md
 ├─ docs
