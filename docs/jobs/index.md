@@ -87,8 +87,7 @@ input {
 
 <a href="https://github.com/modelearth/data-commons" style="float:right">Fork our repo to edit</a>
 
-Include a <a href="https://docs.datacommons.org/api/rest/v2#relation-expressions">Relation Expression</a> (property value) to call v2/node API<br><br>
-
+Include a <a href="https://docs.datacommons.org/api/rest/v2#relation-expressions" target="relexp">Relation Expression</a> (property value) to call v2/node API<br><br>
 
 <b>Parent to children</b><br>
 
@@ -144,7 +143,7 @@ Property (v2/node)<br>
 <div style="clear:both;"></div>
 <button id="feedplayerButton" style="float:right;margin-right:10px;background-color:darkblue;margin-top:0px">Feed Player</button>
 <div style="overflow:auto;padding-right:6px">
-<input type="text" id="apiURL" class="textInput" style="width:100%;max-width:1000px;color:#555;background-color:rgba(0, 0, 0, 0);border:1px solid #fff;" placeholder="API URL" value="" autofocus onfocus="this.select()">
+<textarea rows="3" type="text" id="apiURL" class="textInput" style="line-height:22px;font-size: 14px;width:100%;max-width:1000px;color:#555;background-color:rgba(0, 0, 0, 0);border:1px solid #fff;min-height:100px" placeholder="API URL" value="" autofocus onfocus="this.select()"></textarea>
 </div>
 
 <div style="clear:both"></div>
