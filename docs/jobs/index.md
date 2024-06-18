@@ -83,15 +83,20 @@ input {
 }
 </style>
 
-<div style="background-color: #ddd; padding:20px">
-Include a <a href="https://docs.datacommons.org/api/rest/v2#relation-expressions">Relation Expression</a> (property value) to call v2/node API<br>
-<span style="font-size:16px;font-family: var(--monospace);">
-->* means an 'out' arc with all the properties linked to this node.<br>
-<- means an 'in' arc.<br><br>
+<div style="background-color: #ddd; padding:20px; font-size:16px;">
 
-Okay, so what's an arc? Could this be any more confusing.<br>
-Please help add clarity by <a href="https://github.com/modelearth/data-commons">forking our repo</a>.
-</span>
+<a href="https://github.com/modelearth/data-commons" style="float:right">Fork our repo to edit</a>
+
+Include a <a href="https://docs.datacommons.org/api/rest/v2#relation-expressions">Relation Expression</a> (property value) to call v2/node API<br><br>
+
+
+<b>Parent to children</b><br>
+
+<span style="font-size:20px;font-family: var(--monospace);">-&gt;&ast;</span> means an 'out' arc with all the properties (children) linked to this node.<br><br>
+
+<b>Child to parent</b><br>
+<span style="font-size:20px;font-family: var(--monospace);">&lt;-</span> means an 'in' arc of a child to it's parent nodes.
+
 </div>
 
 <div class="bottomInput">
