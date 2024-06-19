@@ -6,7 +6,6 @@ After clicking the link above, widen your browser to explore the navigation on t
 
 Our javascript [Feed Player](/feed/view/#feed=gdc) loads and displays data from the Google Data Commons API.
 
-<span class="floatright">
 ## Goal Visualization
 
 The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four subsets of goal 9: Innovation.
@@ -32,8 +31,7 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four sub
 19. [Fast Reliable Transit](transit)
 20. [High Speed Internet](internet)
 21. [Expanding Livable Zones](space)
-<br><br>
-</span>
+
 
 TO DO: Pull a simplified hierarchy from Google consisting of timeline data feeds. [GDC Python API samples](https://docs.datacommons.org/tutorials/)
 One of our UX goals is to avoid deep [hierarchy levels](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase&sv=sdg%2FSI_POV_EMP1.AGE--Y15T24) by using simple [navigation filters](#geoview=countries) instead.
