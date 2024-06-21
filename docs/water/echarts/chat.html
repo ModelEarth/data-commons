@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>eCharts Timeline example from ChatGPT</title>
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Import eCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- Import PapaParse for CSV parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>TEST
+    <div id="main" style="width: 100%; height: 600px;"></div>
+    <script type="text/javascript">
+        // Fetch and process CSV data
+        fetch('https://raw.githubusercontent.com/ModelEarth/data-commons/main/docs/air/emissions/data/emission.csv')
+            .then(response => response.text())
+            .then(data => {
+                Papa.parse(data, {
+                    header: true,
+                    complete: function(results) {
+                        createChart(results.data);
+                    }
+                });
+            });
+
+        function createChart(data) {
+            // Extract the years from the columns
+            let years = Object.keys(data[0]).filter(key => !isNaN(key));
+
+            // Extract the country names
+            let countries = [...new Set(data.map(item => item['Country Name']))];
+
+            // Generate series data for each country
+            let series = countries.map(country => {
+                return {
+                    name: country,
+                    type: 'line',
+                    data: years.map(year => {
+                        let record = data.find(item => item['Country Name'] === country);
+                        return record ? parseFloat(record[year]) || 0 : 0;
+                    })
+                };
+            });
+
+            // Configure eCharts
+            let chart = echarts.init(document.getElementById('main'));
+
+            let option = {
+                baseOption: {
+                    timeline: {
+                        axisType: 'category',
+                        data: years,
+                        autoPlay: true,
+                        playInterval: 1000
+                    },
+                    title: {
+                        text: 'Emissions over Years'
+                    },
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+                    legend: {
+                        top: '10%',
+                        data: countries
+                    },
+                    grid: {
+                        left: '3%',
+                        right: '4%',
+                        bottom: '3%',
+                        containLabel: true
+                    },
+                    xAxis: {
+                        type: 'category',
+                        boundaryGap: false,
+                        data: years
+                    },
+                    yAxis: {
+                        type: 'value'
+                    },
+                    series: series
+                },
+                options: years.map(year => {
+                    return {
+                        title: {text: `Emissions in ${year}`},
+                        series: countries.map(country => {
+                            let record = data.find(item => item['Country Name'] === country);
+                            return {
+                                name: country,
+                                type: 'line',
+                                data: series.find(s => s.name === country).data.slice(0, years.indexOf(year) + 1)
+                            };
+                        })
+                    };
+                })
+            };
+
+            chart.setOption(option);
+        }
+    </script>
+</body>
+</html>
