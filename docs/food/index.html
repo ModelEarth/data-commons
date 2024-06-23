@@ -16,8 +16,59 @@ loadMarkdown("index.md", "readmeDiv", "_parent");
 
 <body>
   
+
 <div class="content contentpadding">
-  
+
+<div style="float:left; padding-right:30px">
+<div id="test2"></div>
+</div>
+
+<div style="overflow: auto;">
+    <h3>Example #2</h3>
+    <p>Giving specific nutrition label values and hiding some of the parts of the nutrition label</p>
+<pre id="pre2">
+$('#test2').nutritionLabel({
+    showServingUnitQuantity : false,
+    itemName : 'Bleu Cheese Dressing',
+    ingredientList : 'Bleu Cheese Dressing',
+
+    decimalPlacesForQuantityTextbox : 2,
+    valueServingUnitQuantity : 1,
+
+    allowFDARounding : true,
+    decimalPlacesForNutrition : 2,
+
+    showPolyFat : false,
+    showMonoFat : false,
+
+    valueCalories : 450,
+    valueFatCalories : 430,
+    valueTotalFat : 48,
+    valueSatFat : 6,
+    valueTransFat : 0,
+    valueCholesterol : 30,
+    valueSodium : 780,
+    valueTotalCarb : 3,
+    valueFibers : 0,
+    valueSugars : 3,
+    valueProteins : 3,
+    valueVitaminD : 12.22,
+    valuePotassium_2018 : 4.22,
+    valueCalcium : 7.22,
+    valueIron : 11.22,
+    valueAddedSugars : 17,
+    valueCaffeine : 15.63,
+    showLegacyVersion : false
+});
+</pre>
+</div>
+
+<div style="clear:both"></div>
+
+</div>
+
+
+<div class="content contentpadding">
     <style>
         .search-container {
             margin-bottom: 20px;
@@ -89,6 +140,22 @@ TO DO: Use the following json from loadDataFood() to display a <a href="https://
 <div id="readmeDiv"></div>
 
 </div>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+<link rel='stylesheet' type='text/css' media='all' href='../../../nutrition-label/dist/css/nutritionLabel-min.css'>
+<link rel='stylesheet' type='text/css' media='all' href='../../../nutrition-label/dist/demo/css/demo.css'>
+
+<!-- google webfont for nutrition label -->
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Archivo+Black" />
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="../../../nutrition-label/dist/js/nutritionLabel-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    eval( eval( $('#pre2').html() ) );
+});
+</script>
 
 </body>
 </html>

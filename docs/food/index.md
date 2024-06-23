@@ -2,7 +2,7 @@
 
 # Healthy Food
 
-Goal 2. Healthy Food, No Hunger - [balance repo](/balance/)
+Goal 2. Healthy Food, No Hunger and [GHG mitigation](/OpenFootprint/) - [balance repo](/balance/)
 
 ## Food Nutrition Labels (YAML locally)
 
