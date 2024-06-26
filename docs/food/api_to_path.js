@@ -195,3 +195,5 @@ for (const [name, id] of Object.entries(foodMap)) {
   const url =food_to_webpage(name, id);
   console.log(url);
 }
+
+export default loadDataCommons_list;

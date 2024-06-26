@@ -6,156 +6,37 @@
 <title>Food</title>
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <script type="text/javascript" src="https://model.earth/localsite/js/localsite.js?showheader=true"></script>
 
-<script>
-loadMarkdown("index.md", "readmeDiv", "_parent");
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../food/label.js"></script>
+<script src="../food/search.js"></script>
 </head>
-
 <body>
-  
 
 <div class="content contentpadding">
-
-<div style="float:left; padding-right:30px">
-<div id="test2"></div>
+    <div id="search-bar-container"></div>
 </div>
 
-<div style="overflow: auto;">
-    <h3>Example #2</h3>
-    <p>Giving specific nutrition label values and hiding some of the parts of the nutrition label</p>
-<pre id="pre2">
-$('#test2').nutritionLabel({
-    showServingUnitQuantity : false,
-    itemName : 'Bleu Cheese Dressing',
-    ingredientList : 'Bleu Cheese Dressing',
-
-    decimalPlacesForQuantityTextbox : 2,
-    valueServingUnitQuantity : 1,
-
-    allowFDARounding : true,
-    decimalPlacesForNutrition : 2,
-
-    showPolyFat : false,
-    showMonoFat : false,
-
-    valueCalories : 450,
-    valueFatCalories : 430,
-    valueTotalFat : 48,
-    valueSatFat : 6,
-    valueTransFat : 0,
-    valueCholesterol : 30,
-    valueSodium : 780,
-    valueTotalCarb : 3,
-    valueFibers : 0,
-    valueSugars : 3,
-    valueProteins : 3,
-    valueVitaminD : 12.22,
-    valuePotassium_2018 : 4.22,
-    valueCalcium : 7.22,
-    valueIron : 11.22,
-    valueAddedSugars : 17,
-    valueCaffeine : 15.63,
-    showLegacyVersion : false
-});
-</pre>
-</div>
-
-<div style="clear:both"></div>
-
-</div>
-
-
-<div class="content contentpadding">
-    <style>
-        .search-container {
-            margin-bottom: 20px;
-        }
-        .search-input {
-            padding: 10px;
-            width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .search-button {
-            padding: 10px 15px;
-            border: none;
-            background-color: #28a745;
-            color: white;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .search-button:hover {
-            background-color: #218838;
-        }
-    </style>
-
-  <div class="search-container">
-    <input type="text" id="search-input" class="search-input" placeholder="Enter your food search term">
-    <button onclick="handleSearch()" class="search-button">Search</button>
-</div>
-
-<div>
-    <h3>Nutrition Label</h3>
-    <div>
-        
-    </div>
-
-
-</div>
-
-TO DO: Use the following json from loadDataFood() to display a <a href="https://model.earth/nutrition-label/dist/demo/demo.html">Nutritionix Label</a> using <a href="https://github.com/ModelEarth/nutrition-label">our fork</a><br>
-<div id="resultJson" style="max-height:150px;overflow-y:scroll;border:1px solid #ccc; padding:10px"></div>
-<br><br>
-
-<script type="text/javascript" src="../food/api_to_path.js"></script>
+<script src="../food/api_to_path.js"></script>
 <script>
-    async function loadDataCommons_search(apiKey,keyword) { 
-          const url = `https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${apiKey}&query=${keyword}`;
-          const response = await fetch(url);
-          return await response.json();
-    }
-    async function handleSearch() {
-        var searchTerm = document.getElementById('search-input').value;
-        var link;
-        try {
-          const data = await loadDataCommons_search('bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml', searchTerm);
-          const id = data.foods[0].fdcId;
-          const food_name = data.foods[0].description;
-          console.log("Food : {}, Id : {}", food_name, id);
-          link = `/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/${id}?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml`;
-
-          // TO DO: This could be secondary. Stay in the current page to display the label.
-          window.location.href = link;
-        } catch (error) {
-          alert(error)
-        }
-    }
-    loadDataFood();
+    // Render the search bar
+    renderSearchBar('search-bar-container');
 </script>
 
-
-<div id="readmeDiv"></div>
-
-</div>
-
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
 <link rel='stylesheet' type='text/css' media='all' href='../../../nutrition-label/dist/css/nutritionLabel-min.css'>
-<link rel='stylesheet' type='text/css' media='all' href='../../../nutrition-label/dist/demo/css/demo.css'>
+<link rel='stylesheet' type='text/css' media='all' href='../../../nutrition-label/dist/demo/css/demo.css'> -->
 
 <!-- google webfont for nutrition label -->
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Archivo+Black" />
+<!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Archivo+Black" />
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="../../../nutrition-label/dist/js/nutritionLabel-min.js"></script>
+<script src="../../../nutrition-label/dist/js/nutritionLabel-min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-    eval( eval( $('#pre2').html() ) );
+    eval($('#pre2').html());
 });
-</script>
+</script> -->
 
 </body>
 </html>
