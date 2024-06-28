@@ -1,8 +1,31 @@
-import React from 'react'
+import React from 'react';
 
 const Search = () => {
+
+  // input -> text  ===> convert to fdcId for fetch ===> return dataObj ==> load to frontEnd with calculation & Label
+    // input text with dropdown selection to autofill the food (E.g. milk - brand name )
+    // result will show up on top of labels with "x" delete function (might consider change to check/uncheck) 
+    // need to know what food has data and what are missing -> food item show up as red when fail to fetch? (Or not being able to add from search bar)
+    // populate USDA labels & YAML 
+    // Might consider adding charts to make it easy to read 
+
+
+
+  const handleSearch = ( e ) => {
+
+    return e;
+    
+  }
+
+
+  
+  
   return (
-    <div>Search</div>
+
+    <div class="search-container">
+      {/* <input type="text" id="search-input" class="search-input" placeholder="Enter your food search term"> */}
+      <button onclick="handleSearch()" class="search-button">Search</button>
+    </div>
   )
 }
 
