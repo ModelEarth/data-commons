@@ -1,4 +1,3 @@
-import './App.css';
 import React from 'react';
 import Search from './components/search';
 import Label from './components/label';
