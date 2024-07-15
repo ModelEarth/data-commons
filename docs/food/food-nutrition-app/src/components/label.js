@@ -1,89 +1,117 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Label.css';
+
+const USDA_REQUIRED_NUTRIENTS = [
+  'Total lipid (fat)',
+  'Fatty acids, total saturated',
+  'Cholesterol',
+  'Sodium, Na',
+  'Carbohydrate, by difference',
+  'Fiber, total dietary',
+  'Total Sugars',
+  'Protein',
+  'Vitamin D (D2 + D3), International Units',
+  'Calcium, Ca',
+  'Iron, Fe',
+  'Potassium, K',
+];
+
+const VITAMIN_NUTRIENTS = [
+  'Vitamin A, IU',
+  'Vitamin C, total ascorbic acid',
+  'Vitamin D (D2 + D3), International Units',
+  'Vitamin E (alpha-tocopherol)',
+  'Vitamin K (phylloquinone)',
+  'Thiamin',
+  'Riboflavin',
+  'Niacin',
+  'Vitamin B-6',
+  'Folate, total',
+  'Vitamin B-12',
+  'Choline, total',
+];
 
 const Label = ({ searchResults }) => {
   return (
     <div className="label-container">
       {searchResults.map((result, index) => (
-        <div key={index} className="nutrition-label">
-          <h2>{result.description}</h2>
-          <p>Category: {result.foodCategory || 'N/A'}</p>
-          <p>Brand: {result.brandName || 'N/A'}</p>
-          <div className="nutrition-facts">
-            <h3>Nutrition Facts</h3>
-            <div className="nutrition-item">
-              <span>Serving Size</span>
-              <span>{result.servingSize ? `${result.servingSize} ${result.servingSizeUnit}` : 'N/A'}</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Calories</span>
-              <span>{getNutrientValue(result, 'Energy')}</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Total Fat</span>
-              <span>{getNutrientValue(result, 'Total lipid (fat)')} g</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Saturated Fat</span>
-              <span>{getNutrientValue(result, 'Fatty acids, total saturated')} g</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Trans Fat</span>
-              <span>{getNutrientValue(result, 'Fatty acids, total trans')} g</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Cholesterol</span>
-              <span>{getNutrientValue(result, 'Cholesterol')} mg</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Sodium</span>
-              <span>{getNutrientValue(result, 'Sodium, Na')} mg</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Total Carbohydrates</span>
-              <span>{getNutrientValue(result, 'Carbohydrate, by difference')} g</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Dietary Fiber</span>
-              <span>{getNutrientValue(result, 'Fiber, total dietary')} g</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Total Sugars</span>
-              <span>{getNutrientValue(result, 'Total Sugars')} g</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Protein</span>
-              <span>{getNutrientValue(result, 'Protein')} g</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Vitamin D</span>
-              <span>{getNutrientValue(result, 'Vitamin D (D2 + D3), International Units')} IU</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Calcium</span>
-              <span>{getNutrientValue(result, 'Calcium, Ca')} mg</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Iron</span>
-              <span>{getNutrientValue(result, 'Iron, Fe')} mg</span>
-            </div>
-            <div className="nutrition-item">
-              <span>Potassium</span>
-              <span>{getNutrientValue(result, 'Potassium, K')} mg</span>
-            </div>
-          </div>
-
-          <p className='date'>PublicationDate: {result.publicationDate || 'N/A'}</p>
-        </div>
+        <NutritionLabel key={index} result={result} />
       ))}
     </div>
   );
 };
 
-// Helper function to get nutrient value
-const getNutrientValue = (result, nutrientName) => {
-  const nutrient = result.foodNutrients.find(n => n.nutrient.name === nutrientName);
-  return nutrient ? nutrient.amount : 'N/A';
+const NutritionLabel = ({ result }) => {
+  const [showAll, setShowAll] = useState(false);
+
+  const toggleShowAll = () => {
+    setShowAll(!showAll);
+  };
+
+  const getNutrientValue = (result, nutrientName) => {
+    const nutrient = result.foodNutrients.find(n => n.nutrient.name === nutrientName);
+    return nutrient ? `${nutrient.amount} ${nutrient.nutrient.unitName}` : 'N/A';
+  };
+
+  const usdaNutrients = result.foodNutrients.filter(nutrient =>
+    USDA_REQUIRED_NUTRIENTS.includes(nutrient.nutrient.name)
+  );
+
+  const vitaminNutrients = result.foodNutrients.filter(nutrient =>
+    VITAMIN_NUTRIENTS.includes(nutrient.nutrient.name)
+  );
+
+  const otherNutrients = result.foodNutrients.filter(
+    nutrient => !USDA_REQUIRED_NUTRIENTS.includes(nutrient.nutrient.name) && !VITAMIN_NUTRIENTS.includes(nutrient.nutrient.name)
+  );
+
+  return (
+    <div className="nutrition-label">
+      <h2>{result.description}</h2>
+      <p>Brand: {result.brandName || 'N/A'}</p>
+
+      <div className="serving">
+        <span>Serving Size</span>
+        <span>{result.servingSize ? `${result.servingSize} ${result.servingSizeUnit}` : 'N/A'}</span>
+      </div>
+
+      <div className="calories">
+        <span>Calories</span>
+        <span>{getNutrientValue(result, 'Energy')}</span>
+      </div>
+      <div className="nutrition-facts">
+        <h3>Nutrition Facts</h3>
+
+        {usdaNutrients.map((nutrient, index) => (
+          <div key={index} className="nutrition-item">
+            <span>{nutrient.nutrient.name}</span>
+            <span>{`${nutrient.amount} ${nutrient.nutrient.unitName}`}</span>
+          </div>
+        ))}
+
+        <h4>Vitamins</h4>
+        {vitaminNutrients.map((nutrient, index) => (
+          <div key={index} className="nutrition-item">
+            <span>{nutrient.nutrient.name}</span>
+            <span>{`${nutrient.amount} ${nutrient.nutrient.unitName}`}</span>
+          </div>
+        ))}
+
+        {showAll &&
+          otherNutrients.map((nutrient, index) => (
+            <div key={index} className="nutrition-item">
+              <span>{nutrient.nutrient.name}</span>
+              <span>{`${nutrient.amount} ${nutrient.nutrient.unitName}`}</span>
+            </div>
+          ))}
+        <div className="nutrition-item">
+          <button onClick={toggleShowAll}>{showAll ? 'Show Less' : '...More'}</button>
+        </div>
+      </div>
+
+      <p className="date">Publication Date: {result.publicationDate || 'N/A'}</p>
+    </div>
+  );
 };
 
 export default Label;
