@@ -1,0 +1,44 @@
+/* Label.css */
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nutrition-label {
+    border: 1px solid #000;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .nutrition-facts {
+    margin-top: 10px;
+  }
+  
+  .nutrition-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .nutrition-item span {
+    font-size: 14px;
+  }
+  
+  .nutrition-label h2, .nutrition-label h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nutrition-label h3 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+
+.date {
+
+}
+  

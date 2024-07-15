@@ -1,12 +1,94 @@
-import React from 'react'
+import React from 'react';
+import './Label.css';
 
-const Label = ({searchResults}) => {
+const Label = ({ searchResults }) => {
   return (
-    <div>Label</div>
-  )
-}
+    <div className="label-container">
+      {searchResults.map((result, index) => (
+        <div key={index} className="nutrition-label">
+          <h2>{result.description}</h2>
+          <p>Category: {result.foodCategory || 'N/A'}</p>
+          <p>Brand: {result.brandName || 'N/A'}</p>
+          <div className="nutrition-facts">
+            <h3>Nutrition Facts</h3>
+            <div className="nutrition-item">
+              <span>Serving Size</span>
+              <span>{result.servingSize ? `${result.servingSize} ${result.servingSizeUnit}` : 'N/A'}</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Calories</span>
+              <span>{getNutrientValue(result, 'Energy')}</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Total Fat</span>
+              <span>{getNutrientValue(result, 'Total lipid (fat)')} g</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Saturated Fat</span>
+              <span>{getNutrientValue(result, 'Fatty acids, total saturated')} g</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Trans Fat</span>
+              <span>{getNutrientValue(result, 'Fatty acids, total trans')} g</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Cholesterol</span>
+              <span>{getNutrientValue(result, 'Cholesterol')} mg</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Sodium</span>
+              <span>{getNutrientValue(result, 'Sodium, Na')} mg</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Total Carbohydrates</span>
+              <span>{getNutrientValue(result, 'Carbohydrate, by difference')} g</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Dietary Fiber</span>
+              <span>{getNutrientValue(result, 'Fiber, total dietary')} g</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Total Sugars</span>
+              <span>{getNutrientValue(result, 'Total Sugars')} g</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Protein</span>
+              <span>{getNutrientValue(result, 'Protein')} g</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Vitamin D</span>
+              <span>{getNutrientValue(result, 'Vitamin D (D2 + D3), International Units')} IU</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Calcium</span>
+              <span>{getNutrientValue(result, 'Calcium, Ca')} mg</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Iron</span>
+              <span>{getNutrientValue(result, 'Iron, Fe')} mg</span>
+            </div>
+            <div className="nutrition-item">
+              <span>Potassium</span>
+              <span>{getNutrientValue(result, 'Potassium, K')} mg</span>
+            </div>
+          </div>
+
+          <p className='date'>PublicationDate: {result.publicationDate || 'N/A'}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+// Helper function to get nutrient value
+const getNutrientValue = (result, nutrientName) => {
+  const nutrient = result.foodNutrients.find(n => n.nutrient.name === nutrientName);
+  return nutrient ? nutrient.amount : 'N/A';
+};
 
 export default Label;
+
+
 
 
 // import React from 'react';

@@ -34,7 +34,8 @@ const Search = () => {
       const data = await fetchFoodDetails('bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml', suggestion.fdcId);
       const enrichedData = {
         ...data,
-        foodCategory: suggestion.foodCategory, // Preserving foodCategory from the suggestion
+        foodCategory: suggestion.foodCategory, // adding foodCategory
+        brandName: suggestion.brandName,
       };
       setSearchResults([...searchResults, enrichedData]);
       setSearchInput("");
