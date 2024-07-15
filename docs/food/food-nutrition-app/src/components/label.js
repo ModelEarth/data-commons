@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Label = () => {
+const Label = ({searchResults}) => {
   return (
     <div>Label</div>
   )

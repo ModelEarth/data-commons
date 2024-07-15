@@ -10,7 +10,7 @@ function App() {
     <div>
       <h1>Welcome to Food Nutrition Label</h1>
       <Search />
-      <Label />
+      {/* <Label /> */}
     </div>
   );
 }
