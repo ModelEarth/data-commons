@@ -50,17 +50,13 @@
     font-size: 14px;
     padding: 0;
   }
-  
-  .date {
-    margin-top: 10px;
-    font-size: 12px;
-    color: #666;
-  }
+
 
 .date {
+    margin-top: 10px;
     font-size: small;
     font-style: italic;
-    color: grey;
+    color: #666;
 
 }
   
