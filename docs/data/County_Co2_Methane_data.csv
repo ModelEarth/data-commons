@@ -1,0 +1,1968 @@
+CountyName,Population,CO2,Methane
+Autauga County,59759.0,4635470.1,65884.0
+Calhoun County,6068.0,0.0,0.0
+Clay County,7814.0,0.0,0.0
+Bibb County,156197.0,233019.7,75208.5
+Choctaw County,14358.0,1008684.2,2984.75
+Clarke County,15266.0,0.0,0.0
+Bullock County,10202.0,0.0,0.0
+Cherokee County,51645.0,200623.9,120722.5
+Cleburne County,25284.0,0.0,0.0
+Chilton County,45884.0,7713.1,3453.25
+Barbour County,15414.0,0.0,612664.0
+Butler County,197300.0,856434.3,170922.5
+Blount County,139958.0,203575.7,84954.25
+Baldwin County,43635.0,11190.0,6671.75
+Chambers County,51288.0,7230528.5,15016.75
+Coffee County,59728.0,4.1,29139.25
+Colbert County,58033.0,632637.2,213.55
+Conecuh County,11206.0,0.0,0.0
+Coosa County,10166.0,69439.7,4401.75
+Cullman County,90665.0,81349.2,81249.25
+Covington County,18098.0,0.0,0.0
+Crenshaw County,13025.0,0.0,0.0
+Dale County,49544.0,0.0,0.0
+Dallas County,2600840.0,10164743.9,5454937.75
+Elmore County,29403.0,497753.9,230.75
+DeKalb County,21003.0,22.0,17100.0
+Escambia County,324878.0,2629709.4,239000.75
+Etowah County,103088.0,8497.3,4.0
+Fayette County,39487.0,522825.5,2507.75
+Franklin County,98678.0,72645.1,34.25
+Geneva County,26783.0,0.0,0.0
+Greene County,21107.0,0.0,0.0
+Hale County,31827.0,398500.6,186.5
+Henry County,49906.0,0.0,0.0
+Houston County,21950.0,207389.8,3596.5
+Jackson County,20836.0,1591.9,0.75
+Jefferson County,85784.0,509132.2,34474.0
+Lamar County,50484.0,2750505.2,108859.75
+Lauderdale County,24793.0,0.0,0.0
+Lawrence County,45415.0,0.0,0.0
+Lee County,21982.0,0.0,0.0
+Limestone County,22253.0,5931804.4,24381.25
+Lowndes County,57603.0,1874062.4,31700.55
+Macon County,26229.0,102224.6,5013.75
+Madison County,14000.0,0.0,0.0
+Marengo County,18745.0,748776.1,46876.0
+Marion County,55952.0,859184.3,2078803.5
+Marshall County,29752.0,6110104.4,2816292.75
+Mobile County,411411.0,11465950.8,108490.0
+Monroe County,46109.0,0.0,0.0
+Montgomery County,98915.0,30002.5,14.25
+Morgan County,17430.0,0.0,0.0
+Pickens County,133462.0,41040.8,20.0
+Perry County,8685.0,0.0,0.0
+Pike County,60558.0,29479.5,408.5
+Randolph County,27600.0,65210.5,5343.25
+Russell County,25448.0,91006.8,42.25
+St. Clair County,9576.0,0.0,0.0
+Shelby County,24008.0,175031.5,4096.75
+Sumter County,104012.0,29987.4,15.25
+Talladega County,80704.0,288671.7,17297.75
+Tallapoosa County,40977.0,2090184.1,230651.75
+Tuscaloosa County,236780.0,1218513.4,3141483.75
+Walker County,78870.0,0.0,0.0
+Washington County,137688.0,31662.1,25.75
+Wilcox County,8761.0,0.0,0.0
+Winston County,17543.0,89463.3,8173.0
+Aleutians East Borough,3398.0,45839.6,54.5
+Aleutians West Census Area,5122.0,67194.1,68.25
+Anchorage,287145.0,1697762.4,335900.25
+Bethel Census Area,18257.0,0.0,0.0
+Bristol Bay Borough,865.0,0.0,0.0
+Chugach Census Area,6874.0,0.0,0.0
+Copper River Census Area,2589.0,0.0,0.0
+Dillingham Census Area,4723.0,0.0,0.0
+Denali Borough,1585.0,607618.1,1425.0
+Fairbanks North Star Borough,95356.0,1440401.4,83816.0
+Haines Borough,2056.0,0.0,0.0
+Hoonah-Angoon Census Area,2287.0,0.0,0.0
+Juneau,31685.0,53675.7,12616.75
+Kenai Peninsula Borough,60690.0,575089.1,63533.0
+Ketchikan Gateway Borough,13741.0,0.0,0.0
+Kodiak Island Borough,12720.0,0.0,0.0
+Kusilvak Census Area,8278.0,0.0,0.0
+Lake and Peninsula Borough,1381.0,7721.6,3.75
+Matanuska-Susitna Borough,113325.0,0.0,32036.75
+Nome Census Area,9835.0,0.0,0.0
+North Slope Borough,10805.0,12166297.3,340891.75
+Northwest Arctic Borough,7423.0,147583.9,152.25
+Petersburg Borough,0.0,0.0,0.0
+Sitka,8382.0,0.0,0.0
+Prince of Wales-Hyder Census Area,5650.0,0.0,0.0
+Skagway,1081.0,0.0,0.0
+Southeast Fairbanks Census Area,7021.0,0.0,0.0
+Valdez-Cordova Census Area,0.0,129923.4,1183.5
+Wrangell,2070.0,0.0,0.0
+Yakutat,700.0,0.0,0.0
+Yukon-Koyukuk Census Area,5179.0,0.0,0.0
+Apache County,65432.0,12421886.4,57583.25
+Cochise County,125663.0,1800036.7,7562.0
+Coconino County,144060.0,244752.7,154006.0
+Gila County,53922.0,490.3,0.25
+Graham County,7980.0,0.0,0.0
+Greenlee County,9302.0,30689.3,14.5
+La Paz County,16506.0,60562.9,48883.75
+Maricopa County,4551524.0,15015300.3,500011.5
+Mohave County,220816.0,2672976.1,89415.75
+Navajo County,108650.0,2282167.4,106481.0
+Pima County,1057597.0,1299351.6,139152.0
+Pinal County,464154.0,249209.9,47082.0
+Santa Cruz County,264370.0,28822.9,25786.5
+Yavapai County,246191.0,2045456.9,75322.0
+Yuma County,9899.0,50124.9,23.5
+Arkansas County,16512.0,39616.7,190.0
+Baxter County,42435.0,0.0,0.0
+Ashley County,18354.0,184231.0,184738.0
+Boone County,20968.0,0.0,90126.5
+Benton County,212791.0,71937.1,84173.25
+Bradley County,110616.0,83688.0,64610.75
+Carroll County,29147.0,6.4,38858.25
+Chicot County,9873.0,0.0,0.0
+Clark County,34691.0,32207.1,426.0
+Columbia County,58193.0,6649222.5,1796.0
+Cleveland County,299587.0,49637.2,23.5
+Conway County,21046.0,85363.8,126858.5
+Craighead County,113017.0,68704.6,29.75
+Crittenden County,8981.0,0.0,0.0
+Crawford County,16007.0,0.0,0.0
+Cross County,16601.0,0.0,0.0
+Desha County,10771.0,173289.6,46939.0
+Faulkner County,127665.0,0.0,96772.75
+Drew County,16911.0,0.0,0.0
+Fulton County,14533.0,0.0,0.0
+Grant County,51276.0,2438552.2,642.5
+Garland County,100089.0,0.0,0.0
+Hot Spring County,33203.0,1603720.8,2209.25
+Hempstead County,19453.0,3162777.3,8940.75
+Howard County,33672.0,1245421.9,16855.5
+Independence County,37945.0,5049674.8,13427.75
+Izard County,14048.0,0.0,0.0
+Johnson County,8730.0,0.0,0.0
+Lafayette County,16877.0,0.0,0.0
+Lincoln County,20660.0,6337943.8,43326.75
+Little River County,11821.0,1311758.7,29041.75
+Logan County,31316.0,0.0,507698.0
+Lonoke County,75225.0,0.0,0.0
+Miller County,25403.0,0.0,0.0
+Mississippi County,11688.0,0.0,0.0
+Ouachita County,22049.0,18463.5,9.75
+Nevada County,102293.0,0.0,0.0
+Newton County,12052.0,2192640.3,141472.0
+Phillips County,4240.0,0.0,0.0
+Poinsett County,22495.0,0.0,0.0
+Polk County,45709.0,0.0,0.0
+Pope County,11431.0,0.0,0.0
+Prairie County,1107.0,0.0,0.0
+Pulaski County,33706.0,27217.4,38719.25
+St. Francis County,22451.0,0.0,0.0
+Saline County,14116.0,32419.7,47497.5
+Scott County,21476.0,0.0,0.0
+Searcy County,7918.0,0.0,0.0
+Sebastian County,129059.0,94606.9,80448.0
+Sevier County,22069.0,0.0,0.0
+Sharp County,17810.0,0.0,123024.5
+Stone County,32136.0,0.0,0.0
+Union County,20452.0,206352.7,254.0
+Van Buren County,6429.0,0.0,0.0
+Woodruff County,6049.0,0.0,0.0
+White County,28064.0,0.0,0.0
+Yell County,20129.0,4036.0,54069.75
+Alameda County,1628997.0,438532.8,190809.5
+Alpine County,1190.0,0.0,0.0
+Amador County,41412.0,0.0,0.0
+Butte County,10774.0,76639.3,108.5
+Calaveras County,46563.0,0.0,0.0
+Colusa County,21914.0,1025533.6,3016.25
+Contra Costa County,1156966.0,18392758.9,301556.0
+Del Norte County,27082.0,0.0,0.0
+El Dorado County,192646.0,0.0,0.0
+Fresno County,1015190.0,890361.1,130005.75
+Glenn County,28339.0,0.0,0.0
+Humboldt County,17272.0,1625229.6,4697.25
+Imperial County,178713.0,653774.0,26639.75
+Inyo County,18718.0,0.0,40426.75
+Kern County,916108.0,15841383.9,411220.5
+Kings County,152981.0,145905.6,54502.5
+Lake County,6507.0,0.0,0.0
+Lassen County,29904.0,0.0,173.5
+Los Angeles County,9721138.0,23688446.2,2819898.75
+Madera County,160256.0,163137.2,70917.75
+Marin County,256018.0,102.3,86225.75
+Mariposa County,17020.0,0.0,0.0
+Mendocino County,89783.0,0.0,0.0
+Modoc County,8511.0,35112.9,1221.0
+Merced County,290014.0,421198.1,20769.5
+Mono County,12978.0,0.0,0.0
+Monterey County,432858.0,2487492.1,351832.25
+Napa County,134300.0,0.0,98249.5
+Orange County,37991.0,80341.9,34290.25
+Plumas County,19351.0,0.0,0.0
+Placer County,417772.0,236453.0,38309.5
+Riverside County,2473902.0,1299567.9,344803.0
+Sacramento County,1584169.0,2341825.6,155383.75
+San Benito County,67579.0,0.0,0.0
+San Bernardino County,2193656.0,9393141.0,333739.25
+San Diego County,3276208.0,2048481.0,467303.75
+San Francisco County,808437.0,53846.5,279282.25
+San Joaquin County,793229.0,1140350.7,93426.5
+San Mateo County,729181.0,80910.4,148957.75
+San Luis Obispo County,282013.0,217130.5,34269.0
+Santa Barbara County,443837.0,153991.0,57329.75
+Santa Clara County,1870945.0,1615007.9,355515.25
+Shasta County,180930.0,593784.0,106355.75
+Sierra County,11436.0,0.0,0.0
+Siskiyou County,43660.0,0.0,0.0
+Solano County,448747.0,2784893.8,145029.0
+Sonoma County,482650.0,0.0,53490.5
+Stanislaus County,551275.0,1461182.8,49028.25
+Sutter County,98503.0,923907.3,424.0
+Tehama County,65245.0,51668.9,31183.25
+Trinity County,13996.0,0.0,0.0
+Tulare County,477544.0,281257.0,33027.25
+Tuolumne County,54531.0,0.0,0.0
+Ventura County,832605.0,819819.3,284565.0
+Yolo County,222115.0,87687.9,19375.0
+Yuba County,84310.0,0.0,88636.0
+Adams County,21226.0,0.0,0.0
+Arapahoe County,655808.0,853597.78,129754.98
+Alamosa County,16592.0,0.0,0.0
+Archuleta County,14003.0,0.0,0.0
+Bent County,5399.0,0.0,0.0
+Baca County,3432.0,0.0,0.0
+Boulder County,327468.0,418626.4,53175.25
+Broomfield,76121.0,0.0,0.0
+Chaffee County,20223.0,0.0,0.0
+Cheyenne County,9511.0,0.0,0.0
+Clear Creek County,9355.0,0.0,0.0
+Conejos County,7579.0,0.0,0.0
+Costilla County,3603.0,0.0,0.0
+Crowley County,5614.0,0.0,0.0
+Custer County,9006.0,0.0,0.0
+Delta County,5406.0,0.0,0.0
+Dolores County,2455.0,0.0,0.0
+Douglas County,44144.0,486125.6,67451.5
+Denver,713252.0,16911697.8,4845429.5
+Elbert County,19814.0,0.0,0.0
+Eagle County,55285.0,65651.1,57602.25
+El Paso County,868763.0,2801669.5,501002.75
+Fremont County,39472.0,831146.6,14788.5
+Garfield County,2363.0,0.0,0.0
+Gilpin County,5891.0,0.0,0.0
+Grand County,9769.0,0.0,0.0
+Gunnison County,17267.0,10394.3,244019.25
+Hinsdale County,775.0,0.0,0.0
+Huerfano County,7082.0,0.0,0.0
+Kiowa County,8345.0,0.0,0.0
+Kit Carson County,6961.0,0.0,0.0
+La Plata County,56607.0,1259991.4,224109.5
+Las Animas County,14327.0,212480.0,223788.0
+Larimer County,366778.0,1783165.0,200563.0
+Mesa County,158636.0,13725.4,99847.25
+Mineral County,26855.0,22605.6,10.25
+Moffat County,13177.0,2120.9,776.0
+Montezuma County,26468.0,950.3,1.25
+Montrose County,43811.0,94.2,46837.5
+Otero County,68823.0,0.5,33065.5
+Ouray County,5100.0,0.0,0.0
+Park County,30518.0,235047.3,246.0
+Pitkin County,16876.0,0.0,0.0
+Prowers County,11854.0,0.0,0.0
+Pueblo County,169544.0,9508344.6,63277.0
+Rio Blanco County,6569.0,899339.4,21119.25
+Rio Grande County,11325.0,0.0,0.0
+Routt County,25007.0,2642110.4,107882.25
+Saguache County,6623.0,0.0,0.0
+San Juan County,18662.0,0.0,0.0
+San Miguel County,26953.0,0.0,0.0
+Sedgwick County,525525.0,452675.9,196623.0
+Summit County,43036.0,37712.4,110.5
+Teller County,24857.0,0.0,0.0
+Weld County,350176.0,4202968.2,266009.75
+Fairfield County,20455.0,0.0,0.0
+Hartford County,0.0,585572.5,185443.0
+Litchfield County,0.0,149416.9,70.25
+Middlesex County,10943.0,0.0,0.0
+New Haven County,0.0,3481898.7,103826.52
+New London County,0.0,409845.5,5602.75
+Tolland County,0.0,96004.5,45.75
+Capitol Planning Region,981447.0,0.0,0.0
+Windham County,45842.0,0.0,0.0
+Lower Connecticut River Valley Planning Region,176622.0,0.0,0.0
+Greater Bridgeport Planning Region,327286.0,0.0,0.0
+Naugatuck Valley Planning Region,454083.0,0.0,0.0
+Northeastern Connecticut Planning Region,96196.0,0.0,0.0
+Northwest Hills Planning Region,113234.0,0.0,0.0
+South Central Connecticut Planning Region,573244.0,0.0,0.0
+Southeastern Connecticut Planning Region,280403.0,0.0,0.0
+Western Connecticut Planning Region,623690.0,0.0,0.0
+New Castle County,575494.0,4256699.6,261465.25
+Kent County,740.0,94384.5,922.25
+Sussex County,10680.0,1242.6,136985.0
+District of Columbia,671803.0,88594.0,41.5
+Alachua County,284030.0,1998454.2,3912.5
+Baker County,16938.0,689413.6,474.75
+Bay County,102821.0,3578988.9,23544.0
+Bradford County,59866.0,2695991.8,79264.0
+Brevard County,630693.0,2263327.8,576714.75
+Broward County,1947026.0,2899042.1,282956.75
+Citrus County,162529.0,9160545.4,34975.75
+Charlotte County,11475.0,0.0,0.0
+Collier County,397994.0,11.2,28671.5
+Dixie County,17124.0,0.0,0.0
+Duval County,9888.0,186579.3,24222.25
+DeSoto County,191723.0,1744678.1,18710.45
+Flagler County,126705.0,0.0,0.0
+Gadsden County,43403.0,80927.7,14488.0
+Gilchrist County,18992.0,23714.6,9067.5
+Glades County,12454.0,0.0,0.0
+Gulf County,15314.0,0.0,0.0
+Hamilton County,8298.0,0.0,0.0
+Hardee County,25645.0,2656411.0,1240.5
+Hendry County,41339.0,11480.9,107291.25
+Hernando County,206896.0,782311.2,140277.5
+Highlands County,105618.0,0.0,0.0
+Hillsborough County,426594.0,15738.0,78191.75
+Holmes County,44390.0,0.0,0.0
+Indian River County,167352.0,0.0,15782.0
+Leon County,16209.0,218041.3,137.25
+Levy County,45260.0,0.0,0.0
+Liberty County,101992.0,0.0,80042.25
+Manatee County,429125.0,3811541.7,57508.75
+Martin County,5217.0,180675.73,8786.18
+Miami-Dade County,2673837.0,4183174.1,333870.0
+Nassau County,1383726.0,1935295.3,254318.75
+Okaloosa County,216482.0,29.5,24439.0
+Okeechobee County,40412.0,2982871.3,1384.25
+Osceola County,23274.0,60740.3,28.5
+Palm Beach County,1518477.0,9596675.7,604980.25
+Pasco County,608794.0,1558748.4,14975.5
+Pinellas County,961739.0,2270252.9,284630.0
+Putnam County,57015.0,11436736.2,141983.75
+St. Johns County,306841.0,23981.3,11.25
+St. Lucie County,358704.0,758038.2,57559.25
+Santa Rosa County,198268.0,677228.6,227217.58
+Sarasota County,462286.0,0.0,152117.0
+Seminole County,23351.0,852873.9,399.75
+Suwannee County,45411.0,612678.9,1586.5
+Taylor County,19975.0,0.0,0.0
+Volusia County,579192.0,3506815.0,338246.5
+Wakulla County,35178.0,478138.9,221.75
+Walton County,103065.0,279526.0,129.75
+Appling County,18428.0,0.0,0.0
+Atkinson County,8183.0,0.0,48572.75
+Bacon County,11191.0,0.0,0.0
+Banks County,19328.0,96.9,67877.0
+Barrow County,89299.0,0.0,47840.5
+Bartow County,112816.0,9531345.3,27831.0
+Berrien County,152900.0,23032.5,167729.5
+Ben Hill County,17069.0,0.0,0.0
+Bleckley County,12257.0,0.0,0.0
+Brantley County,18183.0,0.0,0.0
+Brooks County,6906.0,20862.8,1041.75
+Bryan County,48182.0,206059.3,6574.75
+Bulloch County,83059.0,0.0,0.0
+Burke County,2155.0,72625.3,13927.25
+Butts County,26649.0,0.0,0.0
+Camden County,11088.0,0.0,0.0
+Candler County,11000.0,0.0,0.0
+Catoosa County,68826.0,0.0,0.0
+Charlton County,12781.0,40.5,50988.5
+Chatham County,79864.0,108183.3,185.25
+Chattahoochee County,8819.0,19989.2,40599.75
+Chattooga County,24936.0,54479.2,41.25
+Clayton County,17027.0,0.0,0.0
+Clinch County,6662.0,0.0,0.0
+Cobb County,771952.0,6690275.4,3106.0
+Colquitt County,45762.0,0.0,0.0
+Cook County,5708.0,11.3,0.0
+Coweta County,152882.0,22445.9,10.5
+Crisp County,19708.0,0.0,51708.0
+Dade County,7660.0,0.0,0.0
+Dawson County,12130.0,18476.1,5128.25
+Decatur County,11564.0,0.0,83593.25
+Dodge County,88282.0,60650.5,49787.75
+Dooly County,10572.0,0.0,0.0
+Dougherty County,82966.0,240352.8,102537.75
+Early County,10574.0,0.0,0.0
+Echols County,3686.0,0.0,0.0
+Effingham County,34325.0,0.0,83046.75
+Emanuel County,22929.0,0.0,0.0
+Evans County,10695.0,0.0,0.0
+Fannin County,37125.0,1.6,602.75
+Floyd County,15619.0,0.0,0.0
+Forsyth County,389157.0,69062.6,412.75
+Glascock County,2939.0,0.0,0.0
+Gilmer County,7325.0,58729.1,5991.25
+Glynn County,85079.0,352944.7,78433.0
+Grady County,56658.0,336641.9,105696.0
+Gordon County,58954.0,0.0,203309.0
+Gwinnett County,975353.0,0.0,108710.5
+Habersham County,47475.0,0.0,32734.0
+Hall County,2810.0,0.0,0.0
+Hancock County,28172.0,351387.1,657.5
+Haralson County,31337.0,0.0,0.0
+Heard County,11725.0,6819156.2,6174.5
+Harris County,4780913.0,78549799.47,13057659.12
+Hart County,19600.0,26575.2,12.5
+Irwin County,9126.0,0.0,0.0
+Jasper County,32484.0,512917.5,115950.0
+Jeff Davis County,1903.0,0.0,0.0
+Jenkins County,8689.0,11762.9,5.5
+Jones County,19935.0,0.0,33240.5
+Lanier County,10171.0,0.0,0.0
+Laurens County,67965.0,0.0,0.0
+Long County,18348.0,0.0,0.0
+Lumpkin County,34796.0,0.0,0.0
+McDuffie County,21713.0,0.0,0.0
+McIntosh County,19451.0,0.0,0.0
+Meriwether County,20845.0,0.0,79619.25
+Mitchell County,8943.0,52617.7,37.5
+Murray County,13672.0,0.0,0.0
+Muscogee County,202616.0,0.0,130707.5
+Oconee County,80180.0,0.0,53438.0
+Oglethorpe County,15469.0,0.0,0.0
+Paulding County,18757.0,370993.3,160.75
+Peach County,28562.0,0.0,0.0
+Pierce County,42532.0,0.0,0.0
+Quitman County,5701.0,0.0,0.0
+Rabun County,17206.0,0.0,0.0
+Richmond County,9080.0,0.0,0.0
+Schley County,4496.0,0.0,0.0
+Rockdale County,94984.0,77350.0,287.75
+Screven County,13977.0,37956.3,17.75
+Spalding County,68919.0,0.0,108185.25
+Stephens County,9390.0,0.0,0.0
+Stewart County,14035.0,10722836.3,31438.78
+Talbot County,37932.0,0.0,33018.5
+Taliaferro County,1600.0,0.0,0.0
+Tattnall County,24064.0,0.0,0.0
+Telfair County,12354.0,0.0,0.0
+Terrell County,693.0,47959.3,37113.25
+Thomas County,671.0,0.0,0.0
+Tift County,41412.0,0.0,58890.75
+Toombs County,26837.0,0.0,0.0
+Towns County,12972.0,0.0,0.0
+Treutlen County,6365.0,0.0,0.0
+Troup County,70191.0,21105.8,10370.25
+Turner County,8856.0,261512.0,496.0
+Twiggs County,7680.0,25742.4,42240.5
+Upson County,28086.0,178199.6,4448.25
+Ware County,35614.0,0.0,0.0
+Warren County,41440.0,2664166.2,1235.5
+Webster County,8167.0,0.0,0.0
+Wayne County,37998.0,512055.1,6661.75
+Wheeler County,4807.0,138877.3,26938.25
+Whitfield County,103132.0,109155.5,149154.5
+Wilkes County,65784.0,25314.2,61117.25
+Wilkinson County,8143.0,0.0,0.0
+Worth County,1955.0,0.0,0.0
+Hawaii County,206315.0,546216.4,92538.0
+Honolulu County,995638.0,5401080.0,91139.25
+Kalawao County,82.0,0.0,0.0
+Kauai County,73810.0,118750.3,24544.5
+Maui County,164351.0,607951.8,614.25
+Ada County,518907.0,25255.5,139440.75
+Bannock County,89517.0,127101.9,27345.0
+Bear Lake County,6722.0,0.0,0.0
+Benewah County,10370.0,0.0,0.0
+Bingham County,49923.0,89942.6,42.5
+Blaine County,8409.0,0.0,0.0
+Boise County,8333.0,0.0,0.0
+Bonner County,51414.0,185932.9,4098.25
+Bonneville County,129496.0,43832.1,20.75
+Boundary County,13345.0,0.0,0.0
+Camas County,1153.0,0.0,0.0
+Canyon County,251065.0,212029.4,261985.0
+Caribou County,7190.0,608137.0,228.75
+Cassia County,25655.0,86582.3,30388.5
+Clearwater County,8649.0,42036.9,1048.0
+Gem County,20418.0,0.0,0.0
+Gooding County,15715.0,0.0,0.0
+Idaho County,17593.0,0.0,0.0
+Jerome County,25311.0,60880.8,36.0
+Kootenai County,183578.0,860993.3,41706.75
+Latah County,40978.0,0.0,0.0
+Lemhi County,8240.0,0.0,0.0
+Lewis County,16767.0,21853.1,4645.5
+Nez Perce County,43004.0,279831.7,21870.5
+Minidoka County,22194.0,274265.9,10204.0
+Oneida County,38212.0,195061.2,391.75
+Owyhee County,12613.0,0.0,0.0
+Payette County,26956.0,721438.0,334.5
+Power County,8068.0,52861.4,15779.5
+Shoshone County,14012.0,0.0,0.0
+Teton County,23287.0,0.0,0.0
+Twin Falls County,93696.0,333427.4,4645.0
+Valley County,4073.0,82995.1,39.0
+Alexander County,36512.0,0.0,0.0
+Bond County,16566.0,0.0,0.0
+Brown County,270036.0,1090711.1,196325.0
+Bureau County,32828.0,0.0,0.0
+Cass County,28539.0,380520.3,17539.75
+Champaign County,38709.0,0.0,0.0
+Christian County,93114.0,0.0,0.0
+Clinton County,37931.0,350260.5,102395.0
+Coles County,46334.0,0.0,1237.75
+Cumberland County,9746.0,0.0,0.0
+De Witt County,15310.0,35.5,87849.25
+DuPage County,920901.0,548059.3,162949.9
+Edgar County,16433.0,0.0,0.0
+Edwards County,1422.0,0.0,0.0
+Ford County,33848.0,707571.9,20132.25
+Gallatin County,124857.0,304724.0,47339.0
+Grundy County,13783.0,0.0,0.0
+Hardin County,57811.0,102831.6,32742.25
+Henderson County,84511.0,133930.9,12247.25
+Iroquois County,26473.0,59589.4,28.0
+Jersey County,21246.0,0.0,0.0
+Jo Daviess County,21758.0,713798.1,130.75
+Kane County,8227.0,0.0,0.0
+Kendall County,48973.0,57539.5,4415.5
+Kankakee County,106074.0,219114.9,14401.75
+Knox County,3273.0,0.0,0.0
+LaSalle County,108078.0,1147762.3,24677.0
+Livingston County,61516.0,0.0,0.0
+McDonough County,26861.0,24332.2,5649.75
+McHenry County,5189.0,137278.2,114.5
+McLean County,9824.0,9379767.5,26135.0
+Macoupin County,44245.0,0.0,0.0
+Mason County,25000.0,6827942.5,21703.5
+Massac County,13896.0,5398234.4,15390.25
+Menard County,1968.0,0.0,0.0
+Mercer County,58700.0,0.0,95473.5
+Moultrie County,14323.0,0.0,0.0
+Ogle County,51351.0,189433.7,214997.75
+Peoria County,178383.0,3254350.2,262345.75
+Piatt County,16723.0,46395.2,12707.25
+Richland County,17090.0,0.0,0.0
+Rock Island County,141527.0,888754.9,160307.25
+Sangamon County,194534.0,1296257.9,29292.75
+Schuyler County,17650.0,122109.5,57.5
+Stark County,372657.0,1309736.4,253718.0
+Stephenson County,43627.0,122614.9,57.75
+Tazewell County,39821.0,0.0,60932.25
+Vermilion County,72337.0,161698.5,75291.0
+Wabash County,30828.0,254931.0,79033.0
+Whiteside County,54658.0,147219.8,112651.25
+Will County,696757.0,7311827.7,170439.73
+Williamson County,671418.0,25664.5,115473.75
+Winnebago County,170718.0,523035.3,23801.75
+Woodford County,27062.0,0.0,0.0
+Allen County,101115.0,3183213.2,9911.75
+Bartholomew County,83540.0,23372.0,93434.5
+Blackford County,11919.0,0.0,0.0
+Daviess County,8435.0,0.0,0.0
+Dearborn County,51138.0,3292705.9,1521.5
+Delaware County,575182.0,5778340.6,12424.5
+Dubois County,43632.0,46076.9,28696.25
+Elkhart County,206890.0,335.0,57445.25
+Fountain County,16574.0,0.0,0.0
+Gibson County,50837.0,2749.8,13849.25
+Harrison County,64915.0,10976742.6,234939.25
+Hendricks County,182534.0,193232.3,89859.75
+Huntington County,36834.0,19374.5,46.25
+Jay County,20198.0,242249.2,30681.75
+Jennings County,27536.0,0.0,0.0
+Kosciusko County,80826.0,94177.0,35610.5
+LaGrange County,40866.0,0.0,0.0
+LaPorte County,111675.0,1490980.4,9730.5
+Noble County,10896.0,3183088.5,9151.0
+Miami County,0.0,0.0,0.0
+Ohio County,41447.0,0.0,685946.0
+Owen County,11290.0,0.0,0.0
+Parke County,16369.0,0.0,0.0
+Porter County,174791.0,8108016.4,965.0
+Posey County,25063.0,4152501.5,10246.0
+Ripley County,10703.0,0.0,0.0
+Rush County,2927.0,0.0,0.0
+St. Joseph County,60874.0,17889.2,57131.75
+Spencer County,20204.0,0.0,0.0
+Starke County,23258.0,0.0,0.0
+Steuben County,92599.0,140351.6,14686.25
+Sullivan County,160820.0,161.5,64895.25
+Switzerland County,10006.0,0.0,0.0
+Tipton County,61656.0,2333.2,8404.0
+Tippecanoe County,188717.0,928591.7,712.0
+Vanderburgh County,179744.0,166.4,153477.75
+Vermillion County,15451.0,244239.5,22072.25
+Vigo County,106006.0,1181901.5,185169.25
+Warrick County,65185.0,2418187.4,7147.5
+Wells County,3930.0,0.0,0.0
+Whitley County,36873.0,0.0,0.0
+Adair County,19576.0,0.0,0.0
+Allamakee County,13960.0,696637.2,186.5
+Appanoose County,12094.0,0.0,0.0
+Audubon County,5598.0,73848.1,40.25
+Black Hawk County,130274.0,135440.4,172986.0
+Bremer County,25259.0,0.0,0.0
+Buchanan County,19352.0,654502.8,1336095.57
+Buena Vista County,20600.0,188521.4,88.75
+Cedar County,8371.0,0.0,0.0
+Cerro Gordo County,42409.0,1503229.9,74207.5
+Chickasaw County,16812.0,0.0,35191.25
+Davis County,369948.0,983111.6,106670.5
+Des Moines County,38293.0,1402256.5,61539.75
+Dickinson County,25874.0,85814.1,49817.0
+Dubuque County,98677.0,36.8,13672.0
+Emmet County,34163.0,0.0,0.0
+Guthrie County,10647.0,251947.3,118.75
+Ida County,6888.0,216557.8,102.0
+Iowa County,23865.0,0.0,0.0
+Keokuk County,9904.0,27253.6,9063.25
+Kossuth County,14475.0,81479.0,38.5
+Linn County,130467.0,82612.7,293.25
+Lucas County,426643.0,7176610.4,25758.5
+Louisa County,40116.0,743999.2,353.75
+Lyon County,61585.0,700802.0,349.0
+Mahaska County,21946.0,385669.4,181.75
+Mills County,4500.0,0.0,0.0
+Monona County,8486.0,0.0,0.0
+Muscatine County,42377.0,2289333.8,48201.0
+O'Brien County,14060.0,215398.9,101.5
+Page County,23750.0,15.3,60784.75
+Palo Alto County,8764.0,114297.2,53.75
+Plymouth County,533069.0,437388.8,41546.25
+Pocahontas County,7819.0,0.0,0.0
+Pottawattamie County,93173.0,6566255.0,22142.25
+Poweshiek County,18467.0,0.0,0.0
+Sac County,9673.0,0.0,0.0
+Ringgold County,4670.0,0.0,0.0
+Sioux County,3711.0,0.0,0.0
+Tama County,16903.0,20203.3,9.5
+Story County,99673.0,537609.5,756.75
+Wapello County,35043.0,4489015.2,41764.25
+Woodbury County,105671.0,5562296.9,9716.25
+Winneshiek County,19974.0,0.0,36080.5
+Wright County,19156.0,0.0,130676.75
+Barber County,4122.0,50989.6,24.0
+Anderson County,58064.0,89253.3,22432.0
+Atchison County,5182.0,0.0,0.0
+Barton County,11694.0,48.8,53537.0
+Bourbon County,20093.0,0.0,0.0
+Chautauqua County,126027.0,0.1,85645.75
+Chase County,3772.0,0.0,0.0
+Cloud County,8946.0,23332.5,5986.75
+Coffey County,8280.0,0.0,0.0
+Comanche County,13878.0,0.0,0.0
+Cowley County,34453.0,0.0,0.0
+Doniphan County,7440.0,0.0,0.0
+Elk County,30477.0,197646.8,38407.0
+Ellis County,212182.0,5646796.5,176241.75
+Ellsworth County,6355.0,2239.2,856.25
+Finney County,37650.0,1735401.1,40403.25
+Geary County,35691.0,0.0,0.0
+Gove County,2717.0,39154.6,18.5
+Gray County,21015.0,71051.8,33607.5
+Greenwood County,69267.0,70697.7,38.0
+Greeley County,2227.0,0.0,0.0
+Harper County,3129.0,0.0,0.0
+Harvey County,33801.0,0.0,0.0
+Hodgeman County,1755.0,0.0,0.0
+Haskell County,5403.0,0.0,0.0
+Jewell County,2898.0,0.0,0.0
+Kearny County,3855.0,0.0,0.0
+Kingman County,7193.0,11026.5,20504.75
+Labette County,19757.0,0.0,0.0
+Lane County,382353.0,103335.2,25458.5
+Leavenworth County,82892.0,0.0,0.0
+McPherson County,2395.0,0.0,0.0
+Meade County,30698.0,0.0,0.0
+Morris County,12083.0,0.0,0.0
+Morton County,33710.0,1560907.0,4868.5
+Nemaha County,7035.0,0.0,0.0
+Neosho County,15606.0,1457778.4,2778.75
+Ness County,2645.0,0.0,0.0
+Norton County,5301.0,0.0,0.0
+Osborne County,3490.0,0.0,0.0
+Osage County,45839.0,31.5,201293.25
+Ottawa County,30338.0,0.0,0.0
+Pawnee County,15757.0,0.0,0.0
+Pottawatomie County,73533.0,37104.9,28928.5
+Pratt County,9067.0,52437.8,24.75
+Rawlins County,2528.0,0.0,0.0
+Reno County,61516.0,297493.5,238213.25
+Republic County,4642.0,0.0,0.0
+Riley County,71108.0,58139.5,27.75
+Rooks County,4813.0,0.0,0.0
+Seward County,17692.0,22.5,57212.75
+Rice County,67693.0,367527.1,52973.0
+Sheridan County,32096.0,301419.2,178969.75
+Shawnee County,177480.0,87850.6,59917.25
+Sherman County,2799.0,0.0,0.0
+Smith County,241922.0,1085019.77,783120.16
+Stafford County,163380.0,30.3,21535.5
+Stanton County,5717.0,205689.5,79639.25
+Stevens County,48229.0,2446.0,8668.0
+Sumner County,203858.0,4353955.8,27317.55
+Trego County,2752.0,0.0,0.0
+Wabaunsee County,7019.0,0.0,0.0
+Wallace County,1488.0,0.0,0.0
+Wichita County,129978.0,204264.8,140499.75
+Wilson County,52735.0,0.0,0.0
+Woodson County,3109.0,0.0,0.0
+Wyandotte County,165746.0,1682329.4,9958.0
+Ballard County,7650.0,233600.5,33001.25
+Bath County,4049.0,0.0,0.0
+Barren County,44854.0,0.0,137760.75
+Bell County,388386.0,2515923.5,138275.0
+Boyd County,1741.0,0.0,0.0
+Boyle County,30904.0,119609.8,7594.25
+Bracken County,8452.0,0.0,0.0
+Breathitt County,13351.0,0.0,0.0
+Bullitt County,83836.0,75026.2,150.75
+Breckinridge County,20943.0,19069.9,9608.75
+Caldwell County,47848.0,47604.7,39647.0
+Calloway County,37685.0,1.7,1411.25
+Campbell County,47058.0,8546456.7,102176.75
+Carlisle County,4720.0,0.0,0.0
+Carter County,56410.0,0.0,0.0
+Casey County,15920.0,122514.4,5568.0
+Edmonson County,12269.0,0.0,0.0
+Elliott County,7293.0,0.0,0.0
+Estill County,14044.0,238.0,10794.25
+Fleming County,15288.0,0.0,0.0
+Garrard County,17589.0,98010.9,537.0
+Graves County,36412.0,22.4,105987.25
+Grayson County,15343.0,0.0,0.0
+Greenup County,35403.0,94459.5,8600.5
+Green County,36816.0,107252.1,69.75
+Harlan County,3054.0,0.0,0.0
+Hickman County,25455.0,66812.5,19361.75
+Hopkins County,37804.0,0.0,0.0
+Jessamine County,54254.0,0.0,0.0
+Knott County,13874.0,0.0,0.0
+Kenton County,170313.0,14595.1,7.0
+LaRue County,15163.0,0.0,0.0
+Laurel County,62885.0,0.0,44978.5
+Leslie County,10093.0,0.0,0.0
+Letcher County,20893.0,0.0,0.0
+McCracken County,67490.0,6802566.7,19661.35
+McCreary County,16701.0,0.0,0.0
+Magoffin County,11357.0,0.0,0.0
+Menifee County,6250.0,0.0,0.0
+Metcalfe County,10370.0,99079.0,298.5
+Muhlenberg County,30455.0,2486752.4,179130.92
+Nelson County,14652.0,0.0,0.0
+Nicholas County,24335.0,0.0,0.0
+Oldham County,1752.0,0.0,0.0
+Owsley County,3929.0,0.0,0.0
+Pendleton County,6011.0,362718.0,2824.25
+Powell County,7051.0,0.0,0.0
+Robertson County,17153.0,15226483.4,42135.5
+Rockcastle County,16242.0,0.0,0.0
+Rowan County,149645.0,1864902.0,36353.5
+Simpson County,25587.0,148077.1,14268.0
+Todd County,9220.0,0.0,0.0
+Trigg County,14332.0,0.0,0.0
+Trimble County,8539.0,7675465.0,21091.0
+Wolfe County,6400.0,0.0,0.0
+Acadia Parish,56744.0,2573563.3,67675.75
+Allen Parish,22320.0,27740.7,40470.5
+Ascension Parish,130458.0,13508610.6,45388.0
+Assumption Parish,20604.0,171282.5,3027.0
+Avoyelles Parish,38751.0,34696.9,7670.5
+Beauregard Parish,36570.0,537370.6,30981.0
+Bienville Parish,12641.0,784832.8,53669.25
+Bossier Parish,129276.0,278650.3,24908.75
+Caddo Parish,229025.0,1922456.5,340397.25
+Calcasieu Parish,202418.0,17188571.41,42202.03
+Caldwell Parish,9554.0,69802.1,19346.75
+Cameron Parish,4902.0,8584737.09,44871.5
+Catahoula Parish,8566.0,0.0,0.0
+Claiborne Parish,13744.0,0.0,0.0
+Concordia Parish,18116.0,0.0,0.0
+De Soto Parish,26853.0,4149236.0,299551.0
+East Baton Rouge Parish,450544.0,8443958.7,479682.75
+East Feliciana Parish,19135.0,33216.7,8140.25
+East Carroll Parish,6990.0,0.0,0.0
+Evangeline Parish,31986.0,1394005.7,2999.0
+Franklin Parish,19308.0,0.0,0.0
+Grant Parish,22000.0,0.0,0.0
+Iberia Parish,68327.0,0.0,0.0
+Iberville Parish,29506.0,4011127.8,8139.75
+Jackson Parish,14839.0,403325.3,18537.75
+Jefferson Parish,425884.0,5309826.1,306327.25
+Jefferson Davis Parish,32026.0,73516.6,67609.75
+Lafayette Parish,247866.0,54945.5,27989.75
+Lafourche Parish,95870.0,154761.0,2367.5
+La Salle Parish,14729.0,93737.8,105352.0
+Livingston Parish,148425.0,933.0,28344.75
+Madison Parish,9478.0,198152.2,9176.0
+Morehouse Parish,24446.0,54932.1,32049.5
+Lincoln Parish,48129.0,178180.4,21445.25
+Natchitoches Parish,36663.0,524073.1,165337.5
+Orleans Parish,369749.0,312913.4,32672.25
+Ouachita Parish,157702.0,2550039.5,170183.0
+Plaquemines Parish,22516.0,2148240.21,7813.47
+Pointe Coupee Parish,20151.0,2980986.1,48975.25
+Rapides Parish,127189.0,6553414.2,21182.25
+Red River Parish,7420.0,599376.5,44272.75
+Richland Parish,19826.0,430817.2,17713.25
+Sabine Parish,21985.0,134598.2,3448.0
+St. Bernard Parish,44479.0,2539964.3,12914.25
+St. Charles Parish,50998.0,15637787.3,93617.5
+St. Helena Parish,10822.0,271.2,14050.25
+St. John the Baptist Parish,39864.0,4942342.5,18446.5
+St. James Parish,19423.0,3661136.5,7081.5
+St. Landry Parish,81773.0,589572.9,95142.75
+St. Martin Parish,51236.0,0.0,0.0
+St. Mary Parish,47789.0,874828.0,137665.5
+St. Tammany Parish,273263.0,56250.7,18508.25
+Tangipahoa Parish,137048.0,0.0,11561.0
+Tensas Parish,3846.0,0.0,35371.5
+Union Parish,20721.0,49020.0,158612.75
+Terrebonne Parish,104786.0,14930.4,6.75
+Vermilion Parish,56952.0,175720.3,17966.5
+Vernon Parish,47247.0,0.0,0.0
+Washington Parish,45025.0,184789.7,63680.5
+Webster Parish,35643.0,230103.0,26499.75
+West Baton Rouge Parish,28034.0,1101335.1,2586.5
+West Carroll Parish,9475.0,1845.7,3111.75
+West Feliciana Parish,15381.0,261922.8,1603.5
+Winn Parish,13205.0,0.0,0.0
+Androscoggin County,113023.0,21996.5,10.25
+Aroostook County,67255.0,13071.0,1108.75
+Kennebec County,125540.0,0.0,0.0
+Oxford County,59495.0,568950.3,3052.25
+Penobscot County,153704.0,388503.5,45711.75
+Piscataquis County,17417.0,0.0,0.0
+Sagadahoc County,37393.0,24444.2,748.75
+Somerset County,72710.0,39851.7,59222.75
+Waldo County,40241.0,0.0,0.0
+York County,71341.0,44930.9,36.0
+Allegany County,46694.0,12895.3,89448.5
+Anne Arundel County,593286.0,2749972.5,83772.75
+Baltimore County,846161.0,98.9,82136.0
+Calvert County,94573.0,1126738.6,4837.25
+Caroline County,31957.0,276892.2,146.25
+Cecil County,104942.0,1426992.4,57006.0
+Charles County,170102.0,2983885.3,77597.0
+Dorchester County,166133.0,1236647.2,58199.25
+Frederick County,95051.0,254841.3,54510.75
+Garrett County,28579.0,54296.9,46935.75
+Harford County,263867.0,242613.3,50219.75
+Prince George's County,946971.0,3262715.0,65329.5
+Queen Anne's County,51711.0,0.0,0.0
+St. Mary's County,114877.0,0.0,0.0
+Wicomico County,104664.0,41782.7,54706.0
+Worcester County,862927.0,1600357.2,68151.5
+Baltimore,569931.0,678811.4,206049.75
+Barnstable County,232457.0,145320.9,81.75
+Berkshire County,127859.0,197068.1,465.5
+Bristol County,50360.0,0.0,0.0
+Dukes County,20868.0,0.0,0.0
+Essex County,10630.0,0.0,0.0
+Hampden County,461041.0,596181.2,13762.0
+Hampshire County,23468.0,0.0,0.0
+Norfolk County,725531.0,2558862.1,95826.25
+Nantucket County,14421.0,0.0,0.0
+Suffolk County,1525465.0,4429431.9,38344.5
+Alcona County,10417.0,18740.5,524.75
+Alger County,8807.0,76631.0,202.75
+Allegan County,121210.0,505523.3,3446.25
+Alpena County,28847.0,1857975.9,774.5
+Antrim County,24249.0,39674.5,1725.0
+Arenac County,15089.0,0.0,0.0
+Baraga County,8277.0,167041.1,744.0
+Benzie County,18297.0,1111.7,27827.25
+Barry County,34926.0,0.0,0.0
+Branch County,44531.0,63611.0,30.0
+Cheboygan County,25940.0,0.0,0.0
+Chippewa County,66807.0,119077.8,57.5
+Charlevoix County,26293.0,1424267.5,752.75
+Clare County,31352.0,15214.9,29314.0
+Eaton County,108992.0,919991.6,2570.0
+Gladwin County,25728.0,0.0,0.0
+Genesee County,57535.0,103816.9,3516.75
+Gogebic County,14319.0,113886.2,14268.25
+Grand Traverse County,96464.0,0.0,0.0
+Hillsdale County,45762.0,0.0,0.0
+Gratiot County,41100.0,0.0,0.0
+Houghton County,37035.0,0.0,0.0
+Huron County,58218.0,78633.72,37.0
+Ingham County,284108.0,353235.8,3729.75
+Ionia County,66809.0,0.0,0.0
+Iosco County,25521.0,0.0,0.0
+Iron County,6224.0,0.0,0.0
+Isabella County,64447.0,8808.2,4952.25
+Kalkaska County,18182.0,108268.6,5994.5
+Kalamazoo County,261173.0,291368.1,159.25
+Keweenaw County,2180.0,0.0,0.0
+Lapeer County,88780.0,0.0,0.0
+Lenawee County,98567.0,0.0,8227.5
+Leelanau County,22870.0,379437.7,281871.5
+Luce County,5330.0,0.0,0.0
+Mackinac County,10941.0,48332.6,583.0
+Macomb County,874195.0,355227.9,220133.0
+Manistee County,25287.0,851901.4,15928.25
+Marquette County,15779.0,0.0,0.0
+Mecosta County,40720.0,23850.6,9920.5
+Menominee County,4197.0,0.0,0.0
+Midland County,171999.0,8856291.47,3181807.21
+Missaukee County,15213.0,19142.5,471.25
+Montmorency County,9569.0,11.3,76615.0
+Muskegon County,176565.0,32858.3,74450.0
+Newaygo County,50886.0,0.0,0.0
+Montcalm County,67433.0,476960.0,46977.25
+Oakland County,1269431.0,160355.7,188536.0
+Oceana County,26973.0,0.0,0.0
+Ontonagon County,5863.0,450.6,56016.25
+Ogemaw County,20970.0,0.0,0.0
+Oscoda County,8404.0,0.0,0.0
+Otsego County,60636.0,0.0,0.0
+Roscommon County,23708.0,0.0,0.0
+Presque Isle County,13361.0,5.7,70887.25
+Sanilac County,40657.0,43260.8,15731.5
+Saginaw County,188330.0,187782.3,37850.5
+Aitkin County,16126.0,0.0,0.0
+Tuscola County,52945.0,152751.7,79.0
+Wexford County,34196.0,42667.8,107843.25
+Washtenaw County,366376.0,287263.7,31152.75
+Shiawassee County,68022.0,194.9,58882.0
+Schoolcraft County,8188.0,314428.8,323.5
+Anoka County,368864.0,0.0,31172.75
+Becker County,35371.0,0.0,0.0
+Beltrami County,46799.0,61287.0,28.5
+Big Stone County,5144.0,0.0,0.0
+Blue Earth County,69631.0,1538821.3,18867.0
+Carlton County,36708.0,195378.7,51075.0
+Carver County,110034.0,0.0,0.0
+Chisago County,57988.0,0.0,0.0
+Cottonwood County,11356.0,137643.7,64.75
+Crow Wing County,67948.0,47.7,39634.0
+Dakota County,21042.0,164922.0,59918.25
+Faribault County,13926.0,4237.9,2.0
+Fillmore County,5553.0,61955.2,10.5
+Freeborn County,30718.0,159381.3,1439.75
+Goodhue County,48013.0,269505.3,182.25
+Hennepin County,1260121.0,1074870.22,519944.0
+Hubbard County,21960.0,36145.7,2386.5
+Isanti County,42727.0,62061.8,29.5
+Itasca County,45205.0,5680984.4,5153.25
+Kanabec County,16463.0,18.8,27793.5
+Kandiyohi County,43839.0,111237.4,52.5
+Kittson County,4059.0,0.0,0.0
+Koochiching County,11844.0,152197.1,804.0
+Lac qui Parle County,6689.0,36891.0,17.5
+Lake of the Woods County,3871.0,0.0,0.0
+Le Sueur County,29153.0,0.0,0.0
+McLeod County,36714.0,37184.0,19834.5
+Mahnomen County,5328.0,0.0,0.0
+Meeker County,23496.0,0.0,0.0
+Mille Lacs County,27280.0,0.0,0.0
+Morrison County,34246.0,1114.6,0.5
+Mower County,40140.0,150704.7,53866.75
+Nicollet County,34441.0,0.0,0.0
+Nobles County,21947.0,91781.0,43.5
+Norman County,6377.0,13176.9,2391.5
+Olmsted County,164020.0,261841.7,16821.75
+Pennington County,114461.0,944603.6,44845.75
+Otter Tail County,60519.0,254068.8,863.25
+Pine County,29446.0,0.0,0.0
+Pipestone County,9355.0,0.0,0.0
+Red Lake County,3874.0,0.0,0.0
+Ramsey County,11515.0,0.0,0.0
+Redwood County,15361.0,107311.8,1381.75
+Renville County,2220.0,0.0,0.0
+Rock County,164060.0,2063735.1,957.5
+Roseau County,15292.0,0.0,0.0
+St. Louis County,990414.0,616550.2,395184.25
+Sherburne County,100824.0,9778845.1,250679.5
+Sibley County,14955.0,192714.3,90.75
+Stearns County,160405.0,23520.5,11.25
+Steele County,1788.0,0.0,0.0
+Swift County,9755.0,72244.7,36.0
+Traverse County,3275.0,0.0,0.0
+Wabasha County,21658.0,0.0,0.0
+Wadena County,14307.0,0.0,0.0
+Waseca County,18893.0,184369.1,86.75
+Watonwan County,11075.0,0.0,0.0
+Wilkin County,6350.0,0.0,0.0
+Winona County,49478.0,0.0,0.0
+Yellow Medicine County,9486.0,0.0,0.0
+Alcorn County,34204.0,37884.2,9063.75
+Amite County,12619.0,0.0,0.0
+Attala County,17509.0,976712.6,8224.5
+Bolivar County,29370.0,112373.3,52.25
+Claiborne County,32431.0,0.0,0.0
+Coahoma County,20197.0,55551.8,17487.5
+Copiah County,27719.0,0.0,0.0
+Forrest County,78110.0,10845.0,65990.25
+George County,25206.0,11361.6,3197.25
+Hinds County,217730.0,1520321.3,24561.25
+Grenada County,21088.0,0.0,0.0
+Humphreys County,19106.0,960732.3,122361.25
+Issaquena County,1273.0,0.0,0.0
+Itawamba County,23903.0,0.0,0.0
+Jefferson Davis County,11088.0,93975.0,69695.5
+Kemper County,8654.0,1760983.8,4767.73
+Leake County,21135.0,7329.6,25172.75
+Leflore County,26570.0,0.0,77833.5
+Neshoba County,28673.0,0.0,0.0
+Noxubee County,9990.0,0.0,0.0
+Oktibbeha County,51427.0,0.0,96686.75
+Panola County,22677.0,433546.1,38529.5
+Pearl River County,57261.0,0.0,72627.0
+Pontotoc County,38141.0,321712.6,440.75
+Prentiss County,24792.0,0.0,0.0
+Rankin County,158979.0,117340.9,20.0
+Sharkey County,3488.0,0.0,0.0
+Sunflower County,24811.0,127751.4,7698.75
+Tallahatchie County,12035.0,0.0,0.0
+Tate County,28296.0,0.0,0.0
+Tippah County,21431.0,0.0,33129.0
+Tishomingo County,18619.0,0.0,0.0
+Tunica County,9458.0,162.1,28782.5
+Walthall County,13761.0,51781.1,14006.25
+Yalobusha County,12364.0,0.0,0.0
+Yazoo County,25948.0,1111678.8,268.75
+Andrew County,18003.0,0.0,0.0
+Audrain County,24434.0,169150.5,1190.0
+Bates County,16177.0,0.0,0.0
+Bollinger County,10518.0,9158.4,4015.25
+Callaway County,44762.0,3.2,0.0
+Cape Girardeau County,82899.0,1084092.3,652.0
+Chariton County,7386.0,0.0,0.0
+Cole County,76969.0,76.8,22980.0
+Cooper County,16772.0,0.0,0.0
+Dent County,14467.0,97344.5,41.0
+Dunklin County,27406.0,355725.3,165.0
+Gasconade County,14768.0,0.0,0.0
+Gentry County,6253.0,0.0,0.0
+Hickory County,8630.0,0.0,0.0
+Holt County,10043.0,67974.2,32.0
+Howell County,40631.0,0.0,0.0
+Laclede County,36313.0,0.0,0.0
+McDonald County,23588.0,63237.4,21319.0
+Maries County,8431.0,0.0,0.0
+Moniteau County,15220.0,0.0,0.0
+New Madrid County,15695.0,5273749.4,1316.5
+Nodaway County,20670.0,0.0,0.0
+Oregon County,8732.0,0.0,0.0
+Ozark County,8940.0,0.0,0.0
+Pemiscot County,14841.0,0.0,0.0
+Pettis County,43353.0,81581.7,163355.25
+Phelps County,8988.0,2154.2,1981.75
+Platte County,8645.0,0.0,0.0
+Ralls County,10420.0,0.0,0.0
+Ray County,23107.0,0.0,0.0
+Reynolds County,6006.0,0.0,0.0
+St. Charles County,413803.0,4041644.4,11520.0
+Ste. Genevieve County,18644.0,6496330.8,4975.5
+St. Francois County,66969.0,181191.2,247.75
+Scotland County,34162.0,209532.1,74.0
+Shannon County,7193.0,0.0,0.0
+Stoddard County,28377.0,92277.3,37749.0
+Taney County,56821.0,0.0,0.0
+Texas County,20495.0,49710.8,3494.25
+Vernon County,31060.0,423626.2,111.25
+St. Louis,286578.0,208373.0,94199.25
+Big Horn County,11855.0,120075.1,148.75
+Beaverhead County,9719.0,0.0,0.0
+Broadwater County,7793.0,319057.7,354.5
+Carbon County,14542.0,1107245.0,7060.0
+Cascade County,84864.0,311446.9,82875.5
+Chouteau County,5898.0,0.0,0.0
+Daniels County,1628.0,0.0,0.0
+Deer Lodge County,9510.0,174192.9,80.75
+Fallon County,3011.0,17058.5,11214.5
+Fergus County,11663.0,0.0,0.0
+Flathead County,111814.0,32787.2,404.75
+Glacier County,13681.0,0.0,0.0
+Golden Valley County,1744.0,0.0,0.0
+Granite County,3502.0,0.0,0.0
+Hill County,37329.0,0.0,44310.75
+Judith Basin County,2105.0,0.0,0.0
+Lewis and Clark County,73832.0,0.0,32418.5
+McCone County,1709.0,0.0,0.0
+Meagher County,2013.0,0.0,0.0
+Missoula County,121041.0,25.6,18321.25
+Musselshell County,5197.0,0.0,0.0
+Petroleum County,524.0,0.0,0.0
+Pondera County,6078.0,0.0,0.0
+Powder River County,1725.0,0.0,0.0
+Ravalli County,47298.0,0.0,0.0
+Roosevelt County,18934.0,32148.3,15.25
+Rosebud County,8088.0,10442271.8,30757.75
+Sanders County,13442.0,0.0,0.0
+Silver Bow County,36068.0,92045.9,36765.0
+Stillwater County,9177.0,0.0,0.0
+Sweet Grass County,3715.0,0.0,0.0
+Toole County,5082.0,0.0,0.0
+Treasure County,758.0,0.0,0.0
+Wheatland County,2032.0,0.0,0.0
+Wibaux County,919.0,0.0,0.0
+Yellowstone County,169852.0,2877910.6,142780.75
+Antelope County,6293.0,0.0,0.0
+Arthur County,433.0,0.0,0.0
+Banner County,660.0,0.0,0.0
+Box Butte County,10672.0,0.0,0.0
+Buffalo County,13391.0,1946560.1,512.75
+Burt County,6755.0,0.0,0.0
+Cherry County,5464.0,0.0,0.0
+Colfax County,12246.0,0.0,0.0
+Cuming County,8929.0,0.0,0.0
+Dawes County,8241.0,0.0,0.0
+Deuel County,4352.0,0.0,0.0
+Dixon County,5464.0,0.0,0.0
+Dundy County,1590.0,0.0,0.0
+Frontier County,2633.0,0.0,0.0
+Furnas County,4575.0,54414.9,25.75
+Gage County,21583.0,924462.8,6174.0
+Garden County,1837.0,0.0,0.0
+Gosper County,1808.0,5082.4,2.25
+Hayes County,849.0,0.0,0.0
+Hitchcock County,2598.0,46942.3,22.0
+Hooker County,686.0,0.0,0.0
+Kearney County,6690.0,72077.9,34.0
+Keith County,8269.0,27.2,61128.5
+Keya Paha County,787.0,0.0,0.0
+Kimball County,3315.0,0.0,0.0
+Lancaster County,10750.0,0.0,0.0
+Loup County,599.0,0.0,0.0
+Merrick County,7721.0,126226.6,59.5
+Morrill County,4527.0,48961.7,23.0
+Nance County,3326.0,0.0,0.0
+Nuckolls County,4041.0,0.0,0.0
+Otoe County,16198.0,6851332.0,37482.75
+Perkins County,2804.0,0.0,0.0
+Red Willow County,10573.0,0.0,0.0
+Richardson County,7705.0,0.0,0.0
+Sarpy County,196553.0,91952.6,16799.75
+Saunders County,23118.0,0.0,0.0
+Scotts Bluff County,35603.0,359997.0,606.75
+Thayer County,4885.0,0.0,0.0
+Thurston County,298758.0,0.0,0.0
+Churchill County,25843.0,0.0,0.0
+Elko County,54046.0,590122.0,37625.75
+Esmeralda County,744.0,0.0,0.0
+Eureka County,1863.0,1841383.4,4081.25
+Lander County,5766.0,0.0,0.0
+Nye County,54738.0,0.0,0.0
+Storey County,4170.0,1801669.4,835.5
+Washoe County,496745.0,217.5,196798.25
+Pershing County,6462.0,38615.4,18.25
+White Pine County,8788.0,14004.9,34.25
+Carson City,58130.0,0.0,0.0
+Belknap County,64781.0,0.0,0.0
+Cheshire County,77350.0,0.0,0.0
+Coos County,64990.0,0.0,0.0
+Grafton County,91126.0,43692.5,120065.5
+Merrimack County,156020.0,372647.0,2266.75
+Rockingham County,85397.0,97013.9,15379.25
+Strafford County,132275.0,17184.1,138266.0
+Atlantic County,275638.0,81534.3,126984.0
+Bergen County,952997.0,775011.5,17264.5
+Burlington County,466103.0,42794.9,47673.5
+Cape May County,95634.0,0.1,149402.75
+Gloucester County,39493.0,70.0,84197.0
+Hudson County,703366.0,431606.6,200.75
+Hunterdon County,129777.0,69311.8,1642.75
+Monmouth County,644098.0,38567.6,251725.5
+Ocean County,655735.0,240226.2,55787.5
+Passaic County,513936.0,0.0,0.0
+Salem County,65117.0,749687.3,79184.0
+Bernalillo County,672508.0,561397.7,251085.75
+Catron County,3827.0,0.0,0.0
+Chaves County,63894.0,41939.3,19.75
+Cibola County,26950.0,0.0,0.0
+Curry County,23598.0,0.0,0.0
+De Baca County,1693.0,0.0,0.0
+Doña Ana County,223337.0,776540.2,89715.5
+Eddy County,2314.0,0.0,0.0
+Guadalupe County,182760.0,3758508.88,1668.04
+Harding County,1330.0,0.0,0.0
+Hidalgo County,888367.0,3278956.0,210341.75
+Lea County,72452.0,4042930.73,129393.44
+Los Alamos County,19187.0,91730.0,43.0
+Luna County,25749.0,1235009.9,6080.0
+McKinley County,69830.0,56168.0,5853.25
+Mora County,4169.0,0.0,0.0
+Quay County,8546.0,0.0,0.0
+Rio Arriba County,40048.0,0.0,0.0
+Sandoval County,153501.0,34894.5,96408.0
+Santa Fe County,155664.0,41.3,41520.25
+Socorro County,16115.0,0.0,0.0
+Taos County,34580.0,0.0,0.0
+Torrance County,15454.0,29828.9,5069.25
+Valencia County,78080.0,61520.0,28.5
+Albany County,38031.0,10422073.0,28397.25
+Bronx County,1379946.0,333104.1,162.5
+Broome County,197117.0,45913.0,49424.75
+Cattaraugus County,76439.0,75704.3,3031.75
+Cayuga County,74998.0,169445.4,3087.0
+Chemung County,81426.0,95524.6,29060.5
+Chenango County,46458.0,0.0,0.0
+Cortland County,46126.0,12.8,32280.0
+Dutchess County,297545.0,1977271.9,18831.0
+Erie County,267689.0,2333.3,165103.75
+Herkimer County,59822.0,14389.6,18313.0
+Brooklyn,2590516.0,1227159.5,187174.25
+Manhattan,1596273.0,2780030.5,201136.75
+Niagara County,210880.0,545723.1,78541.5
+Onondaga County,468249.0,475797.7,175619.75
+Ontario County,112707.0,116284.1,95103.25
+Orleans County,27666.0,59.7,50972.75
+Oswego County,118287.0,1647550.0,48733.45
+Queens,2278029.0,5280422.8,27646.35
+Rensselaer County,159853.0,1498328.0,2846.0
+St. Lawrence County,107733.0,279141.2,7274.75
+Schenectady County,160093.0,49326.0,23.75
+Saratoga County,238797.0,408828.2,15115.0
+Rockland County,339022.0,719037.5,2455.75
+Schoharie County,30063.0,34867.4,1891.0
+Seneca County,54632.0,660430.1,42537.5
+Tioga County,41106.0,266256.9,75913.0
+Tompkins County,104777.0,146134.5,69.25
+Ulster County,182319.0,49139.1,143.0
+Westchester County,990427.0,361791.0,32088.75
+Wyoming County,20527.0,17777.4,53935.25
+Yates County,24451.0,253122.4,110.25
+Alamance County,176353.0,0.0,127969.0
+Alleghany County,14835.0,1015793.0,217559.25
+Anson County,22202.0,93339.1,51953.0
+Ashe County,27110.0,0.0,0.0
+Avery County,17571.0,0.0,0.0
+Beaufort County,196371.0,0.0,0.0
+Bertie County,17240.0,7384.0,253684.0
+Bladen County,29446.0,55554.9,1036.5
+Brunswick County,15921.0,3289423.1,62211.0
+Buncombe County,273589.0,1447018.9,72724.75
+Cabarrus County,235797.0,0.0,160698.25
+Carteret County,69380.0,0.0,0.0
+Caswell County,22614.0,0.0,0.0
+Catawba County,163462.0,5690401.0,106140.0
+Chowan County,13940.0,0.0,0.0
+Craven County,100874.0,125634.0,136230.25
+Columbus County,49885.0,214536.0,106759.25
+Currituck County,31015.0,0.0,0.0
+Dare County,37956.0,0.0,0.0
+Davidson County,708144.0,511281.2,60732.25
+Davie County,44090.0,0.0,0.0
+Duplin County,48990.0,42124.1,19.75
+Durham County,332680.0,14050.1,6.75
+Edgecombe County,48301.0,0.0,0.0
+Gaston County,234215.0,286894.1,117299.25
+Gates County,10383.0,0.0,0.0
+Granville County,61903.0,0.0,0.0
+Guilford County,546101.0,34736.8,156631.25
+Halifax County,33644.0,955355.2,2773.75
+Harnett County,138832.0,0.0,0.0
+Haywood County,17550.0,1374017.2,2387.88
+Hertford County,20875.0,231314.2,54.75
+Hoke County,53787.0,0.0,0.0
+Hyde County,1184.0,0.0,0.0
+Iredell County,195897.0,214510.1,104493.5
+Johnston County,10406.0,0.0,0.0
+Lenoir County,54633.0,42645.5,24007.75
+McDowell County,17850.0,0.0,0.0
+Mecklenburg County,30508.0,0.0,41143.25
+Moore County,20996.0,1730022.1,26483.25
+Nash County,95789.0,0.0,0.0
+New Hanover County,234921.0,1789124.1,68784.5
+Northampton County,11900.0,0.0,0.0
+Onslow County,207298.0,0.0,70020.75
+Pamlico County,12381.0,0.0,0.0
+Pasquotank County,40938.0,0.0,0.0
+Pender County,65737.0,0.0,0.0
+Perquimans County,13210.0,0.0,0.0
+Pitt County,173542.0,26911.4,23403.75
+Person County,39386.0,6981587.4,75509.5
+Robeson County,116663.0,55438.4,111177.75
+Rutherford County,360619.0,126232.3,87045.25
+Sampson County,59120.0,26820.9,835347.75
+Stanly County,64153.0,20088.3,58.0
+Stokes County,45175.0,6915081.8,16317.25
+Surry County,6527.0,56679.1,33.75
+Swain County,13967.0,0.0,0.0
+Transylvania County,33355.0,0.0,0.0
+Tyrrell County,3365.0,0.0,0.0
+Vance County,42138.0,79937.6,25.5
+Wake County,1175021.0,37572.2,157542.75
+Watauga County,55089.0,0.0,0.0
+Yadkin County,37463.0,0.0,0.0
+Yancey County,18811.0,0.0,0.0
+Barnes County,10758.0,88133.9,107.75
+Benson County,5770.0,0.0,0.0
+Billings County,1018.0,0.0,0.0
+Bottineau County,6376.0,0.0,0.0
+Bowman County,2894.0,0.0,0.0
+Burleigh County,99280.0,30739.4,1147.75
+Cavalier County,3597.0,0.0,0.0
+Dickey County,4923.0,0.0,0.0
+Divide County,2187.0,30063.8,2765.0
+Dunn County,45651.0,305265.0,131.5
+Emmons County,3250.0,0.0,0.0
+Foster County,3378.0,0.0,0.0
+Grand Forks County,72413.0,82230.1,57802.5
+Griggs County,2252.0,0.0,0.0
+Kidder County,2393.0,0.0,0.0
+LaMoure County,4098.0,0.0,0.0
+Hettinger County,2406.0,0.0,0.0
+McKenzie County,13908.0,834316.34,73961.7
+Mountrail County,9290.0,157243.9,7967.0
+Oliver County,1856.0,4895034.2,13601.0
+Pembina County,6763.0,303315.6,38469.5
+Ransom County,5640.0,27146.9,620.75
+Rolette County,11933.0,0.0,0.0
+Sargent County,3795.0,640.5,63647.75
+Slope County,672.0,0.0,0.0
+Stutsman County,21487.0,393778.1,815.25
+Towner County,2064.0,0.0,0.0
+Traill County,7958.0,354227.5,128797.0
+Walsh County,10438.0,0.0,0.0
+Ward County,10964.0,368494.32,15908.46
+Williams County,36652.0,25.2,135490.5
+Ashtabula County,97014.0,451638.6,34609.0
+Ashland County,16039.0,16767.1,628.0
+Athens County,58979.0,181579.1,132208.5
+Auglaize County,45948.0,23166.3,11.0
+Belmont County,65509.0,125338.8,212783.75
+Clermont County,210805.0,4480404.0,13162.5
+Columbiana County,100511.0,305901.6,7893.0
+Coshocton County,36571.0,111222.4,25406.0
+Cuyahoga County,1236041.0,4058983.4,662744.75
+Defiance County,38187.0,362948.7,73826.75
+Darke County,51529.0,314605.3,401.0
+Gallia County,29068.0,18546470.9,86861.0
+Geauga County,95469.0,0.0,0.0
+Guernsey County,38098.0,65679.7,7497.5
+Highland County,2301.0,0.0,0.0
+Hocking County,27858.0,0.0,0.0
+Lorain County,316268.0,1008402.2,117628.75
+Meigs County,13272.0,0.0,0.0
+Licking County,181359.0,103077.1,1073.75
+Medina County,53723.0,0.0,0.0
+Mahoning County,225636.0,148542.3,133374.25
+Morrow County,12300.0,2571784.7,43021.25
+Muskingum County,86113.0,1817859.6,3996.0
+Pickaway County,60023.0,645062.4,2060.25
+Portage County,70718.0,185286.0,24520.5
+Preble County,40596.0,0.0,37492.25
+Ross County,76606.0,292726.1,22175.5
+Sandusky County,58667.0,2820978.6,2606.75
+Scioto County,72194.0,979238.5,25.25
+Trumbull County,200643.0,2399213.8,1097.5
+Tuscarawas County,91937.0,257319.8,636871.25
+Vinton County,12565.0,338295.7,156.75
+Van Wert County,28769.0,184895.6,88.0
+Wood County,73993.0,625695.0,139650.25
+Wyandot County,21567.0,13.1,27056.75
+Alfalfa County,5637.0,15400.0,5285.5
+Atoka County,14262.0,0.0,0.0
+Beaver County,7327.0,0.0,0.0
+Beckham County,22009.0,83702.3,20632.5
+Caddo County,26198.0,733837.9,2273.75
+Canadian County,169149.0,828412.8,97587.25
+Cimarron County,2252.0,0.0,0.0
+Coal County,5313.0,212772.61,7650.1
+Craig County,4847.0,0.0,0.0
+Cotton County,5477.0,0.0,0.0
+Creek County,72699.0,96298.1,33.0
+Dewey County,5140.0,0.0,0.0
+Garvin County,25713.0,894229.9,245582.5
+Harmon County,2428.0,0.0,0.0
+Greer County,5547.0,0.0,0.0
+Hughes County,17692.0,0.0,0.0
+Kingfisher County,15293.0,455179.5,15836.5
+Kay County,43668.0,2262892.3,59092.75
+Latimer County,9630.0,63423.1,40414.5
+Le Flore County,48907.0,1243948.6,3588.25
+Love County,10218.0,0.0,0.0
+McClain County,45306.0,860005.4,36862.5
+McCurtain County,30931.0,367761.2,138852.0
+Major County,7502.0,52.8,56926.75
+Mayes County,39589.0,3212861.5,5572.5
+Muskogee County,66354.0,3916987.0,221302.0
+Nowata County,9483.0,0.0,0.0
+Okfuskee County,11134.0,38758.8,9626.25
+Oklahoma County,802559.0,9296663.08,4209449.04
+Payne County,82794.0,24534.8,31134.25
+Okmulgee County,36990.0,146511.5,31454.25
+Pittsburg County,43613.0,1972817.6,32558.25
+Pushmataha County,10769.0,0.0,0.0
+Roger Mills County,3320.0,15493.2,8016.5
+Rogers County,98836.0,6264942.3,8826.0
+Sequoyah County,39667.0,138880.4,57204.25
+Tillman County,6977.0,0.0,0.0
+Wagoner County,86644.0,0.0,32070.0
+Woods County,8587.0,127201.93,9639.84
+Washita County,10732.0,9572.4,4076.25
+Tulsa County,677358.0,7402488.9,1445721.0
+Woodward County,19990.0,956581.9,49760.5
+Clackamas County,423177.0,19353.7,9.0
+Clatsop County,41695.0,277657.2,28309.25
+Deschutes County,206549.0,65156.3,70296.25
+Crook County,7448.0,0.0,0.0
+Gilliam County,2018.0,3915.0,226457.0
+Harney County,7515.0,0.0,0.0
+Hood River County,24048.0,0.0,0.0
+Josephine County,87730.0,0.0,0.0
+Klamath County,70212.0,1392960.7,4290.75
+Malheur County,31879.0,75492.9,35.5
+Multnomah County,795083.0,133696.8,67925.75
+Tillamook County,27574.0,0.0,0.0
+Umatilla County,80215.0,2855179.5,1315.5
+Wallowa County,7659.0,0.0,0.0
+Wasco County,26561.0,0.0,103166.0
+Yamhill County,108226.0,68416.8,43057.0
+Allegheny County,1233253.0,8230755.4,945279.75
+Armstrong County,1850.0,5409.5,2613.5
+Bedford County,80848.0,165129.5,85549.25
+Berks County,430449.0,3955682.7,236461.0
+Blair County,121032.0,60021.2,125.0
+Bucks County,645054.0,3022372.6,209752.25
+Cambria County,131441.0,3998212.8,24161.0
+Cameron County,425208.0,49026.3,118662.75
+Centre County,158425.0,1016666.0,21269.75
+Clarion County,37346.0,59943.1,5997.75
+Clearfield County,77904.0,162383.8,77.5
+Chester County,17609.0,0.0,0.0
+Dauphin County,288800.0,351358.0,6611.0
+Forest County,9381.0,0.0,0.0
+Indiana County,82957.0,14325822.6,511190.5
+Huntingdon County,43281.0,34821.4,3455.75
+Lackawanna County,215615.0,3778857.2,102262.5
+Luzerne County,326369.0,2871676.5,6529.25
+Lebanon County,144011.0,1753703.6,12045.75
+McKean County,39866.0,487784.4,30623.0
+Juniata County,23339.0,69034.6,11132.75
+Lehigh County,376317.0,373976.5,835.75
+Lycoming County,113104.0,2283891.8,238548.5
+Mifflin County,45988.0,61164.2,26.25
+Montour County,18091.0,1186396.9,366.5
+Northumberland County,12302.0,0.0,0.0
+Schuylkill County,143104.0,2332920.6,1383.75
+Philadelphia County,1567258.0,1042091.5,259265.75
+Potter County,115645.0,5459032.4,130546.5
+Snyder County,39652.0,2827579.3,1284.25
+Susquehanna County,38074.0,519826.4,57539.5
+Venango County,49777.0,544970.9,2016.5
+Westmoreland County,18712.0,0.0,0.0
+Providence County,657288.0,2935778.9,151245.35
+Newport County,84481.0,581724.3,269.75
+Abbeville County,24356.0,0.0,0.0
+Aiken County,174150.0,1155801.9,115064.75
+Allendale County,7579.0,0.0,0.0
+Bamberg County,12908.0,0.0,0.0
+Barnwell County,20414.0,117774.3,2.5
+Berkeley County,129490.0,964782.4,20376.5
+Charleston County,419279.0,513756.9,236617.25
+Clarendon County,30913.0,0.0,0.0
+Dillon County,27738.0,0.0,0.0
+Colleton County,38599.0,0.0,0.0
+Darlington County,62398.0,243333.1,10042.0
+Chesterfield County,378408.0,1972172.5,108447.0
+Edgefield County,26932.0,0.0,0.0
+Florence County,4688.0,0.0,0.0
+Georgetown County,64722.0,3643866.0,92429.25
+Greenville County,547950.0,46837.4,87811.0
+Hampton County,18113.0,0.0,0.0
+Horry County,383101.0,0.0,229271.5
+Kershaw County,67751.0,66822.7,31.5
+Lexington County,304797.0,688676.1,45160.0
+McCormick County,9764.0,0.0,0.0
+Marlboro County,26039.0,160866.3,880.0
+Newberry County,38247.0,0.0,0.0
+Orangeburg County,83094.0,2421831.8,2840.5
+Saluda County,18938.0,7699.6,8.25
+Spartanburg County,345831.0,186644.4,94204.5
+Williamsburg County,30058.0,203346.6,6384.5
+Aurora County,2755.0,0.0,0.0
+Beadle County,19376.0,54215.8,25.5
+Bennett County,3336.0,0.0,0.0
+Bon Homme County,7062.0,15784.5,7.5
+Brookings County,35484.0,492655.7,37673.0
+Brule County,5321.0,0.0,0.0
+Charles Mix County,9213.0,0.0,0.0
+Corson County,3826.0,0.0,0.0
+Codington County,28721.0,252804.0,37206.75
+Davison County,19973.0,105874.3,50.0
+Day County,5479.0,0.0,0.0
+Edmunds County,4065.0,294434.4,1077.0
+Fall River County,7370.0,0.0,0.0
+Faulk County,2126.0,0.0,0.0
+Gregory County,3962.0,0.0,0.0
+Haakon County,1826.0,0.0,0.0
+Hamlin County,6352.0,145056.2,1151.25
+Hand County,3140.0,0.0,0.0
+Hanson County,3461.0,0.0,0.0
+Hutchinson County,20215.0,2358838.1,13918.25
+Jerauld County,1650.0,0.0,0.0
+Kingsbury County,5294.0,0.0,0.0
+McCook County,5778.0,0.0,0.0
+Lyman County,3692.0,0.0,0.0
+Mellette County,1892.0,0.0,0.0
+Miner County,2304.0,0.0,0.0
+Moody County,6349.0,0.0,0.0
+Minnehaha County,203971.0,56783.8,99244.25
+Oglala Lakota County,0.0,0.0,0.0
+Roberts County,803.0,6745.6,10008.25
+Sanborn County,2415.0,0.0,0.0
+Spink County,6235.0,75495.8,35.5
+Stanley County,2999.0,0.0,0.0
+Sully County,1471.0,86.8,0.0
+Tripp County,5565.0,0.0,0.0
+Walworth County,105380.0,20768.2,106000.25
+Yankton County,23373.0,31330.1,14.75
+Ziebach County,2395.0,0.0,0.0
+Bledsoe County,14798.0,0.0,0.0
+Cannon County,14788.0,0.0,0.0
+Cheatham County,41830.0,0.0,0.0
+Cocke County,36879.0,29987.7,14.0
+Crockett County,2943.0,201198.3,11286.25
+Dickson County,55761.0,78891.9,37.25
+Dyer County,36410.0,0.0,0.0
+Fentress County,19332.0,0.0,0.0
+Giles County,16453.0,974050.0,32922.25
+Grainger County,24277.0,0.0,0.0
+Hamblen County,65168.0,0.0,0.0
+Hardeman County,3516.0,36973.2,17.5
+Hawkins County,58043.0,1941628.8,30527.58
+McMinn County,54719.0,557181.0,240384.5
+Loudon County,58181.0,467674.7,159733.25
+McNairy County,25988.0,0.0,0.0
+Maury County,108159.0,114282.2,11412.0
+Obion County,30394.0,184326.6,42747.5
+Overton County,23044.0,0.0,0.0
+Pickett County,5107.0,0.0,0.0
+Rhea County,33730.0,0.0,224058.75
+Roane County,13834.0,0.0,0.0
+Sequatchie County,16909.0,0.0,0.0
+Trousdale County,12111.0,12710.6,3795.75
+Unicoi County,17674.0,0.0,0.0
+Weakley County,33063.0,371004.2,172.03
+Andrews County,18334.0,100483.1,5561.5
+Angelina County,87101.0,94990.7,105540.25
+Aransas County,24944.0,0.0,0.0
+Archer County,8835.0,0.0,0.0
+Atascosa County,50864.0,2341337.5,6519.0
+Bailey County,6779.0,0.0,0.0
+Austin County,31097.0,0.0,0.0
+Bandera County,22115.0,34066.9,6245.75
+Bastrop County,106188.0,1977090.0,917.25
+Baylor County,3466.0,0.0,0.0
+Bee County,30394.0,431486.9,70214.72
+Bexar County,2059530.0,14528001.16,1494701.09
+Blanco County,12418.0,0.0,0.0
+Borden County,585.0,0.0,0.0
+Bosque County,18697.0,562938.0,211.75
+Bowie County,92035.0,47283.1,41922.25
+Brazoria County,388181.0,12325185.6,169065.5
+Brazos County,242014.0,135885.5,104813.0
+Brewster County,9343.0,19259.9,11574.75
+Briscoe County,1431.0,0.0,0.0
+Burleson County,18657.0,0.0,0.0
+Burnet County,52502.0,1443833.3,585.0
+Callahan County,14210.0,0.0,0.0
+Camp County,12716.0,123.4,170.5
+Carson County,5784.0,0.0,0.0
+Castro County,7298.0,0.0,0.0
+Childress County,6809.0,0.0,0.0
+Cochran County,2526.0,0.0,0.0
+Coleman County,7850.0,0.0,0.0
+Coke County,3333.0,112231.5,9865.0
+Collin County,1158696.0,780050.8,785733.25
+Collingsworth County,2568.0,0.0,0.0
+Colorado County,20754.0,547465.2,42852.0
+Comal County,184642.0,2856740.2,71459.5
+Concho County,3340.0,0.0,0.0
+Cooke County,43050.0,0.0,0.0
+Coryell County,85057.0,0.0,0.0
+Cottle County,1307.0,0.0,0.0
+Crane County,4546.0,217900.26,11364.43
+Crosby County,4998.0,0.0,0.0
+Culberson County,2155.0,752717.0,52061.75
+Dallam County,7241.0,43892.0,23.5
+Deaf Smith County,18377.0,214709.8,101.0
+Denton County,977281.0,450526.6,515635.0
+DeWitt County,19772.0,80536.2,5349.25
+Dickens County,1726.0,0.0,0.0
+Dimmit County,8387.0,154393.6,527.5
+Donley County,3339.0,0.0,0.0
+Eastland County,17944.0,40506.2,4238.75
+Ector County,160869.0,2483423.9,151208.75
+Erath County,43895.0,0.0,0.0
+Falls County,17049.0,0.0,0.0
+Fisher County,3622.0,42054.7,19.75
+Foard County,1057.0,0.0,0.0
+Fort Bend County,889146.0,14907143.5,596846.5
+Freestone County,19950.0,2452637.5,101563.0
+Frio County,17815.0,203079.1,682.5
+Galveston County,357117.0,5170134.3,139894.25
+Gaines County,22181.0,555601.1,2042.5
+Garza County,6262.0,0.0,0.0
+Gillespie County,27477.0,0.0,0.0
+Glasscock County,1164.0,280618.8,11219.75
+Goliad County,7131.0,3694807.7,11025.25
+Gonzales County,19832.0,75166.3,840.0
+Gregg County,125443.0,299822.9,82646.5
+Grimes County,30754.0,1070897.5,122924.75
+Hansford County,5151.0,43911.5,2641.5
+Hartley County,5208.0,0.0,0.0
+Hays County,269225.0,2476741.5,1465.25
+Hemphill County,3217.0,101255.4,3582.0
+Hockley County,21161.0,140827.1,802.75
+Hood County,66373.0,3065034.1,16283.5
+Hudspeth County,3432.0,557704.9,5884.0
+Hunt County,108282.0,23767.7,144694.75
+Irion County,1530.0,29016.42,2094.68
+Jack County,8922.0,1657852.6,121824.75
+Jim Wells County,38826.0,600220.0,20487.5
+Jim Hogg County,4763.0,0.0,0.0
+Karnes County,14836.0,383964.5,63341.5
+Kaufman County,172366.0,3633171.6,1723.25
+Kenedy County,358.0,0.0,0.0
+Kerr County,53741.0,0.0,0.0
+Kimble County,4422.0,59073.7,4007.0
+King County,2266789.0,760900.2,308549.5
+Kinney County,3128.0,0.0,0.0
+Kleberg County,30362.0,0.0,0.0
+Lamb County,12724.0,2890507.4,810.0
+Lampasas County,22785.0,0.0,0.0
+La Salle County,6604.0,350867.76,3355.86
+Lavaca County,20589.0,1060133.0,24129.75
+Lipscomb County,2854.0,0.0,0.0
+Live Oak County,11428.0,690745.9,4375.0
+Llano County,22540.0,0.0,0.0
+McLennan County,266836.0,5608991.7,229369.25
+Loving County,51.0,510036.08,123955.46
+McCulloch County,7497.0,0.0,0.0
+McMullen County,576.0,163398.1,1740.75
+Lubbock County,317561.0,62936.1,190499.0
+Lynn County,5724.0,0.0,0.0
+Maverick County,57843.0,0.0,0.0
+Matagorda County,36125.0,660736.6,12749.75
+Milam County,25628.0,0.0,0.0
+Montague County,21063.0,134956.6,6210.0
+Motley County,1032.0,0.0,0.0
+Nacogdoches County,64862.0,152198.7,79204.75
+Navarro County,54636.0,116550.5,100904.5
+Nolan County,14473.0,865797.3,7208.75
+Nueces County,351674.0,12972136.6,253048.75
+Ochiltree County,9606.0,31895.5,5635.5
+Palo Pinto County,29239.0,180198.4,1910.0
+Parker County,165834.0,113661.1,46228.75
+Parmer County,9620.0,5172.2,28155.25
+Pecos County,14735.0,428544.22,22630.68
+Presidio County,5939.0,0.0,0.0
+Rains County,12823.0,0.0,0.0
+Randall County,146140.0,64099.9,55115.75
+Reagan County,3135.0,0.0,0.0
+Real County,2840.0,24592.7,2009.25
+Red River County,11542.0,0.0,0.0
+Reeves County,12905.0,2483475.6,103580.75
+Refugio County,6632.0,214.2,435.25
+Rockwall County,123208.0,0.0,0.0
+Runnels County,9859.0,0.0,0.0
+Rusk County,14186.0,28726.1,18530.5
+Sabine County,10048.0,0.0,0.0
+San Augustine County,7857.0,0.0,0.0
+San Jacinto County,28348.0,116537.6,54.25
+San Patricio County,69954.0,6057396.4,49752.25
+San Saba County,5824.0,0.0,0.0
+Schleicher County,2357.0,0.0,0.0
+Scurry County,16686.0,484113.6,36944.5
+Shackelford County,3186.0,0.0,0.0
+Somervell County,9757.0,0.0,0.0
+Starr County,65728.0,42378.4,4261.5
+Stonewall County,1182.0,0.0,0.0
+Sterling County,1417.0,120119.27,4964.44
+Swisher County,6881.0,0.0,0.0
+Sutton County,3217.0,84127.6,11099.0
+Tarrant County,2154595.0,2678181.76,1861820.37
+Terry County,11567.0,0.0,0.0
+Throckmorton County,1550.0,0.0,0.0
+Titus County,31208.0,4794517.9,69470.0
+Tom Green County,118892.0,0.0,28389.0
+Travis County,1326436.0,2248704.9,639376.75
+Tyler County,8183.0,34421.2,16.75
+Upshur County,23712.0,108845.7,1260.0
+Upton County,3152.0,1148722.07,85218.39
+Val Verde County,47606.0,152357.9,726.75
+Uvalde County,24940.0,0.0,0.0
+Van Zandt County,62859.0,0.0,0.0
+Victoria County,91065.0,1364771.9,13273.5
+Waller County,61894.0,57385.9,2987.75
+Webb County,267780.0,255105.3,187248.75
+Wharton County,41824.0,3280931.3,6424.0
+Wilbarger County,12491.0,0.0,0.0
+Willacy County,20143.0,0.0,0.0
+Winkler County,7306.0,226363.43,41811.81
+Wise County,35421.0,868114.7,1059050.75
+Yoakum County,7451.0,971435.2,357547.25
+Young County,17962.0,175175.4,81.0
+Zapata County,13849.0,10.5,270.75
+Zavala County,9377.0,0.0,0.0
+Box Elder County,61498.0,319958.4,38191.25
+Cache County,140173.0,27482.8,61417.5
+Daggett County,1014.0,41280.8,4708.5
+Duchesne County,20161.0,285495.7,91140.25
+Emery County,10099.0,15370099.0,45389.25
+Juab County,12567.0,1681362.9,1184.0
+Millard County,13330.0,7611089.0,21127.47
+Piute County,1487.0,0.0,0.0
+Rich County,2628.0,0.0,0.0
+Salt Lake County,1186257.0,1686483.6,692290.0
+Sanpete County,29724.0,0.0,0.0
+Tooele County,79934.0,255521.9,129638.75
+Uintah County,37141.0,3136377.1,177213.5
+Wasatch County,36619.0,0.0,0.0
+Utah County,702434.0,2925967.7,108339.25
+Weber County,269561.0,161953.7,44142.0
+Addison County,37578.0,0.0,0.0
+Caledonia County,30579.0,0.0,0.0
+Chittenden County,169301.0,66415.8,4127.5
+Bennington County,37392.0,0.0,0.0
+Grand Isle County,7489.0,0.0,0.0
+Lamoille County,26090.0,0.0,0.0
+Rutland County,60366.0,29496.7,14.25
+Windsor County,58142.0,0.0,0.0
+Accomack County,33191.0,70152.4,57169.0
+Albemarle County,114534.0,0.0,12641.25
+Amelia County,13455.0,521.0,99882.5
+Amherst County,31589.0,126248.6,63631.5
+Appomattox County,16748.0,81486.5,6335.0
+Arlington County,234000.0,0.0,0.0
+Augusta County,78064.0,35.8,99377.0
+Bland County,6148.0,0.0,0.0
+Botetourt County,34135.0,909261.8,897.5
+Buckingham County,16982.0,1208840.3,525.75
+Charles City County,6605.0,132.8,72332.25
+Culpeper County,54381.0,0.0,0.0
+Dickenson County,13725.0,32021.7,94.25
+Dinwiddie County,28161.0,139951.4,42.5
+Fairfax County,1138331.0,339813.9,212061.0
+Fauquier County,74664.0,655993.1,312.25
+Fluvanna County,28159.0,1403068.4,650.5
+Goochland County,26109.0,0.0,0.0
+Greensville County,11226.0,4051623.8,1879.0
+Hanover County,112938.0,2283042.0,1064.75
+Henrico County,333962.0,0.0,72589.25
+Isle of Wight County,40151.0,95905.9,107959.25
+James City County,81199.0,93156.3,36.25
+King and Queen County,6718.0,0.0,109229.0
+King George County,27856.0,95244.6,247088.25
+King William County,18492.0,546530.7,103066.75
+Loudoun County,432085.0,1924037.9,40360.25
+Lunenburg County,12031.0,0.0,79499.5
+Mathews County,8490.0,0.0,0.0
+New Kent County,24986.0,0.0,0.0
+Nottoway County,15559.0,0.0,0.0
+Patrick County,17643.0,0.0,0.0
+Pittsylvania County,59952.0,215927.5,6625.25
+Powhatan County,31489.0,0.0,0.0
+Prince Edward County,21927.0,0.0,0.0
+Prince George County,43134.0,0.0,0.0
+Prince William County,486943.0,928440.7,7638.75
+Rappahannock County,7502.0,0.0,0.0
+Roanoke County,96914.0,0.0,21264.75
+Rockbridge County,22593.0,0.1,45802.25
+Shenandoah County,44968.0,0.0,0.0
+Smyth County,29449.0,0.0,0.0
+Southampton County,17932.0,0.0,0.0
+Spotsylvania County,146688.0,23.4,71847.0
+Wythe County,28111.0,0.0,0.0
+Alexandria,155525.0,112580.4,2613.5
+Bristol,16975.0,0.0,116799.0
+Buena Vista,6591.0,0.0,0.0
+Charlottesville,45373.0,71001.4,1646.0
+Chesapeake,252488.0,64138.6,37.5
+Colonial Heights,18294.0,0.0,0.0
+Covington,5679.0,34462.3,16.25
+Danville,42229.0,66401.4,31.25
+Emporia,5481.0,0.0,0.0
+Fairfax,24835.0,0.0,0.0
+Falls Church,14586.0,0.0,0.0
+Franklin,8247.0,0.0,0.0
+Fredericksburg,28757.0,0.0,0.0
+Galax,6730.0,0.0,0.0
+Hampton,138037.0,23158.8,50843.5
+Hopewell,22962.0,1878737.2,1286.5
+Lexington,7457.0,0.0,0.0
+Harrisonburg,51158.0,30413.0,14.25
+Lynchburg,79287.0,34413.3,16.0
+Manassas,42642.0,28177.5,13.25
+Manassas Park,16703.0,0.0,0.0
+Newport News,184306.0,82965.5,41.75
+Martinsville,13725.0,0.0,0.0
+Norfolk,232995.0,118645.9,45939.75
+Norton,3609.0,0.0,0.0
+Petersburg,33394.0,0.0,115574.25
+Poquoson,12582.0,0.0,0.0
+Portsmouth,97029.0,163020.3,3646.25
+Radford,16738.0,0.0,0.0
+Richmond,229395.0,362470.7,168.25
+Roanoke,97847.0,100205.1,23.0
+Salem,25523.0,0.0,101191.5
+Staunton,25904.0,0.0,0.0
+Suffolk,98537.0,0.0,0.0
+Virginia Beach,455618.0,0.0,0.0
+Waynesboro,22808.0,28980.3,13.75
+Williamsburg,15909.0,0.0,0.0
+Winchester,27936.0,0.0,0.0
+Asotin County,22508.0,0.0,0.0
+Chelan County,79926.0,0.0,0.0
+Clallam County,77805.0,0.0,0.0
+Cowlitz County,111956.0,1455666.4,307311.25
+Ferry County,7448.0,0.0,0.0
+Grays Harbor County,77038.0,1414587.1,3474.25
+Island County,86625.0,0.0,0.0
+Kitsap County,277673.0,42960.1,916.75
+Kittitas County,45189.0,0.0,0.0
+Klickitat County,23271.0,778936.0,249789.25
+Okanogan County,43127.0,0.0,0.0
+Pacific County,24113.0,0.0,0.0
+Pend Oreille County,14179.0,0.0,0.0
+Skagit County,131179.0,3494965.0,8674.5
+Skamania County,12460.0,13862.6,2117.5
+Snohomish County,840079.0,67703.2,5675.5
+Spokane County,549690.0,330068.1,2809.5
+Wahkiakum County,4688.0,0.0,0.0
+Walla Walla County,61890.0,347491.8,99441.25
+Whatcom County,230677.0,4321876.2,23354.75
+Whitman County,47619.0,62388.6,29.5
+Yakima County,257001.0,38741.0,169683.75
+Brooke County,21733.0,273040.6,76.5
+Braxton County,12185.0,1008.9,5393.25
+Cabell County,92730.0,87125.1,41.0
+Doddridge County,7698.0,389359.5,13447.25
+Greenbrier County,32435.0,0.0,0.0
+Hardy County,14192.0,112099.5,7641.75
+Kanawha County,175515.0,396265.4,548658.75
+Mingo County,22573.0,0.0,0.0
+Monongalia County,106869.0,9801735.8,75556.0
+Pleasants County,7586.0,8152422.1,2338.75
+Preston County,34172.0,0.0,0.0
+Raleigh County,72882.0,94.0,1004978.25
+Ritchie County,8207.0,140884.1,4284.0
+Summers County,11762.0,0.0,0.0
+Tucker County,6568.0,0.0,0.0
+Wetzel County,14025.0,211634.6,8021.0
+Wirt County,5091.0,0.0,0.0
+Barron County,46843.0,0.0,0.0
+Bayfield County,16608.0,0.0,0.0
+Burnett County,17036.0,0.0,0.0
+Calumet County,52718.0,11.3,47444.5
+Dane County,568203.0,619638.6,56183.0
+Door County,30526.0,0.0,0.0
+Eau Claire County,106837.0,24732.4,23612.5
+Fond du Lac County,103836.0,393439.2,272.5
+Green Lake County,19220.0,694.5,22390.25
+Juneau County,26866.0,129269.9,61.0
+Kenosha County,167817.0,115588.6,22980.5
+Kewaunee County,20623.0,0.0,0.0
+La Crosse County,120294.0,48035.8,57547.5
+Langlade County,19559.0,0.0,0.0
+Manitowoc County,81172.0,410651.4,21851.5
+Marathon County,137958.0,4446443.0,40835.0
+Marinette County,41988.0,131460.3,61.5
+Milwaukee County,918661.0,12458168.0,85223.75
+Oconto County,39633.0,31799.9,15.0
+Outagamie County,192127.0,2242514.4,103608.75
+Ozaukee County,93009.0,2790854.4,1266.75
+Pepin County,7410.0,0.0,0.0
+Price County,14179.0,125.3,0.0
+Racine County,195846.0,103118.6,12936.25
+St. Croix County,96017.0,0.0,0.0
+Sawyer County,18559.0,0.0,0.0
+Sauk County,65777.0,48985.7,102.5
+Shawano County,40886.0,36287.8,17.5
+Sheboygan County,117841.0,276528.7,12525.0
+Trempealeau County,30899.0,0.0,0.0
+Vilas County,23763.0,0.0,0.0
+Washburn County,16911.0,27.6,12814.0
+Waukesha County,410434.0,7004.6,66823.5
+Waupaca County,51488.0,256496.2,548.0
+Waushara County,24999.0,0.0,0.0
+Converse County,13786.0,4344964.6,25644.75
+Goshen County,12562.0,0.0,0.0
+Hot Springs County,4588.0,0.0,0.0
+Laramie County,100723.0,552095.0,66221.0
+Natrona County,79601.0,285089.4,20091.75
+Niobrara County,2380.0,0.0,0.0
+Sublette County,8763.0,0.0,0.0
+Sweetwater County,41345.0,17254898.1,132257.5
+Uinta County,20712.0,231687.6,7391.0
+Washakie County,7719.0,32598.6,19.0
+Weston County,6860.0,187332.3,615.5
+Adjuntas,17972.0,0.0,0.0
+Aguada,37998.0,0.0,0.0
+Aguas Buenas,24136.0,0.0,0.0
+Aguadilla,54752.0,0.0,0.0
+Aibonito,24555.0,0.0,0.0
+Añasco,25497.0,0.0,0.0
+Arroyo,15797.0,0.0,0.0
+Arecibo,87217.0,26.5,112327.5
+Barceloneta,22604.0,61880.9,32.0
+Barranquitas,28899.0,0.0,0.0
+Bayamón,184326.0,158.6,51687.0
+Cabo Rojo,46983.0,0.0,0.0
+Caguas,126772.0,0.0,0.0
+Camuy,32733.0,0.0,0.0
+Canóvanas,42218.0,0.0,0.0
+Carolina,154126.0,22374.6,23.75
+Cataño,23060.0,0.0,0.0
+Cayey,41509.0,0.0,0.0
+Ceiba,11256.0,0.0,0.0
+Ciales,16924.0,0.0,0.0
+Cidra,39831.0,0.0,0.0
+Coamo,34557.0,0.0,0.0
+Comerío,18817.0,0.0,0.0
+Corozal,34459.0,0.0,0.0
+Culebra,1186.0,0.0,0.0
+Dorado,35786.0,0.0,0.0
+Fajardo,31984.0,12.6,72844.25
+Florida,11641.0,0.0,0.0
+Guánica,13682.0,0.0,0.0
+Guayanilla,17670.0,0.0,0.0
+Guayama,36365.0,0.0,0.0
+Guaynabo,89554.0,193.1,51347.25
+Gurabo,40517.0,0.0,0.0
+Hatillo,38330.0,0.0,0.0
+Hormigueros,15571.0,0.0,0.0
+Humacao,50729.0,0.0,58721.25
+Isabela,42817.0,0.0,0.0
+Jayuya,14726.0,0.0,0.0
+Juana Díaz,46333.0,0.0,0.0
+Juncos,36928.0,41438.1,42.0
+Lajas,23202.0,0.0,0.0
+Lares,27990.0,0.0,0.0
+Las Marías,8826.0,0.0,0.0
+Las Piedras,35099.0,0.0,0.0
+Loíza,23580.0,0.0,0.0
+Luquillo,17716.0,0.0,0.0
+Manatí,39310.0,0.0,0.0
+Maricao,5354.0,0.0,0.0
+Maunabo,10563.0,0.0,0.0
+Mayagüez,72721.0,0.0,0.0
+Moca,37363.0,0.0,0.0
+Morovis,28659.0,0.0,0.0
+Naguabo,23340.0,0.0,0.0
+Naranjito,29153.0,0.0,0.0
+Patillas,15927.0,0.0,0.0
+Orocovis,21378.0,0.0,0.0
+Peñuelas,20298.0,1353661.2,858.0
+Ponce,136542.0,0.0,54061.25
+Quebradillas,23540.0,0.0,0.0
+Rincón,15164.0,0.0,0.0
+Río Grande,46838.0,0.0,0.0
+Sabana Grande,22639.0,0.0,0.0
+Salinas,25688.0,0.0,113870.0
+San Germán,31680.0,0.0,0.0
+San Juan,340903.0,0.0,0.0
+San Lorenzo,37552.0,0.0,0.0
+San Sebastián,39183.0,0.0,0.0
+Santa Isabel,20207.0,0.0,0.0
+Toa Alta,66699.0,0.0,0.0
+Toa Baja,74854.0,0.0,0.0
+Trujillo Alto,67497.0,0.0,0.0
+Vega Alta,35279.0,0.0,0.0
+Vieques,8199.0,0.0,0.0
+Utuado,28155.0,0.0,0.0
+Vega Baja,54182.0,0.0,0.0
+Villalba,21984.0,0.0,0.0
+Yabucoa,30313.0,0.0,0.0
+Yauco,33988.0,0.0,0.0
