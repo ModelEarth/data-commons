@@ -2,8 +2,15 @@
 
 # Healthy Food
 
-Goal 2. Healthy Food, No Hunger and [GHG mitigation](/OpenFootprint/) - [balance repo](/balance/)
+Goal 2. Healthy Food, No Hunger and [GHG mitigation](/OpenFootprint/) - [balance repo](/balance/) - [Why Modern Food Lost its Nutrition](https://www.bbc.com/future/bespoke/follow-the-food/why-modern-food-lost-its-nutrients/)
 
+[International FHIR Nutrition Product json](https://build.fhir.org/nutritionproduct.html) - [About FHIR Fast Healthcare Interoperability](https://en.wikipedia.org/wiki/Fast_Healthcare_Interoperability_Resources)
+<!--
+	https://confluence.hl7.org/display/FHIR/FHIR+Spreadsheet+Authoring#FHIRSpreadsheetAuthoring-ExcelSpreadsheet
+
+	Download spreadsheets
+	https://build.fhir.org/definitions.xlsx.zip
+-->
 ## Food Nutrition Labels (YAML locally)
 
 Source: [USDA API](https://fdc.nal.usda.gov/api-guide.html)

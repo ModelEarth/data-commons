@@ -1,15 +1,15 @@
 [Data Pipeline](../data-pipeline/) and [Active Projects](/projects)
 # UN Goal Timelines
 
-[Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Widen your screen to explore root of 17 UN Goals.  
-Display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Settings in the upper right.
+[Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Click then widen your screen to view navigation for 17 UN Goals.  
+Or display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Settings in the upper right.
 
 ## Projects
 
 TO DO: [County Timelines](/data-commons/docs/data/) and [Country & State Timelines](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) from Google Data Commons API
 
 
-TO DO: Combine our [Earthscape Tabulator](../data-pipeline/timelines/training/naics/) with our [chartJS Google timeline display](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) by adding to [earthscape.js](/localsite/js/earthscape.js).
+TO DO: Combine our [Earthscape Tabulator](../data-pipeline/timelines/training/naics/) with our [chartJS timeline display](/data-commons/docs/data/) by adding to [earthscape.js](/data-commons/docs/data/js/earthscape.js).
 
 <!--[worldbank.org indicators](https://github.com/phiresky/world-development-indicators-sqlite/)-->
 

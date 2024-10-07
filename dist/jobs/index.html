@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Great Jobs | Data Commons</title>
+<title>Goal #1: Great Jobs | Data Commons</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.css">
@@ -80,7 +80,7 @@ return {addSuggestionToInput,loadDataCommons,displayJsonData,loadData};
 <nav>
 <div>Contents</div>
 <ol>
-<li class="observablehq-secondary-link"><a href="#google-api-via-javascript">Google API via Javascript</a></li>
+<li class="observablehq-secondary-link"><a href="#data-commons-api-via-javascript">Data Commons API via Javascript</a></li>
 <li class="observablehq-secondary-link"><a href="#nodejs">NodeJS</a></li>
 </ol>
 </nav>
@@ -88,12 +88,16 @@ return {addSuggestionToInput,loadDataCommons,displayJsonData,loadData};
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
 <p><a href="../../">UN Goal Timelines</a> - <a href="../">Data Commons</a></p>
-<h1 id="great-jobs" tabindex="-1"><a class="observablehq-header-anchor" href="#great-jobs">Great Jobs</a></h1>
-<p>Goal 1. Good Paying Jobs and Assistance - No Poverty</p>
-<h2 id="google-api-via-javascript" tabindex="-1"><a class="observablehq-header-anchor" href="#google-api-via-javascript">Google API via Javascript</a></h2>
-<p>Using <a href="../../docs/jobs/">Javascript</a> and <a href="../../dist/jobs/">NodeJS</a> to call Google Data Commons API.</p>
+<h1 id="goal-%231%3A-great-jobs" tabindex="-1"><a class="observablehq-header-anchor" href="#goal-%231%3A-great-jobs">Goal #1: Great Jobs</a></h1>
+<p>Let's find and apply for great paying jobs. Help us develop a <a href="/feed/view/#feed=serp">local job search using Serp</a>.<br>
+We're focusing on workforce automation and assistance that ends poverty while eliminating government debt.</p>
+<p>If you'd like to document your contributions, one option is to use our <a href="https://docs.google.com/spreadsheets/d/1wvw_xsFWnYE9z8nDQqmu1m2LB5TJEfy5VLkaFuEaCfk/edit?usp=sharing">times spreadsheet template</a>. Better yet, use a readme file instead so you can share an overview with reviewers and include links to your contributions.  (Fork our <a href="https://github.com/ModelEarth/contributors">contributors repo</a> and document your contributions.)</p>
+<h2 id="data-commons-api-via-javascript" tabindex="-1"><a class="observablehq-header-anchor" href="#data-commons-api-via-javascript">Data Commons API via Javascript</a></h2>
+<p>Thanks to Mehul, we finally figured out how to load <a href="../data/">timelines using the GDC Javascript API</a>.
+Using <a href="../../docs/jobs/">Javascript</a> and <a href="../../dist/jobs/">NodeJS</a> to call Google Data Commons API.</p>
 <p>You can find the DCID and property value using:</p>
 <ul>
+<li><a href="https://docs.datacommons.org/api/sheets/">Data Commons Google Sheets add-on</a></li>
 <li><a href="https://datacommons.org/place">Data Commons Place Browser</a></li>
 <li><a href="https://datacommons.org/tools/statvar">Data Commons StatVar Browser</a></li>
 <li><a href="https://datacommons.org/browser/">Data Commons Browser</a></li>
@@ -102,7 +106,6 @@ return {addSuggestionToInput,loadDataCommons,displayJsonData,loadData};
 <!--
 DCID Examples: geoId/13, PowerPlant, Count\_Jobs\_EconomicDevelopmentAdministration\_JobsCreated
 -->
-<p><strong>variable.dcids:</strong> Count_Person, Count_Farm, LandCoverFraction_Forest</p>
 <style>
 body {
   font-family: 'Arial', sans-serif;
@@ -167,7 +170,8 @@ input {
 </style>
 <div style="background-color: #ddd; padding:20px; font-size:16px;">
 <p><a href="https://github.com/modelearth/data-commons" style="float:right">Fork our repo to edit</a></p>
-<p>Include a <a href="https://docs.datacommons.org/api/rest/v2#relation-expressions" target="relexp">Relation Expression</a> (property value) to call v2/node API<br><br></p>
+<p>TO DO: Add intuitive dropdown menus for selecting properties.<br><br></p>
+<p>NOTE: Including a <a href="https://docs.datacommons.org/api/rest/v2#relation-expressions" target="relexp">Relation Expression</a> (property value) currently calls v2/node API.  Add a dropdown for switching the API.<br><br></p>
 <p><b>Parent to children</b><br></p>
 <p><span style="font-size:20px;font-family: var(--monospace);">-&gt;*</span> means an 'out' arc with all the properties (children) linked to this node.<br><br></p>
 <p><b>Child to parent</b><br>
@@ -198,9 +202,12 @@ input {
   
 </div>
 -->
+<div>
+<b>variable.dcids:</b> Count_Person, Count_Farm, LandCoverFraction_Forest<br><br>
+</div>
 <div style="float:left">
 Variable DCIDs:<br>
-<input type="text" id="dcidInput" placeholder="e.g., geoId/13" value="LandCoverFraction_Forest">
+<input type="text" id="dcidInput" style="min-width:200px;" placeholder="e.g., geoId/13" value="LandCoverFraction_Forest">
 </div>
 <div style="float:left;"><!-- show when not timeline which used v2/observation API -->
 Property (v2/node)<br>
@@ -244,7 +251,7 @@ Pass a list in the properties column.
 -->
 <h2 id="nodejs" tabindex="-1"><a class="observablehq-header-anchor" href="#nodejs">NodeJS</a></h2>
 <p>Yarn Build into <a href="../../dist/jobs/">dist/jobs folder</a></p>
-<p>The client-side version of the following resides within index.html and uses<br>
+<p>The client-side version of the following resides within <a href="../../docs/jobs/">docs/jobs/index.html</a> and uses<br>
 <a href="../../docs/components/data-loader-earth.js">components/data-loader-earth.js</a>.</p>
 <!--
 The following is only functional when built into the "dist" repo. [View built version](../../dist/jobs/).

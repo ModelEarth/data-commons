@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link type="text/css" href="/localsite/css/base.css" rel="stylesheet" id="/localsite/css/base.css" />
-<script type="text/javascript" src="/localsite/js/localsite.js?showheader=true&showsearch=hide"></script>
+<script type="text/javascript" src="/localsite/js/localsite.js?showheader=true&showsearch=true&scope=county"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/earthscape.js" type="text/javascript"></script>
@@ -17,32 +17,46 @@
 loadMarkdown("index.md", "readmeDiv", "_parent");
 loadMarkdown("/localsite/start/steps/github-push.md", "githubPushDiv", "_parent");
 
+document.addEventListener('hashChangeEvent', function (elem) {
+    console.log("timeline page detects URL hashChangeEvent");
+
+    // Call getTimelineChart here
+
+}, false);
+
 document.addEventListener('DOMContentLoaded', () => {
-    let chartVariable = 'Count_Person';
+    let dcid_select = 'Count_Person';
     let showAll = 'showTop5';
     let entityId = 'geoId/13'
-    let chartText = document.getElementById('chartVariable').options[document.getElementById('chartVariable').selectedIndex].text;
+    let chartText = document.getElementById('dcid_select').options[document.getElementById('dcid_select').selectedIndex].text;
 
-    getTimelineChart(chartVariable, entityId, showAll, chartText);
+    getTimelineChart(dcid_select, entityId, showAll, chartText);
 
     document.forms['countyShow'].addEventListener('change', function(event) {
         if (event.target.name === 'countyShow') {
             showAll = document.querySelector('input[name="countyShow"]:checked').value;
-            getTimelineChart(chartVariable, entityId, showAll, chartText);
+            getTimelineChart(dcid_select, entityId, showAll, chartText);
         }
     });
 
-    document.getElementById('chartVariable').addEventListener('change', (event) => {
-        chartVariable = event.target.value;
-        chartText = document.getElementById('chartVariable').options[document.getElementById('chartVariable').selectedIndex].text;
-        getTimelineChart(chartVariable, entityId, showAll, chartText);
+    document.getElementById('dcid_select').addEventListener('change', (event) => {
+        dcid_select = event.target.value;
+        chartText = document.getElementById('dcid_select').options[document.getElementById('dcid_select').selectedIndex].text;
+        getTimelineChart(dcid_select, entityId, showAll, chartText);
     });
 
     document.getElementById('entityId').addEventListener('change', (event) => {
         entityId = event.target.value;
-        getTimelineChart(chartVariable, entityId, showAll, chartText);
+        getTimelineChart(dcid_select, entityId, showAll, chartText);
     });
 });
+
+function createLabelFromDCID(DCID) {
+    return DCID
+        .split('_')                        // Split on underscores
+        .map(word => word.replace(/([a-z])([A-Z])/g, '$1 $2')) // Add space between CamelCase
+        .join(' ');                        // Join the words back with spaces
+}
 
 function loadGoalsDropdown(theme,csvPath) {
 
@@ -56,6 +70,9 @@ function loadGoalsDropdown(theme,csvPath) {
     dp.googleCSV = csvPath;
     consoleLog("Google data requested " + dp.googleCSV);
     //dp.googleCSV = "DISABLEX"
+
+    const dcidSelect = document.getElementById('dcid_select');
+
     d3.csv(dp.googleCSV).then(function(data,error) { // One element containing all rows from spreadsheet
 
       consoleLog("Google data loaded");
@@ -71,7 +88,37 @@ function loadGoalsDropdown(theme,csvPath) {
               console.log("data.key: ");
               console.log(data[i]);
               if (data[i].Title) {
-                goalsString = goalsString + data[i].Title + "<br>";
+                //goalsString = goalsString + data[i].Title + "<br>";
+              }
+              if (data[i].DCID) {
+                if (data[i].Scope) {
+                  const scopeList = data[i].Scope.replace(/\s*,\s*/g, ',').split(',');
+
+                  scopeList.forEach(function(scope) {
+                    //goalsString = goalsString + scope + "<br>";
+
+                    goalsString = goalsString + "<a href='timelines/air/" + data[i].DCID + "_" + scope.toLowerCase() + "_data_timeline.csv'>" + data[i].Title + "</a> (" + scope + ")<br>";
+                    if (scope.toLowerCase() == "county") {
+                        data[i].DCID
+
+                        // Add option if it doesn't already exist
+                        //if (!optionExists) {
+                            const option = document.createElement('option');
+                            option.value = data[i].DCID; // Set value dynamically from data[i].DCID
+                            option.text = createLabelFromDCID(data[i].DCID);
+                            dcidSelect.add(option);
+                        //}
+
+                    }
+                  });
+                  goalsString = goalsString + "<hr>";
+                } else {
+                
+                  goalsString = goalsString + "<a href='timelines/air/" + data[i].DCID + "_country_data_timeline.csv'>" + data[i].Title + "</a><br>";
+
+                  //goalsString = goalsString + "<a href='timelines/air/Annual_Amount_Emissions_CarbonDioxide_country_data_timeline.csv'>" + data[i].Title + "</a><br>";
+                }
+                  
               }
           }
         }
@@ -100,8 +147,13 @@ function loadGoalsDropdown(theme,csvPath) {
     });
     });
 }
-loadGoalsDropdown("goals","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=456266073&single=true&output=csv");
-loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv"); // "Air" tab
+//loadGoalsDropdown("goals","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=456266073&single=true&output=csv");
+
+// Copy the sheet URL and modify in this format
+
+loadGoalsDropdown("water","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=2049347939&single=true&output=csv");
+
+loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv");
 </script>
 
 <style>
@@ -114,7 +166,9 @@ loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM
   background-repeat: no-repeat; /* Prevents the image from repeating */
   height: 100%; /* Ensures the div's height is used */
 }
-
+#datascope_select {
+  display:block !important;
+}
 </style>
 </head>
 
@@ -122,6 +176,13 @@ loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM
 
 <div class="heroTransparent notdark">
 <div class="content contentpadding large-list">
+
+  
+  <div id="relocatedScopeMenu"></div>
+
+  <!-- We might not use the same state menu as the search filter.
+  <div id="relocatedStateMenu"></div>
+  -->
 
   <select id="entityId">
       <option value="geoId/01">Alabama</option>
@@ -177,7 +238,7 @@ loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM
       <option value="geoId/56" selected>Wyoming</option>
       <option value="geoId/72">Puerto Rico</option>
   </select>
-  <select id="chartVariable">
+  <select id="dcid_select">
       <option value="Count_Person" selected>County Populations</option>
       <option value="LandCoverFraction_Forest">Land Covered by Forests</option>
       <option value="Count_Farm">Number of Farms</option>
@@ -210,21 +271,24 @@ loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM
 
   Create a DropDown called #Goals using the loadGoalsDropdown() funtion in the current index.html page.<br><br>
 
-  When #Goals changes, update the #chartVariable dropdown with the the DCID from corresponding tab in the Google Sheet.<br><br>
+  When #Goals changes, update the #dcid_select dropdown with the the DCID from corresponding tab in the Google Sheet.<br><br>
 
-  #Goals dropdown > #chartVariable dropdown<br>
+  #Goals dropdown > #dcid_select dropdown<br>
   Goal (Air) > Topic (Emissions): Subtopic (Methane)<br><br>
 
   Goals pulled from <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing">Google Sheet</a>:<br><br>
 
-  <b>UN Goals</b><br>
-  <div id="goalsDiv"></div>
-  <br>
 
   <b>Air Topics</b><br>
   <div id="airDiv"></div>
+  <br>
 
-  <hr><br>
+  <b>Water Topics</b><br>
+  TO DO: Update the timeline above to also show <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US">Country Data</a><br><br>
+
+  <div id="waterDiv"></div>
+  <br>
+
 
   <div id="githubPushDiv"></div>
 </div>

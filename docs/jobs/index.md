@@ -1,14 +1,20 @@
 [UN Goal Timelines](../../) - [Data Commons](../)
 
-# Great Jobs
-Goal 1. Good Paying Jobs and Assistance - No Poverty
+# Goal #1: Great Jobs
+Let's find and apply for great paying jobs. Help us develop a [local job search using Serp](/feed/view/#feed=serp).  
+We're focusing on workforce automation and assistance that ends poverty while eliminating government debt.
 
-## Google API via Javascript
+If you'd like to document your contributions, one option is to use our [times spreadsheet template](https://docs.google.com/spreadsheets/d/1wvw_xsFWnYE9z8nDQqmu1m2LB5TJEfy5VLkaFuEaCfk/edit?usp=sharing). Better yet, use a readme file so you can share an overview and include links to your contributions.  (Fork our [contributors repo](https://github.com/ModelEarth/contributors) and document your contributions.)
 
+
+## Data Commons API via Javascript
+
+Thanks to Mehul, we finally figured out how to load [timelines using the GDC Javascript API](../data/).
 Using [Javascript](../../docs/jobs/) and [NodeJS](../../dist/jobs/) to call Google Data Commons API.
 
 You can find the DCID and property value using:
 
+- [Data Commons Google Sheets add-on](https://docs.datacommons.org/api/sheets/)
 - [Data Commons Place Browser](https://datacommons.org/place)
 - [Data Commons StatVar Browser](https://datacommons.org/tools/statvar)
 - [Data Commons Browser](https://datacommons.org/browser/)
@@ -18,7 +24,6 @@ You can find the DCID and property value using:
 <!--
 DCID Examples: geoId/13, PowerPlant, Count\_Jobs\_EconomicDevelopmentAdministration\_JobsCreated
 -->
-**variable.dcids:** Count\_Person, Count\_Farm, LandCoverFraction\_Forest
 
 <style>
 body {
@@ -87,7 +92,10 @@ input {
 
 <a href="https://github.com/modelearth/data-commons" style="float:right">Fork our repo to edit</a>
 
-Include a <a href="https://docs.datacommons.org/api/rest/v2#relation-expressions" target="relexp">Relation Expression</a> (property value) to call v2/node API<br><br>
+TO DO: Add intuitive dropdown menus for selecting properties.<br><br>
+
+NOTE: Including a <a href="https://docs.datacommons.org/api/rest/v2#relation-expressions" target="relexp">Relation Expression</a> (property value) currently calls v2/node API.  Add a dropdown for switching the API.<br><br>
+
 
 <b>Parent to children</b><br>
 
@@ -125,9 +133,13 @@ Include a <a href="https://docs.datacommons.org/api/rest/v2#relation-expressions
 </div>
 -->
 
+<div>
+<b>variable.dcids:</b> Count_Person, Count_Farm, LandCoverFraction_Forest<br><br>
+</div>
+
 <div style="float:left">
 Variable DCIDs:<br>
-<input type="text" id="dcidInput" placeholder="e.g., geoId/13" value="LandCoverFraction_Forest">
+<input type="text" id="dcidInput" style="min-width:200px;" placeholder="e.g., geoId/13" value="LandCoverFraction_Forest">
 </div>
 
 <div style="float:left;"><!-- show when not timeline which used v2/observation API -->
@@ -182,7 +194,7 @@ Pass a list in the properties column.
 
 Yarn Build into [dist/jobs folder](../../dist/jobs/)
 
-The client-side version of the following resides within index.html and uses  
+The client-side version of the following resides within [docs/jobs/index.html](../../docs/jobs/) and uses  
 [components/data-loader-earth.js](../../docs/components/data-loader-earth.js).
 
 <!--
