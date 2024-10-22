@@ -1,8 +1,7 @@
 [Data Pipeline](../data-pipeline/) and [Active Projects](/projects)
 # UN Goal Timelines
 
-[Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Click then widen your screen to view navigation for 17 UN Goals.  
-Or display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Settings in the upper right.
+[Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Click then widen your screen to view navigation for the UN Goals.  You can display goal links in our left navigation by turning on "Dev Mode" under Settings in the upper right.
 
 ## Projects
 
