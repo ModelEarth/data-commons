@@ -56,8 +56,9 @@ TO DO: Replace the above image with linked images and interactivity by finding a
 
 ## Install and Build Locally
 
-This is an [Observable Framework](https://observablehq.com/framework) project. 
-Run once daily when you start - updates dependencies defined in [package.json](package.json):
+This is an [Observable Framework](https://observablehq.com/framework) project, however you can avoid building for most contributions.
+
+If you do need to build, run when you start to update dependencies defined in [package.json](package.json):
 This is the same as running `yarn install`
 
 	yarn
