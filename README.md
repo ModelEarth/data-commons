@@ -1,8 +1,7 @@
 [Data Pipeline](../data-pipeline/) and [Active Projects](/projects)
 # UN Goal Timelines
 
-[Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Click then widen your screen to view navigation for 17 UN Goals.  
-Or display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Settings in the upper right.
+[Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Click then widen your screen to view navigation for the UN Goals.  You can display goal links in our left navigation by turning on "Dev Mode" under Settings in the upper right.
 
 ## Projects
 
@@ -56,8 +55,9 @@ TO DO: Replace the above image with linked images and interactivity by finding a
 
 ## Install and Build Locally
 
-This is an [Observable Framework](https://observablehq.com/framework) project. 
-Run once daily when you start - updates dependencies defined in [package.json](package.json):
+This is an [Observable Framework](https://observablehq.com/framework) project, however you can avoid building for most contributions.
+
+If you do need to build, run when you start to update dependencies defined in [package.json](package.json):
 This is the same as running `yarn install`
 
 	yarn
