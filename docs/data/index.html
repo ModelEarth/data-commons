@@ -84,7 +84,36 @@ function loadGoalsDropdown(theme,csvPath) {
               console.log("data.key: ");
               console.log(data[i]);
               if (data[i].Title) {
-                goalsString = goalsString + data[i].Title + "<br>";
+                //goalsString = goalsString + data[i].Title + "<br>";
+              }
+              if (data[i].DCID) {
+                if (data[i].Scope) {
+                  const scopeList = data[i].Scope.replace(/\s*,\s*/g, ',').split(',');
+
+                  scopeList.forEach(function(scope) {
+                    //goalsString = goalsString + scope + "<br>";
+
+                    goalsString = goalsString + "<a href='timelines/air/" + data[i].DCID + "_" + scope.toLowerCase() + "_data_timeline.csv'>" + data[i].Title + "</a> (" + scope + ")<br>";
+                    if (scope.toLowerCase() == "county") {
+                        data[i].DCID
+
+                        // Add option if it doesn't already exist
+                        //if (!optionExists) {
+                            const option = document.createElement('option');
+                            option.value = data[i].DCID; // Set value dynamically from data[i].DCID
+                            option.text = createLabelFromDCID(data[i].DCID);
+                            dcidSelect.add(option);
+                        //}
+
+                    }
+                  });
+                  goalsString = goalsString + "<hr>";
+                } else {
+
+                  goalsString = goalsString + "<a href='timelines/air/" + data[i].DCID + "_country_data_timeline.csv'>" + data[i].Title + "</a><br>";
+
+                  //goalsString = goalsString + "<a href='timelines/air/Annual_Amount_Emissions_CarbonDioxide_country_data_timeline.csv'>" + data[i].Title + "</a><br>";
+                }
               }
           }
         }
