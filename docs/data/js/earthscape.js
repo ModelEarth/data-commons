@@ -149,9 +149,9 @@ function getUrbanDensityForYear(data, year) {
 // For county chart - entityId is geoId of the state, eg, geoId/06 for California
 // TO DO - Make genertic by making county interchangable with country, state and zip code datasets.
 
-async function getTimelineChart(dcidVariable, entityId, showAll, chartText) {
+async function getTimelineChart(chartVariable, entityId, showAll, chartText) {
     // Fetch all geoIds for counties
-    const response = await fetch(`https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&entity.expression=${entityId}%3C-containedInPlace%2B%7BtypeOf%3ACounty%7D&select=date&select=entity&select=value&select=variable&variable.dcids=${dcidVariable}`, {
+    const response = await fetch(`https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&entity.expression=${entityId}%3C-containedInPlace%2B%7BtypeOf%3ACounty%7D&select=date&select=entity&select=value&select=variable&variable.dcids=${chartVariable}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -163,7 +163,7 @@ async function getTimelineChart(dcidVariable, entityId, showAll, chartText) {
     const data = await response.json();
 
     // Use the geoId list to fetch respective county + state names
-    const geoIds = Object.keys(data.byVariable[dcidVariable].byEntity);
+    const geoIds = Object.keys(data.byVariable[chartVariable].byEntity);
     const response2 = await fetch('https://api.datacommons.org/v2/node?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI', {
         method: 'POST',
         headers: {
@@ -189,7 +189,7 @@ async function getTimelineChart(dcidVariable, entityId, showAll, chartText) {
     })
 
     // Fetch observational data using geoIds list
-    const url = `https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&variable.dcids=${dcidVariable}&${geoIds.map(id => `entity.dcids=${id}`).join('&')}`
+    const url = `https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&variable.dcids=${chartVariable}&${geoIds.map(id => `entity.dcids=${id}`).join('&')}`
     const response3 = await fetch(url, {
         method: 'POST',
         headers: {
@@ -207,7 +207,7 @@ async function getTimelineChart(dcidVariable, entityId, showAll, chartText) {
     for (const geoId in countyData) {
         formattedData.push({
             county: `${countyData[geoId].name}, ${countyData[geoId].state}`,
-            observations: data3.byVariable[dcidVariable].byEntity[geoId].orderedFacets[0]['observations']
+            observations: data3.byVariable[chartVariable].byEntity[geoId].orderedFacets[0]['observations']
         })
     }
 
@@ -248,6 +248,19 @@ async function getTimelineChart(dcidVariable, entityId, showAll, chartText) {
         };
     });
 
+    const datasets1 = selectedData.map(county => {
+        return {
+            label: county.county,
+            data: years.map(year => {
+                const observation = county.observations.find(obs => obs.date === year);
+                return observation ? observation.value : null;
+            }),
+            backgroundColor: 'rgba(' + Math.floor(Math.random() * 256) + ', ' + Math.floor(Math.random() * 256) + ', ' + Math.floor(Math.random() * 256) + ',0.2)',
+            borderColor: 'rgba(0,0,0,0)',
+            fill: true
+        };
+    });
+
     const config = {
         type: 'line',
         data: {
@@ -282,12 +295,58 @@ async function getTimelineChart(dcidVariable, entityId, showAll, chartText) {
         }
     };
 
+      const data1 = {
+        labels: years,
+        datasets: datasets1
+      };
+
+    const config1 = {
+            type: 'line',
+            data: data1,
+            options: {
+              responsive: true,
+              plugins: {
+                title: {
+                  display: true,
+                  text: (ctx) => 'County Populations'
+                },
+                tooltip: {
+                  mode: 'index'
+                },
+              },
+              interaction: {
+                mode: 'nearest',
+                axis: 'x',
+                intersect: false
+              },
+            scales: {
+              x: {
+                title: {
+                  display: true,
+                  text: 'Years'
+                }
+              },
+              y: {
+                stacked: true,
+                title: {
+                  display: true,
+                  text: 'County Population'
+                } 
+              }
+            }
+            }
+    }
+
     // Delete chart if it already exists
     if (timelineChart instanceof Chart) {
         timelineChart.destroy();
     }
     const ctx = document.getElementById('timelineChart').getContext('2d');
     timelineChart = new Chart(ctx, config);
+
+    if (lineAreaChart instanceof Chart) {
+        lineAreaChart.destroy();
+    }
+    const ctx1 = document.getElementById('lineAreaChart');
+    lineAreaChart = new Chart(ctx1, config1);
 }
-
-
