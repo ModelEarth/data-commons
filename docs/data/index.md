@@ -1,9 +1,12 @@
 [Data Commons](../../)
 
-# UN Goal Timelines - Data Pull
+# Goal Timelines - Data Pull
 
-Our [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) pulls timeline data DCID values from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet UN goal tabs</a>
+The Google DCID values for our timelines reside in our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet UN goal tabs</a>.  
+Our timeline charts use javascript to pull directly from the Google Data Commons API.  
 Scroll down to see Air and Water topics from our Google Sheet tabs.
+
+For python output, our [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) pulls timeline data DCID values from our Google Sheet.
 
 Checkout our [Data Commons pull for navigation map-filters](/localsite/info/data/map-filters)
 
