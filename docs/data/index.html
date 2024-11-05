@@ -72,7 +72,7 @@ document.addEventListener('hashChangeEvent', function (elem) {
 }, false);
 
 function updateDcidSelect(scope) {
-    const dcidSelect = document.getElementById('dcid_select');
+    const dcidSelect = document.getElementById('chartVariable');
     dcidSelect.innerHTML = ''; // Clear existing options
 
     // Define the new options based on the scope
@@ -219,7 +219,7 @@ function loadGoalsDropdown(theme,csvPath) {
                             const option = document.createElement('option');
                             option.value = data[i].DCID; // Set value dynamically from data[i].DCID
                             option.text = createLabelFromDCID(data[i].DCID);
-                            dcidSelect.add(option);
+                            chartVariable.add(option);
                         //}
 
                     }
