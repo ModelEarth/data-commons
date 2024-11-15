@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>UN Goal Timelines - Data Pull | Data Commons</title>
+<title>Goal Timelines - Data Pull | Data Commons</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.css">
@@ -23,18 +23,15 @@ import "../_observablehq/client.js";
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
 <p><a href="../../">Data Commons</a></p>
-<h1 id="un-goal-timelines---data-pull" tabindex="-1"><a class="observablehq-header-anchor" href="#un-goal-timelines---data-pull">UN Goal Timelines - Data Pull</a></h1>
-<p>Cool: <a href="https://docs.datacommons.org/api/sheets/">Data Commons Sheets add-on</a></p>
-<p>Two Colabs:</p>
-<ol>
-<li>
-<p><a href="https://colab.research.google.com/drive/1riRnKUGNGkJZOU6qJoznAxjySInQjnFQ?usp=sharing">Map Filter Colab</a> outputs for one year for our <a href="#geoview=country">Map Nav</a>. It includes Population, CO2 and Methane.</p>
-</li>
-<li>
-<p><a href="https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing">UN Goals Timelines CoLab</a> and DCIDs from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet UN goal tabs</a></p>
-</li>
-</ol>
-<p>Our util for scope data retrieval <a href="https://github.com/ModelEarth/data-commons/blob/main/docs/data/python/scope-data-utils.py">scope-data-utils.py</a></p>
+<h1 id="goal-timelines---data-pull" tabindex="-1"><a class="observablehq-header-anchor" href="#goal-timelines---data-pull">Goal Timelines - Data Pull</a></h1>
+<p>The Google DCID values for our timelines reside in our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet UN goal tabs</a>.<br>
+Our timeline charts use javascript to pull directly from the Google Data Commons API.<br>
+Scroll down to see Air and Water topics from our Google Sheet tabs.</p>
+<p>For python output, our <a href="https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing">UN Goals Timelines CoLab</a> pulls timeline data DCID values from our Google Sheet.</p>
+<p>Checkout our <a href="/localsite/info/data/map-filters">Data Commons pull for navigation map-filters</a></p>
+<p>Cool: <a href="https://docs.datacommons.org/api/sheets/">Data Commons Google Sheet add-on</a></p>
+<hr>
+<p>TO DO: Document and create examples of our util for scope data retrieval <a href="https://github.com/ModelEarth/data-commons/blob/main/docs/data/python/scope-data-utils.py">scope-data-utils.py</a></p>
 <p>TO DO: Update our UN Goals Colab to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a> - Priyanka, Alexandra, everyone</p>
 <!--
 [Our Run Models Colab](https://colab.research.google.com/drive/1zu0WcCiIJ5X3iN1Hd1KSW4dGn0JuodB8?usp=sharing#scrollTo=Z12cWU4y09on) already includes a process for saving CSV files to GitHub. The relevant part happens around saving the integrated dataset to the repo.
@@ -46,8 +43,10 @@ Abhishek L may also have .ipynb files that generate .csv files locally. The outp
 <!--
 TO DO: Also update our [Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
 -->
-<p>TO DO: In the UN Goals Colab, the <a href="https://github.com/ModelEarth/community-data/blob/master/locations/datacommons/country.csv">country.csv timeline output Abhishek created</a> can be output to data-commons/docs/data/air/[dcid].csv.<br>
-Then delete the country.csv file</p>
+<!--
+TO DO: In the UN Goals Colab, the [country.csv timeline output Abhishek created](https://github.com/ModelEarth/community-data/tree/master/locations/datacommons) can be output to data-commons/docs/data/air/[dcid].csv.  
+Then delete the country.csv file
+-->
 <p>TO DO: Update earthscape.js to also display <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US">countries and states</a>. Eliminate datacommons.html after adding to the current page.</p>
 <p>TO DO: The DCID value for the water UN Goal topics is: <code>dc/g/SDG_6</code><br>
 Fix the following so we can update <a href="/feed/view#feed=water">/feed/view/#feed=water</a> to pull the water nav DCID</p>
