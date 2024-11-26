@@ -1,0 +1,228 @@
+availableDate: 12/17/2019
+brandName: BEST CHOICE
+brandOwner: Associated Wholesale Grocers, Inc.
+brandedFoodCategory: Fruit & Vegetable Juice, Nectars & Fruit Drinks
+dataSource: LI
+dataType: Branded
+description: APPLE
+discontinuedDate: ''
+fdcId: 2117388
+foodAttributes:
+- id: 2325326
+  name: Added Package Weight
+  value: 9
+foodClass: Branded
+foodComponents: []
+foodNutrients:
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25213844
+  nutrient:
+    id: 1003
+    name: Protein
+    number: '203'
+    rank: 600
+    unitName: g
+  type: FoodNutrient
+- amount: 11.67
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25213848
+  nutrient:
+    id: 2000
+    name: Total Sugars
+    number: '269'
+    rank: 1510
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25213845
+  nutrient:
+    id: 1004
+    name: Total lipid (fat)
+    number: '204'
+    rank: 800
+    unitName: g
+  type: FoodNutrient
+- amount: 11.67
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25213846
+  nutrient:
+    id: 1005
+    name: Carbohydrate, by difference
+    number: '205'
+    rank: 1110
+    unitName: g
+  type: FoodNutrient
+- amount: 15.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25213849
+  nutrient:
+    id: 1093
+    name: Sodium, Na
+    number: '307'
+    rank: 5800
+    unitName: mg
+  type: FoodNutrient
+- amount: 46.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25213847
+  nutrient:
+    id: 1008
+    name: Energy
+    number: '208'
+    rank: 300
+    unitName: kcal
+  type: FoodNutrient
+- amount: 32.5
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25213850
+  nutrient:
+    id: 1162
+    name: Vitamin C, total ascorbic acid
+    number: '401'
+    rank: 6300
+    unitName: mg
+  type: FoodNutrient
+foodPortions: []
+foodUpdateLog:
+- availableDate: 12/17/2019
+  brandName: BEST CHOICE
+  brandOwner: Associated Wholesale Grocers, Inc.
+  brandedFoodCategory: Fruit & Vegetable Juice, Nectars & Fruit Drinks
+  dataSource: LI
+  dataType: Branded
+  description: APPLE
+  discontinuedDate: ''
+  fdcId: 2117388
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: 070038322238
+  ingredients: FILTERED WATER, APPLE JUICE CONCENTRATE, ASCORBIC ACID (VITAMIN C).
+  marketCountry: United States
+  modifiedDate: 12/17/2019
+  notaSignificantSourceOf: NOT A SIGNIFICANT SOURCE OF CALORIES FROM FAT, SATURATED
+    FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, VITAMIN A, CALCIUM, AND IRON.
+  packageWeight: 64 fl oz/2 Quart/1.89 L
+  publicationDate: 10/28/2021
+  servingSize: 240.0
+  servingSizeUnit: ml
+- availableDate: 12/17/2019
+  brandName: BEST CHOICE
+  brandOwner: Associated Wholesale Grocers, Inc.
+  brandedFoodCategory: Fruit & Vegetable Juice, Nectars & Fruit Drinks
+  dataSource: LI
+  dataType: Branded
+  description: APPLE
+  discontinuedDate: ''
+  fdcId: 1648210
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: 070038322238
+  ingredients: FILTERED WATER, APPLE JUICE CONCENTRATE, ASCORBIC ACID (VITAMIN C).
+  marketCountry: United States
+  modifiedDate: 12/17/2019
+  publicationDate: 3/19/2021
+  servingSize: 240.0
+  servingSizeUnit: ml
+- availableDate: 12/17/2019
+  brandName: BEST CHOICE
+  brandOwner: Associated Wholesale Grocers, Inc.
+  brandedFoodCategory: Fruit & Vegetable Juice, Nectars & Fruit Drinks
+  dataSource: LI
+  dataType: Branded
+  description: APPLE
+  discontinuedDate: ''
+  fdcId: 1356023
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: 070038322238
+  ingredients: FILTERED WATER, APPLE JUICE CONCENTRATE, ASCORBIC ACID (VITAMIN C).
+  marketCountry: United States
+  modifiedDate: 12/17/2019
+  notaSignificantSourceOf: ''
+  packageWeight: ''
+  publicationDate: 2/26/2021
+  servingSize: 240.0
+  servingSizeUnit: ml
+  subbrandName: ''
+- availableDate: 12/17/2019
+  brandOwner: Associated Wholesale Grocers, Inc.
+  brandedFoodCategory: Fruit & Vegetable Juice, Nectars & Fruit Drinks
+  dataSource: LI
+  dataType: Branded
+  description: APPLE
+  discontinuedDate: ''
+  fdcId: 1006981
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: 070038322238
+  householdServingFullText: 8 OZA
+  ingredients: FILTERED WATER, APPLE JUICE CONCENTRATE, ASCORBIC ACID (VITAMIN C).
+  marketCountry: United States
+  modifiedDate: 12/17/2019
+  publicationDate: 6/26/2020
+  servingSize: 240.0
+  servingSizeUnit: ml
+- availableDate: 12/17/2019
+  brandOwner: Associated Wholesale Grocers, Inc.
+  brandedFoodCategory: Fruit & Vegetable Juice, Nectars & Fruit Drinks
+  dataSource: LI
+  dataType: Branded
+  description: APPLE
+  discontinuedDate: ''
+  fdcId: 871094
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: 070038322238
+  householdServingFullText: 8 OZA
+  ingredients: FILTERED WATER, APPLE JUICE CONCENTRATE, ASCORBIC ACID (VITAMIN C).
+  marketCountry: United States
+  modifiedDate: 12/17/2019
+  publicationDate: 5/28/2020
+  servingSize: 240.0
+  servingSizeUnit: ml
+gtinUpc: 070038322238
+ingredients: FILTERED WATER, APPLE JUICE CONCENTRATE, ASCORBIC ACID (VITAMIN C).
+labelNutrients:
+  calories:
+    value: 110
+  carbohydrates:
+    value: 28.0
+  fat:
+    value: 0.0
+  protein:
+    value: 0.0
+  sodium:
+    value: 36.0
+  sugars:
+    value: 28.0
+marketCountry: United States
+modifiedDate: 12/17/2019
+notaSignificantSourceOf: NOT A SIGNIFICANT SOURCE OF CALORIES FROM FAT, SATURATED
+  FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, VITAMIN A, CALCIUM, AND IRON.
+packageWeight: 64 fl oz/2 Quart/1.89 L
+publicationDate: 10/28/2021
+servingSize: 240.0
+servingSizeUnit: ml

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Good Paying Jobs | Data Commons</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../_import/components/data_loader.a470957d.js">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
+<script type="module">
+
+import {define} from "../_observablehq/client.js";
+
+define({id: "7938cf84", outputs: ["addSuggestionToInput"], body: () => {
+  function addSuggestionToInput(suggestion, inputId) {
+    document.getElementById(inputId).value = suggestion;
+  }
+
+  // Event listeners for suggestion bubbles
+  document.querySelectorAll('.suggestion-bubble').forEach(item => {
+    item.addEventListener('click', event => {
+      // Get the suggestion bubble text
+      const suggestion = event.target.innerText;
+      // Get the corresponding input field id
+      const inputId = event.target.parentNode.nextElementSibling.id;
+      // Add suggestion to the input field
+      addSuggestionToInput(suggestion, inputId);
+    });
+  });
+return {addSuggestionToInput};
+}});
+
+define({id: "b85bc961", outputs: ["loadDataCommons","displayJsonData"], body: async () => {
+const {loadDataCommons, displayJsonData} = await import("../_import/components/data_loader.a470957d.js");
+  
+return {loadDataCommons,displayJsonData};
+}});
+
+define({id: "1a028a3e", inputs: ["loadDataCommons","displayJsonData"], body: (loadDataCommons,displayJsonData) => {
+  document.getElementById('loadDataButton').addEventListener('click', () => 
+    {
+        const apiKey = 'AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI';
+        const dcidInput = document.getElementById('dcidInput').value;
+        const propertyInput = document.getElementById('propertyInput').value;
+
+        console.log('DCID:', dcidInput);
+        console.log('Property:', propertyInput);
+
+        loadDataCommons(apiKey, dcidInput, propertyInput).then(data => {
+            console.log(data);
+            displayJsonData(data);
+            })
+                .catch(error => {
+                    console.error('Error loading data:', error);
+            });
+        
+    }
+  );
+}});
+
+define({id: "fddc5e6c", body: () => {
+  // Download JSON button click event
+  document.getElementById("downloadButton").addEventListener("click", function() {
+    const resultData = document.getElementById("resultContainer").textContent;
+    const data = "data:text/json;charset=utf-8," + encodeURIComponent(resultData);
+    const downloadButton = document.createElement("a");
+    downloadButton.setAttribute("href", data);
+    downloadButton.setAttribute("download", "data.json");
+    downloadButton.click();
+  });
+}});
+
+</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#api-demo">API Demo</a></li>
+<li class="observablehq-secondary-link"><a href="#api-examples">API Examples</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<p><a href="../">Data Commons</a></p>
+<h1 id="good-paying-jobs" tabindex="-1"><a class="observablehq-header-anchor" href="#good-paying-jobs">Good Paying Jobs</a></h1>
+<p>Goal 1. No Poverty - Good Paying Jobs and Assistance</p>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+  }
+<p>button {
+background-color: #4CAF50;
+color: white;
+padding: 10px 15px;
+margin: 10px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}</p>
+<p>label {
+display: block;
+margin: 10px 0;
+}</p>
+<p>input {
+padding: 8px;
+width: 100%;
+box-sizing: border-box;
+margin-bottom: 10px;
+}</p>
+<p>#resultContainer {
+margin-top: 20px;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}</p>
+<p>.suggestion-container {
+margin-top: 5px;
+}</p>
+<p>.suggestion-bubble {
+display: inline-block;
+padding: 5px 10px;
+margin-right: 5px;
+cursor: pointer;
+border-radius: 4px;
+border: 1px solid white; /* Changed border color to white */
+}</p>
+<p>.suggestion-bubble:hover {
+background-color: yellow;
+}
+.bottomInput {
+background-color: #ccc;
+padding: 10px;
+}
+.bottomInputX {
+position: fixed;
+background-color: #ccc;
+left: 0;
+bottom: 0;
+top: 300px;
+}
+</style><p></p>
+<h2 id="api-demo" tabindex="-1"><a class="observablehq-header-anchor" href="#api-demo">API Demo</a></h2>
+<p>You can find the desired DCID and property from these sources:</p>
+<ul>
+<li><a href="https://datacommons.org/place">Data Commons Place Browser</a></li>
+<li><a href="https://datacommons.org/tools/statvar">Data Commons StatVar Browser</a></li>
+<li><a href="https://datacommons.org/browser/">Data Commons Browser</a></li>
+</ul>
+<p>For API examples, you can check:</p>
+<ul>
+<li><a href="https://docs.datacommons.org/api/rest/v2">Data Commons REST API Documentation</a></li>
+</ul>
+<p>Scroll down for more examples.</p>
+<div class="bottomInput">
+<div>
+<label for="dcidInput">Enter DCID:</label>
+<div class="suggestion-container" id="dcidSuggestions">
+<span class="suggestion-bubble">geoId/06</span>
+<span class="suggestion-bubble">Count\_Jobs\_EconomicDevelopmentAdministration\_JobsCreated</span>
+<span class="suggestion-bubble">geoId/13</span>
+</div>
+<input type="text" id="dcidInput" placeholder="e.g., geoId/06">
+</div>
+<div>
+<label for="propertyInput">Enter Property:</label>
+<div class="suggestion-container" id="propertySuggestions">
+<span class="suggestion-bubble">&lt;-</span>
+<span class="suggestion-bubble">-&gt;</span>
+<span class="suggestion-bubble">-&gt;*</span>
+<span class="suggestion-bubble">-&gt;[nearbyPlaces,landArea]</span>
+</div>
+<input type="text" id="propertyInput" placeholder="e.g., <-">
+</div>
+<p><button id="downloadButton" style="float:right;background-color:#777 !important">Download</button>
+<button id="loadDataButton">Load</button></p>
+</div>
+<div id="resultContainer"></div><br>
+<br>
+<h2 id="api-examples" tabindex="-1"><a class="observablehq-header-anchor" href="#api-examples">API Examples</a></h2>
+<p>Single DCID: Displays a list of properties using the symbol <code>-&gt;</code>.</p>
+<p>For example, to find the properties related to <code>geoId/06</code>:</p>
+<ul>
+<li>DCID: geoId/06</li>
+<li>Property: -&gt;</li>
+</ul>
+<p>Single DCID: Displays all values of its properties using <code>-&gt;*</code> to indicate all records.</p>
+<p>For example, to display all the properties of <code>Count_Jobs_EconomicDevelopmentAdministration_JobsCreated</code>:</p>
+<ul>
+<li>DCID: Count_Jobs_EconomicDevelopmentAdministration_JobsCreated</li>
+<li>Property: -&gt;*</li>
+</ul>
+<p>To display multiple properties of a single DCID, pass a list in the properties column.</p>
+<p>For example, to display <code>nearbyPlaces</code> and <code>landArea</code> of Georgia:</p>
+<ul>
+<li>DCID: geoID/13</li>
+<li>Property: -&gt;[nearbyPlaces, landArea]</li>
+</ul>
+<div id="cell-7938cf84" class="observablehq observablehq--block"></div>
+<div id="cell-b85bc961" class="observablehq observablehq--block"></div>
+<div id="cell-1a028a3e" class="observablehq observablehq--block"></div>
+<div id="cell-fddc5e6c" class="observablehq observablehq--block"></div>
+</main>
+<footer id="observablehq-footer">
+<div><style>#observablehq-footer{margin-top:40px;border-top:1px solid #ccc;padding-top:10px;}</style>Built with <a href="https://observablehq.com" target="_blank">Observable</a> and <a href="https://DataCommons.org" target="_blank">Google Data Commons</a> by our <a href="/projects/">Model.earth Project Team</a>.</div>
+</footer>
+</div>

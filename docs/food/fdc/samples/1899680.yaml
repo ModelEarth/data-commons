@@ -1,0 +1,274 @@
+availableDate: 2/17/2018
+brandName: CALIFORNIA GOLD
+brandOwner: Apple Valley Farms, Inc
+brandedFoodCategory: Frozen Poultry, Chicken & Turkey
+dataSource: LI
+dataType: Branded
+description: CHICKEN THIGH
+discontinuedDate: ''
+fdcId: 1899680
+foodAttributes:
+- id: 2024419
+  name: Added Package Weight
+  value: 9
+foodClass: Branded
+foodComponents: []
+foodNutrients:
+- amount: 0.88
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 23985809
+  nutrient:
+    id: 2000
+    name: Total Sugars
+    number: '269'
+    rank: 1510
+    unitName: g
+  type: FoodNutrient
+- amount: 16.67
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 23985806
+  nutrient:
+    id: 1004
+    name: Total lipid (fat)
+    number: '204'
+    rank: 800
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 23985810
+  nutrient:
+    id: 1079
+    name: Fiber, total dietary
+    number: '291'
+    rank: 1200
+    unitName: g
+  type: FoodNutrient
+- amount: 193.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 23985808
+  nutrient:
+    id: 1008
+    name: Energy
+    number: '208'
+    rank: 300
+    unitName: kcal
+  type: FoodNutrient
+- amount: 0.88
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 23985807
+  nutrient:
+    id: 1005
+    name: Carbohydrate, by difference
+    number: '205'
+    rank: 1110
+    unitName: g
+  type: FoodNutrient
+- amount: 66.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 23985813
+  nutrient:
+    id: 1093
+    name: Sodium, Na
+    number: '307'
+    rank: 5800
+    unitName: mg
+  type: FoodNutrient
+- amount: 18.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 23985811
+  nutrient:
+    id: 1087
+    name: Calcium, Ca
+    number: '301'
+    rank: 5300
+    unitName: mg
+  type: FoodNutrient
+- amount: 14.04
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 23985805
+  nutrient:
+    id: 1003
+    name: Protein
+    number: '203'
+    rank: 600
+    unitName: g
+  type: FoodNutrient
+- amount: 0.63
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 23985812
+  nutrient:
+    id: 1089
+    name: Iron, Fe
+    number: '303'
+    rank: 5400
+    unitName: mg
+  type: FoodNutrient
+- amount: 88.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 23985814
+  nutrient:
+    id: 1104
+    name: Vitamin A, IU
+    number: '318'
+    rank: 7500
+    unitName: IU
+  type: FoodNutrient
+- amount: 1.1
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 23985815
+  nutrient:
+    id: 1162
+    name: Vitamin C, total ascorbic acid
+    number: '401'
+    rank: 6300
+    unitName: mg
+  type: FoodNutrient
+- amount: 3.95
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 23985818
+  nutrient:
+    id: 1258
+    name: Fatty acids, total saturated
+    number: '606'
+    rank: 9700
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 23985817
+  nutrient:
+    id: 1257
+    name: Fatty acids, total trans
+    number: '605'
+    rank: 15400
+    unitName: g
+  type: FoodNutrient
+- amount: 83.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 23985816
+  nutrient:
+    id: 1253
+    name: Cholesterol
+    number: '601'
+    rank: 15700
+    unitName: mg
+  type: FoodNutrient
+foodPortions: []
+foodUpdateLog:
+- availableDate: 2/17/2018
+  brandName: CALIFORNIA GOLD
+  brandOwner: Apple Valley Farms, Inc
+  brandedFoodCategory: Frozen Poultry, Chicken & Turkey
+  dataSource: LI
+  dataType: Branded
+  description: CHICKEN THIGH
+  discontinuedDate: ''
+  fdcId: 1899680
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: '852782001702'
+  ingredients: CHICKEN THIGH, WATER, SEASONING (SEA SALT, EVAPORATED CANE SYRUP, SODIUM
+    CARBONATE, NATURAL FLAVORING).
+  marketCountry: United States
+  modifiedDate: 2/17/2018
+  packageWeight: 64 oz/4 lbs/1814 g
+  publicationDate: 7/29/2021
+  servingSize: 114.0
+  servingSizeUnit: g
+- availableDate: 2/17/2018
+  brandName: CALIFORNIA GOLD
+  brandOwner: Apple Valley Farms, Inc
+  brandedFoodCategory: Frozen Poultry, Chicken & Turkey
+  dataSource: LI
+  dataType: Branded
+  description: CHICKEN THIGH
+  discontinuedDate: ''
+  fdcId: 1783856
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: '852782001702'
+  ingredients: CHICKEN THIGH, WATER, SEASONING (SEA SALT, EVAPORATED CANE SYRUP, SODIUM
+    CARBONATE, NATURAL FLAVORING).
+  marketCountry: United States
+  modifiedDate: 2/17/2018
+  packageWeight: 1814 g
+  publicationDate: 6/17/2021
+  servingSize: 114.0
+  servingSizeUnit: g
+gtinUpc: '852782001702'
+ingredients: CHICKEN THIGH, WATER, SEASONING (SEA SALT, EVAPORATED CANE SYRUP, SODIUM
+  CARBONATE, NATURAL FLAVORING).
+labelNutrients:
+  calcium:
+    value: 20.5
+  calories:
+    value: 220
+  carbohydrates:
+    value: 1.0
+  cholesterol:
+    value: 94.6
+  fat:
+    value: 19.0
+  fiber:
+    value: 0.0
+  iron:
+    value: 0.718
+  protein:
+    value: 16.0
+  saturatedFat:
+    value: 4.5
+  sodium:
+    value: 75.2
+  sugars:
+    value: 1.0
+  transFat:
+    value: 0.0
+marketCountry: United States
+modifiedDate: 2/17/2018
+packageWeight: 64 oz/4 lbs/1814 g
+publicationDate: 7/29/2021
+servingSize: 114.0
+servingSizeUnit: g

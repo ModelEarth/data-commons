@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Emission Reports | Data Commons</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../../_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../../_observablehq/theme-air,near-midnight.css">
+<link rel="modulepreload" href="../../_observablehq/client.js">
+<link rel="modulepreload" href="../../_observablehq/runtime.js">
+<link rel="modulepreload" href="../../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../../_npm/d3-dsv@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3@7.9.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/@observablehq/plot@0.6.16/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-array@3.2.4/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-axis@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-brush@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-chord@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-color@3.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-contour@4.0.2/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-delaunay@6.0.4/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-dispatch@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-drag@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-ease@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-fetch@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-force@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-format@3.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-geo@3.1.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-hierarchy@3.1.2/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-interpolate@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-path@3.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-polygon@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-quadtree@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-random@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-scale@4.0.2/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-scale-chromatic@3.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-selection@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-shape@3.2.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-time@3.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-time-format@4.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-timer@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-transition@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-zoom@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/isoformat@0.2.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/interval-tree-1d@1.0.4/+esm.js">
+<link rel="modulepreload" href="../../_npm/internmap@2.0.3/+esm.js">
+<link rel="modulepreload" href="../../_npm/delaunator@5.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/binary-search-bounds@2.0.5/+esm.js">
+<link rel="modulepreload" href="../../_npm/robust-predicates@3.0.2/+esm.js">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
+<script type="module">
+
+import {define} from "../../_observablehq/client.js";
+import {registerFile} from "../../_observablehq/stdlib.js";
+
+registerFile("./data/API_EN.ATM.CO2E.PC_DS2_zh_csv_v2_45186.csv", {"name":"./data/API_EN.ATM.CO2E.PC_DS2_zh_csv_v2_45186.csv","mimeType":"text/csv","path":"../../_file/air/emissions/data/API_EN.ATM.CO2E.PC_DS2_zh_csv_v2_45186.14a1f42a.csv"});
+
+define({id: "bf1ff6d1", inputs: ["FileAttachment"], outputs: ["emissionData"], body: (FileAttachment) => {
+//const emissionData = FileAttachment("data/emission.csv").csv({typed: true});
+const emissionData = FileAttachment("data/API_EN.ATM.CO2E.PC_DS2_zh_csv_v2_45186.csv").csv({typed: true});
+return {emissionData};
+}});
+
+define({id: "42786ffb", inputs: ["display","emissionData"], body: (display,emissionData) => {
+display(emissionData)
+}});
+
+define({id: "da263bad", outputs: ["transformEmissionData"], body: () => {
+function transformEmissionData(emissionData) {
+  // Initialize the transformed data array
+  let transformedData = [];
+  
+  // Define the range of years you're interested in
+  // Assuming you start from 1990 since your data seems to have valid entries from then
+  const startYear = 1990;
+  const endYear = 2023; // Adjust based on your needs
+  const years = Array.from({length: endYear - startYear + 1}, (v, k) => k + startYear);
+
+  // Create a template object for each year
+  years.forEach(year => {
+    let yearData = {year: year};
+    
+    // Populate the year object with emission data from each country
+    emissionData.forEach(countryData => {
+      const emissionValue = countryData[year];
+      // Check if the emission data for the year exists; if not, you might skip or set a default
+      if (emissionValue !== null && emissionValue !== undefined) {
+        const countryCode = countryData['Country Code']; // Or use 'Country Code' if preferable
+        yearData[countryCode] = emissionValue;
+      }
+    });
+    
+    // Add the populated year object to the transformed data array
+    transformedData.push(yearData);
+  });
+  
+  return transformedData;
+}
+
+return {transformEmissionData};
+}});
+
+define({id: "e4ada0cf", inputs: ["transformEmissionData","emissionData"], outputs: ["transformedEmissionData"], body: (transformEmissionData,emissionData) => {
+const transformedEmissionData = transformEmissionData(emissionData);
+return {transformedEmissionData};
+}});
+
+define({id: "677ddf71", inputs: ["display","transformedEmissionData"], body: (display,transformedEmissionData) => {
+display(transformedEmissionData)
+}});
+
+define({id: "1cd2072e", inputs: ["transformedEmissionData","d3","display"], outputs: ["keys","dataReadyForStack","series"], body: (transformedEmissionData,d3,display) => {
+// Assuming `transformedEmissionData` is the output from the previous transformation,
+// and D3 library is already included in your environment.
+
+// 1. Determine keys: all country names, assuming they are consistent across all years.
+// If your data structure ensures all years have the same countries, you can just take the keys from the first year.
+let keys = Object.keys(transformedEmissionData[0]).filter(key => key !== 'year');
+
+// If your environment supports dynamic imports or if d3 is already in scope, you can proceed with the stack.
+// Otherwise, ensure d3 is correctly imported and accessible here.
+
+// 2. Prepare the data for D3 stack.
+// Ensure the data is in an array of objects format, each representing a year.
+let dataReadyForStack = transformedEmissionData; // This assumes data is already in the correct format.
+
+// 3. Apply D3 stack
+let series = d3.stack()
+  .keys(keys)
+  .offset(d3.stackOffsetExpand) // This normalizes the stack.
+  (dataReadyForStack);
+
+display(series)
+return {keys,dataReadyForStack,series};
+}});
+
+define({id: "e3b0c442", body: () => {
+
+}});
+
+define({id: "7a1d0c6c", outputs: ["continentRank"], body: () => {
+const continentRank = [
+  "Africa",
+  "Antarctica",
+  "Asia",
+  "Europe",
+  "North America",
+  "Oceania",
+  "South America"
+];
+
+return {continentRank};
+}});
+
+define({id: "34ce5bad", inputs: ["d3"], outputs: ["countryByContinent"], body: (d3) => {
+async function countryByContinent() {
+  // URL to your CSV data source
+  const url = "https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv";
+  
+  // Fetching and parsing the CSV data
+  const data = await d3.csv(url);
+
+ // Creating a map where each country ('code') is associated with its 'region'
+  return new Map(data.map(d => [d['alpha-3'], d['region']]).filter(([code, region]) => region && region.trim().length > 0));
+
+}
+
+countryByContinent().then(map => console.log(map));
+return {countryByContinent};
+}});
+
+define({id: "1df9cc56", inputs: ["countryByContinent","Plot"], outputs: ["countryContinentMap","emissionChart"], body: async (countryByContinent,Plot) => {
+const countryContinentMap = await countryByContinent();
+function emissionChart(transformedEmissionData, {width}) {
+  // Prepare the data - assuming transformedEmissionData is ready for plotting
+  // For example, let's plot the total emissions per continent over the years
+  
+  // Aggregate emissions data by continent
+  const dataByContinent = transformedEmissionData.map(yearData => {
+    const output = {year: yearData.year};
+    for (const country of Object.keys(yearData).filter(k => k !== 'year')) {
+      const continent = countryContinentMap.get(country);
+      if (!output[continent]) output[continent] = 0;
+      output[continent] += yearData[country];
+    }
+    return output;
+  });
+
+  // Flatten data for Plot
+  const flatData = [];
+  dataByContinent.forEach(yearData => {
+    for (const [continent, value] of Object.entries(yearData).filter(([k, v]) => k !== 'year')) {
+      flatData.push({year: yearData.year, continent, value});
+    }
+  });
+
+  return Plot.plot({
+    title: "Emission by Continent Over Years",
+    width,
+    height: 300,
+    marginLeft: 50,
+    x: {
+      label: "Year →",
+      domain: transformedEmissionData.map(d => d.year),
+      grid: true
+    },
+    y: {
+      label: "Emissions →",
+      grid: true
+    },
+    color: {
+      legend: true
+    },
+    marks: [
+
+      Plot.areaY(flatData, {x: "year", y: "value", fill: "continent", title: "continent"}),
+      Plot.ruleY([0])
+    ]
+  });
+}
+
+return {countryContinentMap,emissionChart};
+}});
+
+define({id: "47d31cc6", inline: true, inputs: ["resize","emissionChart","transformedEmissionData","display"], body: async (resize,emissionChart,transformedEmissionData,display) => {
+display(await(
+resize((width) => emissionChart(transformedEmissionData, {width}))
+))
+}});
+
+define({id: "7f484dca", inputs: ["display"], body: (display) => {
+display("This is Co2 Emission data")
+}});
+
+</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<h1 id="emission-reports" tabindex="-1"><a class="observablehq-header-anchor" href="#emission-reports">Emission Reports</a></h1>
+<p><strong>View data formats</strong><br>
+<a href="https://github.com/ModelEarth/data-commons/blob/main/docs/air/emissions/data/API_EN.ATM.CO2E.PC_DS2_zh_csv_v2_45186.csv">API_EN.ATM.CO2E.PC_DS2_zh_csv_v2_45186.csv</a> - below<br>
+<a href="https://github.com/ModelEarth/data-commons/blob/main/docs/air/emissions/data/emission.csv">emission.csv</a> - has gap, more decline</p>
+<div id="cell-bf1ff6d1" class="observablehq observablehq--block"></div>
+<div id="cell-42786ffb" class="observablehq observablehq--block observablehq--loading"></div>
+<div id="cell-da263bad" class="observablehq observablehq--block"></div>
+<div id="cell-e4ada0cf" class="observablehq observablehq--block"></div>
+<div id="cell-677ddf71" class="observablehq observablehq--block observablehq--loading"></div>
+<div id="cell-1cd2072e" class="observablehq observablehq--block"></div>
+<div id="cell-e3b0c442" class="observablehq observablehq--block"></div>
+<div id="cell-7a1d0c6c" class="observablehq observablehq--block"></div>
+<div id="cell-34ce5bad" class="observablehq observablehq--block"></div>
+<div id="cell-1df9cc56" class="observablehq observablehq--block"></div>
+<div class="grid grid-cols-1">
+  <div class="card">
+    <span id="cell-47d31cc6" class="observablehq--loading"></span>
+  </div>
+</div>
+<div id="cell-7f484dca" class="observablehq observablehq--block observablehq--loading"></div>
+</main>
+<footer id="observablehq-footer">
+<div><style>#observablehq-footer{margin-top:40px;border-top:1px solid #ccc;padding-top:10px;}</style>Built with <a href="https://observablehq.com" target="_blank">Observable</a> and <a href="https://DataCommons.org" target="_blank">Google Data Commons</a> by our <a href="/projects/">Model.earth Project Team</a>.</div>
+</footer>
+</div>

@@ -1,0 +1,82 @@
+availableDate: 4/12/2022
+brandName: ALOHA TOFU
+brandOwner: Aloha Tofu Factory Inc
+brandedFoodCategory: Other Meats
+dataSource: LI
+dataType: Branded
+description: TOFU
+discontinuedDate: ''
+fdcId: 2294522
+foodAttributes:
+- id: 2572567
+  name: Nutrient Added
+  value: 5
+foodClass: Branded
+foodComponents: []
+foodNutrients:
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 28147506
+  nutrient:
+    id: 2000
+    name: Total Sugars
+    number: '269'
+    rank: 1510
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 28147507
+  nutrient:
+    id: 1257
+    name: Fatty acids, total trans
+    number: '605'
+    rank: 15400
+    unitName: g
+  type: FoodNutrient
+foodPortions: []
+foodUpdateLog:
+- availableDate: 4/12/2022
+  brandName: ALOHA TOFU
+  brandOwner: Aloha Tofu Factory Inc
+  brandedFoodCategory: Other Meats
+  dataSource: LI
+  dataType: Branded
+  description: TOFU
+  discontinuedDate: ''
+  fdcId: 2294522
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: '077254112070'
+  householdServingFullText: 4 oz.
+  ingredients: NON-GMO WHOLE SOYBEANS, WATER, BIG ISLAND DEEP-SEA NIGARI (MAGNESIUM
+    CHLORIDE A COAGULANT), CALCIUM SULFATE (A COAGULANT)
+  marketCountry: United States
+  modifiedDate: 4/12/2022
+  packageWeight: 16 OZ/454 G
+  publicationDate: 5/23/2022
+  servingSize: 113.0
+  servingSizeUnit: g
+  shortDescription: ''
+gtinUpc: '077254112070'
+householdServingFullText: 4 oz.
+ingredients: NON-GMO WHOLE SOYBEANS, WATER, BIG ISLAND DEEP-SEA NIGARI (MAGNESIUM
+  CHLORIDE A COAGULANT), CALCIUM SULFATE (A COAGULANT)
+labelNutrients:
+  sugars:
+    value: 0.0
+  transFat:
+    value: 0.0
+marketCountry: United States
+modifiedDate: 4/12/2022
+packageWeight: 16 OZ/454 G
+publicationDate: 5/23/2022
+servingSize: 113.0
+servingSizeUnit: g
+shortDescription: ''

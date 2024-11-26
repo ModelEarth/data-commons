@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Weather | Data Commons</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../../_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../../_observablehq/theme-air,near-midnight.css">
+<link rel="modulepreload" href="../../_observablehq/client.js">
+<link rel="modulepreload" href="../../_observablehq/runtime.js">
+<link rel="modulepreload" href="../../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../../_npm/@observablehq/plot@0.6.16/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3@7.9.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/isoformat@0.2.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/interval-tree-1d@1.0.4/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-array@3.2.4/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-axis@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-brush@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-chord@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-color@3.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-contour@4.0.2/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-delaunay@6.0.4/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-dispatch@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-drag@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-dsv@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-ease@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-fetch@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-force@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-format@3.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-geo@3.1.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-hierarchy@3.1.2/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-interpolate@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-path@3.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-polygon@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-quadtree@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-random@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-scale@4.0.2/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-scale-chromatic@3.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-selection@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-shape@3.2.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-time@3.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-time-format@4.1.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-timer@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-transition@3.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/d3-zoom@3.0.0/+esm.js">
+<link rel="modulepreload" href="../../_npm/binary-search-bounds@2.0.5/+esm.js">
+<link rel="modulepreload" href="../../_npm/internmap@2.0.3/+esm.js">
+<link rel="modulepreload" href="../../_npm/delaunator@5.0.1/+esm.js">
+<link rel="modulepreload" href="../../_npm/robust-predicates@3.0.2/+esm.js">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
+<script type="module">
+
+import {define} from "../../_observablehq/client.js";
+import {registerFile} from "../../_observablehq/stdlib.js";
+
+registerFile("./data/forecast.json", {"name":"./data/forecast.json","mimeType":"application/json","path":"../../_file/air/weather/data/forecast.b944f5eb.json"});
+
+define({id: "651cbf70", inputs: ["FileAttachment","display","Plot"], outputs: ["url","script","head","fetchData","temperaturePlot"], body: (FileAttachment,display,Plot) => {
+const url = "https://model.earth/localsite/js/localsite.js?showheader=true&showsearch=true";
+console.log("loadScript seeking: " + url);
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = url;
+var head = document.getElementsByTagName('head')[0];
+head.appendChild(script);
+
+// Important: Remove ".js" from forecast.json.js below:
+// Pre-render json from the .js file into dist _file/air/data
+//const apiWeatherForecast = "data/forecast.json"
+//const forecast = FileAttachment(apiWeatherForecast).json();
+
+//display (forecast); // BUG: Displays: Promise {}
+//display (temperaturePlot(forecast));
+
+async function fetchData() {
+    const forecast = await FileAttachment("data/forecast.json").json()
+    .then(response => {
+      console.log("got it")
+      display(temperaturePlot(response));
+    })
+    .catch(error => {
+        console.error('Error fetching forecast data:', error);
+        //return null; or handle the error appropriately
+    });
+    // return forecast;
+}
+fetchData();
+
+function temperaturePlot(data, {width} = {}) {
+  return Plot.plot({
+    title: "Hourly temperature forecast",
+    width,
+    x: {type: "utc", ticks: "day", label: null},
+    y: {grid: true, inset: 10, label: "Degrees (F)"},
+    marks: [
+      Plot.lineY(data.properties.periods, {
+        x: "startTime",
+        y: "temperature",
+        z: null, // varying color, not series
+        stroke: "temperature",
+        curve: "step-after"
+      })
+    ]
+  });
+}
+
+
+/*
+display(
+  Plot.plot({
+    title: "Hourly temperature forecast",
+    x: {type: "utc", ticks: "day", label: null},
+    y: {grid: true, inset: 10, label: "Degrees (F)"},
+    marks: [
+      Plot.lineY(forecast.properties.periods, {
+        x: "startTime",
+        y: "temperature",
+        z: null, // varying color, not series
+        stroke: "temperature",
+        curve: "step-after"
+      })
+    ]
+  })
+);
+*/
+return {url,script,head,fetchData,temperaturePlot};
+}});
+
+</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<p><a href="../">Air and Climate</a></p>
+<h1 id="weather" tabindex="-1"><a class="observablehq-header-anchor" href="#weather">Weather</a></h1>
+<h2 id="prerender-api.weather.gov-with-.js" tabindex="-1"><a class="observablehq-header-anchor" href="#prerender-api.weather.gov-with-.js">Prerender api.weather.gov with .js</a></h2>
+<p>Saves a file when Observable builds using data/forecast.json.js.<br>
+Added "async function fetchData()" since "display (forecast)"" returned "Promise{}"</p>
+<div id="cell-651cbf70" class="observablehq observablehq--block"></div>
+</main>
+<footer id="observablehq-footer">
+<div><style>#observablehq-footer{margin-top:40px;border-top:1px solid #ccc;padding-top:10px;}</style>Built with <a href="https://observablehq.com" target="_blank">Observable</a> and <a href="https://DataCommons.org" target="_blank">Google Data Commons</a> by our <a href="/projects/">Model.earth Project Team</a>.</div>
+</footer>
+</div>

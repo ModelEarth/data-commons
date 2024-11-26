@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Local Innovation | Data Commons</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="preload" as="style" href="../_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="../_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../_observablehq/stdlib/duckdb.js">
+<link rel="modulepreload" href="../_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="../_npm/@duckdb/duckdb-wasm@1.28.0/+esm.js">
+<link rel="modulepreload" href="../_npm/htl@0.3.1/+esm.js">
+<link rel="modulepreload" href="../_npm/isoformat@0.2.1/+esm.js">
+<link rel="modulepreload" href="../_npm/apache-arrow@17.0.0/+esm.js">
+<link rel="modulepreload" href="../_npm/tslib@2.7.0/+esm.js">
+<link rel="modulepreload" href="../_npm/flatbuffers@24.3.25/+esm.js">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
+<script type="module">
+
+import {define} from "../_observablehq/client.js";
+import {registerFile, FileAttachment} from "../_observablehq/stdlib.js";
+import {registerTable} from "../_observablehq/stdlib/duckdb.js";
+
+registerFile("./data/Flow.parquet", {"name":"./data/Flow.parquet","path":"../_file/innovation/data/Flow.7297939c.parquet"});
+registerTable("US-2020-17schema", FileAttachment("./data/Flow.parquet"));
+
+define({id: "71a1f904", inputs: ["display","Inputs","sql"], body: async (display,Inputs,sql) => {
+display(Inputs.table(await sql`SELECT * FROM "US-2020-17schema" LIMIT 20`));
+}});
+
+</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<p><a href="../">Data Commons</a></p>
+<h1 id="local-innovation" tabindex="-1"><a class="observablehq-header-anchor" href="#local-innovation">Local Innovation</a></h1>
+<p><a href="https://observablehq.com/framework/sql">How to pull DuckDB SQL using Observable</a> and <a href="https://observablehq.com/framework/lib/duckdb">DuckDB in Observable</a></p>
+<p><a href="https://model.earth/OpenFootprint/prep/sql/duckdb/">Our data source</a> - US-2020-17schema.duckdb<br>
+Converted to .parquet files in <a href="https://observablehq.com/d/2898d01446cefef1">Observable Desktop</a> by Kelly Yiou Xie</p>
+<div id="cell-71a1f904" class="observablehq observablehq--block"></div>
+<br>
+<p><strong>Notes</strong><br>
+.duckdb extension is not supported for US-2020-17schema.duckdb<br>
+Error: unknown file type: application/octet-stream (.duckdb)</p>
+<!--
+https://github.com/ModelEarth/OpenFootprint/raw/main/impacts/exiobase/US-source/US-2020-17schema.duckdb
+-->
+<p>DuckDB is generally faster than Pandas for executing SQL queries on large datasets because DuckDB is an in-memory analytical database designed for speed and efficiency.</p>
+<p>Change table names to end with US where XX appears in yaml.</p>
+<!-- 
+Override
+http://localhost:8887/data-commons/dist/_observablehq/theme-air,near-midnight.css
+-->
+<style>
+p {
+  max-width: 100% !important;
+}
+</style></main>
+<footer id="observablehq-footer">
+<div><style>#observablehq-footer{margin-top:40px;border-top:1px solid #ccc;padding-top:10px;}</style>Built with <a href="https://observablehq.com" target="_blank">Observable</a> and <a href="https://DataCommons.org" target="_blank">Google Data Commons</a> by our <a href="/projects/">Model.earth Project Team</a>.</div>
+</footer>
+</div>

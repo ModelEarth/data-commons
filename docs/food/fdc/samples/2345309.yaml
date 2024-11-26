@@ -1,0 +1,699 @@
+dataType: Survey (FNDDS)
+description: Lettuce, raw
+endDate: 12/31/2020
+fdcId: 2345309
+foodAttributes:
+- foodAttributeType:
+    description: Additional descriptions for the food.
+    id: 1001
+    name: Additional Description
+  id: 2660450
+  rank: 1
+  value: lettuce, NFS
+- foodAttributeType:
+    description: Additional descriptions for the food.
+    id: 1001
+    name: Additional Description
+  id: 2660451
+  rank: 2
+  value: iceberg
+- foodAttributeType:
+    description: Generic attributes
+    id: 999
+    name: Attribute
+  id: 2650288
+  name: WWEIA Category number
+  value: '6410'
+- foodAttributeType:
+    description: Generic attributes
+    id: 999
+    name: Attribute
+  id: 2650289
+  name: WWEIA Category description
+  value: Lettuce and lettuce salads
+- foodAttributeType:
+    description: Adjustments made to foods, including moisture changes
+    id: 1002
+    name: Adjustments
+  id: 2667034
+  value: 'Moisture change: 0%'
+foodClass: Survey
+foodCode: '75113000'
+foodNutrients:
+- amount: 1.13
+  id: 28836209
+  nutrient:
+    id: 1003
+    name: Protein
+    number: '203'
+    rank: 600
+    unitName: g
+  type: FoodNutrient
+- amount: 0.14
+  id: 28836210
+  nutrient:
+    id: 1004
+    name: Total lipid (fat)
+    number: '204'
+    rank: 800
+    unitName: g
+  type: FoodNutrient
+- amount: 2.92
+  id: 28836211
+  nutrient:
+    id: 1005
+    name: Carbohydrate, by difference
+    number: '205'
+    rank: 1110
+    unitName: g
+  type: FoodNutrient
+- amount: 14.0
+  id: 28836212
+  nutrient:
+    id: 1008
+    name: Energy
+    number: '208'
+    rank: 300
+    unitName: kcal
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836213
+  nutrient:
+    id: 1018
+    name: Alcohol, ethyl
+    number: '221'
+    rank: 18200
+    unitName: g
+  type: FoodNutrient
+- amount: 95.3
+  id: 28836214
+  nutrient:
+    id: 1051
+    name: Water
+    number: '255'
+    rank: 100
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836215
+  nutrient:
+    id: 1057
+    name: Caffeine
+    number: '262'
+    rank: 18300
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836216
+  nutrient:
+    id: 1058
+    name: Theobromine
+    number: '263'
+    rank: 18400
+    unitName: mg
+  type: FoodNutrient
+- amount: 1.38
+  id: 28836217
+  nutrient:
+    id: 2000
+    name: Sugars, total including NLEA
+    number: '269'
+    rank: 1510
+    unitName: g
+  type: FoodNutrient
+- amount: 1.2
+  id: 28836218
+  nutrient:
+    id: 1079
+    name: Fiber, total dietary
+    number: '291'
+    rank: 1200
+    unitName: g
+  type: FoodNutrient
+- amount: 27.0
+  id: 28836219
+  nutrient:
+    id: 1087
+    name: Calcium, Ca
+    number: '301'
+    rank: 5300
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.64
+  id: 28836220
+  nutrient:
+    id: 1089
+    name: Iron, Fe
+    number: '303'
+    rank: 5400
+    unitName: mg
+  type: FoodNutrient
+- amount: 10.0
+  id: 28836221
+  nutrient:
+    id: 1090
+    name: Magnesium, Mg
+    number: '304'
+    rank: 5500
+    unitName: mg
+  type: FoodNutrient
+- amount: 24.0
+  id: 28836222
+  nutrient:
+    id: 1091
+    name: Phosphorus, P
+    number: '305'
+    rank: 5600
+    unitName: mg
+  type: FoodNutrient
+- amount: 168
+  id: 28836223
+  nutrient:
+    id: 1092
+    name: Potassium, K
+    number: '306'
+    rank: 5700
+    unitName: mg
+  type: FoodNutrient
+- amount: 19.0
+  id: 28836224
+  nutrient:
+    id: 1093
+    name: Sodium, Na
+    number: '307'
+    rank: 5800
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.16
+  id: 28836225
+  nutrient:
+    id: 1095
+    name: Zinc, Zn
+    number: '309'
+    rank: 5900
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.027
+  id: 28836226
+  nutrient:
+    id: 1098
+    name: Copper, Cu
+    number: '312'
+    rank: 6000
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.4
+  id: 28836227
+  nutrient:
+    id: 1103
+    name: Selenium, Se
+    number: '317'
+    rank: 6200
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836228
+  nutrient:
+    id: 1105
+    name: Retinol
+    number: '319'
+    rank: 7430
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 198
+  id: 28836229
+  nutrient:
+    id: 1106
+    name: Vitamin A, RAE
+    number: '320'
+    rank: 7420
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 2370.0
+  id: 28836230
+  nutrient:
+    id: 1107
+    name: Carotene, beta
+    number: '321'
+    rank: 7440
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 2.0
+  id: 28836231
+  nutrient:
+    id: 1108
+    name: Carotene, alpha
+    number: '322'
+    rank: 7450
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 0.2
+  id: 28836232
+  nutrient:
+    id: 1109
+    name: Vitamin E (alpha-tocopherol)
+    number: '323'
+    rank: 7905
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836233
+  nutrient:
+    id: 1114
+    name: Vitamin D (D2 + D3)
+    number: '328'
+    rank: 8700
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836234
+  nutrient:
+    id: 1120
+    name: Cryptoxanthin, beta
+    number: '334'
+    rank: 7460
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836235
+  nutrient:
+    id: 1122
+    name: Lycopene
+    number: '337'
+    rank: 7530
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 1000.0
+  id: 28836236
+  nutrient:
+    id: 1123
+    name: Lutein + zeaxanthin
+    number: '338'
+    rank: 7560
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 6.0
+  id: 28836237
+  nutrient:
+    id: 1162
+    name: Vitamin C, total ascorbic acid
+    number: '401'
+    rank: 6300
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.056
+  id: 28836238
+  nutrient:
+    id: 1165
+    name: Thiamin
+    number: '404'
+    rank: 6400
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.053
+  id: 28836239
+  nutrient:
+    id: 1166
+    name: Riboflavin
+    number: '405'
+    rank: 6500
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.249
+  id: 28836240
+  nutrient:
+    id: 1167
+    name: Niacin
+    number: '406'
+    rank: 6600
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.066
+  id: 28836241
+  nutrient:
+    id: 1175
+    name: Vitamin B-6
+    number: '415'
+    rank: 6800
+    unitName: mg
+  type: FoodNutrient
+- amount: 34.0
+  id: 28836242
+  nutrient:
+    id: 1177
+    name: Folate, total
+    number: '417'
+    rank: 6900
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836243
+  nutrient:
+    id: 1178
+    name: Vitamin B-12
+    number: '418'
+    rank: 7300
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 10.2
+  id: 28836244
+  nutrient:
+    id: 1180
+    name: Choline, total
+    number: '421'
+    rank: 7220
+    unitName: mg
+  type: FoodNutrient
+- amount: 75.2
+  id: 28836245
+  nutrient:
+    id: 1185
+    name: Vitamin K (phylloquinone)
+    number: '430'
+    rank: 8800
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836246
+  nutrient:
+    id: 1186
+    name: Folic acid
+    number: '431'
+    rank: 7000
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 34.0
+  id: 28836247
+  nutrient:
+    id: 1187
+    name: Folate, food
+    number: '432'
+    rank: 7100
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 34.0
+  id: 28836248
+  nutrient:
+    id: 1190
+    name: Folate, DFE
+    number: '435'
+    rank: 7200
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836249
+  nutrient:
+    id: 1242
+    name: Vitamin E, added
+    number: '573'
+    rank: 7920
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836250
+  nutrient:
+    id: 1246
+    name: Vitamin B-12, added
+    number: '578'
+    rank: 7340
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836251
+  nutrient:
+    id: 1253
+    name: Cholesterol
+    number: '601'
+    rank: 15700
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.019
+  id: 28836252
+  nutrient:
+    id: 1258
+    name: Fatty acids, total saturated
+    number: '606'
+    rank: 9700
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836253
+  nutrient:
+    id: 1259
+    name: SFA 4:0
+    number: '607'
+    rank: 9800
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836254
+  nutrient:
+    id: 1260
+    name: SFA 6:0
+    number: '608'
+    rank: 9900
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836255
+  nutrient:
+    id: 1261
+    name: SFA 8:0
+    number: '609'
+    rank: 10000
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836256
+  nutrient:
+    id: 1262
+    name: SFA 10:0
+    number: '610'
+    rank: 10100
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836257
+  nutrient:
+    id: 1263
+    name: SFA 12:0
+    number: '611'
+    rank: 10300
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836258
+  nutrient:
+    id: 1264
+    name: SFA 14:0
+    number: '612'
+    rank: 10500
+    unitName: g
+  type: FoodNutrient
+- amount: 0.017
+  id: 28836259
+  nutrient:
+    id: 1265
+    name: SFA 16:0
+    number: '613'
+    rank: 10700
+    unitName: g
+  type: FoodNutrient
+- amount: 0.002
+  id: 28836260
+  nutrient:
+    id: 1266
+    name: SFA 18:0
+    number: '614'
+    rank: 10900
+    unitName: g
+  type: FoodNutrient
+- amount: 0.005
+  id: 28836261
+  nutrient:
+    id: 1268
+    name: MUFA 18:1
+    number: '617'
+    rank: 12100
+    unitName: g
+  type: FoodNutrient
+- amount: 0.022
+  id: 28836262
+  nutrient:
+    id: 1269
+    name: PUFA 18:2
+    number: '618'
+    rank: 13100
+    unitName: g
+  type: FoodNutrient
+- amount: 0.055
+  id: 28836263
+  nutrient:
+    id: 1270
+    name: PUFA 18:3
+    number: '619'
+    rank: 13900
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836264
+  nutrient:
+    id: 1271
+    name: PUFA 20:4
+    number: '620'
+    rank: 14700
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836265
+  nutrient:
+    id: 1272
+    name: PUFA 22:6 n-3 (DHA)
+    number: '621'
+    rank: 15300
+    unitName: g
+  type: FoodNutrient
+- amount: 0.002
+  id: 28836266
+  nutrient:
+    id: 1275
+    name: MUFA 16:1
+    number: '626'
+    rank: 11700
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836267
+  nutrient:
+    id: 1276
+    name: PUFA 18:4
+    number: '627'
+    rank: 14250
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836268
+  nutrient:
+    id: 1277
+    name: MUFA 20:1
+    number: '628'
+    rank: 12400
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836269
+  nutrient:
+    id: 1278
+    name: PUFA 20:5 n-3 (EPA)
+    number: '629'
+    rank: 15000
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836270
+  nutrient:
+    id: 1279
+    name: MUFA 22:1
+    number: '630'
+    rank: 12500
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  id: 28836271
+  nutrient:
+    id: 1280
+    name: PUFA 22:5 n-3 (DPA)
+    number: '631'
+    rank: 15200
+    unitName: g
+  type: FoodNutrient
+- amount: 0.006
+  id: 28836272
+  nutrient:
+    id: 1292
+    name: Fatty acids, total monounsaturated
+    number: '645'
+    rank: 11400
+    unitName: g
+  type: FoodNutrient
+- amount: 0.078
+  id: 28836273
+  nutrient:
+    id: 1293
+    name: Fatty acids, total polyunsaturated
+    number: '646'
+    rank: 12900
+    unitName: g
+  type: FoodNutrient
+foodPortions:
+- gramWeight: 18
+  id: 286008
+  measureUnit:
+    abbreviation: undetermined
+    id: 9999
+    name: undetermined
+  modifier: '90000'
+  portionDescription: Quantity not specified
+  sequenceNumber: 5
+- gramWeight: 35
+  id: 286006
+  measureUnit:
+    abbreviation: undetermined
+    id: 9999
+    name: undetermined
+  modifier: '10205'
+  portionDescription: 1 cup
+  sequenceNumber: 3
+- gramWeight: 8
+  id: 286004
+  measureUnit:
+    abbreviation: undetermined
+    id: 9999
+    name: undetermined
+  modifier: '61116'
+  portionDescription: 1 leaf
+  sequenceNumber: 1
+- gramWeight: 70
+  id: 286007
+  measureUnit:
+    abbreviation: undetermined
+    id: 9999
+    name: undetermined
+  modifier: '64548'
+  portionDescription: Guideline amount in salad
+  sequenceNumber: 4
+- gramWeight: 539
+  id: 286005
+  measureUnit:
+    abbreviation: undetermined
+    id: 9999
+    name: undetermined
+  modifier: '60849'
+  portionDescription: 1 head
+  sequenceNumber: 2
+inputFoods:
+- amount: 50
+  foodDescription: Lettuce, green leaf, raw
+  id: 120671
+  ingredientCode: 11253
+  ingredientDescription: Lettuce, green leaf, raw
+  ingredientWeight: 50
+  portionCode: '0'
+  portionDescription: NONE
+  sequenceNumber: 2
+  unit: GM
+- amount: 50
+  foodDescription: Lettuce, iceberg (includes crisphead types), raw
+  id: 120670
+  ingredientCode: 11252
+  ingredientDescription: Lettuce, iceberg (includes crisphead types), raw
+  ingredientWeight: 50
+  portionCode: '0'
+  portionDescription: NONE
+  sequenceNumber: 1
+  unit: GM
+publicationDate: 10/28/2022
+startDate: 1/1/2019
+wweiaFoodCategory:
+  wweiaFoodCategoryCode: 2650289
+  wweiaFoodCategoryDescription: Lettuce and lettuce salads

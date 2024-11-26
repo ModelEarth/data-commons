@@ -456,3 +456,462 @@ loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkG
 </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Data Commons - Data</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link type="text/css" href="/localsite/css/base.css" rel="stylesheet" id="/localsite/css/base.css" />
+<script type="text/javascript" src="/localsite/js/localsite.js?showheader=true&showsearch=true&scope=county"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/earthscape.js" type="text/javascript"></script>
+<script>
+loadMarkdown("index.md", "readmeDiv", "_parent");
+loadMarkdown("/localsite/start/steps/github-push.md", "githubPushDiv", "_parent");
+
+
+//document.addEventListener('hashChangeEvent', function (elem) {
+    //console.log("timeline page detects URL hashChangeEvent");
+
+    // Call getTimelineChart here
+
+//}, false);
+
+document.addEventListener('DOMContentLoaded', () => {
+    let chartVariable = 'Count_Person';
+    let showAll = 'showTop5';
+    let entityId = 'geoId/13'
+    let chartText = document.getElementById('chartVariable').options[document.getElementById('chartVariable').selectedIndex].text;
+
+    getTimelineChart(chartVariable, entityId, showAll, chartText);
+
+    document.forms['countyShow'].addEventListener('change', function(event) {
+        if (event.target.name === 'countyShow') {
+            showAll = document.querySelector('input[name="countyShow"]:checked').value;
+            getTimelineChart(chartVariable, entityId, showAll, chartText);
+        }
+    });
+
+    document.getElementById('chartVariable').addEventListener('change', (event) => {
+        chartVariable = event.target.value;
+        chartText = document.getElementById('chartVariable').options[document.getElementById('chartVariable').selectedIndex].text;
+        getTimelineChart(chartVariable, entityId, showAll, chartText);
+    });
+
+    document.getElementById('entityId').addEventListener('change', (event) => {
+        entityId = event.target.value;
+        getTimelineChart(chartVariable, entityId, showAll, chartText);
+    });
+});
+document.addEventListener('hashChangeEvent', function (elem) {
+    console.log("timeline page detects URL hashChangeEvent");
+
+    // Extract new hash values
+    let hash = window.location.hash; // Get the current hash value
+    let newScope = hash ? hash.split('=')[1] : null; // Assuming the hash is like #scope=value
+
+    // Define default values for chart parameters
+    let dcid_select = 'Count_Person'; // or set from hash if applicable
+    let showAll = 'showTop5'; // or set from hash if applicable
+    let entityId = 'geoId/13'; // or set from hash if applicable
+
+    if (newScope) {
+        // Call the function to update the dcid_select dropdown based on the new scope
+        updateDcidSelect(newScope);
+    }
+
+    // Update chart based on the hash change
+    getTimelineChart(dcid_select, entityId, showAll);
+}, false);
+
+function updateDcidSelect(scope) {
+    const dcidSelect = document.getElementById('chartVariable');
+    dcidSelect.innerHTML = ''; // Clear existing options
+
+    // Define the new options based on the scope
+    let options = [];
+    if (scope === "county") {
+        options = [
+            { value: "Count_Person", text: "County Populations" },
+            { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
+            { value: "Count_Farm", text: "Number of Farms" },
+            { value: "Annual_Emissions_Methane_NonBiogenic", text: "Methane NonBiogenic" },
+           //{ value: " Annual_Emissions_CarbonDioxide_NonBiogenic", text: "Annual Emissions CarbonDioxide NonBiogenic" },
+            //{ value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
+            //{ value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
+            //{ value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
+            //{ value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
+           
+        ];
+    } else if (scope === "country") {
+        options = [
+            { value: "Count_Person", text: "Country Populations" },
+            { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
+            { value: "Count_Farm", text: "Number of Farms" },
+            //{ value: "Annual_Emissions_Methane_NonBiogenic", text: "Methane NonBiogenic" },
+            { value: " Annual_Amount_Emissions_CarbonDioxide", text: "Annual Emissions CarbonDioxide NonBiogenic" },
+           // { value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
+           // { value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
+           // { value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
+           // { value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
+            
+            // Add more water-related options as necessary
+        ];
+    }else if (scope === "state") {
+        options = [
+            { value: "Count_Person", text: "State Populations" },
+            { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
+            { value: "Count_Farm", text: "Number of Farms" },
+            //{ value: "Annual_Emissions_Methane_NonBiogenic", text: "Methane NonBiogenic" },
+            { value: " Annual_Amount_Emissions_CarbonDioxide", text: "Annual Emissions CarbonDioxide NonBiogenic" },
+           // { value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
+           // { value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
+           // { value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
+           // { value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
+            
+            // Add more water-related options as necessary
+        ];
+    }else if (scope === "zip") {
+        options = [
+            { value: "Count_Person", text: "Postal Code Populations" },
+            { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
+            { value: "Count_Farm", text: "Number of Farms" },
+            //{ value: "Annual_Emissions_Methane_NonBiogenic", text: "Methane NonBiogenic" },
+            { value: " Annual_Amount_Emissions_CarbonDioxide", text: "Annual Emissions CarbonDioxide NonBiogenic" },
+           // { value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
+           // { value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
+           // { value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
+           // { value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
+            
+            // Add more water-related options as necessary
+        ];
+    }
+   
+    else if (scope === "continent") {
+        options = [
+            { value: "Count_Person", text: "Continent Populations" },
+            { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
+            { value: "Count_Farm", text: "Number of Farms" },
+            //{ value: "Annual_Emissions_Methane_NonBiogenic", text: "Methane NonBiogenic" },
+            { value: " Annual_Amount_Emissions_CarbonDioxide", text: "Annual Emissions CarbonDioxide NonBiogenic" },
+           // { value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
+           // { value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
+           // { value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
+           // { value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
+            
+            // Add more water-related options as necessary
+        ];
+    }
+   
+    
+    // Add other scopes if necessary
+
+    // Populate the dropdown with new options
+    options.forEach(option => {
+        const opt = document.createElement('option');
+        opt.value = option.value;
+        opt.text = option.text;
+        dcidSelect.add(opt);
+    });
+
+    // Optionally, reset the selection to the first option
+    if (options.length > 0) {
+        dcidSelect.value = options[0].value; // Set to the first option by default
+    }
+}
+
+function createLabelFromDCID(DCID) {
+    return DCID
+        .split('_')                        // Split on underscores
+        .map(word => word.replace(/([a-z])([A-Z])/g, '$1 $2')) // Add space between CamelCase
+        .join(' ');                        // Join the words back with spaces
+}
+
+function loadGoalsDropdown(theme,csvPath) {
+
+    if (!onlineApp) {
+      alert("onlineApp=false in localsite.js so not pulling from Google Sheet")
+      return;
+    }
+    loadScript(theroot + 'js/d3.v5.min.js', function(results) {
+    waitForVariable('customD3loaded', function() {
+    dp = {};
+    dp.googleCSV = csvPath;
+    consoleLog("Google data requested " + dp.googleCSV);
+    //dp.googleCSV = "DISABLEX"
+    d3.csv(dp.googleCSV).then(function(data,error) { // One element containing all rows from spreadsheet
+
+      consoleLog("Google data loaded");
+      // LOAD GOOGLE SHEET
+        //dp.data = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
+        //dp.data = data;
+
+        // Loop through data
+        let goalsString = "";
+        for (let i = 0; i < data.length; i++) {
+          //console.log("Are we reaching hear with wastewater?");
+          if (data[i]) {
+              console.log("data.key: ");
+              console.log(data[i]);
+              if (data[i].Title) {
+                //goalsString = goalsString + data[i].Title + "<br>";
+              }
+              if (data[i].DCID) {
+                if (data[i].Scope) {
+                  const scopeList = data[i].Scope.replace(/\s*,\s*/g, ',').split(',');
+
+                  scopeList.forEach(function(scope) {
+                    //goalsString = goalsString + scope + "<br>";
+
+                    goalsString = goalsString + "<a href='timelines/air/" + data[i].DCID + "_" + scope.toLowerCase() + "_data_timeline.csv'>" + data[i].Title + "</a> (" + scope + ")<br>";
+                    if (scope.toLowerCase() == "county") {
+                        data[i].DCID
+
+                        // Add option if it doesn't already exist
+                        //if (!optionExists) {
+                            const option = document.createElement('option');
+                            option.value = data[i].DCID; // Set value dynamically from data[i].DCID
+                            option.text = createLabelFromDCID(data[i].DCID);
+                            chartVariable.add(option);
+                        //}
+
+                    }
+                  });
+                  goalsString = goalsString + "<hr>";
+                } else {
+
+                  goalsString = goalsString + "<a href='timelines/air/" + data[i].DCID + "_country_data_timeline.csv'>" + data[i].Title + "</a><br>";
+
+                  //goalsString = goalsString + "<a href='timelines/air/Annual_Amount_Emissions_CarbonDioxide_country_data_timeline.csv'>" + data[i].Title + "</a><br>";
+                }
+              }
+          }
+        }
+        $("#" + theme + "Div").html(goalsString);
+
+        // LOAD CATEGORIES TAB - Category, SubCategory, SubCategoryLong
+        //localObject.unGoals[dp.show] = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
+        
+        // Save to avoid repeat calls to Google Sheet tab
+        let tabName = "all"
+
+        if(typeof localObject == 'undefined') {
+            var localObject = {};
+        }
+        if(typeof localObject.unGoals == 'undefined') {
+            localObject.unGoals = {}; // From Google Sheet tabs.
+        }
+        localObject.unGoals[tabName] = data;
+
+        console.log("UN Goal Google Sheet")
+        console.log(localObject.unGoals[tabName]); // Include color for mappoint at this point.
+          
+    }, function(error, rows) {
+        consoleLog("ERROR fetching google sheet. " + error);
+    });
+    });
+    });
+}
+//loadGoalsDropdown("goals","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=456266073&single=true&output=csv");
+
+// Copy the sheet URL and modify in this format
+
+loadGoalsDropdown("water","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=2049347939&single=true&output=csv");
+
+loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv");
+loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=1911215802&single=true&output=csv");
+
+
+</script>
+
+<style>
+.heroTransparent {
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), 
+              url(/apps/img/hero/state/GA/GA-hero.jpg);
+  background-size: cover; /* Scales the image to cover the div */
+  background-position: center; /* Centers the image in the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100%; /* Ensures the div's height is used */
+}
+.contentToggle {
+    display: none;
+}
+.active {
+    display: block;
+}
+
+</style>
+</head>
+
+<body>
+<div class="heroTransparent notdark">
+<div class="content contentpadding large-list">
+
+  
+  <div id="relocatedScopeMenu"></div>
+
+  <!-- We might not use the same state menu as the search filter.
+  <div id="relocatedStateMenu"></div>
+  -->
+
+  <select id="entityId">
+      <option value="geoId/01">Alabama</option>
+      <option value="geoId/02">Alaska</option>
+      <option value="geoId/04">Arizona</option>
+      <option value="geoId/05">Arkansas</option>
+      <option value="geoId/06">California</option>
+      <option value="geoId/08">Colorado</option>
+      <option value="geoId/09">Connecticut</option>
+      <option value="geoId/10">Delaware</option>
+      <option value="geoId/11">District of Columbia</option>
+      <option value="geoId/12">Florida</option>
+      <option value="geoId/13" selected>Georgia</option>
+      <option value="geoId/15">Hawaii</option>
+      <option value="geoId/16">Idaho</option>
+      <option value="geoId/17">Illinois</option>
+      <option value="geoId/18">Indiana</option>
+      <option value="geoId/19">Iowa</option>
+      <option value="geoId/20">Kansas</option>
+      <option value="geoId/21">Kentucky</option>
+      <option value="geoId/22">Louisiana</option>
+      <option value="geoId/23">Maine</option>
+      <option value="geoId/24">Maryland</option>
+      <option value="geoId/25">Massachusetts</option>
+      <option value="geoId/26">Michigan</option>
+      <option value="geoId/27">Minnesota</option>
+      <option value="geoId/28">Mississippi</option>
+      <option value="geoId/29">Missouri</option>
+      <option value="geoId/30">Montana</option>
+      <option value="geoId/31">Nebraska</option>
+      <option value="geoId/32">Nevada</option>
+      <option value="geoId/33">New Hampshire</option>
+      <option value="geoId/34">New Jersey</option>
+      <option value="geoId/35">New Mexico</option>
+      <option value="geoId/36">New York</option>
+      <option value="geoId/37">North Carolina</option>
+      <option value="geoId/38">North Dakota</option>
+      <option value="geoId/39">Ohio</option>
+      <option value="geoId/40">Oklahoma</option>
+      <option value="geoId/41">Oregon</option>
+      <option value="geoId/42">Pennsylvania</option>
+      <option value="geoId/44">Rhode Island</option>
+      <option value="geoId/45">South Carolina</option>
+      <option value="geoId/46">South Dakota</option>
+      <option value="geoId/47">Tennessee</option>
+      <option value="geoId/48">Texas</option>
+      <option value="geoId/49">Utah</option>
+      <option value="geoId/50">Vermont</option>
+      <option value="geoId/51">Virginia</option>
+      <option value="geoId/53">Washington</option>
+      <option value="geoId/54">West Virginia</option>
+      <option value="geoId/55">Wisconsin</option>
+      <option value="geoId/56">Wyoming</option>
+      <option value="geoId/72">Puerto Rico</option>
+  </select>
+  <select id="chartVariable">
+      <option value="Count_Person" selected>County Populations</option>
+      <option value="LandCoverFraction_Forest">Land Covered by Forests</option>
+      <option value="Count_Farm">Number of Farms</option>
+      <option value="Annual_Emissions_Methane_NonBiogenic">Methane NonBiogenic</option>
+      <!--
+          Adjust to per capita (and SqMiles) using our nav filter file:
+          https://github.com/ModelEarth/localsite/blob/main/info/data/map-filters/us-states.csv
+
+          Or call the API directly for the additional info (population and sq miles)
+
+          show=Count_Person
+
+          Convert 2-char state to geoId/01 in backend datacommons.js
+      -->
+  </select>
+  <br>
+  <form name="countyShow">
+      <label> <input value="showAll" type="radio" name="countyShow" />All Counties </label>
+      <label> <input value="showTop5" type="radio" name="countyShow" checked />Top 5 </label>
+      <label> <input value="showBottom5" type="radio" name="countyShow" />Bottom 5 </label>
+  </form>
+        <div id="div1" class="toggleDiv">
+            <canvas id="timelineChart"></canvas>
+        </div>
+        <div id="div2" class="toggleDiv">
+            <canvas id="lineAreaChart"></canvas>
+        </div>
+        <label>
+            <input type="radio" name="toggle" value="div1" checked> Line Chart
+        </label>
+        <label>
+            <input type="radio" name="toggle" value="div2"> Area Chart
+        </label>
+    </div>
+</div>
+<div class="content contentpadding large-list">
+  <div id="readmeDiv"></div>
+
+  <b>TO DO: Dropdowns above timeline</b><br><br>
+
+  Create a DropDown called #Goals using the loadGoalsDropdown() funtion in the current index.html page.<br><br>
+
+  When #Goals changes, update the #chartVariable dropdown with the the DCID from corresponding tab in the Google Sheet.<br><br>
+
+  #Goals dropdown > #chartVariable dropdown<br>
+  Goal (Air) > Topic (Emissions): Subtopic (Methane)<br><br>
+
+  Goals pulled from <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing">Google Sheet</a>:<br><br>
+
+  <b>UN Goals</b><br>
+  <div id="goalsDiv"></div>
+  <br>
+
+  <b>Air Topics</b><br>
+  <div id="airDiv"></div>
+  <br>
+
+  <b>Water Topics</b><br>
+  TO DO: Update the timeline above to also show <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US">Country Data</a><br><br>
+
+  <div id="waterDiv"></div>
+  <br>
+  <b>Health Topics</b><br>
+  <div id="healthDiv"></div>
+  <br>
+  <hr><br>
+  <b>Aquifers Topics</b><br>
+  <div id="AquifersDiv"></div>
+  <br>
+  <hr><br>
+
+  <div id="githubPushDiv"></div>
+</div>
+
+<script>
+
+
+    function toggleDivs() {
+            // Get selected value from radio buttons
+            const selectedValue = document.querySelector('input[name="toggle"]:checked').value;
+            
+            // Hide both divs initially
+            document.getElementById('div1').style.display = 'none';
+            document.getElementById('div2').style.display = 'none';
+
+            // Show the selected div
+            document.getElementById(selectedValue).style.display = 'block';
+        }
+
+        // Add event listeners to radio buttons to call toggleDivs() on change
+        document.querySelectorAll('input[name="toggle"]').forEach((radio) => {
+            radio.addEventListener('change', toggleDivs);
+        });
+
+        // Show the first div by default on page load
+    toggleDivs();
+</script>
+</body>
+</html>

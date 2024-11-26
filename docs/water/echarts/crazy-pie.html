@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+  <title>Crazy Pie Chart and Water Withdrawals Timeline</title>
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+  
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    // Function to read and parse the CSV file
+    function loadCSV(filePath, callback) {
+      Papa.parse(filePath, {
+        download: true,
+        header: true,
+        dynamicTyping: true,
+        complete: function(results) {
+          callback(results.data);
+        }
+      });
+    }
+
+    // Process the data and update the chart
+    function processData(data) {
+      let years = [];
+      let seriesData = {};
+
+      data.forEach(row => {
+        let year = row['Year'];
+        let entity = row['Entity'];
+        let value = row['Annual freshwater withdrawals, total (billion cubic meters)'];
+
+        if (!years.includes(year)) {
+          years.push(year);
+        }
+        if (!seriesData[entity]) {
+          seriesData[entity] = {};
+        }
+        seriesData[entity][year] = value;
+      });
+
+      years.sort((a, b) => a - b);
+
+      let datasetSource = [['Entity', ...years]];
+      for (let entity in seriesData) {
+        let row = [entity];
+        years.forEach(year => {
+          row.push(seriesData[entity][year] || 0);
+        });
+        datasetSource.push(row);
+      }
+
+      option = {
+        legend: {},
+        tooltip: {
+          trigger: 'axis',
+          showContent: false
+        },
+        dataset: {
+          source: datasetSource
+        },
+        xAxis: { type: 'category' },
+        yAxis: { gridIndex: 0 },
+        grid: { top: '55%' },
+        series: Array(years.length).fill().map((_, i) => ({
+          type: 'line',
+          smooth: true,
+          seriesLayoutBy: 'row',
+          emphasis: { focus: 'series' }
+        })).concat({
+          type: 'pie',
+          id: 'pie',
+          radius: '30%',
+          center: ['50%', '25%'],
+          emphasis: {
+            focus: 'self'
+          },
+          label: {
+            formatter: `{b}: {@${years[0]}} ({d}%)`
+          },
+          encode: {
+            itemName: 'Entity',
+            value: years[0],
+            tooltip: years[0]
+          }
+        })
+      };
+
+      myChart.on('updateAxisPointer', function (event) {
+        const xAxisInfo = event.axesInfo[0];
+        if (xAxisInfo) {
+          const dimension = xAxisInfo.value + 1;
+          myChart.setOption({
+            series: {
+              id: 'pie',
+              label: {
+                formatter: `{b}: {@[${dimension}]} ({d}%)`
+              },
+              encode: {
+                value: dimension,
+                tooltip: dimension
+              }
+            }
+          });
+        }
+      });
+      myChart.setOption(option);
+    }
+
+    // Load CSV and process data
+    loadCSV('../data/annual-freshwater-withdrawals.csv', processData);
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>

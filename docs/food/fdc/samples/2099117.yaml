@@ -1,0 +1,347 @@
+availableDate: 7/14/2017
+brandName: CLOVER VALLEY
+brandOwner: Nuova Pallante S.P.A.
+brandedFoodCategory: Pasta by Shape & Type
+dataSource: LI
+dataType: Branded
+description: SPAGHETTI
+discontinuedDate: ''
+fdcId: 2099117
+foodAttributes:
+- id: 2303513
+  name: Added Package Weight
+  value: 9
+foodClass: Branded
+foodComponents: []
+foodNutrients:
+- amount: 375.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25699268
+  nutrient:
+    id: 1008
+    name: Energy
+    number: '208'
+    rank: 300
+    unitName: kcal
+  type: FoodNutrient
+- amount: 3.6
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25699270
+  nutrient:
+    id: 1079
+    name: Fiber, total dietary
+    number: '291'
+    rank: 1200
+    unitName: g
+  type: FoodNutrient
+- amount: 5.357
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25699278
+  nutrient:
+    id: 1167
+    name: Niacin
+    number: '406'
+    rank: 6600
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25699281
+  nutrient:
+    id: 1257
+    name: Fatty acids, total trans
+    number: '605'
+    rank: 15400
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25699275
+  nutrient:
+    id: 1162
+    name: Vitamin C, total ascorbic acid
+    number: '401'
+    rank: 6300
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25699282
+  nutrient:
+    id: 1258
+    name: Fatty acids, total saturated
+    number: '606'
+    rank: 9700
+    unitName: g
+  type: FoodNutrient
+- amount: 214.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25699279
+  nutrient:
+    id: 1177
+    name: Folate, total
+    number: '417'
+    rank: 6900
+    unitName: "\xB5g"
+  type: FoodNutrient
+- amount: 76.79
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25699267
+  nutrient:
+    id: 1005
+    name: Carbohydrate, by difference
+    number: '205'
+    rank: 1110
+    unitName: g
+  type: FoodNutrient
+- amount: 3.57
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25699269
+  nutrient:
+    id: 2000
+    name: Total Sugars
+    number: '269'
+    rank: 1510
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25699280
+  nutrient:
+    id: 1253
+    name: Cholesterol
+    number: '601'
+    rank: 15700
+    unitName: mg
+  type: FoodNutrient
+- amount: 1.79
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25699266
+  nutrient:
+    id: 1004
+    name: Total lipid (fat)
+    number: '204'
+    rank: 800
+    unitName: g
+  type: FoodNutrient
+- amount: 3.21
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25699272
+  nutrient:
+    id: 1089
+    name: Iron, Fe
+    number: '303'
+    rank: 5400
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25699274
+  nutrient:
+    id: 1104
+    name: Vitamin A, IU
+    number: '318'
+    rank: 7500
+    unitName: IU
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25699273
+  nutrient:
+    id: 1093
+    name: Sodium, Na
+    number: '307'
+    rank: 5800
+    unitName: mg
+  type: FoodNutrient
+- amount: 1.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25699276
+  nutrient:
+    id: 1165
+    name: Thiamin
+    number: '404'
+    rank: 6400
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25699271
+  nutrient:
+    id: 1087
+    name: Calcium, Ca
+    number: '301'
+    rank: 5300
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.455
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 25699277
+  nutrient:
+    id: 1166
+    name: Riboflavin
+    number: '405'
+    rank: 6500
+    unitName: mg
+  type: FoodNutrient
+- amount: 10.71
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 25699265
+  nutrient:
+    id: 1003
+    name: Protein
+    number: '203'
+    rank: 600
+    unitName: g
+  type: FoodNutrient
+foodPortions: []
+foodUpdateLog:
+- availableDate: 7/14/2017
+  brandName: CLOVER VALLEY
+  brandOwner: Nuova Pallante S.P.A.
+  brandedFoodCategory: Pasta by Shape & Type
+  dataSource: LI
+  dataType: Branded
+  description: SPAGHETTI
+  discontinuedDate: ''
+  fdcId: 2099117
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: '748023090072'
+  ingredients: SEMOLINA, NIACIN, FERROUS LACTATE (IRON), THIAMIN MONONITRATE, RIBOFLAVIN,
+    FOLIC ACID.
+  marketCountry: United States
+  modifiedDate: 7/14/2017
+  packageWeight: 16 oz/1 lbs/454 g
+  publicationDate: 10/28/2021
+  servingSize: 56.0
+  servingSizeUnit: g
+- availableDate: 7/14/2017
+  brandName: CLOVER VALLEY
+  brandOwner: Nuova Pallante S.P.A.
+  brandedFoodCategory: Pasta by Shape & Type
+  dataSource: LI
+  dataType: Branded
+  description: SPAGHETTI
+  discontinuedDate: ''
+  fdcId: 1612590
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: '748023090072'
+  ingredients: SEMOLINA, NIACIN, FERROUS LACTATE (IRON), THIAMIN MONONITRATE, RIBOFLAVIN,
+    FOLIC ACID.
+  marketCountry: United States
+  modifiedDate: 7/14/2017
+  publicationDate: 3/19/2021
+  servingSize: 56.0
+  servingSizeUnit: g
+- availableDate: 7/14/2017
+  brandName: CLOVER VALLEY
+  brandOwner: Nuova Pallante S.P.A.
+  brandedFoodCategory: Pasta by Shape & Type
+  dataSource: LI
+  dataType: Branded
+  description: SPAGHETTI
+  discontinuedDate: ''
+  fdcId: 1320455
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: '748023090072'
+  ingredients: SEMOLINA, NIACIN, FERROUS LACTATE (IRON), THIAMIN MONONITRATE, RIBOFLAVIN,
+    FOLIC ACID.
+  marketCountry: United States
+  modifiedDate: 7/14/2017
+  notaSignificantSourceOf: ''
+  packageWeight: ''
+  publicationDate: 2/26/2021
+  servingSize: 56.0
+  servingSizeUnit: g
+  subbrandName: ''
+gtinUpc: '748023090072'
+ingredients: SEMOLINA, NIACIN, FERROUS LACTATE (IRON), THIAMIN MONONITRATE, RIBOFLAVIN,
+  FOLIC ACID.
+labelNutrients:
+  calcium:
+    value: 0.0
+  calories:
+    value: 210
+  carbohydrates:
+    value: 43.0
+  cholesterol:
+    value: 0.0
+  fat:
+    value: 1.0
+  fiber:
+    value: 2.02
+  iron:
+    value: 1.8
+  protein:
+    value: 6.0
+  saturatedFat:
+    value: 0.0
+  sodium:
+    value: 0.0
+  sugars:
+    value: 2.0
+  transFat:
+    value: 0.0
+marketCountry: United States
+modifiedDate: 7/14/2017
+packageWeight: 16 oz/1 lbs/454 g
+publicationDate: 10/28/2021
+servingSize: 56.0
+servingSizeUnit: g

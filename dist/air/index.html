@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Air and Climate | Data Commons</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../_npm/htl@0.3.1/+esm.js">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
+<script type="module">
+
+import {define} from "../_observablehq/client.js";
+
+define({id: "713e07fd", inputs: ["html","display"], body: async (html,display) => {
+display(await(
+html.fragment`<div id="observablehq-13ca3fe9"></div>
+<p>Credit: <a href="https://observablehq.com/@me-test/plot-stacked-plots">Plot: Stacked Plots based on the country codes found in the DCID</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+  import define from "https://api.observablehq.com/@me-test/plot-stacked-plots.js?v=4";
+  new Runtime().module(define, Inspector.into("#observablehq-13ca3fe9"));
+</script>`
+))
+}});
+
+</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#international-emissions-time">International Emissions Time</a></li>
+<li class="observablehq-secondary-link"><a href="#embedded-stacked-plot-for-multiple-country-codes%3A">Embedded Stacked Plot for Multiple Country Codes:</a></li>
+<li class="observablehq-secondary-link"><a href="#weather-data-loader">Weather Data Loader</a></li>
+<li class="observablehq-secondary-link"><a href="#python-for-google-data-commons-api">Python for Google Data Commons API</a></li>
+<li class="observablehq-secondary-link"><a href="#building-json-and-fetching-with-data-loader">Building json and Fetching with Data Loader</a></li>
+<li class="observablehq-secondary-link"><a href="#embed-of-gdc-component">Embed of GDC Component</a></li>
+<li class="observablehq-secondary-link"><a href="#more">More</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<p><a href="../">Data Commons</a></p>
+<h1 id="air-and-climate" tabindex="-1"><a class="observablehq-header-anchor" href="#air-and-climate">Air and Climate</a></h1>
+<p>Goal 13. Greenhouse Gas Reduction Climate Action</p>
+<h2 id="international-emissions-time" tabindex="-1"><a class="observablehq-header-anchor" href="#international-emissions-time">International Emissions Time</a></h2>
+<!--
+Pointing timeline link at https://model.earth because 
+/emission.html gets shortened to /emission in dist folder, 
+which does not work with python localhost. 
+TO DO: Add steps for installing https cert to run: npx http-server
+https://model.earth/localsite/start/steps/
+-->
+<p><a href="https://model.earth/data-commons/dist/air/emissions/emission.html">View Emissions Timeline</a> - <a href="../../docs/air/emissions/">View Code</a> on <a href="https://github.com/ModelEarth/data-commons/blob/main/docs/air/emissions/emission.md">GitHub</a></p>
+<h2 id="embedded-stacked-plot-for-multiple-country-codes%3A" tabindex="-1"><a class="observablehq-header-anchor" href="#embedded-stacked-plot-for-multiple-country-codes%3A">Embedded Stacked Plot for Multiple Country Codes:</a></h2>
+<div id="cell-713e07fd" class="observablehq observablehq--block observablehq--loading"></div>
+<h2 id="weather-data-loader" tabindex="-1"><a class="observablehq-header-anchor" href="#weather-data-loader">Weather Data Loader</a></h2>
+<p><a href="../../dist/air/weather">View Weather Forecast</a> - Caches data from api.weather.gov.&nbsp; <a href="https://github.com/ModelEarth/data-commons/blob/main/docs/air/weather/index.md">View our Javacript</a></p>
+<p>To refresh the weather forecast, delete the file at: dist/_file/air/weather/data/forecast.867a89c9.json, then <code>yarn build</code></p>
+<h2 id="python-for-google-data-commons-api" tabindex="-1"><a class="observablehq-header-anchor" href="#python-for-google-data-commons-api">Python for Google Data Commons API</a></h2>
+<p><a href="https://colab.research.google.com/drive/1mZC2Pn4oKau9Sz1Q16_qnOK7Tai09uEo#scrollTo=2gMBtmu1MGfq&amp;line=19&amp;uniqifier=1">Our CoLab for emission timelines</a> - Loads from GDC API with Python - Paul</p>
+<p>Learn about <a href="https://docs.datacommons.org/api/python/">Datacommons.org API used in Python</a></p>
+<p>TO DO: Document how we invoke our CoLab with REST JSON for Web interactivity.</p>
+<h2 id="building-json-and-fetching-with-data-loader" tabindex="-1"><a class="observablehq-header-anchor" href="#building-json-and-fetching-with-data-loader">Building json and Fetching with Data Loader</a></h2>
+<p><a href="https://observablehq.com/framework/loaders">Observable data loaders</a></p>
+<p>Javascript and python <a href="https://observablehq.com/framework/getting-started#next-steps">Data Loader samples from Observable</a>.</p>
+<p>The javascript fetches json with this cmd</p>
+<p>node docs/air/data/forecast.json.js</p>
+<p>The python requires running "python" external to Observable build.</p>
+<p>python docs/air/data/forecast.json.py</p>
+<p>Python cannot be built from the <code>yarn build</code> &nbsp;node.js cmd, but it can be run directly using the command above, or within GitHub Pages or through a Google CoLab API.</p>
+<br>
+<h2 id="embed-of-gdc-component" tabindex="-1"><a class="observablehq-header-anchor" href="#embed-of-gdc-component">Embed of GDC Component</a></h2>
+<p>Placed in a span or div tag for <a href="../../dist/air/">built version</a>.</p>
+<span>
+<script src="https://datacommons.org/datacommons.js"></script>
+<datacommons-line header="Population for USA, India, and China" places="country/USA country/IND country/CHN" variables="Count_Person">Chart not visible until built.</datacommons-line>
+</span>
+<span style="font-size: 11px;">
+<a href="https://docs.datacommons.org/api/web_components/">Data Commons Web Components</a> - 
+<a href="https://docs.datacommons.org/api/web_components/line">Line Chart Web Component</a>
+</span>
+<h2 id="more" tabindex="-1"><a class="observablehq-header-anchor" href="#more">More</a></h2>
+<p><a href="https://docs.google.com/document/d/1Xn5LCwlf8hEGsfJ_mAZEfLtNLopSGIeTJkMn90_RzQ8/edit?usp=sharing">Paul's How To</a> - under development. We also need a javascript version.</p>
+</main>
+<footer id="observablehq-footer">
+<div><style>#observablehq-footer{margin-top:40px;border-top:1px solid #ccc;padding-top:10px;}</style>Built with <a href="https://observablehq.com" target="_blank">Observable</a> and <a href="https://DataCommons.org" target="_blank">Google Data Commons</a> by our <a href="/projects/">Model.earth Project Team</a>.</div>
+</footer>
+</div>

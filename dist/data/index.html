@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Goal Timelines - Data Pull | Data Commons</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
+<script type="module">
+
+import "../_observablehq/client.js";
+
+</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<p><a href="../../">Data Commons</a></p>
+<h1 id="goal-timelines---data-pull" tabindex="-1"><a class="observablehq-header-anchor" href="#goal-timelines---data-pull">Goal Timelines - Data Pull</a></h1>
+<p>The Google DCID values for our timelines reside in our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet UN goal tabs</a>.<br>
+Our timeline charts use javascript to pull directly from the Google Data Commons API.<br>
+Scroll down to see Air and Water topics from our Google Sheet tabs.</p>
+<p>For python output, our <a href="https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing">UN Goals Timelines CoLab</a> pulls timeline data DCID values from our Google Sheet.</p>
+<p>Checkout our <a href="/localsite/info/data/map-filters">Data Commons pull for navigation map-filters</a></p>
+<p>Cool: <a href="https://docs.datacommons.org/api/sheets/">Data Commons Google Sheet add-on</a></p>
+<hr>
+<p>TO DO: Document and create examples of our util for scope data retrieval <a href="https://github.com/ModelEarth/data-commons/blob/main/docs/data/python/scope-data-utils.py">scope-data-utils.py</a></p>
+<p>TO DO: Update our UN Goals Colab to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a> - Priyanka, Alexandra, everyone</p>
+<!--
+[Our Run Models Colab](https://colab.research.google.com/drive/1zu0WcCiIJ5X3iN1Hd1KSW4dGn0JuodB8?usp=sharing#scrollTo=Z12cWU4y09on) already includes a process for saving CSV files to GitHub. The relevant part happens around saving the integrated dataset to the repo.
+-->
+<!--
+Abhishek L may also have .ipynb files that generate .csv files locally. The output .csv could be sent to a fork of [data-commons](https://github.com/ModelEarth/data-commons) in a folder added at data-common/docs/data.
+-->
+<p>TO DO: Update our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing">Google Sheet UN Goal tabs</a> with additional DCID values that we'll pull for our Python .csv file generation. - Everyone <!--Pratyush--></p>
+<!--
+TO DO: Also update our [Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
+-->
+<!--
+TO DO: In the UN Goals Colab, the [country.csv timeline output Abhishek created](https://github.com/ModelEarth/community-data/tree/master/locations/datacommons) can be output to data-commons/docs/data/air/[dcid].csv.  
+Then delete the country.csv file
+-->
+
+<!-- test -->
+<p>TO DO: Update earthscape.js to also display <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US">countries and states</a>. Eliminate datacommons.html after adding to the current page.</p>
+<p>TO DO: The DCID value for the water UN Goal topics is: <code>dc/g/SDG_6</code><br>
+Fix the following so we can update <a href="/feed/view#feed=water">/feed/view/#feed=water</a> to pull the water nav DCID</p>
+<pre><code>https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&amp;entity.dcids=dc/g/SDG_6
+</code></pre>
+<p><strong>UN Goals CoLab Specs</strong></p>
+<p>In the <a href="https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing">UN Goals Timelines CoLab</a> create a function called timelineGeneration() that generates the timeline csv files. Pass it an object containing DCID values and their scopes - pulled from our Google Sheet UN Goal tabs.</p>
+<p><strong>Scope</strong> values are: Country, State, County, Zip</p>
+<p>Apply the valid year range from the Google Sheet row in <strong>StartYear</strong> and <strong>EndYear</strong></p>
+<p>We could include an OmitLocations column if some countries lack emissions data.</p>
+<p>We'll send our .csv output to UN Goal subfolders at <a href="https://github.com/ModelEarth/data-commons/tree/main/docs/data">data-commons/docs/data</a></p>
+</main>
+<footer id="observablehq-footer">
+<div><style>#observablehq-footer{margin-top:40px;border-top:1px solid #ccc;padding-top:10px;}</style>Built with <a href="https://observablehq.com" target="_blank">Observable</a> and <a href="https://DataCommons.org" target="_blank">Google Data Commons</a> by our <a href="/projects/">Model.earth Project Team</a>.</div>
+</footer>
+</div>

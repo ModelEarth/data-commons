@@ -1,0 +1,253 @@
+availableDate: 9/20/2017
+brandOwner: FRESH & EASY
+brandedFoodCategory: Pizza Mixes & Other Dry Dinners
+dataSource: LI
+dataType: Branded
+description: RICE
+discontinuedDate: ''
+fdcId: 356554
+foodAttributes: []
+foodClass: Branded
+foodComponents: []
+foodNutrients:
+- amount: 28.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 3380202
+  nutrient:
+    id: 1087
+    name: Calcium, Ca
+    number: '301'
+    rank: 5300
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 3380207
+  nutrient:
+    id: 1258
+    name: Fatty acids, total saturated
+    number: '606'
+    rank: 9700
+    unitName: g
+  type: FoodNutrient
+- amount: 2.5
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 3380205
+  nutrient:
+    id: 1162
+    name: Vitamin C, total ascorbic acid
+    number: '401'
+    rank: 6300
+    unitName: mg
+  type: FoodNutrient
+- amount: 1.88
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 3380203
+  nutrient:
+    id: 1089
+    name: Iron, Fe
+    number: '303'
+    rank: 5400
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 3380206
+  nutrient:
+    id: 1253
+    name: Cholesterol
+    number: '601'
+    rank: 15700
+    unitName: mg
+  type: FoodNutrient
+- amount: 69.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 3380204
+  nutrient:
+    id: 1104
+    name: Vitamin A, IU
+    number: '318'
+    rank: 7500
+    unitName: IU
+  type: FoodNutrient
+- amount: 26.39
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 4938686
+  nutrient:
+    id: 1005
+    name: Carbohydrate, by difference
+    number: '205'
+    rank: 1110
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 4938691
+  nutrient:
+    id: 1257
+    name: Fatty acids, total trans
+    number: '605'
+    rank: 15400
+    unitName: g
+  type: FoodNutrient
+- amount: 2.43
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 4938685
+  nutrient:
+    id: 1004
+    name: Total lipid (fat)
+    number: '204'
+    rank: 800
+    unitName: g
+  type: FoodNutrient
+- amount: 1.4
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 4938689
+  nutrient:
+    id: 1079
+    name: Fiber, total dietary
+    number: '291'
+    rank: 1200
+    unitName: g
+  type: FoodNutrient
+- amount: 465.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 4938690
+  nutrient:
+    id: 1093
+    name: Sodium, Na
+    number: '307'
+    rank: 5800
+    unitName: mg
+  type: FoodNutrient
+- amount: 1.39
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 4938688
+  nutrient:
+    id: 2000
+    name: Total Sugars
+    number: '269'
+    rank: 1510
+    unitName: g
+  type: FoodNutrient
+- amount: 139.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 4938687
+  nutrient:
+    id: 1008
+    name: Energy
+    number: '208'
+    rank: 300
+    unitName: kcal
+  type: FoodNutrient
+- amount: 3.47
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 4938684
+  nutrient:
+    id: 1003
+    name: Protein
+    number: '203'
+    rank: 600
+    unitName: g
+  type: FoodNutrient
+foodPortions: []
+foodUpdateLog:
+- availableDate: 9/20/2017
+  brandOwner: FRESH & EASY
+  brandedFoodCategory: Pizza Mixes & Other Dry Dinners
+  dataSource: LI
+  dataType: Branded
+  description: RICE
+  discontinuedDate: ''
+  fdcId: 356554
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: '5051379035976'
+  householdServingFullText: 1 cup
+  ingredients: 'WATER, PARBOILED LONG GRAIN RICE, TOMATOES, POBLANO PEPPERS, VEGETABLE
+    OIL (FROM ONE OR MORE OF THE FOLLOWING: CANOLA, SUNFLOWER), TOMATO POWDER, SALT,
+    SUGAR, GARLIC POWDER, CUMIN, ONION POWDER, MALTODEXTRIN, NATURAL FLAVORS, PAPRIKA
+    EXTRACT (FOR COLOR), CITRIC ACID.'
+  marketCountry: United States
+  modifiedDate: 9/20/2017
+  publicationDate: 4/1/2019
+  servingSize: 144.0
+  servingSizeUnit: g
+gtinUpc: '5051379035976'
+householdServingFullText: 1 cup
+ingredients: 'WATER, PARBOILED LONG GRAIN RICE, TOMATOES, POBLANO PEPPERS, VEGETABLE
+  OIL (FROM ONE OR MORE OF THE FOLLOWING: CANOLA, SUNFLOWER), TOMATO POWDER, SALT,
+  SUGAR, GARLIC POWDER, CUMIN, ONION POWDER, MALTODEXTRIN, NATURAL FLAVORS, PAPRIKA
+  EXTRACT (FOR COLOR), CITRIC ACID.'
+labelNutrients:
+  calcium:
+    value: 40.3
+  calories:
+    value: 200
+  carbohydrates:
+    value: 38.0
+  cholesterol:
+    value: 0.0
+  fat:
+    value: 3.5
+  fiber:
+    value: 2.02
+  iron:
+    value: 2.71
+  protein:
+    value: 5.0
+  saturatedFat:
+    value: 0.0
+  sodium:
+    value: 670
+  sugars:
+    value: 2.0
+  transFat:
+    value: 0.0
+marketCountry: United States
+modifiedDate: 9/20/2017
+publicationDate: 4/1/2019
+servingSize: 144.0
+servingSizeUnit: g

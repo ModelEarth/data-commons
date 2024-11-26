@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Goal #1: Great Jobs | Data Commons</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../_import/components/data_loader.a470957d.js">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
+<script type="module">
+
+import {define} from "../_observablehq/client.js";
+
+define({id: "6b770fad", outputs: ["addSuggestionToInput","loadDataCommons","displayJsonData","loadData"], body: async () => {
+const {loadDataCommons, displayJsonData} = await import("../_import/components/data_loader.a470957d.js");
+  function addSuggestionToInput(suggestion, inputId) {
+    document.getElementById(inputId).value = suggestion;
+  }
+
+  // TO DO - Avoid use of event.target.parentNode
+
+  // Event listeners for suggestion bubbles
+  document.querySelectorAll('.suggestion-bubble').forEach(item => {
+    item.addEventListener('click', event => {
+      // Get the suggestion bubble text
+      const suggestion = event.target.innerText;
+      // Get the corresponding input field id
+      const inputId = event.target.parentNode.nextElementSibling.id;
+      // Add suggestion to the input field
+      addSuggestionToInput(suggestion, inputId);
+    });
+  });
+
+  // Sends file to dist/_import/components/data_loader.081307e4.js
+  
+  document.getElementById('loadDataButton').addEventListener('click', () => {
+    loadData();
+  });
+  function loadData() {
+      const apiKey = 'AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI';
+      const dcidInput = document.getElementById('dcidInput').value;
+      const propertyInput = document.getElementById('propertyInput').value;
+
+      console.log('DCID:', dcidInput);
+      console.log('Property:', propertyInput);
+
+      loadDataCommons(apiKey, dcidInput, propertyInput).then(data => {
+          console.log(data);
+          displayJsonData(data);
+      }).catch(error => {
+          console.error('Error loading data:', error);
+      });
+  }
+  loadData();
+
+  // This code is also duplicated in index.html
+  document.getElementById('feedplayerButton').addEventListener('click', () => {
+    const apiURL = document.getElementById('apiURL').value;
+    window.location = "/feed/view/#path=" + apiURL.replace(/&/g, encodeURIComponent("&"));
+  });
+  // Download JSON button click event
+  document.getElementById("downloadButton").addEventListener("click", function() {
+    const resultData = document.getElementById("resultContainer").textContent;
+    const data = "data:text/json;charset=utf-8," + encodeURIComponent(resultData);
+    const downloadButton = document.createElement("a");
+    downloadButton.setAttribute("href", data);
+    downloadButton.setAttribute("download", "data.json");
+    downloadButton.click();
+  });
+return {addSuggestionToInput,loadDataCommons,displayJsonData,loadData};
+}});
+
+</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#data-commons-api-via-javascript">Data Commons API via Javascript</a></li>
+<li class="observablehq-secondary-link"><a href="#nodejs">NodeJS</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<p><a href="../../">UN Goal Timelines</a> - <a href="../">Data Commons</a></p>
+<h1 id="goal-%231%3A-great-jobs" tabindex="-1"><a class="observablehq-header-anchor" href="#goal-%231%3A-great-jobs">Goal #1: Great Jobs</a></h1>
+<p>Let's find and apply for great paying jobs. Help us develop a <a href="/feed/view/#feed=serp">local job search using Serp</a>.<br>
+We're focusing on workforce automation and assistance that ends poverty while eliminating government debt.</p>
+<p>If you'd like to document your contributions, one option is to use our <a href="https://docs.google.com/spreadsheets/d/1wvw_xsFWnYE9z8nDQqmu1m2LB5TJEfy5VLkaFuEaCfk/edit?usp=sharing">times spreadsheet template</a>. Better yet, use a readme file so you can share an overview and include links to your contributions.  (Fork our <a href="https://github.com/ModelEarth/contributors">contributors repo</a> and document your contributions.)</p>
+<h2 id="data-commons-api-via-javascript" tabindex="-1"><a class="observablehq-header-anchor" href="#data-commons-api-via-javascript">Data Commons API via Javascript</a></h2>
+<p>Thanks to Mehul, we finally figured out how to load <a href="../data/">timelines using the GDC Javascript API</a>.
+Using <a href="../../docs/jobs/">Javascript</a> and <a href="../../dist/jobs/">NodeJS</a> to call Google Data Commons API.</p>
+<p>You can find the DCID and property value using:</p>
+<ul>
+<li><a href="https://docs.datacommons.org/api/sheets/">Data Commons Google Sheets add-on</a></li>
+<li><a href="https://datacommons.org/place">Data Commons Place Browser</a></li>
+<li><a href="https://datacommons.org/tools/statvar">Data Commons StatVar Browser</a></li>
+<li><a href="https://datacommons.org/browser/">Data Commons Browser</a></li>
+</ul>
+<p><a href="https://docs.datacommons.org/api/rest/v2/observation">Based on REST API v2/observation example 3</a></p>
+<!--
+DCID Examples: geoId/13, PowerPlant, Count\_Jobs\_EconomicDevelopmentAdministration\_JobsCreated
+-->
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#resultContainer {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.suggestion-container {
+  margin-top: 5px;
+}
+
+.suggestion-bubble {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid white; /* Changed border color to white */
+}
+
+.suggestion-bubble:hover {
+  background-color: yellow;
+}
+.bottomInput {
+  background-color: #ccc;
+  padding: 18px;
+  /*
+  position: fixed;
+  right: 0;
+  top: 0;
+  */
+}
+</style>
+<div style="background-color: #ddd; padding:20px; font-size:16px;">
+<p><a href="https://github.com/modelearth/data-commons" style="float:right">Fork our repo to edit</a></p>
+<p>TO DO: Add intuitive dropdown menus for selecting properties.<br><br></p>
+<p>NOTE: Including a <a href="https://docs.datacommons.org/api/rest/v2#relation-expressions" target="relexp">Relation Expression</a> (property value) currently calls v2/node API.  Add a dropdown for switching the API.<br><br></p>
+<p><b>Parent to children</b><br></p>
+<p><span style="font-size:20px;font-family: var(--monospace);">-&gt;*</span> means an 'out' arc with all the properties (children) linked to this node.<br><br></p>
+<p><b>Child to parent</b><br>
+<span style="font-size:20px;font-family: var(--monospace);">&lt;-</span> means an 'in' arc of a child to it's parent nodes.</p>
+</div>
+<div class="bottomInput">
+<!-- Hid these until javascript modified -->
+<!--
+<div>
+  <label for="dcidInput">Enter DCID:</label>
+  <div class="suggestion-container" id="dcidSuggestions">
+    <span class="suggestion-bubble">geoId/06</span>
+    <span class="suggestion-bubble">Count_Jobs_EconomicDevelopmentAdministration_JobsCreated</span>
+    <span class="suggestion-bubble">geoId/13</span>
+   
+  </div>
+  
+</div>
+
+<div>
+  <label for="propertyInput">Enter Property:</label>
+  <div class="suggestion-container" id="propertySuggestions">
+    <span class="suggestion-bubble"><-</span>
+    <span class="suggestion-bubble">-></span>
+    <span class="suggestion-bubble">->*</span>
+    <span class="suggestion-bubble">->[nearbyPlaces,landArea]</span>
+  </div>
+  
+</div>
+-->
+<div>
+<b>variable.dcids:</b> Count_Person, Count_Farm, LandCoverFraction_Forest<br><br>
+</div>
+<div style="float:left">
+Variable DCIDs:<br>
+<input type="text" id="dcidInput" style="min-width:200px;" placeholder="e.g., geoId/13" value="LandCoverFraction_Forest">
+</div>
+<div style="float:left;"><!-- show when not timeline which used v2/observation API -->
+Property (v2/node)<br>
+<input type="text" id="propertyInput" style="font-family: var(--monospace);" placeholder="" value="">
+</div>
+<div style="float:left; padding-left:10px; padding-top:13px">
+<button id="loadDataButton" style="float:left;margin-right:10px">View Data</button>
+<button id="downloadButton" style="float:left;background-color:#999;">Download</button>
+</div>
+<div style="clear:both;"></div>
+<button id="feedplayerButton" style="float:right;margin-right:10px;background-color:darkblue;margin-top:0px">Feed Player</button>
+<div style="overflow:auto;padding-right:6px">
+<textarea rows="3" type="text" id="apiURL" class="textInput" style="line-height:22px;font-size: 14px;width:100%;max-width:1000px;color:#555;background-color:rgba(0, 0, 0, 0);border:1px solid #fff;min-height:100px" placeholder="API URL" value="" autofocus="" onfocus="this.select()"></textarea>
+</div>
+<div style="clear:both"></div>
+</div>
+<div id="resultContainer" style="max-height:400px;overflow-y:scroll;">JSON Output from Google Data Commons API</div>
+<br>
+<!--
+### API Examples
+
+**To find the properties related to `geoId/06`**  
+Display a list of properties using the symbol `->`.
+
+    DCID: geoId/06
+    Property: ->
+
+
+**To display all the properties of JobsCreated**  
+Display all values of its properties using `->*` to indicate all records.
+
+    DCID: Count_Jobs_EconomicDevelopmentAdministration_JobsCreated
+    Property: ->*
+
+
+**To display `nearbyPlaces` and `landArea` of Georgia**  
+Pass a list in the properties column.
+
+    DCID: geoID/13
+    Property: ->[nearbyPlaces, landArea]
+-->
+<h2 id="nodejs" tabindex="-1"><a class="observablehq-header-anchor" href="#nodejs">NodeJS</a></h2>
+<p>Yarn Build into <a href="../../dist/jobs/">dist/jobs folder</a></p>
+<p>The client-side version of the following resides within <a href="../../docs/jobs/">docs/jobs/index.html</a> and uses<br>
+<a href="../../docs/components/data-loader-earth.js">components/data-loader-earth.js</a>.</p>
+<!--
+The following is only functional when built into the "dist" repo. [View built version](../../dist/jobs/).
+-->
+<div id="cell-6b770fad" class="observablehq observablehq--block"></div>
+</main>
+<footer id="observablehq-footer">
+<div><style>#observablehq-footer{margin-top:40px;border-top:1px solid #ccc;padding-top:10px;}</style>Built with <a href="https://observablehq.com" target="_blank">Observable</a> and <a href="https://DataCommons.org" target="_blank">Google Data Commons</a> by our <a href="/projects/">Model.earth Project Team</a>.</div>
+</footer>
+</div>

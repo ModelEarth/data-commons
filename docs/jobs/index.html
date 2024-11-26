@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Data Commons - Jobs Timeline</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+<link rel="stylesheet" href="/data-commons/dist/_observablehq/theme-air,near-midnight.css" />
+-->
+<script type="text/javascript" src="/localsite/js/localsite.js?showheader=true&showsearch=true"></script>
+
+<!-- Same as NodeJS in index.md -->
+<script type="text/javascript" src="../components/data-loader-earth.js"></script>
+<script>
+  waitForElm('#resultContainer').then((elm) => {
+    document.getElementById('loadDataButton').addEventListener('click', () => {
+        loadData();
+    });
+    loadData(); // Init
+  });
+  function loadData() {
+    const apiKey = 'AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI';
+    const dcidInput = document.getElementById('dcidInput').value;
+    const propertyInput = document.getElementById('propertyInput').value;
+
+    console.log('DCID:', dcidInput);
+    console.log('Property:', propertyInput);
+
+    loadDataCommons(apiKey, dcidInput, propertyInput).then(data => {
+        //console.log("data: ");
+        //console.log(data);
+        //displayJsonData(data); // Older approach, not well formatted
+        
+        // Why didn't this work?  Something to do with assignment to resultData.innerHTML
+        //const resultData = document.getElementById("resultContainer").textContent;
+        //resultData.innerHTML = formatRow("",data,0); // Resides in localsite.js
+
+        let fullHtml = formatRow("",data,0); // Resides in localsite.js
+        $("#resultContainer").html(fullHtml);
+
+    }).catch(error => {
+        console.error('Error loading data:', error);
+    });
+  }
+  waitForElm('#downloadButton').then((elm) => {
+    document.getElementById('feedplayerButton').addEventListener('click', () => {
+      const apiURL = document.getElementById('apiURL').value;
+      window.location = "/feed/view/#path=" + apiURL.replace(/&/g, encodeURIComponent("&"));
+    });
+  });
+  waitForElm('#downloadButton').then((elm) => {
+    document.getElementById("downloadButton").addEventListener("click", function() {
+      alert("clicked")
+      const resultData = document.getElementById("resultContainer").textContent;
+      const data = "data:text/json;charset=utf-8," + encodeURIComponent(resultData);
+      const downloadButton = document.createElement("a");
+      downloadButton.setAttribute("href", data);
+      downloadButton.setAttribute("download", "data.json");
+      downloadButton.click();
+    });
+  });
+</script>
+
+
+<script>
+// Contains #resultContainer
+loadMarkdown("index.md", "readmeDiv", "_parent");
+</script>
+<style>
+body {
+  /* find where these are being set to 20px */
+  margin: 0px; /* avoid important so .bodyLeftMargin can override */
+  padding: 0px !important;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="observablehq-centerXXX" class="content contentpadding">
+  <div id="readmeDiv"></div>
+</div>
+
+
+</body>
+</html>

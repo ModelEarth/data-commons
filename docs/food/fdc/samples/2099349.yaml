@@ -1,0 +1,291 @@
+availableDate: 3/8/2018
+brandName: ESSENTIAL EVERYDAY
+brandOwner: Supervalu, Inc.
+brandedFoodCategory: Canned Vegetables
+dataSource: LI
+dataType: Branded
+description: SPINACH
+discontinuedDate: ''
+fdcId: 2099349
+foodAttributes:
+- id: 2303778
+  name: Added Package Weight
+  value: 9
+foodClass: Branded
+foodComponents: []
+foodNutrients:
+- amount: 1.7
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 26335056
+  nutrient:
+    id: 1079
+    name: Fiber, total dietary
+    number: '291'
+    rank: 1200
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 26335062
+  nutrient:
+    id: 1253
+    name: Cholesterol
+    number: '601'
+    rank: 15700
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 26335055
+  nutrient:
+    id: 2000
+    name: Total Sugars
+    number: '269'
+    rank: 1510
+    unitName: g
+  type: FoodNutrient
+- amount: 1.5
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 26335058
+  nutrient:
+    id: 1089
+    name: Iron, Fe
+    number: '303'
+    rank: 5400
+    unitName: mg
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 26335052
+  nutrient:
+    id: 1004
+    name: Total lipid (fat)
+    number: '204'
+    rank: 800
+    unitName: g
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 26335064
+  nutrient:
+    id: 1258
+    name: Fatty acids, total saturated
+    number: '606'
+    rank: 9700
+    unitName: g
+  type: FoodNutrient
+- amount: 21.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 26335054
+  nutrient:
+    id: 1008
+    name: Energy
+    number: '208'
+    rank: 300
+    unitName: kcal
+  type: FoodNutrient
+- amount: 0.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 26335063
+  nutrient:
+    id: 1257
+    name: Fatty acids, total trans
+    number: '605'
+    rank: 15400
+    unitName: g
+  type: FoodNutrient
+- amount: 33.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 26335057
+  nutrient:
+    id: 1087
+    name: Calcium, Ca
+    number: '301'
+    rank: 5300
+    unitName: mg
+  type: FoodNutrient
+- amount: 2917.0
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 26335060
+  nutrient:
+    id: 1104
+    name: Vitamin A, IU
+    number: '318'
+    rank: 7500
+    unitName: IU
+  type: FoodNutrient
+- amount: 7.5
+  foodNutrientDerivation:
+    code: LCCD
+    description: Calculated from a daily value percentage per serving size measure
+    id: 75
+  id: 26335061
+  nutrient:
+    id: 1162
+    name: Vitamin C, total ascorbic acid
+    number: '401'
+    rank: 6300
+    unitName: mg
+  type: FoodNutrient
+- amount: 1.67
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 26335051
+  nutrient:
+    id: 1003
+    name: Protein
+    number: '203'
+    rank: 600
+    unitName: g
+  type: FoodNutrient
+- amount: 3.33
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 26335053
+  nutrient:
+    id: 1005
+    name: Carbohydrate, by difference
+    number: '205'
+    rank: 1110
+    unitName: g
+  type: FoodNutrient
+- amount: 300.0
+  foodNutrientDerivation:
+    code: LCCS
+    description: Calculated from value per serving size measure
+    id: 70
+  id: 26335059
+  nutrient:
+    id: 1093
+    name: Sodium, Na
+    number: '307'
+    rank: 5800
+    unitName: mg
+  type: FoodNutrient
+foodPortions: []
+foodUpdateLog:
+- availableDate: 3/8/2018
+  brandName: ESSENTIAL EVERYDAY
+  brandOwner: Supervalu, Inc.
+  brandedFoodCategory: Canned Vegetables
+  dataSource: LI
+  dataType: Branded
+  description: SPINACH
+  discontinuedDate: ''
+  fdcId: 2099349
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: '041303010051'
+  ingredients: SPINACH, WATER, SALT.
+  marketCountry: United States
+  modifiedDate: 3/8/2018
+  packageWeight: 7.75 oz/220 g
+  publicationDate: 10/28/2021
+  servingSize: 120.0
+  servingSizeUnit: g
+- availableDate: 3/8/2018
+  brandName: ESSENTIAL EVERYDAY
+  brandOwner: Supervalu, Inc.
+  brandedFoodCategory: Canned Vegetables
+  dataSource: LI
+  dataType: Branded
+  description: SPINACH
+  discontinuedDate: ''
+  fdcId: 1612900
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: '041303010051'
+  ingredients: SPINACH, WATER, SALT.
+  marketCountry: United States
+  modifiedDate: 3/8/2018
+  publicationDate: 3/19/2021
+  servingSize: 120.0
+  servingSizeUnit: g
+- availableDate: 3/8/2018
+  brandName: ESSENTIAL EVERYDAY
+  brandOwner: Supervalu, Inc.
+  brandedFoodCategory: Canned Vegetables
+  dataSource: LI
+  dataType: Branded
+  description: SPINACH
+  discontinuedDate: ''
+  fdcId: 1320765
+  foodAttributes: []
+  foodClass: Branded
+  gtinUpc: '041303010051'
+  ingredients: SPINACH, WATER, SALT.
+  marketCountry: United States
+  modifiedDate: 3/8/2018
+  notaSignificantSourceOf: ''
+  packageWeight: ''
+  publicationDate: 2/26/2021
+  servingSize: 120.0
+  servingSizeUnit: g
+  subbrandName: ''
+gtinUpc: '041303010051'
+ingredients: SPINACH, WATER, SALT.
+labelNutrients:
+  calcium:
+    value: 39.6
+  calories:
+    value: 25.2
+  carbohydrates:
+    value: 4.0
+  cholesterol:
+    value: 0.0
+  fat:
+    value: 0.0
+  fiber:
+    value: 2.04
+  iron:
+    value: 1.8
+  protein:
+    value: 2.0
+  saturatedFat:
+    value: 0.0
+  sodium:
+    value: 360
+  sugars:
+    value: 0.0
+  transFat:
+    value: 0.0
+marketCountry: United States
+modifiedDate: 3/8/2018
+packageWeight: 7.75 oz/220 g
+publicationDate: 10/28/2021
+servingSize: 120.0
+servingSizeUnit: g

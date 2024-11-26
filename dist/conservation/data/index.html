@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Data Commons</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../../_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../../_observablehq/theme-air,near-midnight.css">
+<link rel="modulepreload" href="../../_observablehq/client.js">
+<link rel="modulepreload" href="../../_observablehq/runtime.js">
+<link rel="modulepreload" href="../../_observablehq/stdlib.js">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
+<script type="module">
+
+import "../../_observablehq/client.js";
+
+</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#forest-coverage-timeline-data">Forest Coverage Timeline Data</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<h2 id="forest-coverage-timeline-data" tabindex="-1"><a class="observablehq-header-anchor" href="#forest-coverage-timeline-data">Forest Coverage Timeline Data</a></h2>
+<h3 id="landcoverfraction_forest" tabindex="-1"><a class="observablehq-header-anchor" href="#landcoverfraction_forest">LandCoverFraction_Forest</a></h3>
+<pre><code>python3 -m venv env &amp;&amp; source env/bin/activate
+python LandCoverFraction_Forest.py
+</code></pre>
+<p>Resulting file from GDC API: <a href="LandCoverFraction_Forest.csv">LandCoverFraction_Forest.csv</a></p>
+<p>This is what one key/value pair in one of the indices in the json looks like:</p>
+<pre><code>{'geoId/13001': {'geoId/13001': {'LandCoverFraction_Forest': {'sourceSeries': [{'val': {'2015': 57.712213157748906, '2019': 56.10225251926496, '2017': 57.329201724571796, '2016': 57.08418588188137, '2018': 58.540199494228055}, 'measurementMethod': 'GoogleEarthEngine_MeanReduction', 'importName': 'Copernicus_GlobalLandCoverLayers', 'provenanceDomain': 'copernicus.eu', 'scalingFactor': '100', 'unit': 'Percent', 'isDcAggregate': True, 'provenanceUrl': 'https://land.copernicus.eu/global/lcviewer'}]}}}
+</code></pre>
+<p>Python:</p>
+<pre><code>import datacommons
+data = datacommons.get_stat_all(["geoId/27","geoId/55"], ["LandCoverFraction_Forest"])
+
+for geo_id, stats in data.items():
+    print(f"Data for location: {geo_id}")
+    for stat_name, stat_info in stats.items():
+        print(f"Stat name: {stat_name}")
+        for series in stat_info['sourceSeries']:
+            print(f"Source series:")
+            for year, count in series['val'].items():
+                print(f"Year: {year}, Count: {count}")
+            print(f"Measurement method: {series['measurementMethod']}")
+            print(f"Import name: {series['importName']}")
+            print(f"Provenance domain: {series['provenanceDomain']}")
+            print(f"Provenance URL: {series['provenanceUrl']}")
+            print()
+</code></pre>
+</main>
+<footer id="observablehq-footer">
+<div><style>#observablehq-footer{margin-top:40px;border-top:1px solid #ccc;padding-top:10px;}</style>Built with <a href="https://observablehq.com" target="_blank">Observable</a> and <a href="https://DataCommons.org" target="_blank">Google Data Commons</a> by our <a href="/projects/">Model.earth Project Team</a>.</div>
+</footer>
+</div>

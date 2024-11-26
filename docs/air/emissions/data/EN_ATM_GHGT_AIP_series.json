@@ -1,0 +1,5377 @@
+[
+    {
+        "country_code": "AUS",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 423.67222
+            },
+            {
+                "year": "1991",
+                "emission": 423.73306
+            },
+            {
+                "year": "1992",
+                "emission": 427.42608
+            },
+            {
+                "year": "1993",
+                "emission": 428.33707
+            },
+            {
+                "year": "1994",
+                "emission": 428.81822
+            },
+            {
+                "year": "1995",
+                "emission": 437.27655
+            },
+            {
+                "year": "1996",
+                "emission": 443.92827
+            },
+            {
+                "year": "1997",
+                "emission": 456.01598
+            },
+            {
+                "year": "1998",
+                "emission": 469.75152
+            },
+            {
+                "year": "1999",
+                "emission": 476.39199
+            },
+            {
+                "year": "2000",
+                "emission": 487.77776
+            },
+            {
+                "year": "2001",
+                "emission": 495.60431
+            },
+            {
+                "year": "2002",
+                "emission": 499.19049
+            },
+            {
+                "year": "2003",
+                "emission": 500.59996
+            },
+            {
+                "year": "2004",
+                "emission": 517.72651
+            },
+            {
+                "year": "2005",
+                "emission": 524.21149
+            },
+            {
+                "year": "2006",
+                "emission": 528.03842
+            },
+            {
+                "year": "2007",
+                "emission": 534.41784
+            },
+            {
+                "year": "2008",
+                "emission": 537.26231
+            },
+            {
+                "year": "2009",
+                "emission": 540.38162
+            },
+            {
+                "year": "2010",
+                "emission": 535.54922
+            },
+            {
+                "year": "2011",
+                "emission": 537.2055
+            },
+            {
+                "year": "2012",
+                "emission": 539.51105
+            },
+            {
+                "year": "2013",
+                "emission": 530.31191
+            },
+            {
+                "year": "2014",
+                "emission": 524.7094
+            },
+            {
+                "year": "2015",
+                "emission": 533.06383
+            },
+            {
+                "year": "2016",
+                "emission": 542.28787
+            },
+            {
+                "year": "2017",
+                "emission": 549.33002
+            },
+            {
+                "year": "2018",
+                "emission": 549.73194
+            },
+            {
+                "year": "2019",
+                "emission": 545.15252
+            }
+        ]
+    },
+    {
+        "country_code": "AUT",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 78.42049
+            },
+            {
+                "year": "1991",
+                "emission": 82.08233
+            },
+            {
+                "year": "1992",
+                "emission": 75.46927
+            },
+            {
+                "year": "1993",
+                "emission": 75.70919
+            },
+            {
+                "year": "1994",
+                "emission": 75.9583
+            },
+            {
+                "year": "1995",
+                "emission": 79.23798
+            },
+            {
+                "year": "1996",
+                "emission": 82.45259
+            },
+            {
+                "year": "1997",
+                "emission": 82.11623
+            },
+            {
+                "year": "1998",
+                "emission": 81.43285
+            },
+            {
+                "year": "1999",
+                "emission": 79.89837
+            },
+            {
+                "year": "2000",
+                "emission": 80.12943
+            },
+            {
+                "year": "2001",
+                "emission": 84.06472
+            },
+            {
+                "year": "2002",
+                "emission": 85.81506
+            },
+            {
+                "year": "2003",
+                "emission": 91.30672
+            },
+            {
+                "year": "2004",
+                "emission": 90.98523
+            },
+            {
+                "year": "2005",
+                "emission": 92.14729
+            },
+            {
+                "year": "2006",
+                "emission": 89.72878
+            },
+            {
+                "year": "2007",
+                "emission": 86.98394
+            },
+            {
+                "year": "2008",
+                "emission": 86.44021
+            },
+            {
+                "year": "2009",
+                "emission": 79.77907
+            },
+            {
+                "year": "2010",
+                "emission": 84.33672
+            },
+            {
+                "year": "2011",
+                "emission": 82.12703
+            },
+            {
+                "year": "2012",
+                "emission": 79.43238
+            },
+            {
+                "year": "2013",
+                "emission": 79.81717
+            },
+            {
+                "year": "2014",
+                "emission": 76.23867
+            },
+            {
+                "year": "2015",
+                "emission": 78.46223
+            },
+            {
+                "year": "2016",
+                "emission": 79.47101
+            },
+            {
+                "year": "2017",
+                "emission": 81.8625
+            },
+            {
+                "year": "2018",
+                "emission": 78.62764
+            },
+            {
+                "year": "2019",
+                "emission": 79.84225
+            }
+        ]
+    },
+    {
+        "country_code": "BEL",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 145.71949
+            },
+            {
+                "year": "1991",
+                "emission": 148.43922
+            },
+            {
+                "year": "1992",
+                "emission": 148.03915
+            },
+            {
+                "year": "1993",
+                "emission": 146.89739
+            },
+            {
+                "year": "1994",
+                "emission": 151.49712
+            },
+            {
+                "year": "1995",
+                "emission": 153.61679
+            },
+            {
+                "year": "1996",
+                "emission": 157.32392
+            },
+            {
+                "year": "1997",
+                "emission": 148.8525
+            },
+            {
+                "year": "1998",
+                "emission": 154.02116
+            },
+            {
+                "year": "1999",
+                "emission": 147.78933
+            },
+            {
+                "year": "2000",
+                "emission": 148.88293
+            },
+            {
+                "year": "2001",
+                "emission": 147.32461
+            },
+            {
+                "year": "2002",
+                "emission": 147.41269
+            },
+            {
+                "year": "2003",
+                "emission": 147.71345
+            },
+            {
+                "year": "2004",
+                "emission": 148.55479
+            },
+            {
+                "year": "2005",
+                "emission": 145.5617
+            },
+            {
+                "year": "2006",
+                "emission": 142.72048
+            },
+            {
+                "year": "2007",
+                "emission": 139.07166
+            },
+            {
+                "year": "2008",
+                "emission": 138.98022
+            },
+            {
+                "year": "2009",
+                "emission": 126.32502
+            },
+            {
+                "year": "2010",
+                "emission": 133.63352
+            },
+            {
+                "year": "2011",
+                "emission": 123.13428
+            },
+            {
+                "year": "2012",
+                "emission": 120.38571
+            },
+            {
+                "year": "2013",
+                "emission": 120.44349
+            },
+            {
+                "year": "2014",
+                "emission": 114.732
+            },
+            {
+                "year": "2015",
+                "emission": 118.95998
+            },
+            {
+                "year": "2016",
+                "emission": 117.68918
+            },
+            {
+                "year": "2017",
+                "emission": 117.4243
+            },
+            {
+                "year": "2018",
+                "emission": 117.89474
+            },
+            {
+                "year": "2019",
+                "emission": 116.65149
+            }
+        ]
+    },
+    {
+        "country_code": "BGR",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 99.97808
+            },
+            {
+                "year": "1991",
+                "emission": 81.79582
+            },
+            {
+                "year": "1992",
+                "emission": 76.21837
+            },
+            {
+                "year": "1993",
+                "emission": 75.61064
+            },
+            {
+                "year": "1994",
+                "emission": 71.51954
+            },
+            {
+                "year": "1995",
+                "emission": 72.90891
+            },
+            {
+                "year": "1996",
+                "emission": 73.24927
+            },
+            {
+                "year": "1997",
+                "emission": 70.02876
+            },
+            {
+                "year": "1998",
+                "emission": 65.92219
+            },
+            {
+                "year": "1999",
+                "emission": 58.81704
+            },
+            {
+                "year": "2000",
+                "emission": 57.86427
+            },
+            {
+                "year": "2001",
+                "emission": 60.77688
+            },
+            {
+                "year": "2002",
+                "emission": 58.13023
+            },
+            {
+                "year": "2003",
+                "emission": 62.94028
+            },
+            {
+                "year": "2004",
+                "emission": 62.1095
+            },
+            {
+                "year": "2005",
+                "emission": 62.71487
+            },
+            {
+                "year": "2006",
+                "emission": 63.3771
+            },
+            {
+                "year": "2007",
+                "emission": 67.30794
+            },
+            {
+                "year": "2008",
+                "emission": 65.99659
+            },
+            {
+                "year": "2009",
+                "emission": 57.16397
+            },
+            {
+                "year": "2010",
+                "emission": 59.79637
+            },
+            {
+                "year": "2011",
+                "emission": 65.07143
+            },
+            {
+                "year": "2012",
+                "emission": 60.08712
+            },
+            {
+                "year": "2013",
+                "emission": 54.89392
+            },
+            {
+                "year": "2014",
+                "emission": 57.98787
+            },
+            {
+                "year": "2015",
+                "emission": 61.33835
+            },
+            {
+                "year": "2016",
+                "emission": 58.80091
+            },
+            {
+                "year": "2017",
+                "emission": 61.14847
+            },
+            {
+                "year": "2018",
+                "emission": 57.28177
+            },
+            {
+                "year": "2019",
+                "emission": 55.95528
+            }
+        ]
+    },
+    {
+        "country_code": "BLR",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 139.15199
+            },
+            {
+                "year": "1991",
+                "emission": 130.84089
+            },
+            {
+                "year": "1992",
+                "emission": 120.14078
+            },
+            {
+                "year": "1993",
+                "emission": 106.92359
+            },
+            {
+                "year": "1994",
+                "emission": 89.77989
+            },
+            {
+                "year": "1995",
+                "emission": 83.44294
+            },
+            {
+                "year": "1996",
+                "emission": 84.29736
+            },
+            {
+                "year": "1997",
+                "emission": 85.10998
+            },
+            {
+                "year": "1998",
+                "emission": 86.36189
+            },
+            {
+                "year": "1999",
+                "emission": 80.05793
+            },
+            {
+                "year": "2000",
+                "emission": 79.71708
+            },
+            {
+                "year": "2001",
+                "emission": 79.8701
+            },
+            {
+                "year": "2002",
+                "emission": 78.36379
+            },
+            {
+                "year": "2003",
+                "emission": 80.44844
+            },
+            {
+                "year": "2004",
+                "emission": 84.70415
+            },
+            {
+                "year": "2005",
+                "emission": 86.79869
+            },
+            {
+                "year": "2006",
+                "emission": 90.64209
+            },
+            {
+                "year": "2007",
+                "emission": 90.11701
+            },
+            {
+                "year": "2008",
+                "emission": 92.95337
+            },
+            {
+                "year": "2009",
+                "emission": 88.81449
+            },
+            {
+                "year": "2010",
+                "emission": 90.6948
+            },
+            {
+                "year": "2011",
+                "emission": 90.3423
+            },
+            {
+                "year": "2012",
+                "emission": 91.37071
+            },
+            {
+                "year": "2013",
+                "emission": 92.26423
+            },
+            {
+                "year": "2014",
+                "emission": 91.0407
+            },
+            {
+                "year": "2015",
+                "emission": 85.97545
+            },
+            {
+                "year": "2016",
+                "emission": 87.74502
+            },
+            {
+                "year": "2017",
+                "emission": 88.5422
+            },
+            {
+                "year": "2018",
+                "emission": 89.06461
+            },
+            {
+                "year": "2019",
+                "emission": 90.1157
+            }
+        ]
+    },
+    {
+        "country_code": "CAN",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 601.52369
+            },
+            {
+                "year": "1991",
+                "emission": 595.77673
+            },
+            {
+                "year": "1992",
+                "emission": 613.59852
+            },
+            {
+                "year": "1993",
+                "emission": 616.79839
+            },
+            {
+                "year": "1994",
+                "emission": 638.00047
+            },
+            {
+                "year": "1995",
+                "emission": 656.29872
+            },
+            {
+                "year": "1996",
+                "emission": 678.71449
+            },
+            {
+                "year": "1997",
+                "emission": 691.19537
+            },
+            {
+                "year": "1998",
+                "emission": 696.90152
+            },
+            {
+                "year": "1999",
+                "emission": 709.60092
+            },
+            {
+                "year": "2000",
+                "emission": 733.51134
+            },
+            {
+                "year": "2001",
+                "emission": 722.93501
+            },
+            {
+                "year": "2002",
+                "emission": 726.55518
+            },
+            {
+                "year": "2003",
+                "emission": 744.83189
+            },
+            {
+                "year": "2004",
+                "emission": 745.91978
+            },
+            {
+                "year": "2005",
+                "emission": 738.7186
+            },
+            {
+                "year": "2006",
+                "emission": 730.10194
+            },
+            {
+                "year": "2007",
+                "emission": 751.66127
+            },
+            {
+                "year": "2008",
+                "emission": 735.69285
+            },
+            {
+                "year": "2009",
+                "emission": 693.5979
+            },
+            {
+                "year": "2010",
+                "emission": 702.80275
+            },
+            {
+                "year": "2011",
+                "emission": 714.07851
+            },
+            {
+                "year": "2012",
+                "emission": 717.17239
+            },
+            {
+                "year": "2013",
+                "emission": 725.37184
+            },
+            {
+                "year": "2014",
+                "emission": 722.55767
+            },
+            {
+                "year": "2015",
+                "emission": 723.09602
+            },
+            {
+                "year": "2016",
+                "emission": 706.93391
+            },
+            {
+                "year": "2017",
+                "emission": 716.09201
+            },
+            {
+                "year": "2018",
+                "emission": 728.47589
+            },
+            {
+                "year": "2019",
+                "emission": 730.24494
+            }
+        ]
+    },
+    {
+        "country_code": "CHE",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 53.6311
+            },
+            {
+                "year": "1991",
+                "emission": 55.54261
+            },
+            {
+                "year": "1992",
+                "emission": 55.30404
+            },
+            {
+                "year": "1993",
+                "emission": 52.75223
+            },
+            {
+                "year": "1994",
+                "emission": 51.75712
+            },
+            {
+                "year": "1995",
+                "emission": 52.68405
+            },
+            {
+                "year": "1996",
+                "emission": 53.38053
+            },
+            {
+                "year": "1997",
+                "emission": 52.21992
+            },
+            {
+                "year": "1998",
+                "emission": 53.78345
+            },
+            {
+                "year": "1999",
+                "emission": 53.63457
+            },
+            {
+                "year": "2000",
+                "emission": 52.93142
+            },
+            {
+                "year": "2001",
+                "emission": 54.47708
+            },
+            {
+                "year": "2002",
+                "emission": 52.98603
+            },
+            {
+                "year": "2003",
+                "emission": 54.08041
+            },
+            {
+                "year": "2004",
+                "emission": 54.68841
+            },
+            {
+                "year": "2005",
+                "emission": 55.34819
+            },
+            {
+                "year": "2006",
+                "emission": 55.0378
+            },
+            {
+                "year": "2007",
+                "emission": 53.1236
+            },
+            {
+                "year": "2008",
+                "emission": 54.54143
+            },
+            {
+                "year": "2009",
+                "emission": 53.08392
+            },
+            {
+                "year": "2010",
+                "emission": 54.72138
+            },
+            {
+                "year": "2011",
+                "emission": 50.6064
+            },
+            {
+                "year": "2012",
+                "emission": 51.94623
+            },
+            {
+                "year": "2013",
+                "emission": 52.83153
+            },
+            {
+                "year": "2014",
+                "emission": 48.87541
+            },
+            {
+                "year": "2015",
+                "emission": 48.41562
+            },
+            {
+                "year": "2016",
+                "emission": 48.70906
+            },
+            {
+                "year": "2017",
+                "emission": 47.86893
+            },
+            {
+                "year": "2018",
+                "emission": 46.36971
+            },
+            {
+                "year": "2019",
+                "emission": 46.10819
+            }
+        ]
+    },
+    {
+        "country_code": "CYP",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 5.57103
+            },
+            {
+                "year": "1991",
+                "emission": 6.07244
+            },
+            {
+                "year": "1992",
+                "emission": 6.52187
+            },
+            {
+                "year": "1993",
+                "emission": 6.79893
+            },
+            {
+                "year": "1994",
+                "emission": 7.04913
+            },
+            {
+                "year": "1995",
+                "emission": 6.98558
+            },
+            {
+                "year": "1996",
+                "emission": 7.33559
+            },
+            {
+                "year": "1997",
+                "emission": 7.43033
+            },
+            {
+                "year": "1998",
+                "emission": 7.76427
+            },
+            {
+                "year": "1999",
+                "emission": 8.03507
+            },
+            {
+                "year": "2000",
+                "emission": 8.30859
+            },
+            {
+                "year": "2001",
+                "emission": 8.25705
+            },
+            {
+                "year": "2002",
+                "emission": 8.48566
+            },
+            {
+                "year": "2003",
+                "emission": 8.87886
+            },
+            {
+                "year": "2004",
+                "emission": 9.07874
+            },
+            {
+                "year": "2005",
+                "emission": 9.2052
+            },
+            {
+                "year": "2006",
+                "emission": 9.46079
+            },
+            {
+                "year": "2007",
+                "emission": 9.78958
+            },
+            {
+                "year": "2008",
+                "emission": 10.00634
+            },
+            {
+                "year": "2009",
+                "emission": 9.77266
+            },
+            {
+                "year": "2010",
+                "emission": 9.44439
+            },
+            {
+                "year": "2011",
+                "emission": 9.15041
+            },
+            {
+                "year": "2012",
+                "emission": 8.61765
+            },
+            {
+                "year": "2013",
+                "emission": 7.91878
+            },
+            {
+                "year": "2014",
+                "emission": 8.29418
+            },
+            {
+                "year": "2015",
+                "emission": 8.33677
+            },
+            {
+                "year": "2016",
+                "emission": 8.78393
+            },
+            {
+                "year": "2017",
+                "emission": 8.96969
+            },
+            {
+                "year": "2018",
+                "emission": 8.81143
+            },
+            {
+                "year": "2019",
+                "emission": 8.84153
+            }
+        ]
+    },
+    {
+        "country_code": "CZE",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 197.07182
+            },
+            {
+                "year": "1991",
+                "emission": 178.84405
+            },
+            {
+                "year": "1992",
+                "emission": 172.34724
+            },
+            {
+                "year": "1993",
+                "emission": 164.7222
+            },
+            {
+                "year": "1994",
+                "emission": 157.20396
+            },
+            {
+                "year": "1995",
+                "emission": 156.32952
+            },
+            {
+                "year": "1996",
+                "emission": 159.34727
+            },
+            {
+                "year": "1997",
+                "emission": 154.76338
+            },
+            {
+                "year": "1998",
+                "emission": 148.6016
+            },
+            {
+                "year": "1999",
+                "emission": 139.02996
+            },
+            {
+                "year": "2000",
+                "emission": 149.27231
+            },
+            {
+                "year": "2001",
+                "emission": 149.2999
+            },
+            {
+                "year": "2002",
+                "emission": 145.65798
+            },
+            {
+                "year": "2003",
+                "emission": 148.73447
+            },
+            {
+                "year": "2004",
+                "emission": 149.76323
+            },
+            {
+                "year": "2005",
+                "emission": 147.72754
+            },
+            {
+                "year": "2006",
+                "emission": 148.95358
+            },
+            {
+                "year": "2007",
+                "emission": 150.77659
+            },
+            {
+                "year": "2008",
+                "emission": 145.889
+            },
+            {
+                "year": "2009",
+                "emission": 136.85338
+            },
+            {
+                "year": "2010",
+                "emission": 139.6059
+            },
+            {
+                "year": "2011",
+                "emission": 138.06889
+            },
+            {
+                "year": "2012",
+                "emission": 134.13867
+            },
+            {
+                "year": "2013",
+                "emission": 128.69189
+            },
+            {
+                "year": "2014",
+                "emission": 126.56324
+            },
+            {
+                "year": "2015",
+                "emission": 127.97221
+            },
+            {
+                "year": "2016",
+                "emission": 129.58495
+            },
+            {
+                "year": "2017",
+                "emission": 130.46008
+            },
+            {
+                "year": "2018",
+                "emission": 128.55462
+            },
+            {
+                "year": "2019",
+                "emission": 122.63851
+            }
+        ]
+    },
+    {
+        "country_code": "DEU",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 1248.57692
+            },
+            {
+                "year": "1991",
+                "emission": 1202.06055
+            },
+            {
+                "year": "1992",
+                "emission": 1152.17982
+            },
+            {
+                "year": "1993",
+                "emission": 1142.84527
+            },
+            {
+                "year": "1994",
+                "emission": 1124.86486
+            },
+            {
+                "year": "1995",
+                "emission": 1120.55525
+            },
+            {
+                "year": "1996",
+                "emission": 1138.78614
+            },
+            {
+                "year": "1997",
+                "emission": 1103.88095
+            },
+            {
+                "year": "1998",
+                "emission": 1078.77563
+            },
+            {
+                "year": "1999",
+                "emission": 1044.92744
+            },
+            {
+                "year": "2000",
+                "emission": 1042.61209
+            },
+            {
+                "year": "2001",
+                "emission": 1058.74506
+            },
+            {
+                "year": "2002",
+                "emission": 1037.23457
+            },
+            {
+                "year": "2003",
+                "emission": 1034.13758
+            },
+            {
+                "year": "2004",
+                "emission": 1017.52575
+            },
+            {
+                "year": "2005",
+                "emission": 992.52951
+            },
+            {
+                "year": "2006",
+                "emission": 999.35467
+            },
+            {
+                "year": "2007",
+                "emission": 973.76863
+            },
+            {
+                "year": "2008",
+                "emission": 974.78035
+            },
+            {
+                "year": "2009",
+                "emission": 908.68845
+            },
+            {
+                "year": "2010",
+                "emission": 941.80534
+            },
+            {
+                "year": "2011",
+                "emission": 917.2736
+            },
+            {
+                "year": "2012",
+                "emission": 923.34203
+            },
+            {
+                "year": "2013",
+                "emission": 940.41954
+            },
+            {
+                "year": "2014",
+                "emission": 901.25514
+            },
+            {
+                "year": "2015",
+                "emission": 904.26181
+            },
+            {
+                "year": "2016",
+                "emission": 907.96791
+            },
+            {
+                "year": "2017",
+                "emission": 892.07567
+            },
+            {
+                "year": "2018",
+                "emission": 855.89041
+            },
+            {
+                "year": "2019",
+                "emission": 809.79854
+            }
+        ]
+    },
+    {
+        "country_code": "DNK",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 71.09766
+            },
+            {
+                "year": "1991",
+                "emission": 81.72944
+            },
+            {
+                "year": "1992",
+                "emission": 75.74017
+            },
+            {
+                "year": "1993",
+                "emission": 77.87465
+            },
+            {
+                "year": "1994",
+                "emission": 81.78596
+            },
+            {
+                "year": "1995",
+                "emission": 78.83828
+            },
+            {
+                "year": "1996",
+                "emission": 92.00752
+            },
+            {
+                "year": "1997",
+                "emission": 82.56201
+            },
+            {
+                "year": "1998",
+                "emission": 78.53583
+            },
+            {
+                "year": "1999",
+                "emission": 76.04865
+            },
+            {
+                "year": "2000",
+                "emission": 71.74814
+            },
+            {
+                "year": "2001",
+                "emission": 73.46976
+            },
+            {
+                "year": "2002",
+                "emission": 72.88711
+            },
+            {
+                "year": "2003",
+                "emission": 77.95607
+            },
+            {
+                "year": "2004",
+                "emission": 71.98769
+            },
+            {
+                "year": "2005",
+                "emission": 67.60107
+            },
+            {
+                "year": "2006",
+                "emission": 75.3034
+            },
+            {
+                "year": "2007",
+                "emission": 70.73152
+            },
+            {
+                "year": "2008",
+                "emission": 67.13743
+            },
+            {
+                "year": "2009",
+                "emission": 64.3313
+            },
+            {
+                "year": "2010",
+                "emission": 64.66411
+            },
+            {
+                "year": "2011",
+                "emission": 59.42958
+            },
+            {
+                "year": "2012",
+                "emission": 54.83768
+            },
+            {
+                "year": "2013",
+                "emission": 56.56081
+            },
+            {
+                "year": "2014",
+                "emission": 52.33215
+            },
+            {
+                "year": "2015",
+                "emission": 49.73765
+            },
+            {
+                "year": "2016",
+                "emission": 51.76436
+            },
+            {
+                "year": "2017",
+                "emission": 49.64888
+            },
+            {
+                "year": "2018",
+                "emission": 49.6213
+            },
+            {
+                "year": "2019",
+                "emission": 45.81218
+            }
+        ]
+    },
+    {
+        "country_code": "ESP",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 290.00147
+            },
+            {
+                "year": "1991",
+                "emission": 297.74842
+            },
+            {
+                "year": "1992",
+                "emission": 307.39155
+            },
+            {
+                "year": "1993",
+                "emission": 296.70953
+            },
+            {
+                "year": "1994",
+                "emission": 313.33554
+            },
+            {
+                "year": "1995",
+                "emission": 329.35069
+            },
+            {
+                "year": "1996",
+                "emission": 321.41346
+            },
+            {
+                "year": "1997",
+                "emission": 335.79294
+            },
+            {
+                "year": "1998",
+                "emission": 345.41475
+            },
+            {
+                "year": "1999",
+                "emission": 372.59211
+            },
+            {
+                "year": "2000",
+                "emission": 388.21154
+            },
+            {
+                "year": "2001",
+                "emission": 385.64307
+            },
+            {
+                "year": "2002",
+                "emission": 403.70067
+            },
+            {
+                "year": "2003",
+                "emission": 411.52481
+            },
+            {
+                "year": "2004",
+                "emission": 427.38729
+            },
+            {
+                "year": "2005",
+                "emission": 442.07501
+            },
+            {
+                "year": "2006",
+                "emission": 435.25558
+            },
+            {
+                "year": "2007",
+                "emission": 446.32812
+            },
+            {
+                "year": "2008",
+                "emission": 412.13624
+            },
+            {
+                "year": "2009",
+                "emission": 372.31872
+            },
+            {
+                "year": "2010",
+                "emission": 357.87602
+            },
+            {
+                "year": "2011",
+                "emission": 357.58845
+            },
+            {
+                "year": "2012",
+                "emission": 350.31774
+            },
+            {
+                "year": "2013",
+                "emission": 323.52594
+            },
+            {
+                "year": "2014",
+                "emission": 325.60936
+            },
+            {
+                "year": "2015",
+                "emission": 336.99488
+            },
+            {
+                "year": "2016",
+                "emission": 325.4657
+            },
+            {
+                "year": "2017",
+                "emission": 338.73817
+            },
+            {
+                "year": "2018",
+                "emission": 333.25041
+            },
+            {
+                "year": "2019",
+                "emission": 314.52851
+            }
+        ]
+    },
+    {
+        "country_code": "EST",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 41.04549
+            },
+            {
+                "year": "1991",
+                "emission": 37.09998
+            },
+            {
+                "year": "1992",
+                "emission": 27.15979
+            },
+            {
+                "year": "1993",
+                "emission": 21.7143
+            },
+            {
+                "year": "1994",
+                "emission": 22.22327
+            },
+            {
+                "year": "1995",
+                "emission": 20.27377
+            },
+            {
+                "year": "1996",
+                "emission": 21.18071
+            },
+            {
+                "year": "1997",
+                "emission": 20.75907
+            },
+            {
+                "year": "1998",
+                "emission": 19.02144
+            },
+            {
+                "year": "1999",
+                "emission": 17.85009
+            },
+            {
+                "year": "2000",
+                "emission": 17.49587
+            },
+            {
+                "year": "2001",
+                "emission": 17.93388
+            },
+            {
+                "year": "2002",
+                "emission": 17.34207
+            },
+            {
+                "year": "2003",
+                "emission": 19.28411
+            },
+            {
+                "year": "2004",
+                "emission": 19.48232
+            },
+            {
+                "year": "2005",
+                "emission": 19.25708
+            },
+            {
+                "year": "2006",
+                "emission": 18.59888
+            },
+            {
+                "year": "2007",
+                "emission": 22.20685
+            },
+            {
+                "year": "2008",
+                "emission": 20.08366
+            },
+            {
+                "year": "2009",
+                "emission": 16.66156
+            },
+            {
+                "year": "2010",
+                "emission": 21.21819
+            },
+            {
+                "year": "2011",
+                "emission": 21.28617
+            },
+            {
+                "year": "2012",
+                "emission": 20.11488
+            },
+            {
+                "year": "2013",
+                "emission": 22.01984
+            },
+            {
+                "year": "2014",
+                "emission": 21.17638
+            },
+            {
+                "year": "2015",
+                "emission": 18.13932
+            },
+            {
+                "year": "2016",
+                "emission": 19.80893
+            },
+            {
+                "year": "2017",
+                "emission": 21.06644
+            },
+            {
+                "year": "2018",
+                "emission": 20.20636
+            },
+            {
+                "year": "2019",
+                "emission": 14.69912
+            }
+        ]
+    },
+    {
+        "country_code": "FIN",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 71.07501
+            },
+            {
+                "year": "1991",
+                "emission": 68.97683
+            },
+            {
+                "year": "1992",
+                "emission": 67.53717
+            },
+            {
+                "year": "1993",
+                "emission": 69.80206
+            },
+            {
+                "year": "1994",
+                "emission": 75.3309
+            },
+            {
+                "year": "1995",
+                "emission": 71.663
+            },
+            {
+                "year": "1996",
+                "emission": 77.65559
+            },
+            {
+                "year": "1997",
+                "emission": 76.3534
+            },
+            {
+                "year": "1998",
+                "emission": 72.65618
+            },
+            {
+                "year": "1999",
+                "emission": 72.03928
+            },
+            {
+                "year": "2000",
+                "emission": 70.16259
+            },
+            {
+                "year": "2001",
+                "emission": 75.48995
+            },
+            {
+                "year": "2002",
+                "emission": 77.91781
+            },
+            {
+                "year": "2003",
+                "emission": 85.53807
+            },
+            {
+                "year": "2004",
+                "emission": 81.85013
+            },
+            {
+                "year": "2005",
+                "emission": 69.85138
+            },
+            {
+                "year": "2006",
+                "emission": 81.22818
+            },
+            {
+                "year": "2007",
+                "emission": 79.57436
+            },
+            {
+                "year": "2008",
+                "emission": 71.46537
+            },
+            {
+                "year": "2009",
+                "emission": 67.82841
+            },
+            {
+                "year": "2010",
+                "emission": 75.62163
+            },
+            {
+                "year": "2011",
+                "emission": 67.87663
+            },
+            {
+                "year": "2012",
+                "emission": 62.40231
+            },
+            {
+                "year": "2013",
+                "emission": 62.79727
+            },
+            {
+                "year": "2014",
+                "emission": 58.65976
+            },
+            {
+                "year": "2015",
+                "emission": 55.08728
+            },
+            {
+                "year": "2016",
+                "emission": 58.007
+            },
+            {
+                "year": "2017",
+                "emission": 55.23018
+            },
+            {
+                "year": "2018",
+                "emission": 56.28182
+            },
+            {
+                "year": "2019",
+                "emission": 53.02125
+            }
+        ]
+    },
+    {
+        "country_code": "FRA",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 547.12783
+            },
+            {
+                "year": "1991",
+                "emission": 573.26701
+            },
+            {
+                "year": "1992",
+                "emission": 562.72482
+            },
+            {
+                "year": "1993",
+                "emission": 541.99408
+            },
+            {
+                "year": "1994",
+                "emission": 534.18317
+            },
+            {
+                "year": "1995",
+                "emission": 540.26349
+            },
+            {
+                "year": "1996",
+                "emission": 558.53553
+            },
+            {
+                "year": "1997",
+                "emission": 551.31586
+            },
+            {
+                "year": "1998",
+                "emission": 564.79456
+            },
+            {
+                "year": "1999",
+                "emission": 558.54213
+            },
+            {
+                "year": "2000",
+                "emission": 552.41916
+            },
+            {
+                "year": "2001",
+                "emission": 557.71637
+            },
+            {
+                "year": "2002",
+                "emission": 551.77393
+            },
+            {
+                "year": "2003",
+                "emission": 556.0256
+            },
+            {
+                "year": "2004",
+                "emission": 554.91988
+            },
+            {
+                "year": "2005",
+                "emission": 555.96177
+            },
+            {
+                "year": "2006",
+                "emission": 545.43642
+            },
+            {
+                "year": "2007",
+                "emission": 535.68505
+            },
+            {
+                "year": "2008",
+                "emission": 528.37073
+            },
+            {
+                "year": "2009",
+                "emission": 506.42366
+            },
+            {
+                "year": "2010",
+                "emission": 513.46178
+            },
+            {
+                "year": "2011",
+                "emission": 488.90216
+            },
+            {
+                "year": "2012",
+                "emission": 490.28617
+            },
+            {
+                "year": "2013",
+                "emission": 491.50299
+            },
+            {
+                "year": "2014",
+                "emission": 461.18853
+            },
+            {
+                "year": "2015",
+                "emission": 464.20567
+            },
+            {
+                "year": "2016",
+                "emission": 467.06
+            },
+            {
+                "year": "2017",
+                "emission": 470.56432
+            },
+            {
+                "year": "2018",
+                "emission": 452.03446
+            },
+            {
+                "year": "2019",
+                "emission": 442.98467
+            }
+        ]
+    },
+    {
+        "country_code": "GBR",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 794.86945
+            },
+            {
+                "year": "1991",
+                "emission": 804.23267
+            },
+            {
+                "year": "1992",
+                "emission": 783.56056
+            },
+            {
+                "year": "1993",
+                "emission": 764.12194
+            },
+            {
+                "year": "1994",
+                "emission": 754.88683
+            },
+            {
+                "year": "1995",
+                "emission": 748.48364
+            },
+            {
+                "year": "1996",
+                "emission": 770.30928
+            },
+            {
+                "year": "1997",
+                "emission": 744.64042
+            },
+            {
+                "year": "1998",
+                "emission": 742.69669
+            },
+            {
+                "year": "1999",
+                "emission": 712.88346
+            },
+            {
+                "year": "2000",
+                "emission": 711.97254
+            },
+            {
+                "year": "2001",
+                "emission": 714.59726
+            },
+            {
+                "year": "2002",
+                "emission": 694.79061
+            },
+            {
+                "year": "2003",
+                "emission": 701.37264
+            },
+            {
+                "year": "2004",
+                "emission": 697.60949
+            },
+            {
+                "year": "2005",
+                "emission": 690.11227
+            },
+            {
+                "year": "2006",
+                "emission": 683.13237
+            },
+            {
+                "year": "2007",
+                "emission": 671.4655
+            },
+            {
+                "year": "2008",
+                "emission": 650.47611
+            },
+            {
+                "year": "2009",
+                "emission": 594.41668
+            },
+            {
+                "year": "2010",
+                "emission": 608.7323
+            },
+            {
+                "year": "2011",
+                "emission": 563.65998
+            },
+            {
+                "year": "2012",
+                "emission": 580.41864
+            },
+            {
+                "year": "2013",
+                "emission": 566.54583
+            },
+            {
+                "year": "2014",
+                "emission": 526.5563
+            },
+            {
+                "year": "2015",
+                "emission": 509.05072
+            },
+            {
+                "year": "2016",
+                "emission": 484.14619
+            },
+            {
+                "year": "2017",
+                "emission": 473.38998
+            },
+            {
+                "year": "2018",
+                "emission": 466.66698
+            },
+            {
+                "year": "2019",
+                "emission": 453.10146
+            }
+        ]
+    },
+    {
+        "country_code": "GRC",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 103.28946
+            },
+            {
+                "year": "1991",
+                "emission": 103.34425
+            },
+            {
+                "year": "1992",
+                "emission": 104.58835
+            },
+            {
+                "year": "1993",
+                "emission": 104.18843
+            },
+            {
+                "year": "1994",
+                "emission": 106.97503
+            },
+            {
+                "year": "1995",
+                "emission": 109.31088
+            },
+            {
+                "year": "1996",
+                "emission": 112.45689
+            },
+            {
+                "year": "1997",
+                "emission": 117.3572
+            },
+            {
+                "year": "1998",
+                "emission": 122.9548
+            },
+            {
+                "year": "1999",
+                "emission": 123.11281
+            },
+            {
+                "year": "2000",
+                "emission": 126.47088
+            },
+            {
+                "year": "2001",
+                "emission": 127.52466
+            },
+            {
+                "year": "2002",
+                "emission": 127.5401
+            },
+            {
+                "year": "2003",
+                "emission": 131.27963
+            },
+            {
+                "year": "2004",
+                "emission": 131.96069
+            },
+            {
+                "year": "2005",
+                "emission": 136.42369
+            },
+            {
+                "year": "2006",
+                "emission": 132.51799
+            },
+            {
+                "year": "2007",
+                "emission": 135.14901
+            },
+            {
+                "year": "2008",
+                "emission": 131.82516
+            },
+            {
+                "year": "2009",
+                "emission": 124.61909
+            },
+            {
+                "year": "2010",
+                "emission": 118.50004
+            },
+            {
+                "year": "2011",
+                "emission": 115.57173
+            },
+            {
+                "year": "2012",
+                "emission": 112.30552
+            },
+            {
+                "year": "2013",
+                "emission": 102.68438
+            },
+            {
+                "year": "2014",
+                "emission": 99.25781
+            },
+            {
+                "year": "2015",
+                "emission": 95.46398
+            },
+            {
+                "year": "2016",
+                "emission": 91.82184
+            },
+            {
+                "year": "2017",
+                "emission": 95.60099
+            },
+            {
+                "year": "2018",
+                "emission": 92.30835
+            },
+            {
+                "year": "2019",
+                "emission": 85.63094
+            }
+        ]
+    },
+    {
+        "country_code": "HRV",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 31.38729
+            },
+            {
+                "year": "1991",
+                "emission": 24.69209
+            },
+            {
+                "year": "1992",
+                "emission": 22.77196
+            },
+            {
+                "year": "1993",
+                "emission": 22.722
+            },
+            {
+                "year": "1994",
+                "emission": 21.81872
+            },
+            {
+                "year": "1995",
+                "emission": 22.4873
+            },
+            {
+                "year": "1996",
+                "emission": 22.99482
+            },
+            {
+                "year": "1997",
+                "emission": 24.39892
+            },
+            {
+                "year": "1998",
+                "emission": 24.50948
+            },
+            {
+                "year": "1999",
+                "emission": 25.82404
+            },
+            {
+                "year": "2000",
+                "emission": 25.56346
+            },
+            {
+                "year": "2001",
+                "emission": 26.73944
+            },
+            {
+                "year": "2002",
+                "emission": 27.79326
+            },
+            {
+                "year": "2003",
+                "emission": 29.22414
+            },
+            {
+                "year": "2004",
+                "emission": 29.26364
+            },
+            {
+                "year": "2005",
+                "emission": 29.73072
+            },
+            {
+                "year": "2006",
+                "emission": 30.08135
+            },
+            {
+                "year": "2007",
+                "emission": 31.48574
+            },
+            {
+                "year": "2008",
+                "emission": 30.50612
+            },
+            {
+                "year": "2009",
+                "emission": 28.15112
+            },
+            {
+                "year": "2010",
+                "emission": 27.75297
+            },
+            {
+                "year": "2011",
+                "emission": 27.4296
+            },
+            {
+                "year": "2012",
+                "emission": 25.61264
+            },
+            {
+                "year": "2013",
+                "emission": 24.3306
+            },
+            {
+                "year": "2014",
+                "emission": 23.47554
+            },
+            {
+                "year": "2015",
+                "emission": 23.91192
+            },
+            {
+                "year": "2016",
+                "emission": 23.99992
+            },
+            {
+                "year": "2017",
+                "emission": 24.73756
+            },
+            {
+                "year": "2018",
+                "emission": 23.53628
+            },
+            {
+                "year": "2019",
+                "emission": 23.60502
+            }
+        ]
+    },
+    {
+        "country_code": "HUN",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 94.78697
+            },
+            {
+                "year": "1991",
+                "emission": 88.31462
+            },
+            {
+                "year": "1992",
+                "emission": 78.14177
+            },
+            {
+                "year": "1993",
+                "emission": 79.35266
+            },
+            {
+                "year": "1994",
+                "emission": 78.42209
+            },
+            {
+                "year": "1995",
+                "emission": 77.19325
+            },
+            {
+                "year": "1996",
+                "emission": 79.54754
+            },
+            {
+                "year": "1997",
+                "emission": 78.00679
+            },
+            {
+                "year": "1998",
+                "emission": 77.39732
+            },
+            {
+                "year": "1999",
+                "emission": 77.81998
+            },
+            {
+                "year": "2000",
+                "emission": 74.91673
+            },
+            {
+                "year": "2001",
+                "emission": 76.85685
+            },
+            {
+                "year": "2002",
+                "emission": 75.13762
+            },
+            {
+                "year": "2003",
+                "emission": 78.04277
+            },
+            {
+                "year": "2004",
+                "emission": 76.96089
+            },
+            {
+                "year": "2005",
+                "emission": 76.71756
+            },
+            {
+                "year": "2006",
+                "emission": 75.50665
+            },
+            {
+                "year": "2007",
+                "emission": 73.72554
+            },
+            {
+                "year": "2008",
+                "emission": 71.58401
+            },
+            {
+                "year": "2009",
+                "emission": 65.40283
+            },
+            {
+                "year": "2010",
+                "emission": 66.05658
+            },
+            {
+                "year": "2011",
+                "emission": 64.35414
+            },
+            {
+                "year": "2012",
+                "emission": 60.95751
+            },
+            {
+                "year": "2013",
+                "emission": 58.06818
+            },
+            {
+                "year": "2014",
+                "emission": 58.40772
+            },
+            {
+                "year": "2015",
+                "emission": 61.51667
+            },
+            {
+                "year": "2016",
+                "emission": 62.25859
+            },
+            {
+                "year": "2017",
+                "emission": 64.71642
+            },
+            {
+                "year": "2018",
+                "emission": 64.7354
+            },
+            {
+                "year": "2019",
+                "emission": 64.43317
+            }
+        ]
+    },
+    {
+        "country_code": "IRL",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 54.40032
+            },
+            {
+                "year": "1991",
+                "emission": 55.21027
+            },
+            {
+                "year": "1992",
+                "emission": 55.19653
+            },
+            {
+                "year": "1993",
+                "emission": 55.73995
+            },
+            {
+                "year": "1994",
+                "emission": 57.21506
+            },
+            {
+                "year": "1995",
+                "emission": 58.74088
+            },
+            {
+                "year": "1996",
+                "emission": 60.90477
+            },
+            {
+                "year": "1997",
+                "emission": 62.36115
+            },
+            {
+                "year": "1998",
+                "emission": 64.94247
+            },
+            {
+                "year": "1999",
+                "emission": 66.20287
+            },
+            {
+                "year": "2000",
+                "emission": 68.45871
+            },
+            {
+                "year": "2001",
+                "emission": 70.4872
+            },
+            {
+                "year": "2002",
+                "emission": 68.62305
+            },
+            {
+                "year": "2003",
+                "emission": 69.03277
+            },
+            {
+                "year": "2004",
+                "emission": 68.38455
+            },
+            {
+                "year": "2005",
+                "emission": 70.26434
+            },
+            {
+                "year": "2006",
+                "emission": 69.62058
+            },
+            {
+                "year": "2007",
+                "emission": 68.59157
+            },
+            {
+                "year": "2008",
+                "emission": 68.13146
+            },
+            {
+                "year": "2009",
+                "emission": 62.35637
+            },
+            {
+                "year": "2010",
+                "emission": 61.94941
+            },
+            {
+                "year": "2011",
+                "emission": 57.79358
+            },
+            {
+                "year": "2012",
+                "emission": 58.78514
+            },
+            {
+                "year": "2013",
+                "emission": 58.57058
+            },
+            {
+                "year": "2014",
+                "emission": 58.06257
+            },
+            {
+                "year": "2015",
+                "emission": 60.43195
+            },
+            {
+                "year": "2016",
+                "emission": 62.47514
+            },
+            {
+                "year": "2017",
+                "emission": 62.11486
+            },
+            {
+                "year": "2018",
+                "emission": 62.52601
+            },
+            {
+                "year": "2019",
+                "emission": 59.77764
+            }
+        ]
+    },
+    {
+        "country_code": "ISL",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 3.6829
+            },
+            {
+                "year": "1991",
+                "emission": 3.46617
+            },
+            {
+                "year": "1992",
+                "emission": 3.38097
+            },
+            {
+                "year": "1993",
+                "emission": 3.4661
+            },
+            {
+                "year": "1994",
+                "emission": 3.39824
+            },
+            {
+                "year": "1995",
+                "emission": 3.51311
+            },
+            {
+                "year": "1996",
+                "emission": 3.57174
+            },
+            {
+                "year": "1997",
+                "emission": 3.7394
+            },
+            {
+                "year": "1998",
+                "emission": 3.88344
+            },
+            {
+                "year": "1999",
+                "emission": 4.10531
+            },
+            {
+                "year": "2000",
+                "emission": 4.1268
+            },
+            {
+                "year": "2001",
+                "emission": 4.01874
+            },
+            {
+                "year": "2002",
+                "emission": 4.11332
+            },
+            {
+                "year": "2003",
+                "emission": 4.07343
+            },
+            {
+                "year": "2004",
+                "emission": 4.1746
+            },
+            {
+                "year": "2005",
+                "emission": 4.02291
+            },
+            {
+                "year": "2006",
+                "emission": 4.60648
+            },
+            {
+                "year": "2007",
+                "emission": 4.9011
+            },
+            {
+                "year": "2008",
+                "emission": 5.29994
+            },
+            {
+                "year": "2009",
+                "emission": 4.96628
+            },
+            {
+                "year": "2010",
+                "emission": 4.86627
+            },
+            {
+                "year": "2011",
+                "emission": 4.64706
+            },
+            {
+                "year": "2012",
+                "emission": 4.65736
+            },
+            {
+                "year": "2013",
+                "emission": 4.65439
+            },
+            {
+                "year": "2014",
+                "emission": 4.68566
+            },
+            {
+                "year": "2015",
+                "emission": 4.76399
+            },
+            {
+                "year": "2016",
+                "emission": 4.71662
+            },
+            {
+                "year": "2017",
+                "emission": 4.79542
+            },
+            {
+                "year": "2018",
+                "emission": 4.82219
+            },
+            {
+                "year": "2019",
+                "emission": 4.72235
+            }
+        ]
+    },
+    {
+        "country_code": "ITA",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 518.72044
+            },
+            {
+                "year": "1991",
+                "emission": 519.79053
+            },
+            {
+                "year": "1992",
+                "emission": 518.70084
+            },
+            {
+                "year": "1993",
+                "emission": 511.61971
+            },
+            {
+                "year": "1994",
+                "emission": 505.63337
+            },
+            {
+                "year": "1995",
+                "emission": 532.00411
+            },
+            {
+                "year": "1996",
+                "emission": 526.37922
+            },
+            {
+                "year": "1997",
+                "emission": 534.06159
+            },
+            {
+                "year": "1998",
+                "emission": 546.48884
+            },
+            {
+                "year": "1999",
+                "emission": 551.75995
+            },
+            {
+                "year": "2000",
+                "emission": 555.46629
+            },
+            {
+                "year": "2001",
+                "emission": 557.1994
+            },
+            {
+                "year": "2002",
+                "emission": 563.13801
+            },
+            {
+                "year": "2003",
+                "emission": 582.40971
+            },
+            {
+                "year": "2004",
+                "emission": 587.93332
+            },
+            {
+                "year": "2005",
+                "emission": 589.07161
+            },
+            {
+                "year": "2006",
+                "emission": 578.51465
+            },
+            {
+                "year": "2007",
+                "emission": 573.01014
+            },
+            {
+                "year": "2008",
+                "emission": 560.11914
+            },
+            {
+                "year": "2009",
+                "emission": 505.21899
+            },
+            {
+                "year": "2010",
+                "emission": 516.47373
+            },
+            {
+                "year": "2011",
+                "emission": 503.64526
+            },
+            {
+                "year": "2012",
+                "emission": 484.21802
+            },
+            {
+                "year": "2013",
+                "emission": 449.17893
+            },
+            {
+                "year": "2014",
+                "emission": 427.93041
+            },
+            {
+                "year": "2015",
+                "emission": 440.4367
+            },
+            {
+                "year": "2016",
+                "emission": 437.69609
+            },
+            {
+                "year": "2017",
+                "emission": 432.71374
+            },
+            {
+                "year": "2018",
+                "emission": 428.54935
+            },
+            {
+                "year": "2019",
+                "emission": 418.2806
+            }
+        ]
+    },
+    {
+        "country_code": "JPN",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 1269.0153
+            },
+            {
+                "year": "1991",
+                "emission": 1283.38664
+            },
+            {
+                "year": "1992",
+                "emission": 1295.60415
+            },
+            {
+                "year": "1993",
+                "emission": 1291.28487
+            },
+            {
+                "year": "1994",
+                "emission": 1352.19075
+            },
+            {
+                "year": "1995",
+                "emission": 1373.75763
+            },
+            {
+                "year": "1996",
+                "emission": 1386.21181
+            },
+            {
+                "year": "1997",
+                "emission": 1378.93008
+            },
+            {
+                "year": "1998",
+                "emission": 1330.54277
+            },
+            {
+                "year": "1999",
+                "emission": 1353.95995
+            },
+            {
+                "year": "2000",
+                "emission": 1373.75487
+            },
+            {
+                "year": "2001",
+                "emission": 1348.10869
+            },
+            {
+                "year": "2002",
+                "emission": 1372.02855
+            },
+            {
+                "year": "2003",
+                "emission": 1378.77244
+            },
+            {
+                "year": "2004",
+                "emission": 1370.20243
+            },
+            {
+                "year": "2005",
+                "emission": 1377.91287
+            },
+            {
+                "year": "2006",
+                "emission": 1356.61044
+            },
+            {
+                "year": "2007",
+                "emission": 1391.88293
+            },
+            {
+                "year": "2008",
+                "emission": 1319.25764
+            },
+            {
+                "year": "2009",
+                "emission": 1247.10064
+            },
+            {
+                "year": "2010",
+                "emission": 1300.45171
+            },
+            {
+                "year": "2011",
+                "emission": 1351.25166
+            },
+            {
+                "year": "2012",
+                "emission": 1394.04399
+            },
+            {
+                "year": "2013",
+                "emission": 1405.88861
+            },
+            {
+                "year": "2014",
+                "emission": 1356.58854
+            },
+            {
+                "year": "2015",
+                "emission": 1318.5167
+            },
+            {
+                "year": "2016",
+                "emission": 1301.85589
+            },
+            {
+                "year": "2017",
+                "emission": 1288.52872
+            },
+            {
+                "year": "2018",
+                "emission": 1245.02089
+            },
+            {
+                "year": "2019",
+                "emission": 1209.49335
+            }
+        ]
+    },
+    {
+        "country_code": "LIE",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 0.22851
+            },
+            {
+                "year": "1991",
+                "emission": 0.23606
+            },
+            {
+                "year": "1992",
+                "emission": 0.23627
+            },
+            {
+                "year": "1993",
+                "emission": 0.2434
+            },
+            {
+                "year": "1994",
+                "emission": 0.22977
+            },
+            {
+                "year": "1995",
+                "emission": 0.23359
+            },
+            {
+                "year": "1996",
+                "emission": 0.2359
+            },
+            {
+                "year": "1997",
+                "emission": 0.24847
+            },
+            {
+                "year": "1998",
+                "emission": 0.25943
+            },
+            {
+                "year": "1999",
+                "emission": 0.25643
+            },
+            {
+                "year": "2000",
+                "emission": 0.24705
+            },
+            {
+                "year": "2001",
+                "emission": 0.24662
+            },
+            {
+                "year": "2002",
+                "emission": 0.25295
+            },
+            {
+                "year": "2003",
+                "emission": 0.26307
+            },
+            {
+                "year": "2004",
+                "emission": 0.26329
+            },
+            {
+                "year": "2005",
+                "emission": 0.26369
+            },
+            {
+                "year": "2006",
+                "emission": 0.26728
+            },
+            {
+                "year": "2007",
+                "emission": 0.23809
+            },
+            {
+                "year": "2008",
+                "emission": 0.25785
+            },
+            {
+                "year": "2009",
+                "emission": 0.24311
+            },
+            {
+                "year": "2010",
+                "emission": 0.22816
+            },
+            {
+                "year": "2011",
+                "emission": 0.21532
+            },
+            {
+                "year": "2012",
+                "emission": 0.2245
+            },
+            {
+                "year": "2013",
+                "emission": 0.23072
+            },
+            {
+                "year": "2014",
+                "emission": 0.1997
+            },
+            {
+                "year": "2015",
+                "emission": 0.19804
+            },
+            {
+                "year": "2016",
+                "emission": 0.18752
+            },
+            {
+                "year": "2017",
+                "emission": 0.19303
+            },
+            {
+                "year": "2018",
+                "emission": 0.18069
+            },
+            {
+                "year": "2019",
+                "emission": 0.18711
+            }
+        ]
+    },
+    {
+        "country_code": "LTU",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 47.79229
+            },
+            {
+                "year": "1991",
+                "emission": 49.78607
+            },
+            {
+                "year": "1992",
+                "emission": 30.61692
+            },
+            {
+                "year": "1993",
+                "emission": 24.55093
+            },
+            {
+                "year": "1994",
+                "emission": 23.18714
+            },
+            {
+                "year": "1995",
+                "emission": 22.2016
+            },
+            {
+                "year": "1996",
+                "emission": 23.24878
+            },
+            {
+                "year": "1997",
+                "emission": 22.81556
+            },
+            {
+                "year": "1998",
+                "emission": 23.781
+            },
+            {
+                "year": "1999",
+                "emission": 20.96807
+            },
+            {
+                "year": "2000",
+                "emission": 19.42584
+            },
+            {
+                "year": "2001",
+                "emission": 20.22895
+            },
+            {
+                "year": "2002",
+                "emission": 20.60807
+            },
+            {
+                "year": "2003",
+                "emission": 20.77624
+            },
+            {
+                "year": "2004",
+                "emission": 21.59377
+            },
+            {
+                "year": "2005",
+                "emission": 22.70012
+            },
+            {
+                "year": "2006",
+                "emission": 22.99058
+            },
+            {
+                "year": "2007",
+                "emission": 25.17092
+            },
+            {
+                "year": "2008",
+                "emission": 24.19234
+            },
+            {
+                "year": "2009",
+                "emission": 19.90223
+            },
+            {
+                "year": "2010",
+                "emission": 20.74236
+            },
+            {
+                "year": "2011",
+                "emission": 21.33866
+            },
+            {
+                "year": "2012",
+                "emission": 21.26146
+            },
+            {
+                "year": "2013",
+                "emission": 20.024
+            },
+            {
+                "year": "2014",
+                "emission": 19.98669
+            },
+            {
+                "year": "2015",
+                "emission": 20.28303
+            },
+            {
+                "year": "2016",
+                "emission": 20.31183
+            },
+            {
+                "year": "2017",
+                "emission": 20.51888
+            },
+            {
+                "year": "2018",
+                "emission": 20.1501
+            },
+            {
+                "year": "2019",
+                "emission": 20.36785
+            }
+        ]
+    },
+    {
+        "country_code": "LUX",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 12.72738
+            },
+            {
+                "year": "1991",
+                "emission": 13.37104
+            },
+            {
+                "year": "1992",
+                "emission": 13.13473
+            },
+            {
+                "year": "1993",
+                "emission": 13.28622
+            },
+            {
+                "year": "1994",
+                "emission": 12.45812
+            },
+            {
+                "year": "1995",
+                "emission": 10.08408
+            },
+            {
+                "year": "1996",
+                "emission": 10.1486
+            },
+            {
+                "year": "1997",
+                "emission": 9.49563
+            },
+            {
+                "year": "1998",
+                "emission": 8.61478
+            },
+            {
+                "year": "1999",
+                "emission": 9.07966
+            },
+            {
+                "year": "2000",
+                "emission": 9.65818
+            },
+            {
+                "year": "2001",
+                "emission": 10.15168
+            },
+            {
+                "year": "2002",
+                "emission": 10.92876
+            },
+            {
+                "year": "2003",
+                "emission": 11.37329
+            },
+            {
+                "year": "2004",
+                "emission": 12.76515
+            },
+            {
+                "year": "2005",
+                "emission": 13.00505
+            },
+            {
+                "year": "2006",
+                "emission": 12.83666
+            },
+            {
+                "year": "2007",
+                "emission": 12.25391
+            },
+            {
+                "year": "2008",
+                "emission": 12.14135
+            },
+            {
+                "year": "2009",
+                "emission": 11.5964
+            },
+            {
+                "year": "2010",
+                "emission": 12.17642
+            },
+            {
+                "year": "2011",
+                "emission": 12.05277
+            },
+            {
+                "year": "2012",
+                "emission": 11.80744
+            },
+            {
+                "year": "2013",
+                "emission": 11.2704
+            },
+            {
+                "year": "2014",
+                "emission": 10.80726
+            },
+            {
+                "year": "2015",
+                "emission": 10.32443
+            },
+            {
+                "year": "2016",
+                "emission": 10.0829
+            },
+            {
+                "year": "2017",
+                "emission": 10.26698
+            },
+            {
+                "year": "2018",
+                "emission": 10.56523
+            },
+            {
+                "year": "2019",
+                "emission": 10.7428
+            }
+        ]
+    },
+    {
+        "country_code": "LVA",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 25.8682
+            },
+            {
+                "year": "1991",
+                "emission": 23.97213
+            },
+            {
+                "year": "1992",
+                "emission": 19.20011
+            },
+            {
+                "year": "1993",
+                "emission": 15.78296
+            },
+            {
+                "year": "1994",
+                "emission": 13.83135
+            },
+            {
+                "year": "1995",
+                "emission": 12.44795
+            },
+            {
+                "year": "1996",
+                "emission": 12.50259
+            },
+            {
+                "year": "1997",
+                "emission": 11.94896
+            },
+            {
+                "year": "1998",
+                "emission": 11.45055
+            },
+            {
+                "year": "1999",
+                "emission": 10.67414
+            },
+            {
+                "year": "2000",
+                "emission": 10.05949
+            },
+            {
+                "year": "2001",
+                "emission": 10.64648
+            },
+            {
+                "year": "2002",
+                "emission": 10.61713
+            },
+            {
+                "year": "2003",
+                "emission": 10.7919
+            },
+            {
+                "year": "2004",
+                "emission": 10.75986
+            },
+            {
+                "year": "2005",
+                "emission": 10.93436
+            },
+            {
+                "year": "2006",
+                "emission": 11.41491
+            },
+            {
+                "year": "2007",
+                "emission": 11.86326
+            },
+            {
+                "year": "2008",
+                "emission": 11.41634
+            },
+            {
+                "year": "2009",
+                "emission": 10.73092
+            },
+            {
+                "year": "2010",
+                "emission": 11.82012
+            },
+            {
+                "year": "2011",
+                "emission": 11.02989
+            },
+            {
+                "year": "2012",
+                "emission": 10.85136
+            },
+            {
+                "year": "2013",
+                "emission": 10.76341
+            },
+            {
+                "year": "2014",
+                "emission": 10.67101
+            },
+            {
+                "year": "2015",
+                "emission": 10.72486
+            },
+            {
+                "year": "2016",
+                "emission": 10.71653
+            },
+            {
+                "year": "2017",
+                "emission": 10.75714
+            },
+            {
+                "year": "2018",
+                "emission": 11.26072
+            },
+            {
+                "year": "2019",
+                "emission": 11.13213
+            }
+        ]
+    },
+    {
+        "country_code": "MCO",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 0.10273
+            },
+            {
+                "year": "1991",
+                "emission": 0.10359
+            },
+            {
+                "year": "1992",
+                "emission": 0.10923
+            },
+            {
+                "year": "1993",
+                "emission": 0.10819
+            },
+            {
+                "year": "1994",
+                "emission": 0.10889
+            },
+            {
+                "year": "1995",
+                "emission": 0.10553
+            },
+            {
+                "year": "1996",
+                "emission": 0.10984
+            },
+            {
+                "year": "1997",
+                "emission": 0.10795
+            },
+            {
+                "year": "1998",
+                "emission": 0.10716
+            },
+            {
+                "year": "1999",
+                "emission": 0.10812
+            },
+            {
+                "year": "2000",
+                "emission": 0.109
+            },
+            {
+                "year": "2001",
+                "emission": 0.10686
+            },
+            {
+                "year": "2002",
+                "emission": 0.10718
+            },
+            {
+                "year": "2003",
+                "emission": 0.10449
+            },
+            {
+                "year": "2004",
+                "emission": 0.10036
+            },
+            {
+                "year": "2005",
+                "emission": 0.0982
+            },
+            {
+                "year": "2006",
+                "emission": 0.0927
+            },
+            {
+                "year": "2007",
+                "emission": 0.0926
+            },
+            {
+                "year": "2008",
+                "emission": 0.093
+            },
+            {
+                "year": "2009",
+                "emission": 0.0911
+            },
+            {
+                "year": "2010",
+                "emission": 0.0879
+            },
+            {
+                "year": "2011",
+                "emission": 0.0855
+            },
+            {
+                "year": "2012",
+                "emission": 0.0875
+            },
+            {
+                "year": "2013",
+                "emission": 0.0905
+            },
+            {
+                "year": "2014",
+                "emission": 0.0849
+            },
+            {
+                "year": "2015",
+                "emission": 0.0877
+            },
+            {
+                "year": "2016",
+                "emission": 0.08671
+            },
+            {
+                "year": "2017",
+                "emission": 0.08576
+            },
+            {
+                "year": "2018",
+                "emission": 0.08713
+            },
+            {
+                "year": "2019",
+                "emission": 0.08254
+            }
+        ]
+    },
+    {
+        "country_code": "MLT",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 2.5955
+            },
+            {
+                "year": "1991",
+                "emission": 2.45025
+            },
+            {
+                "year": "1992",
+                "emission": 2.51974
+            },
+            {
+                "year": "1993",
+                "emission": 3.10601
+            },
+            {
+                "year": "1994",
+                "emission": 2.88941
+            },
+            {
+                "year": "1995",
+                "emission": 2.68561
+            },
+            {
+                "year": "1996",
+                "emission": 2.80937
+            },
+            {
+                "year": "1997",
+                "emission": 2.8248
+            },
+            {
+                "year": "1998",
+                "emission": 2.79041
+            },
+            {
+                "year": "1999",
+                "emission": 2.87795
+            },
+            {
+                "year": "2000",
+                "emission": 2.81323
+            },
+            {
+                "year": "2001",
+                "emission": 2.93915
+            },
+            {
+                "year": "2002",
+                "emission": 2.99068
+            },
+            {
+                "year": "2003",
+                "emission": 3.271
+            },
+            {
+                "year": "2004",
+                "emission": 3.16112
+            },
+            {
+                "year": "2005",
+                "emission": 2.9851
+            },
+            {
+                "year": "2006",
+                "emission": 3.04033
+            },
+            {
+                "year": "2007",
+                "emission": 3.13683
+            },
+            {
+                "year": "2008",
+                "emission": 3.07679
+            },
+            {
+                "year": "2009",
+                "emission": 2.89211
+            },
+            {
+                "year": "2010",
+                "emission": 2.96846
+            },
+            {
+                "year": "2011",
+                "emission": 2.97204
+            },
+            {
+                "year": "2012",
+                "emission": 3.18148
+            },
+            {
+                "year": "2013",
+                "emission": 2.8716
+            },
+            {
+                "year": "2014",
+                "emission": 2.90519
+            },
+            {
+                "year": "2015",
+                "emission": 2.22008
+            },
+            {
+                "year": "2016",
+                "emission": 1.90248
+            },
+            {
+                "year": "2017",
+                "emission": 2.06088
+            },
+            {
+                "year": "2018",
+                "emission": 2.04117
+            },
+            {
+                "year": "2019",
+                "emission": 2.17472
+            }
+        ]
+    },
+    {
+        "country_code": "NLD",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 219.6041
+            },
+            {
+                "year": "1991",
+                "emission": 227.26386
+            },
+            {
+                "year": "1992",
+                "emission": 227.94836
+            },
+            {
+                "year": "1993",
+                "emission": 228.69479
+            },
+            {
+                "year": "1994",
+                "emission": 229.57152
+            },
+            {
+                "year": "1995",
+                "emission": 229.63934
+            },
+            {
+                "year": "1996",
+                "emission": 240.42469
+            },
+            {
+                "year": "1997",
+                "emission": 232.38644
+            },
+            {
+                "year": "1998",
+                "emission": 232.77911
+            },
+            {
+                "year": "1999",
+                "emission": 219.33664
+            },
+            {
+                "year": "2000",
+                "emission": 217.57776
+            },
+            {
+                "year": "2001",
+                "emission": 218.27157
+            },
+            {
+                "year": "2002",
+                "emission": 216.09344
+            },
+            {
+                "year": "2003",
+                "emission": 216.74296
+            },
+            {
+                "year": "2004",
+                "emission": 218.28846
+            },
+            {
+                "year": "2005",
+                "emission": 212.5531
+            },
+            {
+                "year": "2006",
+                "emission": 207.51009
+            },
+            {
+                "year": "2007",
+                "emission": 205.89405
+            },
+            {
+                "year": "2008",
+                "emission": 205.31585
+            },
+            {
+                "year": "2009",
+                "emission": 199.72219
+            },
+            {
+                "year": "2010",
+                "emission": 211.67515
+            },
+            {
+                "year": "2011",
+                "emission": 197.32707
+            },
+            {
+                "year": "2012",
+                "emission": 193.08148
+            },
+            {
+                "year": "2013",
+                "emission": 193.38753
+            },
+            {
+                "year": "2014",
+                "emission": 185.61727
+            },
+            {
+                "year": "2015",
+                "emission": 192.71273
+            },
+            {
+                "year": "2016",
+                "emission": 193.10102
+            },
+            {
+                "year": "2017",
+                "emission": 190.56747
+            },
+            {
+                "year": "2018",
+                "emission": 186.31855
+            },
+            {
+                "year": "2019",
+                "emission": 180.30909
+            }
+        ]
+    },
+    {
+        "country_code": "NOR",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 51.47511
+            },
+            {
+                "year": "1991",
+                "emission": 49.18233
+            },
+            {
+                "year": "1992",
+                "emission": 47.49457
+            },
+            {
+                "year": "1993",
+                "emission": 49.40079
+            },
+            {
+                "year": "1994",
+                "emission": 51.27968
+            },
+            {
+                "year": "1995",
+                "emission": 51.62359
+            },
+            {
+                "year": "1996",
+                "emission": 54.61466
+            },
+            {
+                "year": "1997",
+                "emission": 54.63117
+            },
+            {
+                "year": "1998",
+                "emission": 54.77997
+            },
+            {
+                "year": "1999",
+                "emission": 55.73695
+            },
+            {
+                "year": "2000",
+                "emission": 55.11739
+            },
+            {
+                "year": "2001",
+                "emission": 56.34907
+            },
+            {
+                "year": "2002",
+                "emission": 55.22238
+            },
+            {
+                "year": "2003",
+                "emission": 55.76284
+            },
+            {
+                "year": "2004",
+                "emission": 56.15119
+            },
+            {
+                "year": "2005",
+                "emission": 55.26962
+            },
+            {
+                "year": "2006",
+                "emission": 55.23838
+            },
+            {
+                "year": "2007",
+                "emission": 56.8954
+            },
+            {
+                "year": "2008",
+                "emission": 55.44236
+            },
+            {
+                "year": "2009",
+                "emission": 53.05384
+            },
+            {
+                "year": "2010",
+                "emission": 55.26559
+            },
+            {
+                "year": "2011",
+                "emission": 54.50957
+            },
+            {
+                "year": "2012",
+                "emission": 53.99811
+            },
+            {
+                "year": "2013",
+                "emission": 53.9891
+            },
+            {
+                "year": "2014",
+                "emission": 53.86314
+            },
+            {
+                "year": "2015",
+                "emission": 54.12511
+            },
+            {
+                "year": "2016",
+                "emission": 53.09507
+            },
+            {
+                "year": "2017",
+                "emission": 52.08948
+            },
+            {
+                "year": "2018",
+                "emission": 52.21146
+            },
+            {
+                "year": "2019",
+                "emission": 50.33398
+            }
+        ]
+    },
+    {
+        "country_code": "NZL",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 65.12923
+            },
+            {
+                "year": "1991",
+                "emission": 66.00534
+            },
+            {
+                "year": "1992",
+                "emission": 67.15348
+            },
+            {
+                "year": "1993",
+                "emission": 66.91344
+            },
+            {
+                "year": "1994",
+                "emission": 68.13538
+            },
+            {
+                "year": "1995",
+                "emission": 68.91313
+            },
+            {
+                "year": "1996",
+                "emission": 70.97341
+            },
+            {
+                "year": "1997",
+                "emission": 73.66913
+            },
+            {
+                "year": "1998",
+                "emission": 71.56928
+            },
+            {
+                "year": "1999",
+                "emission": 73.36638
+            },
+            {
+                "year": "2000",
+                "emission": 75.39763
+            },
+            {
+                "year": "2001",
+                "emission": 78.38636
+            },
+            {
+                "year": "2002",
+                "emission": 78.56349
+            },
+            {
+                "year": "2003",
+                "emission": 80.73364
+            },
+            {
+                "year": "2004",
+                "emission": 80.54878
+            },
+            {
+                "year": "2005",
+                "emission": 82.48617
+            },
+            {
+                "year": "2006",
+                "emission": 82.51841
+            },
+            {
+                "year": "2007",
+                "emission": 80.52257
+            },
+            {
+                "year": "2008",
+                "emission": 80.60545
+            },
+            {
+                "year": "2009",
+                "emission": 77.88195
+            },
+            {
+                "year": "2010",
+                "emission": 78.31641
+            },
+            {
+                "year": "2011",
+                "emission": 78.14924
+            },
+            {
+                "year": "2012",
+                "emission": 80.44628
+            },
+            {
+                "year": "2013",
+                "emission": 79.82777
+            },
+            {
+                "year": "2014",
+                "emission": 80.674
+            },
+            {
+                "year": "2015",
+                "emission": 80.72444
+            },
+            {
+                "year": "2016",
+                "emission": 78.67836
+            },
+            {
+                "year": "2017",
+                "emission": 80.282
+            },
+            {
+                "year": "2018",
+                "emission": 80.57831
+            },
+            {
+                "year": "2019",
+                "emission": 82.31788
+            }
+        ]
+    },
+    {
+        "country_code": "POL",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 475.86293
+            },
+            {
+                "year": "1991",
+                "emission": 463.79087
+            },
+            {
+                "year": "1992",
+                "emission": 451.01594
+            },
+            {
+                "year": "1993",
+                "emission": 450.91126
+            },
+            {
+                "year": "1994",
+                "emission": 445.28905
+            },
+            {
+                "year": "1995",
+                "emission": 447.30906
+            },
+            {
+                "year": "1996",
+                "emission": 461.10953
+            },
+            {
+                "year": "1997",
+                "emission": 451.02273
+            },
+            {
+                "year": "1998",
+                "emission": 420.68152
+            },
+            {
+                "year": "1999",
+                "emission": 409.18256
+            },
+            {
+                "year": "2000",
+                "emission": 396.59491
+            },
+            {
+                "year": "2001",
+                "emission": 395.18765
+            },
+            {
+                "year": "2002",
+                "emission": 385.45507
+            },
+            {
+                "year": "2003",
+                "emission": 399.25884
+            },
+            {
+                "year": "2004",
+                "emission": 404.90089
+            },
+            {
+                "year": "2005",
+                "emission": 405.22525
+            },
+            {
+                "year": "2006",
+                "emission": 420.40833
+            },
+            {
+                "year": "2007",
+                "emission": 420.26892
+            },
+            {
+                "year": "2008",
+                "emission": 413.75043
+            },
+            {
+                "year": "2009",
+                "emission": 394.7139
+            },
+            {
+                "year": "2010",
+                "emission": 413.50155
+            },
+            {
+                "year": "2011",
+                "emission": 412.48895
+            },
+            {
+                "year": "2012",
+                "emission": 404.97567
+            },
+            {
+                "year": "2013",
+                "emission": 401.63824
+            },
+            {
+                "year": "2014",
+                "emission": 388.92907
+            },
+            {
+                "year": "2015",
+                "emission": 390.81588
+            },
+            {
+                "year": "2016",
+                "emission": 400.42128
+            },
+            {
+                "year": "2017",
+                "emission": 414.81941
+            },
+            {
+                "year": "2018",
+                "emission": 411.85217
+            },
+            {
+                "year": "2019",
+                "emission": 390.74467
+            }
+        ]
+    },
+    {
+        "country_code": "PRT",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 58.78377
+            },
+            {
+                "year": "1991",
+                "emission": 60.68904
+            },
+            {
+                "year": "1992",
+                "emission": 64.53604
+            },
+            {
+                "year": "1993",
+                "emission": 63.02764
+            },
+            {
+                "year": "1994",
+                "emission": 63.92487
+            },
+            {
+                "year": "1995",
+                "emission": 68.58814
+            },
+            {
+                "year": "1996",
+                "emission": 66.29463
+            },
+            {
+                "year": "1997",
+                "emission": 69.47347
+            },
+            {
+                "year": "1998",
+                "emission": 74.33327
+            },
+            {
+                "year": "1999",
+                "emission": 82.40044
+            },
+            {
+                "year": "2000",
+                "emission": 81.66811
+            },
+            {
+                "year": "2001",
+                "emission": 81.19988
+            },
+            {
+                "year": "2002",
+                "emission": 85.71994
+            },
+            {
+                "year": "2003",
+                "emission": 80.42933
+            },
+            {
+                "year": "2004",
+                "emission": 83.55956
+            },
+            {
+                "year": "2005",
+                "emission": 85.70434
+            },
+            {
+                "year": "2006",
+                "emission": 80.87167
+            },
+            {
+                "year": "2007",
+                "emission": 78.59301
+            },
+            {
+                "year": "2008",
+                "emission": 76.19515
+            },
+            {
+                "year": "2009",
+                "emission": 73.00869
+            },
+            {
+                "year": "2010",
+                "emission": 68.72703
+            },
+            {
+                "year": "2011",
+                "emission": 67.31909
+            },
+            {
+                "year": "2012",
+                "emission": 65.40463
+            },
+            {
+                "year": "2013",
+                "emission": 63.54223
+            },
+            {
+                "year": "2014",
+                "emission": 63.43983
+            },
+            {
+                "year": "2015",
+                "emission": 67.58667
+            },
+            {
+                "year": "2016",
+                "emission": 65.74158
+            },
+            {
+                "year": "2017",
+                "emission": 70.79072
+            },
+            {
+                "year": "2018",
+                "emission": 67.13179
+            },
+            {
+                "year": "2019",
+                "emission": 63.46998
+            }
+        ]
+    },
+    {
+        "country_code": "ROU",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 247.76051
+            },
+            {
+                "year": "1991",
+                "emission": 204.63121
+            },
+            {
+                "year": "1992",
+                "emission": 189.61314
+            },
+            {
+                "year": "1993",
+                "emission": 179.51461
+            },
+            {
+                "year": "1994",
+                "emission": 176.82745
+            },
+            {
+                "year": "1995",
+                "emission": 184.07427
+            },
+            {
+                "year": "1996",
+                "emission": 186.89491
+            },
+            {
+                "year": "1997",
+                "emission": 179.7068
+            },
+            {
+                "year": "1998",
+                "emission": 163.55569
+            },
+            {
+                "year": "1999",
+                "emission": 145.63254
+            },
+            {
+                "year": "2000",
+                "emission": 140.29211
+            },
+            {
+                "year": "2001",
+                "emission": 143.92399
+            },
+            {
+                "year": "2002",
+                "emission": 145.55167
+            },
+            {
+                "year": "2003",
+                "emission": 151.29214
+            },
+            {
+                "year": "2004",
+                "emission": 149.38172
+            },
+            {
+                "year": "2005",
+                "emission": 148.55725
+            },
+            {
+                "year": "2006",
+                "emission": 149.93551
+            },
+            {
+                "year": "2007",
+                "emission": 147.74376
+            },
+            {
+                "year": "2008",
+                "emission": 143.21907
+            },
+            {
+                "year": "2009",
+                "emission": 123.17764
+            },
+            {
+                "year": "2010",
+                "emission": 117.69918
+            },
+            {
+                "year": "2011",
+                "emission": 124.77949
+            },
+            {
+                "year": "2012",
+                "emission": 121.99118
+            },
+            {
+                "year": "2013",
+                "emission": 113.04833
+            },
+            {
+                "year": "2014",
+                "emission": 113.70363
+            },
+            {
+                "year": "2015",
+                "emission": 114.277
+            },
+            {
+                "year": "2016",
+                "emission": 111.68089
+            },
+            {
+                "year": "2017",
+                "emission": 115.18857
+            },
+            {
+                "year": "2018",
+                "emission": 115.99673
+            },
+            {
+                "year": "2019",
+                "emission": 112.66459
+            }
+        ]
+    },
+    {
+        "country_code": "RUS",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 3158.80434
+            },
+            {
+                "year": "1991",
+                "emission": 2997.92859
+            },
+            {
+                "year": "1992",
+                "emission": 2519.55958
+            },
+            {
+                "year": "1993",
+                "emission": 2382.40522
+            },
+            {
+                "year": "1994",
+                "emission": 2120.84038
+            },
+            {
+                "year": "1995",
+                "emission": 2068.3338
+            },
+            {
+                "year": "1996",
+                "emission": 2017.43258
+            },
+            {
+                "year": "1997",
+                "emission": 1899.54864
+            },
+            {
+                "year": "1998",
+                "emission": 1867.7537
+            },
+            {
+                "year": "1999",
+                "emission": 1897.29671
+            },
+            {
+                "year": "2000",
+                "emission": 1895
+            },
+            {
+                "year": "2001",
+                "emission": 1928.6
+            },
+            {
+                "year": "2002",
+                "emission": 1908.5
+            },
+            {
+                "year": "2003",
+                "emission": 1940.1
+            },
+            {
+                "year": "2004",
+                "emission": 1952.6
+            },
+            {
+                "year": "2005",
+                "emission": 1970.6
+            },
+            {
+                "year": "2006",
+                "emission": 2030.2
+            },
+            {
+                "year": "2007",
+                "emission": 2030.1
+            },
+            {
+                "year": "2008",
+                "emission": 2059.5
+            },
+            {
+                "year": "2009",
+                "emission": 1925
+            },
+            {
+                "year": "2010",
+                "emission": 2019.4
+            },
+            {
+                "year": "2011",
+                "emission": 2076.1
+            },
+            {
+                "year": "2012",
+                "emission": 2100.9
+            },
+            {
+                "year": "2013",
+                "emission": 2041.8
+            },
+            {
+                "year": "2014",
+                "emission": 2037.6
+            },
+            {
+                "year": "2015",
+                "emission": 2033.3
+            },
+            {
+                "year": "2016",
+                "emission": 2034
+            },
+            {
+                "year": "2017",
+                "emission": 2082.6
+            },
+            {
+                "year": "2018",
+                "emission": 2145.2
+            },
+            {
+                "year": "2019",
+                "emission": 2136.5
+            }
+        ]
+    },
+    {
+        "country_code": "SVK",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 73.38616
+            },
+            {
+                "year": "1991",
+                "emission": 63.9266
+            },
+            {
+                "year": "1992",
+                "emission": 58.21279
+            },
+            {
+                "year": "1993",
+                "emission": 54.79604
+            },
+            {
+                "year": "1994",
+                "emission": 52.32303
+            },
+            {
+                "year": "1995",
+                "emission": 52.88894
+            },
+            {
+                "year": "1996",
+                "emission": 52.72311
+            },
+            {
+                "year": "1997",
+                "emission": 52.63499
+            },
+            {
+                "year": "1998",
+                "emission": 51.94877
+            },
+            {
+                "year": "1999",
+                "emission": 50.56142
+            },
+            {
+                "year": "2000",
+                "emission": 48.66991
+            },
+            {
+                "year": "2001",
+                "emission": 50.92539
+            },
+            {
+                "year": "2002",
+                "emission": 49.5267
+            },
+            {
+                "year": "2003",
+                "emission": 49.68081
+            },
+            {
+                "year": "2004",
+                "emission": 50.40947
+            },
+            {
+                "year": "2005",
+                "emission": 50.35719
+            },
+            {
+                "year": "2006",
+                "emission": 50.26753
+            },
+            {
+                "year": "2007",
+                "emission": 48.47795
+            },
+            {
+                "year": "2008",
+                "emission": 48.89852
+            },
+            {
+                "year": "2009",
+                "emission": 44.70618
+            },
+            {
+                "year": "2010",
+                "emission": 45.36393
+            },
+            {
+                "year": "2011",
+                "emission": 44.55547
+            },
+            {
+                "year": "2012",
+                "emission": 42.30922
+            },
+            {
+                "year": "2013",
+                "emission": 41.86256
+            },
+            {
+                "year": "2014",
+                "emission": 39.86299
+            },
+            {
+                "year": "2015",
+                "emission": 40.71246
+            },
+            {
+                "year": "2016",
+                "emission": 41.11212
+            },
+            {
+                "year": "2017",
+                "emission": 42.2267
+            },
+            {
+                "year": "2018",
+                "emission": 42.15913
+            },
+            {
+                "year": "2019",
+                "emission": 39.94833
+            }
+        ]
+    },
+    {
+        "country_code": "SVN",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 18.58024
+            },
+            {
+                "year": "1991",
+                "emission": 17.22831
+            },
+            {
+                "year": "1992",
+                "emission": 17.21963
+            },
+            {
+                "year": "1993",
+                "emission": 17.46876
+            },
+            {
+                "year": "1994",
+                "emission": 17.90258
+            },
+            {
+                "year": "1995",
+                "emission": 18.69099
+            },
+            {
+                "year": "1996",
+                "emission": 19.30513
+            },
+            {
+                "year": "1997",
+                "emission": 19.85192
+            },
+            {
+                "year": "1998",
+                "emission": 19.42562
+            },
+            {
+                "year": "1999",
+                "emission": 18.80573
+            },
+            {
+                "year": "2000",
+                "emission": 18.58177
+            },
+            {
+                "year": "2001",
+                "emission": 19.85145
+            },
+            {
+                "year": "2002",
+                "emission": 20.10788
+            },
+            {
+                "year": "2003",
+                "emission": 19.776
+            },
+            {
+                "year": "2004",
+                "emission": 20.17528
+            },
+            {
+                "year": "2005",
+                "emission": 20.43319
+            },
+            {
+                "year": "2006",
+                "emission": 20.63335
+            },
+            {
+                "year": "2007",
+                "emission": 20.81743
+            },
+            {
+                "year": "2008",
+                "emission": 21.54328
+            },
+            {
+                "year": "2009",
+                "emission": 19.37809
+            },
+            {
+                "year": "2010",
+                "emission": 19.61354
+            },
+            {
+                "year": "2011",
+                "emission": 19.54039
+            },
+            {
+                "year": "2012",
+                "emission": 18.91761
+            },
+            {
+                "year": "2013",
+                "emission": 18.22097
+            },
+            {
+                "year": "2014",
+                "emission": 16.5815
+            },
+            {
+                "year": "2015",
+                "emission": 16.76095
+            },
+            {
+                "year": "2016",
+                "emission": 17.61646
+            },
+            {
+                "year": "2017",
+                "emission": 17.6966
+            },
+            {
+                "year": "2018",
+                "emission": 17.52174
+            },
+            {
+                "year": "2019",
+                "emission": 17.06545
+            }
+        ]
+    },
+    {
+        "country_code": "SWE",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 71.23917
+            },
+            {
+                "year": "1991",
+                "emission": 71.49594
+            },
+            {
+                "year": "1992",
+                "emission": 71.03292
+            },
+            {
+                "year": "1993",
+                "emission": 71.33693
+            },
+            {
+                "year": "1994",
+                "emission": 73.85201
+            },
+            {
+                "year": "1995",
+                "emission": 73.18539
+            },
+            {
+                "year": "1996",
+                "emission": 77.15115
+            },
+            {
+                "year": "1997",
+                "emission": 72.13784
+            },
+            {
+                "year": "1998",
+                "emission": 72.588
+            },
+            {
+                "year": "1999",
+                "emission": 69.5045
+            },
+            {
+                "year": "2000",
+                "emission": 68.14905
+            },
+            {
+                "year": "2001",
+                "emission": 68.96319
+            },
+            {
+                "year": "2002",
+                "emission": 69.68474
+            },
+            {
+                "year": "2003",
+                "emission": 70.05293
+            },
+            {
+                "year": "2004",
+                "emission": 69.48757
+            },
+            {
+                "year": "2005",
+                "emission": 66.66253
+            },
+            {
+                "year": "2006",
+                "emission": 66.28164
+            },
+            {
+                "year": "2007",
+                "emission": 65.16448
+            },
+            {
+                "year": "2008",
+                "emission": 62.7889
+            },
+            {
+                "year": "2009",
+                "emission": 58.52368
+            },
+            {
+                "year": "2010",
+                "emission": 64.55743
+            },
+            {
+                "year": "2011",
+                "emission": 60.23062
+            },
+            {
+                "year": "2012",
+                "emission": 57.37645
+            },
+            {
+                "year": "2013",
+                "emission": 55.71895
+            },
+            {
+                "year": "2014",
+                "emission": 53.8333
+            },
+            {
+                "year": "2015",
+                "emission": 53.99852
+            },
+            {
+                "year": "2016",
+                "emission": 53.57152
+            },
+            {
+                "year": "2017",
+                "emission": 53.01059
+            },
+            {
+                "year": "2018",
+                "emission": 52.17022
+            },
+            {
+                "year": "2019",
+                "emission": 50.91986
+            }
+        ]
+    },
+    {
+        "country_code": "TUR",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 219.57221
+            },
+            {
+                "year": "1991",
+                "emission": 226.95677
+            },
+            {
+                "year": "1992",
+                "emission": 233.18506
+            },
+            {
+                "year": "1993",
+                "emission": 240.52114
+            },
+            {
+                "year": "1994",
+                "emission": 234.49643
+            },
+            {
+                "year": "1995",
+                "emission": 247.99371
+            },
+            {
+                "year": "1996",
+                "emission": 267.61411
+            },
+            {
+                "year": "1997",
+                "emission": 278.86603
+            },
+            {
+                "year": "1998",
+                "emission": 280.41945
+            },
+            {
+                "year": "1999",
+                "emission": 277.84088
+            },
+            {
+                "year": "2000",
+                "emission": 298.95423
+            },
+            {
+                "year": "2001",
+                "emission": 280.50323
+            },
+            {
+                "year": "2002",
+                "emission": 286.22735
+            },
+            {
+                "year": "2003",
+                "emission": 305.29015
+            },
+            {
+                "year": "2004",
+                "emission": 314.84315
+            },
+            {
+                "year": "2005",
+                "emission": 337.34465
+            },
+            {
+                "year": "2006",
+                "emission": 358.5711
+            },
+            {
+                "year": "2007",
+                "emission": 391.66426
+            },
+            {
+                "year": "2008",
+                "emission": 387.85321
+            },
+            {
+                "year": "2009",
+                "emission": 395.84389
+            },
+            {
+                "year": "2010",
+                "emission": 399.14306
+            },
+            {
+                "year": "2011",
+                "emission": 428.12039
+            },
+            {
+                "year": "2012",
+                "emission": 447.58208
+            },
+            {
+                "year": "2013",
+                "emission": 439.69438
+            },
+            {
+                "year": "2014",
+                "emission": 458.95388
+            },
+            {
+                "year": "2015",
+                "emission": 473.33582
+            },
+            {
+                "year": "2016",
+                "emission": 498.88678
+            },
+            {
+                "year": "2017",
+                "emission": 524.98092
+            },
+            {
+                "year": "2018",
+                "emission": 522.47663
+            },
+            {
+                "year": "2019",
+                "emission": 506.08042
+            }
+        ]
+    },
+    {
+        "country_code": "UKR",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 942.57407
+            },
+            {
+                "year": "1991",
+                "emission": 856.17582
+            },
+            {
+                "year": "1992",
+                "emission": 801.15432
+            },
+            {
+                "year": "1993",
+                "emission": 711.03175
+            },
+            {
+                "year": "1994",
+                "emission": 604.72718
+            },
+            {
+                "year": "1995",
+                "emission": 561.92572
+            },
+            {
+                "year": "1996",
+                "emission": 515.0896
+            },
+            {
+                "year": "1997",
+                "emission": 499.40161
+            },
+            {
+                "year": "1998",
+                "emission": 480.72592
+            },
+            {
+                "year": "1999",
+                "emission": 449.42496
+            },
+            {
+                "year": "2000",
+                "emission": 427.60279
+            },
+            {
+                "year": "2001",
+                "emission": 445.70084
+            },
+            {
+                "year": "2002",
+                "emission": 430.83988
+            },
+            {
+                "year": "2003",
+                "emission": 440.13392
+            },
+            {
+                "year": "2004",
+                "emission": 442.91637
+            },
+            {
+                "year": "2005",
+                "emission": 442.06265
+            },
+            {
+                "year": "2006",
+                "emission": 459.69839
+            },
+            {
+                "year": "2007",
+                "emission": 463.03
+            },
+            {
+                "year": "2008",
+                "emission": 450.79066
+            },
+            {
+                "year": "2009",
+                "emission": 390.31052
+            },
+            {
+                "year": "2010",
+                "emission": 407.12369
+            },
+            {
+                "year": "2011",
+                "emission": 428.39517
+            },
+            {
+                "year": "2012",
+                "emission": 417.43521
+            },
+            {
+                "year": "2013",
+                "emission": 409.04206
+            },
+            {
+                "year": "2014",
+                "emission": 362.60894
+            },
+            {
+                "year": "2015",
+                "emission": 319.14119
+            },
+            {
+                "year": "2016",
+                "emission": 337.45651
+            },
+            {
+                "year": "2017",
+                "emission": 323.04506
+            },
+            {
+                "year": "2018",
+                "emission": 339.79789
+            },
+            {
+                "year": "2019",
+                "emission": 332.11402
+            }
+        ]
+    },
+    {
+        "country_code": "USA",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 6442.65063
+            },
+            {
+                "year": "1991",
+                "emission": 6373.62114
+            },
+            {
+                "year": "1992",
+                "emission": 6486.34384
+            },
+            {
+                "year": "1993",
+                "emission": 6604.34989
+            },
+            {
+                "year": "1994",
+                "emission": 6691.82283
+            },
+            {
+                "year": "1995",
+                "emission": 6775.86025
+            },
+            {
+                "year": "1996",
+                "emission": 6981.16538
+            },
+            {
+                "year": "1997",
+                "emission": 7036.50804
+            },
+            {
+                "year": "1998",
+                "emission": 7083.26927
+            },
+            {
+                "year": "1999",
+                "emission": 7125.39903
+            },
+            {
+                "year": "2000",
+                "emission": 7313.61649
+            },
+            {
+                "year": "2001",
+                "emission": 7202.95651
+            },
+            {
+                "year": "2002",
+                "emission": 7244.30189
+            },
+            {
+                "year": "2003",
+                "emission": 7301.36318
+            },
+            {
+                "year": "2004",
+                "emission": 7415.47111
+            },
+            {
+                "year": "2005",
+                "emission": 7423.03103
+            },
+            {
+                "year": "2006",
+                "emission": 7344.46285
+            },
+            {
+                "year": "2007",
+                "emission": 7449.61603
+            },
+            {
+                "year": "2008",
+                "emission": 7224.64898
+            },
+            {
+                "year": "2009",
+                "emission": 6772.00007
+            },
+            {
+                "year": "2010",
+                "emission": 6991.10634
+            },
+            {
+                "year": "2011",
+                "emission": 6827.40242
+            },
+            {
+                "year": "2012",
+                "emission": 6585.90777
+            },
+            {
+                "year": "2013",
+                "emission": 6764.66911
+            },
+            {
+                "year": "2014",
+                "emission": 6824.95671
+            },
+            {
+                "year": "2015",
+                "emission": 6671.11207
+            },
+            {
+                "year": "2016",
+                "emission": 6520.33784
+            },
+            {
+                "year": "2017",
+                "emission": 6483.29133
+            },
+            {
+                "year": "2018",
+                "emission": 6671.4494
+            },
+            {
+                "year": "2019",
+                "emission": 6558.34518
+            }
+        ]
+    },
+    {
+        "country_code": "EU",
+        "data": [
+            {
+                "year": "1990",
+                "emission": 5639.3767
+            },
+            {
+                "year": "1991",
+                "emission": 5544.26459
+            },
+            {
+                "year": "1992",
+                "emission": 5371.20886
+            },
+            {
+                "year": "1993",
+                "emission": 5272.78867
+            },
+            {
+                "year": "1994",
+                "emission": 5243.85388
+            },
+            {
+                "year": "1995",
+                "emission": 5291.52412
+            },
+            {
+                "year": "1996",
+                "emission": 5405.82404
+            },
+            {
+                "year": "1997",
+                "emission": 5310.09891
+            },
+            {
+                "year": "1998",
+                "emission": 5268.61521
+            },
+            {
+                "year": "1999",
+                "emission": 5163.02208
+            },
+            {
+                "year": "2000",
+                "emission": 5154.15802
+            },
+            {
+                "year": "2001",
+                "emission": 5205.01842
+            },
+            {
+                "year": "2002",
+                "emission": 5170.96466
+            },
+            {
+                "year": "2003",
+                "emission": 5259.18202
+            },
+            {
+                "year": "2004",
+                "emission": 5260.52407
+            },
+            {
+                "year": "2005",
+                "emission": 5225.91919
+            },
+            {
+                "year": "2006",
+                "emission": 5214.7053
+            },
+            {
+                "year": "2007",
+                "emission": 5164.33522
+            },
+            {
+                "year": "2008",
+                "emission": 5046.19913
+            },
+            {
+                "year": "2009",
+                "emission": 4674.52179
+            },
+            {
+                "year": "2010",
+                "emission": 4778.99296
+            },
+            {
+                "year": "2011",
+                "emission": 4625.10103
+            },
+            {
+                "year": "2012",
+                "emission": 4566.63514
+            },
+            {
+                "year": "2013",
+                "emission": 4469.2877
+            },
+            {
+                "year": "2014",
+                "emission": 4292.17659
+            },
+            {
+                "year": "2015",
+                "emission": 4322.94126
+            },
+            {
+                "year": "2016",
+                "emission": 4300.89879
+            },
+            {
+                "year": "2017",
+                "emission": 4315.84605
+            },
+            {
+                "year": "2018",
+                "emission": 4220.93223
+            },
+            {
+                "year": "2019",
+                "emission": 4056.38934
+            }
+        ]
+    }
+]

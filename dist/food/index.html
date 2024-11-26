@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Healthy Food | Data Commons</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air,near-midnight.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
+<script type="module">
+
+import "../_observablehq/client.js";
+
+</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#food-nutrition-labels-(yaml-locally)">Food Nutrition Labels (YAML locally)</a></li>
+<li class="observablehq-secondary-link"><a href="#specific-food-profiles-(json-directly-from-fda-api)">Specific Food Profiles (JSON directly from FDA API)</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<p><a href="../">Data Commons</a></p>
+<h1 id="healthy-food" tabindex="-1"><a class="observablehq-header-anchor" href="#healthy-food">Healthy Food</a></h1>
+<p>Goal 2. Healthy Food, No Hunger and <a href="/OpenFootprint/">GHG mitigation</a> - <a href="/balance/">balance repo</a> - <a href="https://www.bbc.com/future/bespoke/follow-the-food/why-modern-food-lost-its-nutrients/">Why Modern Food Lost its Nutrition</a></p>
+<p><a href="https://build.fhir.org/nutritionproduct.html">International FHIR Nutrition Product json</a> - <a href="https://en.wikipedia.org/wiki/Fast_Healthcare_Interoperability_Resources">About FHIR Fast Healthcare Interoperability</a></p>
+<!--
+	https://confluence.hl7.org/display/FHIR/FHIR+Spreadsheet+Authoring#FHIRSpreadsheetAuthoring-ExcelSpreadsheet
+
+	Download spreadsheets
+	https://build.fhir.org/definitions.xlsx.zip
+-->
+<h2 id="food-nutrition-labels-(yaml-locally)" tabindex="-1"><a class="observablehq-header-anchor" href="#food-nutrition-labels-(yaml-locally)">Food Nutrition Labels (YAML locally)</a></h2>
+<p>Source: <a href="https://fdc.nal.usda.gov/api-guide.html">USDA API</a></p>
+<p>In the "fdc" subfolder we have two yaml samples for each of the 5 food groups (protein, dairy, vegetable, fruit, grains)</p>
+<p><strong>Protein</strong><br>
+<a href="/io/template/parser/#yaml=/data-commons/docs/food/fdc/samples/1899680.yaml">CHICKEN THIGH</a><br>
+<a href="/io/template/parser/#yaml=/data-commons/docs/food/fdc/samples/2015943.yaml">CHEDDAR CHEESE</a></p>
+<p><strong>Dairy</strong><br>
+<a href="/io/template/parser/#yaml=/data-commons/docs/food/fdc/samples/2501185.yaml">MILK</a><br>
+<a href="/io/template/parser/#yaml=/data-commons/docs/food/fdc/samples/2099349.yaml">SPINACH</a></p>
+<p><strong>Vegetable</strong><br>
+<a href="/io/template/parser/#yaml=/data-commons/docs/food/fdc/samples/2294522.yaml">TOFU</a><br>
+<a href="/io/template/parser/#yaml=/data-commons/docs/food/fdc/samples/2345309.yaml">Lettuce, raw</a></p>
+<p><strong>Fruit</strong><br>
+<a href="/io/template/parser/#yaml=/data-commons/docs/food/fdc/samples/2117388.yaml">APPLE</a><br>
+<a href="/io/template/parser/#yaml=/data-commons/docs/food/fdc/samples/2135570.yaml">CHERRY</a></p>
+<p><strong>Grains</strong><br>
+<a href="/io/template/parser/#yaml=/data-commons/docs/food/fdc/samples/2099117.yaml">SPAGHETTI</a><br>
+<a href="/io/template/parser/#yaml=/data-commons/docs/food/fdc/samples/356554.yaml">RICE</a></p>
+<h2 id="specific-food-profiles-(json-directly-from-fda-api)" tabindex="-1"><a class="observablehq-header-anchor" href="#specific-food-profiles-(json-directly-from-fda-api)">Specific Food Profiles (JSON directly from FDA API)</a></h2>
+<p>Each food's nutrition data path is passed to our Feed-Player:</p>
+<p><strong>Fruits</strong>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/454004?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">APPLE</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2012128?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">BANANA</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1864680?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">ORANGE</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2388788?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">STRAWBERRY</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2388443?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">GRAPES</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2193119?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">WATERMELON</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2282543?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">PINEAPPLE</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2629151?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">MANGO</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2116605?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">BLUEBERRY</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2038855?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">RASPBERRY</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2053614?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">PEACH</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2135570?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">CHERRY</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2344749?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Pear, raw</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2344761?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Plum, canned</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1662236?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">KIWI</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2038425?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">LEMON</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2344800?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Lime souffle</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2156170?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">GRAPEFRUIT</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1568209?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">CANTALOUPE</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2107589?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">APRICOT</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2121828?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">BLACKBERRY</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2541400?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">POMEGRANATE</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2670269?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">PAPAYA</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2344729?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Dragon fruit</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2216672?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">FIG</a></p>
+<p><strong>Vegetables</strong>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2617829?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">SPINACH</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1602525?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">KALE</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2345309?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Lettuce, raw</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/170392?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Cabbage, kimchi</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2438059?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">ONION</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1662203?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">GARLIC</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2345004?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Potato patty</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/477475?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">SWEET POTATO</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2428955?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">ZUCCHINI</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2345576?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Eggplant dip</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2434324?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">PUMPKIN</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2345528?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Spaghetti squash, cooked</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2409200?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">CAULIFLOWER</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2609688?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">BRUSSELS SPROUTS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2390911?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">ASPARAGUS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2426624?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">GREEN BEANS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2030118?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">PEAS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2194089?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">CORN</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2310033?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">MUSHROOM</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2321499?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">BEETROOT CHIPS, BEETROOT</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2345323?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Radish, raw</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/170470?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Turnip greens and turnips, frozen, unprepared</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2345478?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Parsnips, cooked</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/577891?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">RUTABAGA</a></p>
+<p><strong>Proteins</strong>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2187885?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">CHICKEN BREAST</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1028841?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">SALMON</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1663044?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">EGGS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2035482?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">GREEK YOGURT</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2294522?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">TOFU</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1605879?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">LEAN BEEF</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2440897?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">TURKEY BREAST</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2025821?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">COTTAGE CHEESE</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2029597?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">SARDINES</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2425458?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">LENTILS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1858805?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">QUINOA</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2078991?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">BLACK BEANS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2068232?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">CHICKPEAS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2068771?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">TUNA</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2343014?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Peanut butter</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2433310?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">ALMONDS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1909132?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">MILK</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/776020?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">WHEY PROTEIN</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2524489?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">PORK CHOPS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2340784?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Soy milk</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/174272?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Tempeh</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2012995?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">SEITAN WHEAT PROTEIN CUBED, SEITAN</a></p>
+<p><strong>Carbohydrates</strong>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2020713?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">OATS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2431690?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">BROWN RICE</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1858805?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">QUINOA</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2070778?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">WHOLE GRAIN BREAD</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2456103?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">WHOLE GRAIN PASTA</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/477475?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">SWEET POTATO</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2345004?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Potato patty</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2343845?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Barley</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/170286?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Buckwheat</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2343861?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Millet</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2156255?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">WHOLE WHEAT COUSCOUS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2668934?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">WHOLE WHEAT TORTILLAS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2093351?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">WHOLE WHEAT BAGELS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/1940942?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">WILD RICE</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2017935?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">BULGUR</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2659627?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">FARRO</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2105052?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">POPCORN</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2601092?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">CORNMEAL</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2388834?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">COUSCOUS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2488703?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">WHITE RICE</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2456464?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">WHITE BREAD</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2343841?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">Pasta, cooked</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2487760?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">BAGELS</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2070798?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">CEREAL</a>
+<a href="/feed/view/#path=https://api.nal.usda.gov/fdc/v1/food/2055557?api_key=bLecediTVa2sWd8AegmUZ9o7DxYFSYoef9B4i1Ml">CRACKERS</a></p>
+<p><a href="https://data.world/adamhelsinger/food-nutrition-information">Data.world nutrition data for raw fruits, vegetables</a> - from Rakesh</p>
+<p><strong>Food Health and Impacts</strong></p>
+<ul>
+<li><a href="https://github.com/vasturiano/3d-force-graph">3D Force Graph</a> for <a href="/balance/">Balanced Diets</a><!--Rakesh, Anshit--></li>
+</ul>
+<p>TO DO: Create 3D Force-Directed Graph mockup for the <a href="https://www.researchgate.net/figure/The-nutrient-nutrient-network-Each-node-represents-a-nutrient-and-nodes-are-connected_fig4_264826549">Uncovering the Nutritional Landscape of Food</a> visualizations below (we will then contact researches to get data) - In the nutrient-nutrient network. Each node represents a nutrient, and nodes are connected through correlations between abundances of nutrients across all foods. The network is composed of three major groups of nutrients densely connected to one another through positive correlations.</p>
+<p>The shape of each node indicates a hierarchical or ‘taxonomic’ level of a nutrient, from ‘ Highest ’ (a general class of nutrients) to ‘Lowest’ (a specific nutrient). Color and thickness of each link correspond to the sign and magnitude of the correlation, respectively. Seven nutrients are omitted which don’t have significant correlations with any others. We also omit amino acids, because their correlations with other nutrients are very similar to correlations of total protein with others, and thus redundant for visualization.</p>
+<p><a href="../../docs/food/network/img/The-nutrient-nutrient-network-Each-node-represents-a-nutrient-and-nodes-are-connected.png"><img src="../../docs/food/network/img/The-nutrient-nutrient-network-Each-node-represents-a-nutrient-and-nodes-are-connected.png" style="width:100%;max-width:800px;"></a></p>
+<p><a href="../../docs/food/network/img/The-food-food-network-A-C-Large-scale-to-small-scale-overviews-of-the-network-Each.png"><img src="../../docs/food/network/img/The-food-food-network-A-C-Large-scale-to-small-scale-overviews-of-the-network-Each.png" style="width:100%;max-width:800px;"></a></p>
+</main>
+<footer id="observablehq-footer">
+<div><style>#observablehq-footer{margin-top:40px;border-top:1px solid #ccc;padding-top:10px;}</style>Built with <a href="https://observablehq.com" target="_blank">Observable</a> and <a href="https://DataCommons.org" target="_blank">Google Data Commons</a> by our <a href="/projects/">Model.earth Project Team</a>.</div>
+</footer>
+</div>
