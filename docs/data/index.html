@@ -391,6 +391,9 @@ loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM
         <label>
             <input type="radio" name="toggle" value="div2"> Area Chart
         </label>
+        <label>
+            <input type="radio" name="toggle" value="both"> Both
+        </label>
     </div>
 </div>
 <div class="content contentpadding large-list">
@@ -429,23 +432,27 @@ loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM
 
 
     function toggleDivs() {
-            // Get selected value from radio buttons
-            const selectedValue = document.querySelector('input[name="toggle"]:checked').value;
-            
-            // Hide both divs initially
-            document.getElementById('div1').style.display = 'none';
-            document.getElementById('div2').style.display = 'none';
-
-            // Show the selected div
-            document.getElementById(selectedValue).style.display = 'block';
+        // Get selected value from radio buttons
+        const selectedValue = document.querySelector('input[name="toggle"]:checked').value;
+        if (selectedValue == "both") {
+            document.getElementById('div1').style.display = 'block';
+            document.getElementById('div2').style.display = 'block';
+            return;
         }
+        // Hide both divs initially
+        document.getElementById('div1').style.display = 'none';
+        document.getElementById('div2').style.display = 'none';
 
-        // Add event listeners to radio buttons to call toggleDivs() on change
-        document.querySelectorAll('input[name="toggle"]').forEach((radio) => {
-            radio.addEventListener('change', toggleDivs);
-        });
+        // Show the selected div
+        document.getElementById(selectedValue).style.display = 'block';
+    }
 
-        // Show the first div by default on page load
+    // Add event listeners to radio buttons to call toggleDivs() on change
+    document.querySelectorAll('input[name="toggle"]').forEach((radio) => {
+        radio.addEventListener('change', toggleDivs);
+    });
+
+    // Show the first div by default on page load
     toggleDivs();
 </script>
 </body>
