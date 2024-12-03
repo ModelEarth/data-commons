@@ -5,7 +5,7 @@
 
 ## Projects
 
-TO DO: [County Timelines](/data-commons/docs/data/) and [Country & State Timelines](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) from Google Data Commons API
+TO DO: [Goal Timelines Data Config](/data-commons/docs/data/) and [Country & State Timelines (legacy)](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) from Google Data Commons API
 
 
 TO DO: Combine our [Earthscape Tabulator](../data-pipeline/timelines/training/naics/) with our [chartJS timeline display](/data-commons/docs/data/) by adding to [earthscape.js](/data-commons/docs/data/js/earthscape.js).
