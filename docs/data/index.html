@@ -72,11 +72,10 @@ document.addEventListener('hashChangeEvent', function (elem) {
 }, false);
 
 function updateDcidSelect(scope) {
-//<<<<<<< HEAD
-    //const dcidSelect = document.getElementById('dcid_select');
-//=======
+
+    //const dcidSelect = document.getElementById('dcid_select'); // Older name for #chartVariable probably
     const dcidSelect = document.getElementById('chartVariable');
-//>>>>>>> upstream/main
+
     dcidSelect.innerHTML = ''; // Clear existing options
 
     // Define the new options based on the scope
@@ -270,6 +269,9 @@ function loadGoalsDropdown(theme,csvPath) {
 loadGoalsDropdown("water","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=2049347939&single=true&output=csv");
 
 loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv");
+
+loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=1911215802&single=true&output=csv");
+
 </script>
 
 <style>
@@ -426,6 +428,9 @@ loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM
   <div id="waterDiv"></div>
   <br>
 
+  <b>Health Topics</b><br>
+  <div id="healthDiv"></div>
+  <br>
   <hr><br>
 
   <div id="githubPushDiv"></div>
