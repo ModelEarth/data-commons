@@ -50,6 +50,120 @@ document.addEventListener('DOMContentLoaded', () => {
         getTimelineChart(chartVariable, entityId, showAll, chartText);
     });
 });
+document.addEventListener('hashChangeEvent', function () {
+    console.log("Timeline page detects URL hashChangeEvent");
+
+    const hash = window.location.hash;
+    const newScope = hash ? hash.split('=')[1] : null;
+
+    if (newScope) {
+        // Fetch dropdown options for the new scope
+        updateDcidSelectFromSheet(newScope);
+    }
+}, false);
+async function updateDcidSelectFromSheet(scope) {
+    const dcidSelect = document.getElementById('chartVariable');
+    if (!dcidSelect) {
+        console.error("Dropdown element with ID 'chartVariable' not found.");
+        return;
+    }
+
+    dcidSelect.innerHTML = ''; // Clear existing options
+
+    try {
+        // Replace this URL with your specific sheet's export URL
+        const sheetUrl = "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/export?format=csv&gid=0";
+
+        const response = await fetch(sheetUrl);
+        const csvText = await response.text();
+
+        console.log("CSV Data:", csvText); // Log the entire CSV data for debugging
+
+        // Parse CSV data correctly, handling quoted commas
+        const rows = parseCSV(csvText);
+
+        console.log("Parsed Rows:", rows); // Log parsed rows for debugging
+
+        const headers = rows[0]; // Assuming the first row contains headers
+        console.log("Headers:", headers); // Log headers to ensure correct column names
+
+        // Find the indices for the Scope, Value, and Text columns
+        const scopeIndex = headers.indexOf('Scope');
+        const valueIndex = headers.indexOf('DCID'); // Assuming 'Value' is stored in the 'DCID' column
+        const textIndex = headers.indexOf('Title'); // Assuming 'Text' is stored in the 'Title' column
+
+        if (scopeIndex === -1 || valueIndex === -1 || textIndex === -1) {
+            console.error("Missing required columns in the CSV data.");
+            return;
+        }
+
+        // Normalize the provided scope (trim and lowercase for comparison)
+        const normalizedScope = scope.trim().toLowerCase();
+
+        // Filter rows by the selected scope (case-insensitive)
+        const filteredOptions = rows.slice(1).filter(row => {
+            const scopeColumn = row[scopeIndex]?.trim(); // Get the Scope column value
+            if (!scopeColumn) {
+                console.log("Skipping row with empty Scope column:", row); // Log empty rows for debugging
+                return false;
+            }
+
+            // Handle comma-separated values within quotes in the Scope column
+            const scopes = scopeColumn.replace(/"/g, '').split(',').map(s => s.trim().toLowerCase());
+
+            console.log("Row Scope Column:", scopeColumn); // Log the original Scope column value
+            console.log("Row Split Scopes:", scopes); // Log split scopes
+
+            // Compare each scope against the user-provided scope (case-insensitive)
+            const matchFound = scopes.some(s => s === normalizedScope); // Use 'some' for matching any of the scopes
+            console.log(`Match found for scope '${normalizedScope}':`, matchFound); // Log the result of the match check
+
+            return matchFound; // Return true if scope matches
+        });
+
+        console.log("Filtered Options:", filteredOptions); // Log the filtered options to verify
+
+        // Populate dropdown
+        filteredOptions.forEach(row => {
+            const value = row[valueIndex]?.trim();
+            const text = row[textIndex]?.trim();
+            if (value && text) {
+                const opt = document.createElement('option');
+                opt.value = value;
+                opt.text = text;
+                dcidSelect.add(opt);
+            }
+        });
+
+        // Set default selection if options exist
+        if (filteredOptions.length > 0) {
+            dcidSelect.value = filteredOptions[0][valueIndex].trim(); // Set to the first option's value
+        } else {
+            console.warn("No options matched the provided scope:", normalizedScope);
+        }
+    } catch (error) {
+        console.error("Error fetching or parsing Google Sheet data:", error);
+    }
+}
+
+// CSV Parsing function to handle quoted commas
+function parseCSV(csvText) {
+    // Split rows by newlines
+    const rows = csvText.split('\n').map(row => {
+        // Use a regular expression to handle commas inside quotes
+        const regex = /(?:,|\r?\n|^)(?:"([^"]*)"|([^",]*))/g;
+        const columns = [];
+        let match;
+        while ((match = regex.exec(row)) !== null) {
+            columns.push(match[1] || match[2]); // Take the value inside quotes or the normal value
+        }
+        return columns;
+    });
+    return rows;
+}
+
+
+/*
 document.addEventListener('hashChangeEvent', function (elem) {
     console.log("timeline page detects URL hashChangeEvent");
 
@@ -64,7 +178,8 @@ document.addEventListener('hashChangeEvent', function (elem) {
 
     if (newScope) {
         // Call the function to update the dcid_select dropdown based on the new scope
-        updateDcidSelect(newScope);
+       updateDcidSelect(newScope);
+      
     }
 
     // Update chart based on the hash change
@@ -82,15 +197,15 @@ function updateDcidSelect(scope) {
     let options = [];
     if (scope === "county") {
         options = [
-            { value: "Count_Person", text: "County Populations" },
-            { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
-            { value: "Count_Farm", text: "Number of Farms" },
-            { value: "Annual_Emissions_Methane_NonBiogenic", text: "Methane NonBiogenic" },
-            { value: " Annual_Emissions_CarbonDioxide_NonBiogenic", text: "Annual Emissions CarbonDioxide NonBiogenic" },
-            { value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
-            { value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
-            { value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
-            { value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
+             { value: "Count_Person", text: "County Populations" },
+             { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
+             { value: "Count_Farm", text: "Number of Farms" },
+             { value: "Annual_Emissions_Methane_NonBiogenic", text: "Methane NonBiogenic" },
+             { value: " Annual_Emissions_CarbonDioxide_NonBiogenic", text: "Annual Emissions CarbonDioxide NonBiogenic" },
+             { value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
+             { value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
+             { value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
+             { value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
            
         ];
     } else if (scope === "country") {
@@ -165,6 +280,7 @@ function updateDcidSelect(scope) {
         dcidSelect.value = options[0].value; // Set to the first option by default
     }
 }
+*/
 
 function createLabelFromDCID(DCID) {
     return DCID
@@ -308,6 +424,10 @@ loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkG
 
   
   <div id="relocatedScopeMenu"></div>
+  <div id="template-container"></div>
+  <div id="templateLoaded"></div>
+
+
 
   <!-- We might not use the same state menu as the search filter.
   <div id="relocatedStateMenu"></div>
@@ -367,6 +487,7 @@ loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkG
       <option value="geoId/56">Wyoming</option>
       <option value="geoId/72">Puerto Rico</option>
   </select>
+ 
   <select id="chartVariable">
       <option value="Count_Person" selected>County Populations</option>
       <option value="LandCoverFraction_Forest">Land Covered by Forests</option>
@@ -383,6 +504,8 @@ loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkG
           Convert 2-char state to geoId/01 in backend datacommons.js
       -->
   </select>
+  
+
   <br>
   <form name="countyShow">
       <label> <input value="showAll" type="radio" name="countyShow" />All Counties </label>
@@ -437,8 +560,8 @@ loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkG
   <b>Health Topics</b><br>
   <div id="healthDiv"></div>
   <br>
-  <!--
-  <b>Aquifers Topics</b><br>
+  
+  <!-- <b>Aquifers Topics</b><br>
   <div id="aquifersDiv"></div>
   <br>
   <b>Conservation Topics</b><br>
@@ -452,7 +575,7 @@ loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkG
   <br>
   <b>ZipCode Topics</b><br>
   <div id="zipcodedivDiv"></div>
-  <br>-->
+  <br> -->
   <hr><br>
 
   <div id="githubPushDiv"></div>
