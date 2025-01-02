@@ -6,7 +6,7 @@ The Google DCID values for our timelines reside in our <a href="https://docs.goo
 Our timeline charts use javascript to pull directly from the Google Data Commons API.  
 Scroll down to see Air and Water topics from our Google Sheet tabs.
 
-For python output, our [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) pulls timeline data DCID values from our Google Sheet.
+For python output, our [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) pulls timeline data DCID values from our Google Sheet. We also pull [States and Counties with Python](https://colab.research.google.com/drive/1CsIjLujiiBoGJlIHCBvDZit3QSVg07zR?usp=sharing)
 
 Checkout our [Data Commons pull for navigation map-filters](/localsite/info/data/map-filters)
 
