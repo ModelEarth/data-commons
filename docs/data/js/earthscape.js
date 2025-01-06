@@ -143,14 +143,25 @@ function getUrbanDensityForYear(data, year) {
     return result ? result.UrbanDensity : "";
 }
 
-
-
 // Function to get multi-location timelines
-// For county chart - entityId is geoId of the state, eg, geoId/06 for California
-// TO DO - Make genertic by making county interchangable with country, state and zip code datasets.
+// IN PROGRESS: Making interchangable with country, state and zip code datasets.
 
-async function getTimelineChart(chartVariable, entityId, showAll, chartText) {
-    // Fetch all geoIds for counties
+let geoValues = {};
+
+async function getTimelineChart(scope, chartVariable, entityId, showAll, chartText) {
+    // scope:
+        // zip
+        // county - Fetch all geoIds for counties
+        // state
+        // country
+
+    // chartVariable - Count_Person, etc.
+
+    // entityId is geoId of the location, eg, geoId/06 for California
+    
+    // THREE API calls to Gooogle Data Commons
+
+    // GET GeoID list
     const response = await fetch(`https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&entity.expression=${entityId}%3C-containedInPlace%2B%7BtypeOf%3ACounty%7D&select=date&select=entity&select=value&select=variable&variable.dcids=${chartVariable}`, {
         method: 'POST',
         headers: {
@@ -176,39 +187,140 @@ async function getTimelineChart(chartVariable, entityId, showAll, chartText) {
     });
     const data2 = await response2.json();
 
-    // Put county info together
-    const countyData = {};
     Object.keys(data2.data).forEach(geoId => {
         node = data2.data[geoId].arcs;
         stateName = node.containedInPlace.nodes[0]['name'];
         countyName = node.name.nodes[0]['value'];
-        countyData[geoId] = {
+        // countyCodes
+        geoValues[geoId] = {
             name: countyName,
             state: stateName
         };
     })
 
-    // Fetch observational data using geoIds list
-    const url = `https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&variable.dcids=${chartVariable}&${geoIds.map(id => `entity.dcids=${id}`).join('&')}`
-    const response3 = await fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            "date": "",
-            "select": ["date", "entity", "value", "variable"]
+    // Fetch country codes for selected countries
+    if (scope == "country") {
+        let selectedCountries = "CN,IN,US";
+        chartVariable = "Count_Person"; // HACK, should not be needed
+
+        // Fetch country codes for selected countries
+        let responseCountryCodes = await fetch('https://api.datacommons.org/v2/resolve?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "nodes": selectedCountries,
+                "property": "<-description{typeOf:Country}->dcid"
+            })
+        });
+
+        // Make a dictionary of country code -> name
+        //const countryCodes = {};
+
+        const data = await responseCountryCodes.json();
+        if (data?.entities && Array.isArray(data.entities)) { 
+            data.entities.forEach(entity => {
+                if (entity.node && entity.candidates && entity.candidates[0] && entity.candidates[0].dcid) {
+                    //countryCodes
+                    geoValues[entity.candidates[0].dcid] = entity.node;
+                }
+            });
+        } else {
+            console.warn('No entities found in the response data. Append to URL: #country=IN,CN,US');
+            alert('Append to URL: #country=IN,CN,US');
+        }
+
+        // Fetch data for selected countries and selected variable
+        const geoIds = Object.keys(geoValues);
+        const url = `https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&variable.dcids=${chartVariable}&${geoIds.map(id => `entity.dcids=${id}`).join('&')}`
+        //alert(url);
+        const response2 = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "date": "",
+                "select": ["date", "entity", "value", "variable"]
+            })
         })
-    })
-    const data3 = await response3.json();
+        geoValues = await response2.json();
+        //universalData = await response2.json(); // HACK - name will be changed from universalData
+    }
+
+    // Fetch observational data using geoIds list
+    let url = `https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&variable.dcids=${chartVariable}&${geoIds.map(id => `entity.dcids=${id}`).join('&')}`
+
+    let response3;
+    let data3;
+    if (scope == "county") {
+        response3 = await fetch(url, {
+            
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    "date": "",
+                    "select": ["date", "entity", "value", "variable"]
+                })
+        })
+        data3 = await response3.json();
+    } else if (scope == "country") {
+        // Fetch data for selected countries and selected variable
+
+        let geoIds = Object.keys(geoValues);
+        let url = `https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&variable.dcids=${chartVariable}&${geoIds.map(id => `entity.dcids=${id}`).join('&')}`
+        response3 = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "date": "",
+                "select": ["date", "entity", "value", "variable"]
+            })
+        })
+        data3 = await response3.json();
+        console.log("data3")
+        console.log(data3)
+    } else if (scope == "state") {
+        let statesList = ['Florida', 'New Jersey', 'New York State', 'New Mexico', 'Alaska']; // 'New York' does not work, use 'New York State' - idk why
+    
+        response3 = await fetch('https://api.datacommons.org/v2/resolve?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "nodes": statesList,
+                "property": "<-description{typeOf:State}->dcid"
+            })
+        });
+        data3 = await response3.json();
+        console.log("data3");
+        console.log(data3);
+    }
+    
 
     // Format data
     const formattedData = [];
-    for (const geoId in countyData) {
-        formattedData.push({
-            county: `${countyData[geoId].name}, ${countyData[geoId].state}`,
-            observations: data3.byVariable[chartVariable].byEntity[geoId].orderedFacets[0]['observations']
-        })
+    console.log("geoValues");
+    console.log(geoValues);
+    for (const geoId in geoValues) {
+        if (scope == "county") {
+            formattedData.push({
+                county: `${geoValues[geoId].name}, ${geoValues[geoId].state}`,
+                observations: data3.byVariable[chartVariable].byEntity[geoId].orderedFacets[0]['observations']
+            })
+        } else {
+            // TO INVESTIGATE
+            formattedData.push({
+                country: geoValues[geoId],
+                observations: data3.byVariable[chartVariable].byEntity[geoId].orderedFacets.find((element) => element.facetId == facetId)['observations']
+            })
+        }
     }
 
     // Get unique years
@@ -300,6 +412,7 @@ async function getTimelineChart(chartVariable, entityId, showAll, chartText) {
         datasets: datasets1
       };
 
+    let chartTitle = 'The County Populations';
     const config1 = {
             type: 'line',
             data: data1,
@@ -308,7 +421,7 @@ async function getTimelineChart(chartVariable, entityId, showAll, chartText) {
               plugins: {
                 title: {
                   display: true,
-                  text: (ctx) => 'County Populations'
+                  text: (ctx) => chartTitle
                 },
                 tooltip: {
                   mode: 'index'
