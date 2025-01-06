@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('hashChangeEvent', function () {
     console.log("Timeline page detects URL hashChangeEvent");
 
-    const hash = window.location.hash;
-    const newScope = hash ? hash.split('=')[1] : null;
+    let hash = getHash();
+    const newScope = hash.scope;
 
     if (newScope) {
         // Fetch dropdown options for the new scope
@@ -397,6 +397,9 @@ loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkG
 </script>
 
 <style>
+#selectScope {
+    display: block !important;
+}
 .heroTransparent {
   position: relative;
   background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), 
