@@ -17,26 +17,58 @@ loadMarkdown("index.md", "readmeDiv", "_parent");
 loadMarkdown("/localsite/start/steps/github-push.md", "githubPushDiv", "_parent");
 
 
-//document.addEventListener('hashChangeEvent', function (elem) {
+document.addEventListener('hashChangeEvent', function (elem) {
+    console.log("Timeline page detects URL hashChangeEvent");
+
+    let hash = getHash();
+    const newScope = hash.scope;
+
+    if (newScope) {
+        // Fetch dropdown options for the new scope
+        
+    }
+
     //console.log("timeline page detects URL hashChangeEvent");
+    if (hash.scope != priorHash.scope) {
+        updateDcidSelectFromSheet(hash.scope);
+        //alert("scope change")
+        refreshTimeline();
+    }
+}, false);
 
-    // Call getTimelineChart here
-
-//}, false);
-
-document.addEventListener('DOMContentLoaded', () => {
+function refreshTimeline() {
     let hash = getHash();
     let scope = "county";
     if (hash.scope) {
         scope = hash.scope;
     }
-    let chartVariable = 'Count_Person';
-    let showAll = 'showTop5';
-    let entityId = 'geoId/13'
-    let chartText = document.getElementById('chartVariable').options[document.getElementById('chartVariable').selectedIndex].text;
+    waitForElm('#chartVariable').then((elm) => {
+        //let chartVariable = 'Count_Person';
+        let chartVariableSelect = document.getElementById('chartVariable');
+        setTimeout(() => { // Hack - wait 3 seconds. Later we'll wait for #chartVariable to have a value.
+                        
+            let chartVariable = chartVariableSelect.options[chartVariableSelect.selectedIndex].value;
+            //alert(chartVariable)
 
-   getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
-    
+            let showAll = 'showTop5';
+            let entityId = 'geoId/13'
+            let chartText = document.getElementById('chartVariable').options[document.getElementById('chartVariable').selectedIndex].text;
+
+            getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
+        },3000);
+    });
+}
+document.addEventListener('DOMContentLoaded', () => {
+    let hash = getHash();
+    if (!hash.scope) {
+
+        //let selectScopeSelect = document.getElementById('selectScope');
+
+        hash.scope = document.getElementById('selectScope').options[document.getElementById('selectScope').selectedIndex].text;
+        //alert(hash.scope)
+    }
+    updateDcidSelectFromSheet(hash.scope);
+    refreshTimeline();
 
     document.forms['countyShow'].addEventListener('change', function(event) {
         if (event.target.name === 'countyShow') {
@@ -57,22 +89,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('hashChangeEvent', function () {
-    console.log("Timeline page detects URL hashChangeEvent");
-
-    let hash = getHash();
-    const newScope = hash.scope;
-
-    if (newScope) {
-        // Fetch dropdown options for the new scope
-        updateDcidSelectFromSheet(newScope);
-    }
-}, false);
           
 async function updateDcidSelectFromSheet(scope) {
+
+    /*
+    // Several Google Sheet tabs were previously hardcoded
+
+    //loadGoalsDropdown("goals","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=456266073&single=true&output=csv");
+
+    // Copy the sheet URL and modify in this format
+
+    loadGoalsDropdown("water","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=2049347939&single=true&output=csv");
+
+    loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv");
+
+    loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=1911215802&single=true&output=csv");
+
+    //loadGoalsDropdown("aquifers","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=484745180&single=true&output=csv");
+
+    //loadGoalsDropdown("conservation","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=374006451&single=true&output=csv");
+
+    //loadGoalsDropdown("population", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=471398138&single=true&output=csv");
+
+    //loadGoalsDropdown("zipcodeleveldata","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=492624247&single=true&output=csv");
+
+    */
+
+
     const dcidSelect = document.getElementById('chartVariable');
     if (!dcidSelect) {
-        console.error("Dropdown element with ID 'chartVariable' not found.");
+        alert("Dropdown element with ID 'chartVariable' not found.");
         return;
     }
 
@@ -382,26 +428,6 @@ function loadGoalsDropdown(theme,csvPath) {
     });
     });
 }
-//loadGoalsDropdown("goals","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=456266073&single=true&output=csv");
-
-// Copy the sheet URL and modify in this format
-
-loadGoalsDropdown("water","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=2049347939&single=true&output=csv");
-
-loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv");
-
-loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=1911215802&single=true&output=csv");
-
-//loadGoalsDropdown("aquifers","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=484745180&single=true&output=csv");
-
-//loadGoalsDropdown("conservation","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=374006451&single=true&output=csv");
-
-//loadGoalsDropdown("population", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=471398138&single=true&output=csv");
-
-//loadGoalsDropdown("zipcodeleveldata","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=492624247&single=true&output=csv");
-
-                                 
-
 </script>
 
 <style>
@@ -431,7 +457,7 @@ loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkG
 <div class="content contentpadding large-list">
 
   
-  <div id="relocatedScopeMenu"></div>
+  <div id="relocatedScopeMenu" style="float:left"></div>
   <div id="template-container"></div>
   <div id="templateLoaded"></div>
 
@@ -497,10 +523,14 @@ loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkG
   </select>
  
   <select id="chartVariable">
+
+      <!--
       <option value="Count_Person" selected>County Populations</option>
       <option value="LandCoverFraction_Forest">Land Covered by Forests</option>
       <option value="Count_Farm">Number of Farms</option>
       <option value="Annual_Emissions_Methane_NonBiogenic">Methane NonBiogenic</option>
+      -->
+
       <!--
           Adjust to per capita (and SqMiles) using our nav filter file:
           https://github.com/ModelEarth/localsite/blob/main/info/data/map-filters/us-states.csv
