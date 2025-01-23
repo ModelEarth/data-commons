@@ -51,9 +51,14 @@ function refreshTimeline() {
             //alert(chartVariable)
 
             let showAll = 'showTop5';
-            let entityId = 'geoId/13'
+            // 
+            // showAll = document.querySelector('input[name="countyShow"]:checked').value;
+
+            let entityId = 'geoId/13'; // BUGBUG - Avoid hardcoding
+
             let chartText = document.getElementById('chartVariable').options[document.getElementById('chartVariable').selectedIndex].text;
 
+            //alert(chartVariable + " " + chartText)
             getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
         },3000);
     });
@@ -78,9 +83,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('chartVariable').addEventListener('change', (event) => {
+
+        /*
+        let hash = getHash();
+        let scope = "county";
+        if (hash.scope) {
+            scope = hash.scope;
+        }
+
         chartVariable = event.target.value;
         chartText = document.getElementById('chartVariable').options[document.getElementById('chartVariable').selectedIndex].text;
         getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
+        */
+
+        refreshTimeline();
     });
 
     document.getElementById('entityId').addEventListener('change', (event) => {
