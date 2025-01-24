@@ -142,7 +142,123 @@ function getUrbanDensityForYear(data, year) {
     });
     return result ? result.UrbanDensity : "";
 }
+async function getTimelineChart(scope, chartVariable, entityId, showAll, chartText) {
+    let geoValues = {}; // To store the geoId to location name mapping
+    const API_KEY = "AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI"; // Replace with your secure method of storing keys
 
+    try {
+        // Step 1: Fetch GeoIDs based on the scope
+        let geoIds = [];
+        if (["county", "state", "country"].includes(scope)) {
+            const scopeNodes = {
+                state: ['Florida', 'New Jersey', 'New York State', 'New Mexico', 'Alaska'],
+                country: ['US', 'CN', 'IN'],
+            };
+            const type = scope.charAt(0).toUpperCase() + scope.slice(1); // e.g., State, Country
+            const { geoIds: resolvedGeoIds, geoValues: resolvedGeoValues } = await resolveGeoIds(scopeNodes[scope] || [], type);
+            geoIds = resolvedGeoIds;
+            geoValues = resolvedGeoValues;
+        } else if (scope === "zip") {
+            console.warn("Zip code scope is not implemented yet.");
+            return;
+        }
+
+        // Step 2: Fetch observation data
+        const response = await fetchData(`https://api.datacommons.org/v2/observation?key=${API_KEY}&variable.dcids=${chartVariable}&${geoIds.map(id => `entity.dcids=${id}`).join('&')}`, 'POST', {
+            date: "",
+            select: ["date", "entity", "value", "variable"]
+        });
+
+        const data = response?.byVariable[chartVariable]?.byEntity || {};
+
+        // Step 3: Format Data
+        const formattedData = Object.keys(data).map(geoId => {
+            const locationName = geoValues[geoId]?.name || geoId;
+            const observations = data[geoId]?.orderedFacets?.[0]?.observations || [];
+            return {
+                location: locationName,
+                observations,
+                averageValue: observations.reduce((sum, obs) => sum + obs.value, 0) / (observations.length || 1)
+            };
+        });
+
+        // Step 4: Filter Data (Top 5, Bottom 5, or All)
+        const selectedData = showAll === "showTop5"
+            ? formattedData.sort((a, b) => b.averageValue - a.averageValue).slice(0, 5)
+            : showAll === "showBottom5"
+            ? formattedData.sort((a, b) => a.averageValue - b.averageValue).slice(0, 5)
+            : formattedData;
+
+        // Step 5: Prepare Chart Data
+        const years = [...new Set(selectedData.flatMap(item => item.observations.map(obs => obs.date)))].sort();
+        const datasets = selectedData.map(item => ({
+            label: item.location,
+            data: years.map(year => {
+                const obs = item.observations.find(o => o.date === year);
+                return obs ? obs.value : null;
+            }),
+            borderColor: `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`,
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+        }));
+
+        // Step 6: Render Chart
+        const config = {
+            type: 'line',
+            data: {
+                labels: years,
+                datasets: datasets
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' },
+                    title: { display: true, text: chartText }
+                },
+                scales: {
+                    x: { title: { display: true, text: 'Year' } },
+                    y: { title: { display: true, text: chartText } }
+                }
+            }
+        };
+
+        if (window.timelineChart?.destroy) window.timelineChart.destroy();
+        const ctx = document.getElementById('timelineChart').getContext('2d');
+        window.timelineChart = new Chart(ctx, config);
+
+    } catch (error) {
+        console.error(`Error in scope "${scope}" for entity "${entityId}":`, error);
+    }
+}
+
+async function resolveGeoIds(nodes, type) {
+    const response = await fetchData('https://api.datacommons.org/v2/resolve', 'POST', {
+        nodes,
+        property: `<-description{typeOf:${type}}->dcid`,
+    });
+    const entities = response?.entities || {};
+    return {
+        geoIds: Object.keys(entities),
+        geoValues: Object.entries(entities).reduce((map, [geoId, entity]) => {
+            map[geoId] = { name: entity.node };
+            return map;
+        }, {}),
+    };
+}
+
+async function fetchData(url, method, body) {
+    try {
+        const response = await fetch(url, {
+            method,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body)
+        });
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        return await response.json();
+    } catch (error) {
+        console.error(`Error fetching data from ${url}:`, error);
+        return null;
+    }
+}
 /*
 // Function to get multi-location timelines
 // IN PROGRESS: Making interchangable with country, state and zip code datasets.
@@ -316,11 +432,13 @@ async function getTimelineChart(scope, chartVariable, entityId, showAll, chartTe
             })
         } else {
             // TO INVESTIGATE
+            console.log('API Response:', data);
+
             formattedData.push({
                 country: geoValues[geoId],
                 observations: data3.byVariable[chartVariable].byEntity[geoId].orderedFacets.find((element) => element.facetId == facetId)['observations']
             })
-        }
+        }       
     }
 
     // Get unique years
@@ -464,159 +582,7 @@ async function getTimelineChart(scope, chartVariable, entityId, showAll, chartTe
     lineAreaChart = new Chart(ctx1, config1);
 }
 */
-//(display the timeline chartTitle acoording to scope selected but every time need to reload the page)
-let geoValues = {};
-
-async function getTimelineChart(scope, chartVariable, entityId, showAll, chartText) {
-    // Fetch GeoID list and details
-    const geoIdUrl = `https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&entity.expression=${entityId}%3C-containedInPlace%2B%7BtypeOf%3ACounty%7D&select=date&select=entity&select=value&select=variable&variable.dcids=${chartVariable}`;
-    const geoIdResponse = await fetch(geoIdUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ dates: "" })
-    });
-    const geoIdData = await geoIdResponse.json();
-
-    const geoIds = Object.keys(geoIdData.byVariable[chartVariable].byEntity);
-
-    // Fetch names for geoIds
-    const namesUrl = `https://api.datacommons.org/v2/node?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI`;
-    const namesResponse = await fetch(namesUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            nodes: geoIds,
-            property: "->[containedInPlace, name]"
-        })
-    });
-    const namesData = await namesResponse.json();
-
-    // Map geoIds to names and states
-    geoValues = {};
-    for (const geoId in namesData.data) {
-        const node = namesData.data[geoId]?.arcs || {};
-        const stateName = node?.containedInPlace?.nodes?.[0]?.name || "Unknown State";
-        const countyName = node?.name?.nodes?.[0]?.value || "Unknown County";
-        geoValues[geoId] = { name: countyName, state: stateName };
-    }
-
-    // Fetch observational data based on scope
-    const observationUrl = `https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&variable.dcids=${chartVariable}&${geoIds.map(id => `entity.dcids=${id}`).join('&')}`;
-    const observationResponse = await fetch(observationUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ date: "", select: ["date", "entity", "value", "variable"] })
-    });
-    const observationData = await observationResponse.json();
-
-    // Format data for visualization
-    const formattedData = [];
-    for (const geoId in geoValues) {
-        if (observationData.byVariable[chartVariable]?.byEntity[geoId]?.orderedFacets) {
-            const observations = observationData.byVariable[chartVariable].byEntity[geoId].orderedFacets[0].observations;
-            formattedData.push({
-                label: scope === "county" 
-                    ? `${geoValues[geoId].name}, ${geoValues[geoId].state}` 
-                    : scope === "state" 
-                    ? geoValues[geoId].state 
-                    : geoValues[geoId].name,
-                observations: observations || []
-            });
-        }
-    }
-
-    // Calculate averages and apply filters (top 5, bottom 5, or all)
-    formattedData.forEach(item => {
-        item.average = item.observations.reduce((sum, obs) => sum + obs.value, 0) / item.observations.length;
-    });
-    const selectedData = showAll === 'showTop5'
-        ? formattedData.sort((a, b) => b.average - a.average).slice(0, 5)
-        : showAll === 'showBottom5'
-        ? formattedData.sort((a, b) => a.average - b.average).slice(0, 5)
-        : formattedData;
-
-    // Extract unique years
-    const yearsSet = new Set();
-    selectedData.forEach(item => {
-        item.observations.forEach(obs => yearsSet.add(obs.date));
-    });
-    const years = [...yearsSet].sort((a, b) => a - b);
-
-    // Prepare datasets for Chart.js
-    const datasets = selectedData.map(item => ({
-        label: item.label,
-        data: years.map(year => {
-            const observation = item.observations.find(obs => obs.date === year);
-            return observation ? observation.value : null;
-        }),
-        borderColor: `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`,
-        backgroundColor: 'rgba(0, 0, 0, 0)',
-    }));
-
-    try {
-        // Fetch and prepare data
-        const chartTitle = scope === "county"
-            ? "County Timeline"
-            : scope === "state"
-            ? "State Timeline"
-            : "Country Timeline";
-
-        console.log("Current scope:", scope);
-        console.log("Chart title:", chartTitle);
-
-        const ctx = document.getElementById('timelineChart')?.getContext('2d');
-        if (!ctx) {
-            console.error("Canvas context not found.");
-            return;
-        }
-
-        // Destroy the existing chart instance if it exists
-        if (window.timelineChart instanceof Chart) {
-            console.log("Destroying existing chart instance...");
-            window.timelineChart.destroy();
-            window.timelineChart = null; // Clear reference
-        }
-
-        // Validate data before creating the chart
-        if (!years || years.length === 0 || !datasets || datasets.length === 0) {
-            console.error("Insufficient data to render the chart.");
-            return;
-        }
-
-        console.log("Years:", years);
-        console.log("Datasets:", datasets);
-
-        // Create a new Chart.js instance
-        const config = {
-            type: 'line',
-            data: {
-                labels: years, // X-axis labels (e.g., years)
-                datasets: datasets // Data for each line in the chart
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: { position: 'top' },
-                    title: {
-                        display: true,
-                        text: chartTitle // Dynamically set title
-                    }
-                },
-                scales: {
-                    x: { title: { display: true, text: 'Year' } },
-                    y: { title: { display: true, text: chartText || 'Value' } }
-                }
-            }
-        };
-
-        console.log("Initializing new chart instance...");
-        window.timelineChart = new Chart(ctx, config);
-    } catch (error) {
-        console.error("Error in getTimelineChart:", error);
-    }
-}
-//(display the timeline chartTitle acoording to scope selected but every time need to reload the page)
-
+//original function
 
 
 
