@@ -583,3 +583,7 @@ async function getTimelineChart(scope, chartVariable, entityId, showAll, chartTe
 }
 */
 //original function
+
+
+
+
