@@ -43,26 +43,24 @@ function refreshTimeline() {
     if (hash.scope) {
         scope = hash.scope;
     }
-    waitForElm('#chartVariable').then((elm) => {
+    //waitForElm('#chartVariable').then((elm) => {
         //let chartVariable = 'Count_Person';
         let chartVariableSelect = document.getElementById('chartVariable');
-        setTimeout(() => { // Hack - wait 3 seconds. Later we'll wait for #chartVariable to have a value.
+        //setTimeout(() => { // Hack - wait 3 seconds. Later we'll wait for #chartVariable to have a value.
                         
             let chartVariable = chartVariableSelect.options[chartVariableSelect.selectedIndex].value;
-            //alert(chartVariable)
 
-            let showAll = 'showTop5';
-            // 
-            // showAll = document.querySelector('input[name="countyShow"]:checked').value;
+            let showAll = document.querySelector('input[name="countyShow"]:checked').value;
+            if(!showAll) {showAll = 'showTop5';}
 
-            let entityId = 'geoId/13'; // BUGBUG - Avoid hardcoding
-
+            let entityIdSelect = document.getElementById('entityId');
+            let entityId = entityIdSelect.options[entityIdSelect.selectedIndex].value;
             let chartText = document.getElementById('chartVariable').options[document.getElementById('chartVariable').selectedIndex].text;
 
             //alert(chartVariable + " " + chartText)
             getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
-        },3000);
-    });
+        //},3000);
+    //});
 }
 document.addEventListener('DOMContentLoaded', () => {
     let hash = getHash();
@@ -74,12 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
         //alert(hash.scope)
     }
     updateDcidSelectFromSheet(hash.scope);
-    refreshTimeline();
+    
 
     document.forms['countyShow'].addEventListener('change', function(event) {
         if (event.target.name === 'countyShow') {
-            showAll = document.querySelector('input[name="countyShow"]:checked').value;
-            getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
+            //showAll = document.querySelector('input[name="countyShow"]:checked').value;
+            //getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
+            refreshTimeline();
         }
     });
 
@@ -100,9 +99,14 @@ document.addEventListener('DOMContentLoaded', () => {
         refreshTimeline();
     });
 
+    // State menu change
     document.getElementById('entityId').addEventListener('change', (event) => {
         entityId = event.target.value;
-        getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
+        scope = "counties"
+
+        refreshTimeline();
+
+        //getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
     });
 });
 
@@ -141,7 +145,7 @@ async function updateDcidSelectFromSheet(scope) {
 
     dcidSelect.innerHTML = ''; // Clear existing options
 
-    try {
+    //try {
         // Replace this URL with your specific sheet's export URL
         const sheetUrl = "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/export?format=csv&gid=0";
 
@@ -209,12 +213,13 @@ async function updateDcidSelectFromSheet(scope) {
         // Set default selection if options exist
         if (filteredOptions.length > 0) {
             dcidSelect.value = filteredOptions[0][valueIndex].trim(); // Set to the first option's value
+            refreshTimeline();
         } else {
             console.warn("No options matched the provided scope:", normalizedScope);
         }
-    } catch (error) {
-        console.error("Error fetching or parsing Google Sheet data:", error);
-    }
+    //} catch (error) {
+    //    console.error("Error fetching or parsing Google Sheet data:", error);
+    //}
 }
 
 // CSV Parsing function to handle quoted commas
@@ -420,6 +425,9 @@ function loadGoalsDropdown(theme,csvPath) {
               }
           }
         }
+        // DCID has been set in #chartVariable, now use it to render chart
+        //refreshTimeline();
+
         $("#" + theme + "Div").html(goalsString);
 
         // LOAD CATEGORIES TAB - Category, SubCategory, SubCategoryLong
@@ -568,6 +576,7 @@ function loadGoalsDropdown(theme,csvPath) {
       <label> <input value="showTop5" type="radio" name="countyShow" checked />Top 5 </label>
       <label> <input value="showBottom5" type="radio" name="countyShow" />Bottom 5 </label>
   </form>
+        <!-- Also update home repo -->
         <div id="div1" class="toggleDiv">
             <canvas id="timelineChart"></canvas>
         </div>
