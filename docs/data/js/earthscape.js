@@ -422,7 +422,13 @@ async function getTimelineChart(scope, chartVariable, entityId, showAll, chartTe
         datasets: datasets1
       };
 
-    let chartTitle = 'The County Populations X';
+    //let chartTitle = 'The County Populations X'; // chartVariable DD
+
+    // Do we need to wait for #chartVariable to have a value?
+    // Might share this with refreshTimeline()
+    let chartVariableSelect = document.getElementById('chartVariable');
+    let chartTitle = chartVariableSelect.options[chartVariableSelect.selectedIndex].value;
+
     const config1 = {
             type: 'line',
             data: data1,
@@ -474,7 +480,158 @@ async function getTimelineChart(scope, chartVariable, entityId, showAll, chartTe
     lineAreaChart = new Chart(ctx1, config1);
 }
 
+function refreshTimeline() {
+    let hash = getHash();
+    let scope = "county";
+    if (hash.scope) {
+        scope = hash.scope;
+    }
+    //waitForElm('#chartVariable').then((elm) => { // Avoid this since values won't be there yet.
+        //let chartVariable = 'Count_Person';
+        let chartVariableSelect = document.getElementById('chartVariable');
+        //setTimeout(() => { // Hack - wait 3 seconds. Later we'll wait for #chartVariable to have a value.
+                        
+            let chartVariable = chartVariableSelect.options[chartVariableSelect.selectedIndex].value;
+
+            let showAll = document.querySelector('input[name="countyShow"]:checked').value;
+            if(!showAll) {showAll = 'showTop5';}
+
+            let entityIdSelect = document.getElementById('entityId');
+            let entityId = entityIdSelect.options[entityIdSelect.selectedIndex].value;
+            let chartText = document.getElementById('chartVariable').options[document.getElementById('chartVariable').selectedIndex].text;
+
+            //alert(chartVariable + " " + chartText)
+            getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
+        //},3000);
+    //});
+}
+async function updateDcidSelectFromSheet(scope) {
+
+    let hash = getHash();
+    if (!scope && hash.scope) {
+        scope = hash.scope;
+    }
+
+    /*
+    // Several Google Sheet tabs were previously hardcoded
+
+    //loadGoalsDropdown("goals","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=456266073&single=true&output=csv");
+
+    // Copy the sheet URL and modify in this format
+
+    loadGoalsDropdown("water","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=2049347939&single=true&output=csv");
+
+    loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv");
+
+    loadGoalsDropdown("health", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=1911215802&single=true&output=csv");
+
+    //loadGoalsDropdown("aquifers","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=484745180&single=true&output=csv");
+
+    //loadGoalsDropdown("conservation","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=374006451&single=true&output=csv");
+
+    //loadGoalsDropdown("population", "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=471398138&single=true&output=csv");
+
+    //loadGoalsDropdown("zipcodeleveldata","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=492624247&single=true&output=csv");
+
+    */
 
 
+    const dcidSelect = document.getElementById('chartVariable');
+    if (!dcidSelect) {
+        alert("Dropdown element with ID 'chartVariable' not found.");
+        return;
+    }
 
+    dcidSelect.innerHTML = ''; // Clear existing options
 
+    //try {
+        // Replace this URL with your specific sheet's export URL
+        const sheetUrl = "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/export?format=csv&gid=0";
+
+        const response = await fetch(sheetUrl);
+        const csvText = await response.text();
+
+        console.log("CSV Data:", csvText); // Log the entire CSV data for debugging
+
+        // Parse CSV data correctly, handling quoted commas
+        const rows = parseCSV(csvText);
+
+        console.log("Parsed Rows:", rows); // Log parsed rows for debugging
+
+        const headers = rows[0]; // Assuming the first row contains headers
+        console.log("Headers:", headers); // Log headers to ensure correct column names
+
+        // Find the indices for the Scope, Value, and Text columns
+        const scopeIndex = headers.indexOf('Scope');
+        const valueIndex = headers.indexOf('DCID'); // Assuming 'Value' is stored in the 'DCID' column
+        const textIndex = headers.indexOf('Title'); // Assuming 'Text' is stored in the 'Title' column
+
+        if (scopeIndex === -1 || valueIndex === -1 || textIndex === -1) {
+            console.error("Missing required columns in the CSV data.");
+            return;
+        }
+
+        // Normalize the provided scope (trim and lowercase for comparison)
+        const normalizedScope = scope.trim().toLowerCase();
+
+        // Filter rows by the selected scope (case-insensitive)
+        const filteredOptions = rows.slice(1).filter(row => {
+            const scopeColumn = row[scopeIndex]?.trim(); // Get the Scope column value
+            if (!scopeColumn) {
+                console.log("Skipping row with empty Scope column:", row); // Log empty rows for debugging
+                return false;
+            }
+
+            // Handle comma-separated values within quotes in the Scope column
+            const scopes = scopeColumn.replace(/"/g, '').split(',').map(s => s.trim().toLowerCase());
+
+            console.log("Row Scope Column:", scopeColumn); // Log the original Scope column value
+            console.log("Row Split Scopes:", scopes); // Log split scopes
+
+            // Compare each scope against the user-provided scope (case-insensitive)
+            const matchFound = scopes.some(s => s === normalizedScope); // Use 'some' for matching any of the scopes
+            console.log(`Match found for scope '${normalizedScope}':`, matchFound); // Log the result of the match check
+
+            return matchFound; // Return true if scope matches
+        });
+
+        console.log("Filtered Options:", filteredOptions); // Log the filtered options to verify
+
+        // Populate dropdown
+        filteredOptions.forEach(row => {
+            const value = row[valueIndex]?.trim();
+            const text = row[textIndex]?.trim();
+            if (value && text) {
+                const opt = document.createElement('option');
+                opt.value = value;
+                opt.text = text;
+                dcidSelect.add(opt);
+            }
+        });
+
+        // Set default selection if options exist
+        if (filteredOptions.length > 0) {
+            dcidSelect.value = filteredOptions[0][valueIndex].trim(); // Set to the first option's value
+            refreshTimeline();
+        } else {
+            console.warn("No options matched the provided scope:", normalizedScope);
+        }
+    //} catch (error) {
+    //    console.error("Error fetching or parsing Google Sheet data:", error);
+    //}
+}
+// CSV Parsing function to handle quoted commas
+function parseCSV(csvText) {
+    // Split rows by newlines
+    const rows = csvText.split('\n').map(row => {
+        // Use a regular expression to handle commas inside quotes
+        const regex = /(?:,|\r?\n|^)(?:"([^"]*)"|([^",]*))/g;
+        const columns = [];
+        let match;
+        while ((match = regex.exec(row)) !== null) {
+            columns.push(match[1] || match[2]); // Take the value inside quotes or the normal value
+        }
+        return columns;
+    });
+    return rows;
+}
