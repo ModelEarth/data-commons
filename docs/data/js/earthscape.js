@@ -254,7 +254,7 @@ async function getTimelineChart(scope, chartVariable, entityId, showAll, chartTe
     let url = `https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&variable.dcids=${chartVariable}&${geoIds.map(id => `entity.dcids=${id}`).join('&')}`
 
     let response3;
-    let data3;
+    let timelineData;
 
     // Not implimented here yet.
     const scopeNodes = {
@@ -275,7 +275,7 @@ async function getTimelineChart(scope, chartVariable, entityId, showAll, chartTe
                     "select": ["date", "entity", "value", "variable"]
                 })
         })
-        data3 = await response3.json();
+        timelineData = await response3.json();
     } else if (scope == "country") {
         // Fetch data for selected countries and selected variable
 
@@ -291,9 +291,9 @@ async function getTimelineChart(scope, chartVariable, entityId, showAll, chartTe
                 "select": ["date", "entity", "value", "variable"]
             })
         })
-        data3 = await response3.json();
-        console.log("data3")
-        console.log(data3)
+        timelineData = await response3.json();
+        console.log("timelineData")
+        console.log(timelineData)
     } else if (scope == "state") {
         let statesList = ['Florida', 'New Jersey', 'New York State', 'New Mexico', 'Alaska']; // 'New York' does not work, use 'New York State' - idk why
     
@@ -307,9 +307,9 @@ async function getTimelineChart(scope, chartVariable, entityId, showAll, chartTe
                 "property": "<-description{typeOf:State}->dcid"
             })
         });
-        data3 = await response3.json();
-        console.log("data3");
-        console.log(data3);
+        timelineData = await response3.json();
+        console.log("timelineData");
+        console.log(timelineData);
     }
     
 
@@ -322,13 +322,13 @@ async function getTimelineChart(scope, chartVariable, entityId, showAll, chartTe
         if (scope == "county") {
             formattedData.push({
                 county: `${geoValues[geoId].name}, ${geoValues[geoId].state}`,
-                observations: data3.byVariable[chartVariable].byEntity[geoId].orderedFacets[0]['observations']
+                observations: timelineData.byVariable[chartVariable].byEntity[geoId].orderedFacets[0]['observations']
             })
         } else {
             // TO INVESTIGATE
             formattedData.push({
                 country: geoValues[geoId],
-                observations: data3.byVariable[chartVariable].byEntity[geoId].orderedFacets.find((element) => element.facetId == facetId)['observations']
+                observations: timelineData.byVariable[chartVariable].byEntity[geoId].orderedFacets.find((element) => element.facetId == facetId)['observations']
             })
         }
     }
