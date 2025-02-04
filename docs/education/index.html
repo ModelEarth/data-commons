@@ -19,6 +19,12 @@ loadMarkdown("index.md", "readmeDiv", "_parent");
 
 <body>
 
+<script>
+if (location.host.indexOf('localhost') < 0) {
+  window.location = "/io/learn/";
+}
+</script>
+
 <div class="content contentpadding">
   <div id="readmeDiv"></div>
 
