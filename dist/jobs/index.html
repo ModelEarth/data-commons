@@ -10,14 +10,14 @@
 <link rel="modulepreload" href="../_observablehq/client.js">
 <link rel="modulepreload" href="../_observablehq/runtime.js">
 <link rel="modulepreload" href="../_observablehq/stdlib.js">
-<link rel="modulepreload" href="../_import/components/data_loader.a470957d.js">
+<link rel="modulepreload" href="../_import/components/data_loader.80d21c48.js">
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"><script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
 <script type="module">
 
 import {define} from "../_observablehq/client.js";
 
 define({id: "6b770fad", outputs: ["addSuggestionToInput","loadDataCommons","displayJsonData","loadData"], body: async () => {
-const {loadDataCommons, displayJsonData} = await import("../_import/components/data_loader.a470957d.js");
+const {loadDataCommons, displayJsonData} = await import("../_import/components/data_loader.80d21c48.js");
   function addSuggestionToInput(suggestion, inputId) {
     document.getElementById(inputId).value = suggestion;
   }
@@ -80,7 +80,6 @@ return {addSuggestionToInput,loadDataCommons,displayJsonData,loadData};
 <nav>
 <div>Contents</div>
 <ol>
-<li class="observablehq-secondary-link"><a href="#data-commons-api-via-javascript">Data Commons API via Javascript</a></li>
 <li class="observablehq-secondary-link"><a href="#nodejs">NodeJS</a></li>
 </ol>
 </nav>
@@ -89,12 +88,11 @@ return {addSuggestionToInput,loadDataCommons,displayJsonData,loadData};
 <main id="observablehq-main" class="observablehq">
 <p><a href="../../">UN Goal Timelines</a> - <a href="../">Data Commons</a></p>
 <h1 id="goal-%231%3A-great-jobs" tabindex="-1"><a class="observablehq-header-anchor" href="#goal-%231%3A-great-jobs">Goal #1: Great Jobs</a></h1>
-<p>Let's find and apply for great paying jobs. Help us develop a <a href="/feed/view/#feed=serp">local job search using Serp</a>.<br>
-We're focusing on workforce automation and assistance that ends poverty while eliminating government debt.</p>
-<p>If you'd like to document your contributions, one option is to use our <a href="https://docs.google.com/spreadsheets/d/1wvw_xsFWnYE9z8nDQqmu1m2LB5TJEfy5VLkaFuEaCfk/edit?usp=sharing">times spreadsheet template</a>. Better yet, use a readme file so you can share an overview and include links to your contributions.  (Fork our <a href="https://github.com/ModelEarth/contributors">contributors repo</a> and document your contributions.)</p>
 <h2 id="data-commons-api-via-javascript" tabindex="-1"><a class="observablehq-header-anchor" href="#data-commons-api-via-javascript">Data Commons API via Javascript</a></h2>
-<p>Thanks to Mehul, we finally figured out how to load <a href="../data/">timelines using the GDC Javascript API</a>.
-Using <a href="../../docs/jobs/">Javascript</a> and <a href="../../dist/jobs/">NodeJS</a> to call Google Data Commons API.</p>
+<p><a href="/data-commons/docs/data/">Timeline charts using the GDC Javascript API</a>.</p>
+<!--
+Using [Javascript](../../docs/jobs/) and [NodeJS](../../dist/jobs/) to call Google Data Commons API.
+-->
 <p>You can find the DCID and property value using:</p>
 <ul>
 <li><a href="https://docs.datacommons.org/api/sheets/">Data Commons Google Sheets add-on</a></li>
