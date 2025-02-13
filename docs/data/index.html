@@ -15,7 +15,6 @@
 
 <script>
 loadMarkdown("index.md", "readmeDiv", "_parent");
-loadMarkdown("/localsite/start/steps/github-push.md", "githubPushDiv", "_parent");
 
 /* Also update home/index.html */
 document.addEventListener('hashChangeEvent', function (elem) {
@@ -301,45 +300,6 @@ function loadGoalsDropdown(theme,csvPath) {
 </div>
 <div class="content contentpadding large-list">
   <div id="readmeDiv"></div>
-
-  <b>TO DO: Dropdowns above timeline</b><br><br>
-
-  Create a DropDown called #Goals using the loadGoalsDropdown() funtion in the current index.html page.<br><br>
-
-  When #Goals changes, update the #chartVariable dropdown with the the DCID from corresponding tab in the Google Sheet.<br><br>
-
-  #Goals dropdown > #chartVariable dropdown<br>
-  Goal (Air) > Topic (Emissions): Subtopic (Methane)<br><br>
-
-  Goals pulled from <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing">Google Sheet</a>:<br><br>
-
-  <b>UN Goals</b><br>
-  <div id="goalsDiv"></div>
-  <br>
-
-
-  <b>Health Topics</b><br>
-  <div id="healthDiv"></div>
-  <br>
-  
-  <!-- <b>Aquifers Topics</b><br>
-  <div id="aquifersDiv"></div>
-  <br>
-  <b>Conservation Topics</b><br>
-  <div id="conservationDiv"></div>
-  <br>
-  <b>Population Topics</b><br>
-  <div id="populationDiv"></div>
-  <br>
-  <b>ZipCodeLevelData Topics</b><br>
-  <div id="zipcodeleveldatadivDiv"></div>
-  <br>
-  <b>ZipCode Topics</b><br>
-  <div id="zipcodedivDiv"></div>
-  <br> -->
-  <hr><br>
-
-  <div id="githubPushDiv"></div>
 </div>
 <script>
     // Add event listener to radio buttons to call toggleDivs() on change
