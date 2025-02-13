@@ -1,14 +1,14 @@
 [Data Pipeline](../data-pipeline/) and [Active Projects](/projects)
 # UN Goal Timelines
 
-[Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Click then widen your screen to view navigation for the UN Goals.  You can display goal links in our left navigation by turning on "Dev Mode" under Settings in the upper right.
+[Our UN Goal Timeline Development](/data-commons/docs/data/) uses Apache eCharts with the Google Data Commons javascript API.
+
+**Help us add more timelines**
+Locate in [Google UN Data Commons Nav](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Click then widen your screen to view navigation for the UN Goals.  You can display goal links in our left navigation by turning on "Dev Mode" under Settings in the upper right.
 
 ## Projects
 
-TO DO: [Goal Timelines Data Config](/data-commons/docs/data/) and [Country & State Timelines (legacy)](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) from Google Data Commons API
-
-
-TO DO: Combine our [Earthscape Tabulator](../data-pipeline/timelines/training/naics/) with our [chartJS timeline display](/data-commons/docs/data/) by adding to [earthscape.js](/data-commons/docs/data/js/earthscape.js).
+TO DO: Combine our [Earthscape Tabulator](../data-pipeline/timelines/training/naics/) with our [chartJS timeline display](/data-commons/docs/data/) by adding to [earthscape.js](/localsite/js/earthscape.js).
 
 <!--[worldbank.org indicators](https://github.com/phiresky/world-development-indicators-sqlite/)-->
 
@@ -16,7 +16,7 @@ TO DO: Combine our [Earthscape Tabulator](../data-pipeline/timelines/training/na
 	TO DO: Display all 17 Global Goal indicator lines on one large 30-year timeline chart with projections.<br><br>
 -->
 
-TO DO: [Python with UN Goal topics Google Sheet](docs/data/) for larger timeline datasets to be used by [RealityStream](/RealityStream/).
+TO DO: [Python with UN Goal topics Google Sheet](docs/data/) for larger timeline datasets to also be used by [RealityStream](/RealityStream/).
 
 
 Pre-saving .csv files using python in our CoLabs is easier to collaborate on than [Observable Data Loaders](https://observablehq.com/framework/loaders).
