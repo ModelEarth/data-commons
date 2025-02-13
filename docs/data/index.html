@@ -17,37 +17,21 @@
 loadMarkdown("index.md", "readmeDiv", "_parent");
 loadMarkdown("/localsite/start/steps/github-push.md", "githubPushDiv", "_parent");
 
-
+/* Also update home/index.html */
 document.addEventListener('hashChangeEvent', function (elem) {
     console.log("Timeline page detects URL hashChangeEvent");
-
     let hash = getHash();
-    const newScope = hash.scope;
-
-    if (newScope) {
-        // Fetch dropdown options for the new scope
-        
-    }
-
-    //console.log("timeline page detects URL hashChangeEvent");
-    if (hash.scope != priorHash.scope) {
+    if (hash.scope != priorHash.scope || hash.goal != priorHash.goal) {
         updateDcidSelectFromSheet(hash.scope);
-        //alert("scope change")
-        //refreshTimeline(); // Already called in updateDcidSelectFromSheet()
     }
 }, false);
-
-
 document.addEventListener('DOMContentLoaded', () => {
     let hash = getHash();
     if (!hash.scope) {
-
-        //let selectScopeSelect = document.getElementById('selectScope');
-
         hash.scope = document.getElementById('selectScope').options[document.getElementById('selectScope').selectedIndex].text;
-        //alert(hash.scope)
     }
-    updateDcidSelectFromSheet(hash.scope);
+    // not needed since hashChangeEvent calls on page load.
+    //updateDcidSelectFromSheet(hash.scope);
     
     document.addEventListener('change', function(event) {
         if (event.target.name === 'countyShow') {
@@ -57,19 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('chartVariable').addEventListener('change', (event) => {
-
-        /*
-        let hash = getHash();
-        let scope = "county";
-        if (hash.scope) {
-            scope = hash.scope;
-        }
-
-        chartVariable = event.target.value;
-        chartText = document.getElementById('chartVariable').options[document.getElementById('chartVariable').selectedIndex].text;
-        getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
-        */
-
         refreshTimeline();
     });
 
@@ -84,129 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
-
-
-
-/*
-document.addEventListener('hashChangeEvent', function (elem) {
-    console.log("timeline page detects URL hashChangeEvent");
-
-    // Extract new hash values
-    let hash = window.location.hash; // Get the current hash value
-    let newScope = hash ? hash.split('=')[1] : null; // Assuming the hash is like #scope=value
-
-    // Define default values for chart parameters
-    let dcid_select = 'Count_Person'; // or set from hash if applicable
-    let showAll = 'showTop5'; // or set from hash if applicable
-    let entityId = 'geoId/13'; // or set from hash if applicable
-
-    if (newScope) {
-        // Call the function to update the dcid_select dropdown based on the new scope
-       updateDcidSelect(newScope);
-      
-    }
-
-    // Update chart based on the hash change
-    getTimelineChart(dcid_select, entityId, showAll);
-}, false);
-
-function updateDcidSelect(scope) {
-
-    //const dcidSelect = document.getElementById('dcid_select'); // Older name for #chartVariable probably
-    const dcidSelect = document.getElementById('chartVariable');
-
-    dcidSelect.innerHTML = ''; // Clear existing options
-
-    // Define the new options based on the scope
-    let options = [];
-    if (scope === "county") {
-        options = [
-             { value: "Count_Person", text: "County Populations" },
-             { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
-             { value: "Count_Farm", text: "Number of Farms" },
-             { value: "Annual_Emissions_Methane_NonBiogenic", text: "Methane NonBiogenic" },
-             { value: " Annual_Emissions_CarbonDioxide_NonBiogenic", text: "Annual Emissions CarbonDioxide NonBiogenic" },
-             { value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
-             { value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
-             { value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
-             { value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
-           
-        ];
-    } else if (scope === "country") {
-        options = [
-            { value: "Count_Person", text: "Country Populations" },
-            { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
-            { value: "Count_Farm", text: "Number of Farms" },
-            { value: " worldBank/EN_ATM_CO2E_KT", text: " Annual Emission (KT)" },
-            { value: " Annual_Amount_Emissions_CarbonDioxide", text: "Annual Emissions CarbonDioxide NonBiogenic" },
-           // { value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
-           // { value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
-           // { value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
-           // { value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
-            
-            // Add more water-related options as necessary
-        ];
-    }else if (scope === "state") {
-        options = [
-        { value: "Count_Person", text: "State Populations" },
-            { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
-            { value: "Count_Farm", text: "Number of Farms" },
-            { value: "Annual_Emissions_Methane_NonBiogenic", text: "Methane NonBiogenic" },
-            { value: " Annual_Emissions_CarbonDioxide_NonBiogenic", text: "Annual Emissions CarbonDioxide NonBiogenic" },
-            { value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
-            { value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
-            { value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
-            { value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
-        ];
-    }else if (scope === "zip") {
-        options = [
-            { value: "Count_Person", text: "Postal Code Populations" },
-            { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
-            { value: "Count_Farm", text: "Number of Farms" },
-            { value: "Annual_Emissions_Methane_NonBiogenic", text: "Methane NonBiogenic" },
-            { value: " Annual_Emissions_CarbonDioxide_NonBiogenic", text: "Annual Emissions CarbonDioxide NonBiogenic" },
-            { value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
-            { value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
-            { value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
-            { value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
-        ];
-    }
-   
-    else if (scope === "continent") {
-        options = [
-            { value: "Count_Person", text: "Continent Populations" },
-            { value: "LandCoverFraction_Forest", text: "Land Covered by Forests" },
-            { value: "Count_Farm", text: "Number of Farms" },
-            //{ value: "Annual_Emissions_Methane_NonBiogenic", text: "Methane NonBiogenic" },
-            { value: " Annual_Amount_Emissions_CarbonDioxide", text: "Annual Emissions CarbonDioxide NonBiogenic" },
-           // { value: "Annual_Emissions_CarbonDioxide_Biogenic", text: "Annual Emissions CarbonDioxide Biogenic" },
-           // { value: "Annual_Emissions_Methane_NonBiogenic", text: "Annual Emissions Methane NonBiogenic" },
-           // { value: "Annual_Emissions_GreenhouseGas_NonBiogenic", text: "Annual Emissions GreenhouseGas NonBiogenic" },
-           // { value: "Annual_Emissions_GreenhouseGas_LeadProduction_NonBiogenic", text: "Annual Emissions GreenhouseGas LeadProduction NonBiogenic" },
-            
-            // Add more water-related options as necessary
-        ];
-    }
-   
-    
-    // Add other scopes if necessary
-
-    // Populate the dropdown with new options
-    options.forEach(option => {
-        const opt = document.createElement('option');
-        opt.value = option.value;
-        opt.text = option.text;
-        dcidSelect.add(opt);
-    });
-
-    // Optionally, reset the selection to the first option
-    if (options.length > 0) {
-        dcidSelect.value = options[0].value; // Set to the first option by default
-    }
-}
-*/
 
 function createLabelFromDCID(DCID) {
     return DCID
@@ -450,15 +298,6 @@ function loadGoalsDropdown(theme,csvPath) {
   <div id="goalsDiv"></div>
   <br>
 
-  <b>Air Topics</b><br>
-  <div id="airDiv"></div>
-  <br>
-
-  <b>Water Topics</b><br>
-  TO DO: Update the timeline above to also show <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US">Country Data</a><br><br>
-
-  <div id="waterDiv"></div>
-  <br>
 
   <b>Health Topics</b><br>
   <div id="healthDiv"></div>
