@@ -21,6 +21,7 @@ loadMarkdown("/localsite/start/steps/github-push.md", "githubPushDiv", "_parent"
 document.addEventListener('hashChangeEvent', function (elem) {
     console.log("Timeline page detects URL hashChangeEvent");
     let hash = getHash();
+    //alert("priorHash.scope: " + priorHash.scope)
     if (hash.scope != priorHash.scope || hash.goal != priorHash.goal) {
         updateDcidSelectFromSheet(hash.scope);
     }
@@ -30,8 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!hash.scope) {
         hash.scope = document.getElementById('selectScope').options[document.getElementById('selectScope').selectedIndex].text;
     }
+    //alert(hash.scope)
     // not needed since hashChangeEvent calls on page load.
-    //updateDcidSelectFromSheet(hash.scope);
+    updateDcidSelectFromSheet(hash.scope);
     
     document.addEventListener('change', function(event) {
         if (event.target.name === 'countyShow') {
