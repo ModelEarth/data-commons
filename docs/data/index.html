@@ -26,7 +26,10 @@ document.addEventListener('hashChangeEvent', function (elem) {
     }
     //alert("priorHash.scope: " + priorHash.scope)
     if (hash.scope != priorHash.scope || hash.goal != priorHash.goal) {
-        $("#selectScope").val(hash.scope);
+        const selectScope = document.getElementById("selectScope");
+        if (selectScope) {
+          selectScope.value = hash.scope;
+        }
         updateDcidSelectFromSheet(hash.scope);
     }
 }, false);
