@@ -54,6 +54,3 @@ Apply the valid year range from the Google Sheet row in **StartYear** and **EndY
 
 We could include an OmitLocations column if some countries lack emissions data.
 
-
-We'll send our .csv output to UN Goal subfolders at [data-commons/docs/data](https://github.com/ModelEarth/data-commons/tree/main/docs/data)
-
