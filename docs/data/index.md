@@ -14,9 +14,7 @@ Cool: [Data Commons Google Sheet add-on](https://docs.datacommons.org/api/sheets
 
 ---
 
-TO DO: Document and create examples of our util for scope data retrieval [scope-data-utils.py](https://github.com/ModelEarth/data-commons/blob/main/docs/data/python/scope-data-utils.py)
-
-TO DO: Update our UN Goals Colab to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a> - Priyanka, Alexandra, everyone
+DONE: Update our UN Goals Colab to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a> - Priyanka, Alexandra, everyone
 
 <!--
 [Our Run Models Colab](https://colab.research.google.com/drive/1zu0WcCiIJ5X3iN1Hd1KSW4dGn0JuodB8?usp=sharing#scrollTo=Z12cWU4y09on) already includes a process for saving CSV files to GitHub. The relevant part happens around saving the integrated dataset to the repo.
@@ -26,7 +24,7 @@ TO DO: Update our UN Goals Colab to pull DCID's from our <a href="https://docs.g
 Abhishek L may also have .ipynb files that generate .csv files locally. The output .csv could be sent to a fork of [data-commons](https://github.com/ModelEarth/data-commons) in a folder added at data-common/docs/data.
 -->
 
-TO DO: Update our [Google Sheet UN Goal tabs](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing) with additional DCID values that we'll pull for our Python .csv file generation. - Everyone <!--Pratyush-->
+TO DO: Update our [Google Sheet UN Goal tabs](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing) with additional DCID values that we'll pull into our javascript timelines above. - Everyone
 
 <!--
 TO DO: Also update our [Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
@@ -37,14 +35,14 @@ TO DO: In the UN Goals Colab, the [country.csv timeline output Abhishek created]
 Then delete the country.csv file
 -->
 
-TO DO: Update earthscape.js to also display <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US">countries and states</a>. Eliminate datacommons.html after adding to the current page.
+DONE: Update earthscape.js to also display <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US">countries and states</a>. Eliminate datacommons.html after adding to the current page.
 
 TO DO: The DCID value for the water UN Goal topics is: `dc/g/SDG_6`  
 Fix the following so we can update [/feed/view/#feed=water](/feed/view#feed=water) to pull the water nav DCID  
 
 	https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&entity.dcids=dc/g/SDG_6
 
-
+We created a python util for scope data retrieval [scope-data-utils.py](https://github.com/ModelEarth/data-commons/blob/main/docs/data/python/scope-data-utils.py) - but it's probably not been used.
 
 **UN Goals CoLab Specs**
 
