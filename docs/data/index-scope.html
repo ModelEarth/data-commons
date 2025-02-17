@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     getTimelineChart(dcid_select, entityId, showAll, chartText);
 
-    document.forms['countyShow'].addEventListener('change', function(event) {
-        if (event.target.name === 'countyShow') {
-            showAll = document.querySelector('input[name="countyShow"]:checked').value;
+    document.forms['whichLines'].addEventListener('change', function(event) {
+        if (event.target.name === 'whichLines') {
+            showAll = document.querySelector('input[name="whichLines"]:checked').value;
             getTimelineChart(dcid_select, entityId, showAll, chartText);
         }
     });
@@ -369,10 +369,10 @@ loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM
       -->
   </select>
   <br>
-  <form name="countyShow">
-      <label> <input value="showAll" type="radio" name="countyShow" />All Counties </label>
-      <label> <input value="showTop5" type="radio" name="countyShow" checked />Top 5 </label>
-      <label> <input value="showBottom5" type="radio" name="countyShow" />Bottom 5 </label>
+  <form name="whichLines">
+      <label> <input value="showAll" type="radio" name="whichLines" />All Counties </label>
+      <label> <input value="showTop5" type="radio" name="whichLines" checked />Top 5 </label>
+      <label> <input value="showBottom5" type="radio" name="whichLines" />Bottom 5 </label>
   </form>
   <canvas id="timelineChart"></canvas>
 </div>

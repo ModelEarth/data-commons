@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
     updateDcidSelectFromSheet(hash.scope);
     
     document.addEventListener('change', function(event) {
-        if (event.target.name === 'countyShow') {
-          //alert('Radio button changed! ' + event.target.value);
+        if (event.target.name === 'whichLines') {
+          console.log('whichLines changed to ' + event.target.value);
           refreshTimeline();
         }
     });
@@ -276,9 +276,11 @@ function loadGoalsDropdown(theme,csvPath) {
       <select id="chartVariable"></select>
 
         <br>
-        <label> <input value="showAll" type="radio" name="countyShow" />All Counties </label>
-        <label> <input value="showTop5" type="radio" name="countyShow" checked />Top 5 </label>
-        <label> <input value="showBottom5" type="radio" name="countyShow" />Bottom 5 </label>
+        <div class="whichLinesHolder">
+          <label> <input value="showAll" type="radio" name="whichLines" />All </label>
+          <label> <input value="showTop5" type="radio" name="whichLines" checked />Top 5 </label>
+          <label> <input value="showBottom5" type="radio" name="whichLines" />Bottom 5 </label>
+        </div>
 
         <div id="div1" class="toogleDiv">
             <canvas id="timelineChart"></canvas>
