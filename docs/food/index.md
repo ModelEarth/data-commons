@@ -2,7 +2,7 @@
 
 # Healthy Food
 
-Goal 2. Healthy Food, No Hunger and [GHG mitigation](/OpenFootprint/) - [balance repo](/balance/) - [Why Modern Food Lost its Nutrition](https://www.bbc.com/future/bespoke/follow-the-food/why-modern-food-lost-its-nutrients/)
+Goal 2. Healthy Food, No Hunger and [GHG mitigation](/profile/) - [balance repo](/balance/) - [Why Modern Food Lost its Nutrition](https://www.bbc.com/future/bespoke/follow-the-food/why-modern-food-lost-its-nutrients/)
 
 [International FHIR Nutrition Product json](https://build.fhir.org/nutritionproduct.html) - [About FHIR Fast Healthcare Interoperability](https://en.wikipedia.org/wiki/Fast_Healthcare_Interoperability_Resources)
 <!--
