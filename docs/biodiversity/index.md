@@ -6,6 +6,9 @@ From planting native species to reducing chemical use and supporting conservatio
 
 [IUCN Red List of Threatened Species](https://www.iucnredlist.org)
 
+Microsoft Planetary Computer
+[Connectivity Across U.S. Agricultural Lands](https://cspbeta.z22.web.core.windows.net/)
+[Human Impacts Over Time](https://cspbeta.z22.web.core.windows.net/project2)
 <!--
 https://msnrajeevan.github.io/EndangeredWildlifeInsights
 -->
