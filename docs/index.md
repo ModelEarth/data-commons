@@ -20,7 +20,7 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus five sub
 8\. [Vibrant Economies](economy)
 9\. [Local Innovation](innovation)
 10\. [Open and Inclusive](open)
-11\. [Biodiverse Habitats](biodiversity)
+11\. [Biodiverse Development](biodiversity)
 12\. [Restoring Treecover](conservation)
 13\. [Air and Climate](air)
 14\. [Aquatic Life](aquatic)
