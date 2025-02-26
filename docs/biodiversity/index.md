@@ -13,3 +13,4 @@ Microsoft Planetary Computer
 https://msnrajeevan.github.io/EndangeredWildlifeInsights
 -->
 
+Biodiverse Development focuses on large-scale changes to the built environment and agriculture that foster biodiversity, migration and resource abundance through transparent market-based systems brokered by AI.
