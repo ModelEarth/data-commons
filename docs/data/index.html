@@ -179,6 +179,116 @@ function loadGoalsDropdown(theme,csvPath) {
 .active {
     display: block;
 }
+
+/*Table css start */
+#table-container {
+    padding: 24px 0;
+}
+#table-container table {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    line-height: 1.55em;
+}
+#table-container table tr:first-child {
+    background-color: #e6e6e6;
+    border-bottom: 1px solid #999;
+    box-sizing: border-box;
+    color: #555;
+    font-weight: 700;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    max-height: 32px;
+} 
+#table-container table tr:first-child th {
+    min-width: 40px;
+    width: auto;
+    height: 32px;
+    background-color: #eee;
+    border-right: 1px solid #fff;
+    background: #e6e6e6;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    vertical-align: bottom;
+}
+#table-container table tr:not(:first-child) {
+    background-color: #fff;
+    color: #333;
+    display: inline-block;
+    overflow: visible;
+    position: relative;
+    white-space: nowrap;
+}
+#table-container table tr:not(:first-child) td {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    padding: 4px;
+    position: relative;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 13px;
+    height: 30px;  /*!important;*/
+    padding-top: 6px; /*!important;*/
+}
+#table-container table tr:first-child th.Topic,
+#table-container table tr:not(:first-child) td.num0 {
+    width: 80px;
+}
+#table-container table tr:first-child th.Subtopic,
+#table-container table tr:not(:first-child) td.num1 {
+    width: 80px;
+}
+#table-container table tr:first-child th.DCID,
+#table-container table tr:not(:first-child) td.num2 {
+    width: 232px;
+}    
+#table-container table tr:first-child th.Title,
+#table-container table tr:not(:first-child) td.num3 {
+    width: 168px;
+}
+#table-container table tr:first-child th.IsUsable,
+#table-container table tr:not(:first-child) td.num4 {
+    width: 80px;
+}
+#table-container table tr:first-child th.Scope,
+#table-container table tr:not(:first-child) td.num5 {
+    width: 128px;
+}
+#table-container table tr:first-child th.StartYear,
+#table-container table tr:not(:first-child) td.num6 {
+    width: 96px;
+}
+#table-container table tr:first-child th.EndYear,
+#table-container table tr:not(:first-child) td.num7 {
+    width: 96px;
+}
+#table-container table tr:first-child th.Source,
+#table-container table tr:not(:first-child) td.num8 {
+    width: 232px;
+}
+#table-container table tr:first-child th.Notes,
+#table-container table tr:not(:first-child) td.num9 {
+    width: 64px;
+}
+/* Table css end */ 
 </style>
 </head>
 
@@ -288,7 +398,10 @@ function loadGoalsDropdown(theme,csvPath) {
         <div id="div2" class="toogleDiv">
             <canvas id="lineAreaChart"></canvas>
         </div>
-        <div id="tabulatorGrid"></div>
+        <div id="tabulatorGrid">
+            <div>Table Name Placeholder</div>
+            <div id="table-container"></div>
+        </div>
 
         <label>
             <input type="radio" name="toogleChartType" value="div1" checked> Line Chart
