@@ -11,7 +11,7 @@
 <script type="text/javascript" src="/localsite/js/localsite.js?showheader=true&showsearch=true&scope=country"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="../../../localsite/js/earthscape.js" type="text/javascript"></script>
+<script src="/localsite/js/earthscape.js" id="/localsite/js/earthscape.js" type="text/javascript"></script>
 
 <script>
 loadMarkdown("index.md", "readmeDiv", "_parent");
@@ -61,103 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
         //getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
     });
 });
-
-
-function createLabelFromDCID(DCID) {
-    return DCID
-        .split('_')                        // Split on underscores
-        .map(word => word.replace(/([a-z])([A-Z])/g, '$1 $2')) // Add space between CamelCase
-        .join(' ');                        // Join the words back with spaces
-}
-
-function loadGoalsDropdown(theme,csvPath) {
-
-    if (!onlineApp) {
-      alert("onlineApp=false in localsite.js so not pulling from Google Sheet")
-      return;
-    }
-    loadScript(theroot + 'js/d3.v5.min.js', function(results) {
-    waitForVariable('customD3loaded', function() {
-    dp = {};
-    dp.googleCSV = csvPath;
-    consoleLog("Google data requested " + dp.googleCSV);
-    //dp.googleCSV = "DISABLEX"
-    d3.csv(dp.googleCSV).then(function(data,error) { // One element containing all rows from spreadsheet
-
-      consoleLog("Google data loaded");
-      // LOAD GOOGLE SHEET
-        //dp.data = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
-        //dp.data = data;
-
-        // Loop through data
-        let goalsString = "";
-        for (let i = 0; i < data.length; i++) {
-          //console.log("Are we reaching hear with wastewater?");
-          if (data[i]) {
-              console.log("data.key: ");
-              console.log(data[i]);
-              if (data[i].Title) {
-                //goalsString = goalsString + data[i].Title + "<br>";
-              }
-              if (data[i].DCID) {
-                if (data[i].Scope) {
-                  const scopeList = data[i].Scope.replace(/\s*,\s*/g, ',').split(',');
-
-                  scopeList.forEach(function(scope) {
-                    //goalsString = goalsString + scope + "<br>";
-
-                    goalsString = goalsString + "<a href='timelines/air/" + data[i].DCID + "_" + scope.toLowerCase() + "_data_timeline.csv'>" + data[i].Title + "</a> (" + scope + ")<br>";
-                    if (scope.toLowerCase() == "county") {
-                        data[i].DCID
-
-                        // Add option if it doesn't already exist
-                        //if (!optionExists) {
-                            const option = document.createElement('option');
-                            option.value = data[i].DCID; // Set value dynamically from data[i].DCID
-                            option.text = createLabelFromDCID(data[i].DCID);
-                            chartVariable.add(option);
-                        //}
-
-                    }
-                  });
-                  goalsString = goalsString + "<hr>";
-                } else {
-
-                  goalsString = goalsString + "<a href='timelines/air/" + data[i].DCID + "_country_data_timeline.csv'>" + data[i].Title + "</a><br>";
-
-                  //goalsString = goalsString + "<a href='timelines/air/Annual_Amount_Emissions_CarbonDioxide_country_data_timeline.csv'>" + data[i].Title + "</a><br>";
-                }
-              }
-          }
-        }
-        // DCID has been set in #chartVariable, now use it to render chart
-        //refreshTimeline();
-
-        $("#" + theme + "Div").html(goalsString);
-
-        // LOAD CATEGORIES TAB - Category, SubCategory, SubCategoryLong
-        //localObject.unGoals[dp.show] = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
-        
-        // Save to avoid repeat calls to Google Sheet tab
-        let tabName = "all"
-
-        if(typeof localObject == 'undefined') {
-            var localObject = {};
-        }
-        if(typeof localObject.unGoals == 'undefined') {
-            localObject.unGoals = {}; // From Google Sheet tabs.
-        }
-        localObject.unGoals[tabName] = data;
-
-        console.log("UN Goal Google Sheet")
-        console.log(localObject.unGoals[tabName]); // Include color for mappoint at this point.
-          
-    }, function(error, rows) {
-        consoleLog("ERROR fetching google sheet. " + error);
-    });
-    });
-    });
-}
 </script>
 
 <style>
@@ -298,7 +201,7 @@ function loadGoalsDropdown(theme,csvPath) {
 
   <!-- Also update in home repo -->
   
-  <div style="float:right">
+  <div style="floatX:right; margin-bottom:8px">
       <div id="airTimelinesLink" style="display:none;">
       <b>Health Timelines</b> | View <a href="#goal=air">Emissions Timelines</a>
       </div>
@@ -386,10 +289,20 @@ function loadGoalsDropdown(theme,csvPath) {
       <select id="chartVariable"></select>
   
         <br>
-        <div class="whichLinesHolder">
+        
+        <div class="whichLinesHolder" style="float:left">
           <label> <input value="showAll" type="radio" name="whichLines" />All </label>
           <label> <input value="showTop5" type="radio" name="whichLines" checked />Top 5 </label>
           <label> <input value="showBottom5" type="radio" name="whichLines" />Bottom 5 </label>
+        </div>
+
+        <div style="floatX:right">
+            &nbsp; <span style="font-size:24px;color:#aaa">|</span> 
+          <label> <input value="totals" type="radio" name="whichPer" />Totals </label>
+          <label> <input value="percapita" type="radio" name="whichPer" checked />Per Capita </label>
+          <!--
+          <label> <input value="perarea" type="radio" name="whichPer" />Per Area </label>
+          -->
         </div>
 
         <div id="div1" class="toogleDiv">
