@@ -1,0 +1,113 @@
+<!DOCTYPE json>
+
+<script type="text/javascript" src="/localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script src="/localsite/js/earthscape.js" id="/localsite/js/earthscape.js" type="text/javascript"></script>
+
+<script>
+refreshTimeline();
+
+if(typeof hiddenhash == 'undefined') {
+  var hiddenhash = {};
+}
+function getHash() {
+  return (mix(getHashOnly(),hiddenhash)); // Includes hiddenhash
+}
+function getHashOnly() {
+  return (function (pairs) {
+    if (pairs == "") return {};
+    var result = {};
+    pairs.forEach(function (pair) {
+      // Split the pair on "=" to get key and value
+      let keyValue = pair.split('=');
+      let key = keyValue[0];
+      let value = keyValue.slice(1).join('=');
+
+      // Replace "%26" with "&" in the value
+      value = value.replace(/%26/g, '&');
+
+      // Handle nested keys with periods
+      let keys = key.split('.');
+      let current = result;
+
+      for (let i = 0; i < keys.length; i++) {
+        if (i === keys.length - 1) {
+          // Last key, set the value
+          current[keys[i]] = value;
+        } else {
+          // Intermediate key, ensure it's an object
+          if (!current[keys[i]]) current[keys[i]] = {};
+          current = current[keys[i]];
+        }
+      }
+    });
+    return result;
+  })(window.location.hash.substr(1).split('&'));
+}
+// Combine two objects, priority to incoming. Delete blanks indicated by incoming.
+function mix(incoming, target) {
+   let target2;
+   let target1 = structuredClone(extend(true, {}, target)); // Clone/copy object without entanglement - prevents making hashhidden = hash
+   //console.log("mix incoming and default (target). Incoming has priority.");
+   //console.log(incoming);
+   //console.log(target);
+   if (window.jQuery) {
+    target2 = structuredClone(extend(true, target1, incoming)); // structuredClone prevents entanglement, subsequent overrides first.
+   } else {
+    consoleLog("USING non-jquery extend")
+    // This non-JQuery extend results in "Uncaught (in promise) RangeError: Maximum call stack size exceeded" with map.js mix(dp,defaults)
+    target2 = structuredClone(extend(true, target1, incoming)); // Clone/copy object without entanglement, subsequent overrides first.
+   }
+   for(var key in incoming) {
+     if (incoming.hasOwnProperty(key)) {
+        if (incoming[key] === null || incoming[key] === undefined || incoming[key] === '') {
+          delete target2[key];
+        } else {
+          // Already set by extend above.
+          //target2[key] = incoming[key];
+        }
+     }
+   }
+   //console.log("mixed output");
+   //console.log(target2);
+   return target2;
+}
+// Pass in the objects to merge as arguments.
+// For a deep extend, set the first argument to `true`.
+// https://gomakethings.com/vanilla-javascript-version-of-jquery-extend/
+function extend () {
+
+  // Variables
+  var extended = {};
+  var deep = false;
+  var i = 0;
+  var length = arguments.length;
+
+  // Check if a deep merge
+  if ( Object.prototype.toString.call( arguments[0] ) === '[object Boolean]' ) {
+    deep = arguments[0];
+    i++;
+  }
+
+  // Merge the object into the extended object
+  var merge = function (obj) {
+    for ( var prop in obj ) {
+      if ( Object.prototype.hasOwnProperty.call( obj, prop ) ) {
+        // If deep merge and property is an object, merge properties
+        if ( deep && Object.prototype.toString.call(obj[prop]) === '[object Object]' ) {
+          extended[prop] = structuredClone(extend( true, extended[prop], obj[prop] ));
+        } else {
+          extended[prop] = obj[prop];
+        }
+      }
+    }
+  };
+
+  // Loop through each object and conduct a merge
+  for ( ; i < length; i++ ) {
+    var obj = arguments[i];
+    merge(obj);
+  }
+
+  return extended;
+};
+</script>
