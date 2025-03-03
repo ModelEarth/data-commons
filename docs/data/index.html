@@ -1,5 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-us">
+    <style>
+      #table-containerPerCapita table {
+    padding: 24px 0;
+    overflow-x: auto;
+}
+
+#table-containerPerCapita table {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    line-height: 1.55em;
+    
+}
+
+#table-containerPerCapita th, 
+#table-containerPerCapita td {
+    border: 1px solid black;
+    padding: 8px;
+    white-space: nowrap; /* Prevents content wrapping */
+    min-width: 80px; /* Ensures reasonable sizing */
+    max-width: 300px; /* Avoids excessive width */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#table-containerPerCapita th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+       
+    </style>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -313,7 +349,9 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div id="tabulatorGrid">
             <div>Table Name Placeholder</div>
-            <div id="table-container"></div>
+            <div id="table-container"  ></div>
+            <div>Per Capita Table</div>
+        <div id="table-containerPerCapita"></div>
         </div>
 
         <label>
@@ -328,10 +366,11 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 </div>
 </div>
-
 <div class="content contentpadding large-list">
   <div id="readmeDiv"></div>
+  </div>
 </div>
+        
 <script>
     // Add event listener to radio buttons to call toggleDivs() on change
     // Has to reside after toogleChartType html above.
