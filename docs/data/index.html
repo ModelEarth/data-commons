@@ -332,13 +332,13 @@ document.addEventListener('DOMContentLoaded', () => {
           <label> <input value="showBottom5" type="radio" name="whichLines" />Bottom 5 </label>
         </div>
 
-        <div style="floatX:right">
+        <div id="perCapitaOptions" style="floatX:right">
             &nbsp; <span style="font-size:24px;color:#aaa">|</span> 
-          <label> <input value="totals" type="radio" name="whichPer" checked  />Totals </label>
-          <label> <input value="percapita" type="radio" name="whichPer" />Per Capita (coming soon)</label>
-          <!--
-          <label> <input value="perarea" type="radio" name="whichPer" />Per Area </label>
-          -->
+            <label> <input value="totals" type="radio" name="whichPer" checked  />Totals </label>
+            <label> <input value="percapita" type="radio" name="whichPer" />Per Capita (coming soon)</label>
+            <!--
+            <label> <input value="perarea" type="radio" name="whichPer" />Per Area </label>
+            -->
         </div>
 
         <div id="div1" class="toogleDiv">
@@ -350,8 +350,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <div id="tabulatorGrid">
             <div>Table Name Placeholder</div>
             <div id="table-container"  ></div>
-            <div>Per Capita Table</div>
-        <div id="table-containerPerCapita"></div>
+            <div id="perCapitaTableSection">
+                <div>Per Capita Table</div>
+                <div id="table-containerPerCapita"></div>
+            </div>
         </div>
 
         <label>
@@ -370,7 +372,21 @@ document.addEventListener('DOMContentLoaded', () => {
   <div id="readmeDiv"></div>
   </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let hash = getHash();
+        const perCapitaOptions = document.getElementById('perCapitaOptions');
+        const perCapitaTableSection = document.getElementById('perCapitaTableSection');
         
+        if (hash.goal === "health") {
+            perCapitaOptions.style.display = 'none'; // Hide Per Capita options for health
+            perCapitaTableSection.style.display = 'none'; // Hide Per Capita table for health
+        } else {
+            perCapitaOptions.style.display = 'block'; // Show Per Capita options for other pages
+            perCapitaTableSection.style.display = 'block'; // Show Per Capita table for other pages
+        }
+    });
+</script>
 <script>
     // Add event listener to radio buttons to call toggleDivs() on change
     // Has to reside after toogleChartType html above.
