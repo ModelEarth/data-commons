@@ -49,9 +49,9 @@ The UN Sustainable Development Goals (SDG) data resides in the [Google Data Comm
 [UN Comtrade Data Pull](/data-pipeline/international/comtrade) and [Intergovernmental Panel on Climate Change (IPCC)](https://www.ipcc.ch) - The UN body for climate change data assessments.
 
 <img src="docs/components/img/goals.png" style="width:100%; max-width:1200px;"><br>
+<!--
 TO DO: Replace the above image with linked images and interactivity by finding a GitHub repo containing UN Goal marketing material, including icons and related images.<br><br>
-
-
+-->
 
 ## Install and Build Locally
 
