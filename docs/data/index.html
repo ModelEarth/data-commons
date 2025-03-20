@@ -1,41 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <style>
-      #table-containerPerCapita table {
-    padding: 24px 0;
-    overflow-x: auto;
-}
-
-#table-containerPerCapita table {
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    border: none;
-    font-size: 14px;
-    overflow: hidden;
-    position: relative;
-    text-align: left;
-    line-height: 1.55em;
-    
-}
-
-#table-containerPerCapita th, 
-#table-containerPerCapita td {
-    border: 1px solid black;
-    padding: 8px;
-    white-space: nowrap; /* Prevents content wrapping */
-    min-width: 80px; /* Ensures reasonable sizing */
-    max-width: 300px; /* Avoids excessive width */
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-#table-containerPerCapita th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-       
-    </style>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -118,10 +82,14 @@ document.addEventListener('DOMContentLoaded', () => {
 .active {
     display: block;
 }
+</style>
 
+
+<!-- To remove -->
+<style>
 /*Table css start */
 #table-container {
-    padding: 24px 0;
+    paddingX: 24px 0;
 }
 #table-container table {
     width: 100%;
@@ -229,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 /* Table css end */ 
 </style>
+
 </head>
 
 <body>
@@ -355,8 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <canvas id="lineAreaChart"></canvas>
         </div>
         <div id="tabulatorGrid">
-            <div>Table Name Placeholder</div>
-            <div id="table-container"  ></div>
+            <div id="table-container"></div>
             <div id="perCapitaTableSection">
                 <div>Per Capita Table</div>
                 <div id="table-containerPerCapita"></div>
