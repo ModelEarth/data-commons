@@ -16,7 +16,7 @@ TO DO: Combine our [Earthscape Tabulator](../data-pipeline/timelines/training/na
 	TO DO: Display all 17 Global Goal indicator lines on one large 30-year timeline chart with projections.<br><br>
 -->
 
-TO DO: [Python with UN Goal topics Google Sheet](docs/data/) for larger timeline datasets to also be used by [RealityStream](/RealityStream/).
+TO DO: [Python with UN Goal topics Google Sheet](docs/data/) for larger timeline datasets to also be used by [RealityStream](/realitystream/).
 
 
 Pre-saving .csv files using python in our CoLabs is easier to collaborate on than [Observable Data Loaders](https://observablehq.com/framework/loaders).
