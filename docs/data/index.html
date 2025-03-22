@@ -206,21 +206,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
   <!-- Also update in home repo -->
   
-  <div style="floatX:right; margin-bottom:8px">
-      <div id="airTimelinesLink" style="display:none;">
-      <b>Health Timelines</b> | View <a href="#goal=air">Emissions Timelines</a>
-      </div>
-      <div id="healthTimelinesLink">
-      <b>Emissions Timelines</b> | View <a href="#goal=health">Health Timelines</a>
-      </div>
-
-      <span style="display:none" class="local">
-        <a href="#goal=jobs&scope=state">Jobs</a>
-        | <a href="#goal=economy">Economy</a>
-        | <a href="#goal=biodiverse">Biodiverse</a>
-        | <a href="#goal=air">Air</a>
-      </span>
+  <div style="margin-bottom: 8px; font-family: Arial, sans-serif;" id="timeline-nav">
+    <!-- Links will be dynamically populated here -->
   </div>
+  
+  <script>
+    function updateTimelineNav() {
+      // Define all goals with their display names
+      const goals = [
+        { goal: "air", name: "Emissions" },
+        { goal: "health", name: "Health" },
+        { goal: "jobs", name: "Jobs", extra: "&scope=state" },
+        { goal: "economy", name: "Economy" },
+        { goal: "biodiverse", name: "Biodiverse" }
+      ];
+  
+      // Get the current goal from the hash
+      const hash = window.location.hash;
+      const goalMatch = hash.match(/goal=([^&]+)/);
+      const currentGoal = goalMatch ? goalMatch[1] : "air"; // Default to "air"
+  
+      // Find the active goal object
+      const activeGoal = goals.find(g => g.goal === currentGoal) || goals[0];
+      const inactiveGoals = goals.filter(g => g.goal !== currentGoal);
+  
+      // Clear the container
+      const container = document.getElementById('timeline-nav');
+      container.innerHTML = '';
+  
+      // Add the active goal first as "Timeline"
+      const activeElement = document.createElement('span');
+      activeElement.innerHTML = `<b>${activeGoal.name} Timeline</b>`;
+      container.appendChild(activeElement);
+  
+      // Add the inactive goals as links
+      inactiveGoals.forEach((goal, index) => {
+        // Add separator before each inactive link
+        const separator = document.createTextNode(' | ');
+        container.appendChild(separator);
+  
+        const link = document.createElement('a');
+        link.href = `#goal=${goal.goal}${goal.extra || ''}`;
+        link.textContent = goal.name;
+        link.style.marginLeft = '10px';
+        link.style.textDecoration = 'none';
+        link.style.color = '#0066cc';
+        link.className = 'timeline-link';
+        container.appendChild(link);
+      });
+    }
+  
+    // Run on load and hash change
+    document.addEventListener('DOMContentLoaded', updateTimelineNav);
+    window.addEventListener('hashchange', updateTimelineNav);
+  </script>
 
   <div style="overflow:visible;">
 
