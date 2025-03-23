@@ -16,6 +16,13 @@ Cool: [Data Commons Google Sheet add-on](https://docs.datacommons.org/api/sheets
 
 DONE: Update our UN Goals Colab to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a> - Priyanka, Alexandra, everyone
 
+TO DO: Populate and limit to 5 options for Bottom 5  category
+TO DO: Bottom 5 seems to be working intermittently
+TO DO: Expand the chart to display all countries
+TO DO: Sort timeline data by year before sending it to the chart
+IN PROGRESS: Goals sheets - cleanup Gender and Age data and club them into separate columns - Niranjan
+TO DO: Percapita needs to be applied to emissions timelines.
+
 <!--
 [Our Run Models Colab](https://colab.research.google.com/drive/1zu0WcCiIJ5X3iN1Hd1KSW4dGn0JuodB8?usp=sharing#scrollTo=Z12cWU4y09on) already includes a process for saving CSV files to GitHub. The relevant part happens around saving the integrated dataset to the repo.
 -->
@@ -36,11 +43,6 @@ Then delete the country.csv file
 -->
 
 DONE: Update earthscape.js to also display <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US">countries and states</a>. Eliminate datacommons.html after adding to the current page.
-
-TO DO: The DCID value for the water UN Goal topics is: `dc/g/SDG_6`  
-Fix the following so we can update [/feed/view/#feed=water](/feed/view#feed=water) to pull the water nav DCID  
-
-	https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&entity.dcids=dc/g/SDG_6
 
 We created a python util for scope data retrieval [scope-data-utils.py](https://github.com/ModelEarth/data-commons/blob/main/docs/data/python/scope-data-utils.py) - but it's probably not been used.
 
