@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { goal: "health", name: "Health" },
         { goal: "jobs", name: "Jobs", extra: "&scope=state" },
         { goal: "economy", name: "Economy" },
-        { goal: "biodiverse", name: "Biodiverse" }
+        { goal: "biodiverse", name: "Biodiversity" }
       ];
   
       // Get the current goal from the hash
@@ -248,7 +248,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const link = document.createElement('a');
         link.href = `#goal=${goal.goal}${goal.extra || ''}`;
         link.textContent = goal.name;
-        link.style.marginLeft = '10px';
+        link.style.marginLeft = '2px';
+        link.style.marginRight = '2px';
         link.style.textDecoration = 'none';
         link.style.color = '#0066cc';
         link.className = 'timeline-link';
