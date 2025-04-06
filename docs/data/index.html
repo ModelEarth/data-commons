@@ -229,8 +229,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Find the active goal object
       const activeGoal = goals.find(g => g.goal === currentGoal) || goals[0];
-      const inactiveGoals = goals.filter(g => g.goal !== currentGoal);
+      //const inactiveGoals = goals.filter(g => g.goal !== currentGoal);
   
+      const allGoals = goals;
+
       // Clear the container
       const container = document.getElementById('timeline-nav');
       container.innerHTML = '';
@@ -238,23 +240,35 @@ document.addEventListener('DOMContentLoaded', () => {
       // Add the active goal first as "Timeline"
       const activeElement = document.createElement('span');
       activeElement.innerHTML = `<b>${activeGoal.name} Timeline</b>`;
-      container.appendChild(activeElement);
+      //container.appendChild(activeElement);
   
-      // Add the inactive goals as links
-      inactiveGoals.forEach((goal, index) => {
-        // Add separator before each inactive link
-        const separator = document.createTextNode(' | ');
-        container.appendChild(separator);
-  
-        const link = document.createElement('a');
-        link.href = `#goal=${goal.goal}${goal.extra || ''}`;
-        link.textContent = goal.name;
-        link.style.marginLeft = '2px';
-        link.style.marginRight = '2px';
-        link.style.textDecoration = 'none';
-        link.style.color = '#0066cc';
-        link.className = 'timeline-link';
-        container.appendChild(link);
+      // Add the goals as links
+      allGoals.forEach((goal, index) => {
+        // Only add separator if not the first item
+        if (index > 0) {
+            const separator = document.createTextNode(' | ');
+            container.appendChild(separator);
+        }
+        
+        if (goal.goal === currentGoal) {
+            // Make current goal bold instead of linking it
+            const boldText = document.createElement('b');
+            boldText.textContent = goal.name;
+            boldText.style.marginLeft = '2px';
+            boldText.style.marginRight = '2px';
+            container.appendChild(boldText);
+        } else {
+            // Create link for other goals
+            const link = document.createElement('a');
+            link.href = `#goal=${goal.goal}${goal.extra || ''}`;
+            link.textContent = goal.name;
+            link.style.marginLeft = '2px';
+            link.style.marginRight = '2px';
+            link.style.textDecoration = 'none';
+            link.style.color = '#0066cc';
+            link.className = 'timeline-link';
+            container.appendChild(link);
+        }
       });
     }
   
@@ -339,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
           Convert 2-char state to geoId/01 in earthscape.js
       -->
 
-      <select id="chartVariable"></select>
+      <select id="chartVariable" style="max-width:400px;"></select>
   
         <br>
         
