@@ -10,6 +10,7 @@ Scroll down to see Air and Water topics from our Google Sheet tabs.
 
 **Our UN Goal Timelines created with Google's JavaScript API**
 
+TO DO: Adjust the chartJS timeline above for mobile viewing on narrow screens.
 TO DO: Update our [Google Sheet UN Goal tabs](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing) with additional DCID values to pull into our javascript timelines above. - Everyone
 IN PROGRESS: Updates for top/bottom 5 and all countries - Priyanka
 IN PROGRESS: Goals sheets - Using one row to also support Age and Gender - Niranjan
