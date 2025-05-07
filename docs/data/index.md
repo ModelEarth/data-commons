@@ -10,11 +10,11 @@ Scroll down to see Air and Water topics from our Google Sheet tabs.
 
 **Our UN Goal Timelines created with Google's JavaScript API**
 
-TO DO: Adjust the chartJS timeline above for mobile viewing on narrow screens.
+TO DO: Adjust the chartJS timeline above for mobile viewing on narrow screens. - Rakesh
 TO DO: Update our [Google Sheet UN Goal tabs](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing) with additional DCID values to pull into our javascript timelines above. - Everyone
 IN PROGRESS: Updates for top/bottom 5 and all countries - Priyanka
 IN PROGRESS: Goals sheets - Using one row to also support Age and Gender - Niranjan
-TO DO: Percapita needs to be applied to emissions timelines. And activate toggle.
+TO DO: Percapita needs to be applied to emissions timelines. And activate toggle. - Chandu
 STILL NEEDED?: Sort timeline data by year before sending it to the chart. Which charts did we see this issue in?
 
 TO DO: Update [RealityStream](/realitystream/models/) to fetch a path from our timelines page. The process will need to wait until the DOM is replaced with json. Sample path: [/data-commons/docs/data/#output=json](https://model.earth/data-commons/docs/data/#output=json)

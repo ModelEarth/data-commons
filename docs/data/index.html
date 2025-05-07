@@ -60,6 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //getTimelineChart(scope, chartVariable, entityId, showAll, chartText);
     });
+    document.querySelectorAll('input[name="whichPer"]').forEach((radio) => {
+    radio.addEventListener('change', () => {
+        refreshTimeline(); // This will re-fetch emissions and population and update the chart
+    });
+});
 });
 </script>
 
@@ -362,10 +367,10 @@ document.addEventListener('DOMContentLoaded', () => {
           <label> <input value="showBottom5" type="radio" name="whichLines" />Bottom 5 </label>
         </div>
 
-        <div id="perCapitaOptions" style="floatX:right">
+        <div id="perCapitaOptions" style="float:right">
             &nbsp; <span style="font-size:24px;color:#aaa">|</span> 
             <label> <input value="totals" type="radio" name="whichPer" checked  />Totals </label>
-            <label> <input value="percapita" type="radio" name="whichPer" />Per Capita (coming soon)</label>
+            <label> <input value="percapita" type="radio" name="whichPer" />Per Capita </label>
             <!--
             <label> <input value="perarea" type="radio" name="whichPer" />Per Area </label>
             -->
