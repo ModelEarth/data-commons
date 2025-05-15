@@ -363,7 +363,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         <div class="whichLinesHolder" style="float:left">
           <label> <input value="showAll" type="radio" name="whichLines" />All </label>
-          <label> <input value="showTop5" type="radio" name="whichLines" checked />Top 5 </label>
+          <label> <input value="showSelected" type="radio" name="whichLines" checked/>11 Countries </label>
+          <div style="display:none" class="local">
+            <a id="countryListLink" href="#geoview=countries" onclick="handleCountryListClick()">Country List</a>
+          </div>
+          <label> <input value="showTop5" type="radio" name="whichLines" />Top 5 </label>
           <label> <input value="showBottom5" type="radio" name="whichLines" />Bottom 5 </label>
         </div>
 
@@ -381,13 +385,6 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div id="div2" class="toogleDiv" chart-wrapper>
             <canvas id="lineAreaChart" ></canvas>
-        </div>
-        <div id="tabulatorGrid">
-            <div id="table-container"></div>
-            <div id="perCapitaTableSection">
-                <div>Per Capita Table</div>
-                <div id="table-containerPerCapita"></div>
-            </div>
         </div>
 
         <label>
