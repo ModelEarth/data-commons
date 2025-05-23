@@ -23,13 +23,12 @@ document.addEventListener('hashChangeEvent', function (elem) {
     if (!hash.scope) {
         hash.scope = "country"; // CUSTOM - also set in call to localsite.js above.
     }
-    //alert("priorHash.scope: " + priorHash.scope)
     if (hash.scope != priorHash.scope || hash.goal != priorHash.goal) {
         const selectScope = document.getElementById("selectScope");
         if (selectScope) {
           selectScope.value = hash.scope;
         }
-        updateDcidSelectFromSheet(hash.scope);
+        updateDcidSelectFromSheet(hash.scope); // In localsite/js/earthscape.js
     }
 }, false);
 document.addEventListener('DOMContentLoaded', () => {
@@ -363,11 +362,15 @@ document.addEventListener('DOMContentLoaded', () => {
         
         <div class="whichLinesHolder" style="float:left">
           <label> <input value="showAll" type="radio" name="whichLines" />All </label>
-          <label> <input value="showSelected" type="radio" name="whichLines" checked/>11 Countries </label>
-          <div style="display:none" class="local">
-            <a id="countryListLink" href="#geoview=countries" onclick="handleCountryListClick()">Country List</a>
+          <div style="display:none" class="scope-country">
+              <label> <input value="showSelected" type="radio" name="whichLines"/>11 Countries </label>
           </div>
-          <label> <input value="showTop5" type="radio" name="whichLines" />Top 5 </label>
+          <div style="display:none" class="local">
+            <div style="display:none" class="scope-country">
+                <a id="countryListLink" href="#geoview=countries" onclick="handleCountryListClick()">Country List</a>
+            </div>
+          </div>
+          <label> <input value="showTop5" type="radio" name="whichLines" checked />Top 5 </label>
           <label> <input value="showBottom5" type="radio" name="whichLines" />Bottom 5 </label>
         </div>
 
@@ -405,16 +408,16 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        let hash = getHash();
+        let hash = getHash(); // Defaulted to country above.
         const perCapitaOptions = document.getElementById('perCapitaOptions');
-        const perCapitaTableSection = document.getElementById('perCapitaTableSection');
+        //const perCapitaTableSection = document.getElementById('perCapitaTableSection');
         
         if (hash.goal === "health") {
             perCapitaOptions.style.display = 'none'; // Hide Per Capita options for health
-            perCapitaTableSection.style.display = 'none'; // Hide Per Capita table for health
+            //perCapitaTableSection.style.display = 'none'; // Hide Per Capita table for health
         } else {
             perCapitaOptions.style.display = 'block'; // Show Per Capita options for other pages
-            perCapitaTableSection.style.display = 'block'; // Show Per Capita table for other pages
+            //perCapitaTableSection.style.display = 'block'; // Show Per Capita table for other pages
         }
     });
 </script>
