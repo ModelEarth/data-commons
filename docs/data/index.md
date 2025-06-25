@@ -49,7 +49,9 @@ Earlier dev page:
 
 For python output, our [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) pulls timeline data DCID values from our Google Sheet. We also pull [States and Counties with Python](https://colab.research.google.com/drive/1CsIjLujiiBoGJlIHCBvDZit3QSVg07zR?usp=sharing)
 
-TO DO: In the [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) create a function called timelineGeneration() that generates all the timelines as csv files. Pass it an object containing DCID values and their scopes - pulled from our Google Sheet UN Goal tabs.
+<!--
+ON HOLD: In the [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) create a function called timelineGeneration() that generates all the timelines as csv files. Pass it an object containing DCID values and their scopes - pulled from our Google Sheet UN Goal tabs.
+-->
 
 **Scope** values are: Country, State, County, Zip
 
