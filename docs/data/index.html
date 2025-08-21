@@ -364,9 +364,9 @@ document.addEventListener('DOMContentLoaded', () => {
           <div style="display:none" class="scope-country">
               <label> <input value="showSelected" type="radio" name="whichLines"/>11 Countries </label>
           </div>
-          <div style="display:none" class="local">
-            <div style="display:none" class="scope-country">
-                <a id="countryListLink" href="#geoview=countries" onclick="handleCountryListClick()">Country List</a>
+          <div class="local">
+            <div class="scope-country">
+                <label><input value="countryList" type="radio" name="whichLines" id="countryListLink" onclick="handleCountryListClick()"/>Country List</label>
             </div>
           </div>
           <label> <input value="showTop5" type="radio" name="whichLines" checked />Top 5 </label>
