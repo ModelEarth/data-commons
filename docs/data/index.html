@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 .heroTransparent {
   position: relative;
   background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), 
-              url(/apps/img/hero/state/GA/GA-hero.jpg);
+              url(https://model.earth/apps/img/hero/state/GA/GA-hero.jpg);
   background-size: cover; /* Scales the image to cover the div */
   background-position: center; /* Centers the image in the div */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -359,18 +359,13 @@ document.addEventListener('DOMContentLoaded', () => {
   
         <br>
         
-        <div class="whichLinesHolder" style="float:left">
-          <label> <input value="showAll" type="radio" name="whichLines" />All </label>
-          <div style="display:none" class="scope-country">
-              <label> <input value="showSelected" type="radio" name="whichLines"/>11 Countries </label>
+        <div class="whichLinesHolder" style="float:left; display: flex;">
+          <label> <input value="showAll" type="radio" name="whichLines" />All &nbsp;</label>
+          <div class="scope-country">
+              <label> <input value="showSelected" type="radio" name="whichLines"/>11 Countries &nbsp;</label>
           </div>
-          <div class="local">
-            <div class="scope-country">
-                <label><input value="countryList" type="radio" name="whichLines" id="countryListLink" onclick="handleCountryListClick()"/>Country List</label>
-            </div>
-          </div>
-          <label> <input value="showTop5" type="radio" name="whichLines" checked />Top 5 </label>
-          <label> <input value="showBottom5" type="radio" name="whichLines" />Bottom 5 </label>
+          <label> <input value="showTop5" type="radio" name="whichLines" checked />Top 5 &nbsp;</label>
+          <label> <input value="showBottom5" type="radio" name="whichLines" />Bottom 5 &nbsp;</label>
         </div>
 
         <div id="perCapitaOptions" style="float:right">
