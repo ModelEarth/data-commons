@@ -74,7 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
   background-size: cover; /* Scales the image to cover the div */
   background-position: center; /* Centers the image in the div */
   background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: 100%; /* Ensures the div's height is used */
+  height: auto; /* Allow height to be determined by content */
+  min-height: 120px; /* Minimum height to show the background image */
 }
 .contenttoogleChartType {
     display: none;
@@ -201,13 +202,16 @@ document.addEventListener('DOMContentLoaded', () => {
 </head>
 
 <body>
-<div class="heroTransparent notdark">
-<div class="content contentpadding large-list">
 
+
+<div class="heroTransparent notdark">
+<div class="content contentpadding">
     <div class="local btn btn-primary floatRight" onclick="location.href='/realitystream/#' + window.location.hash.substr(1); return false;" style="display:none;min-width:133px;font-size:15px;border:none;">
                 RealityStream
             </div>
+</div>
 
+<div class="content contentpadding large-list">
   <!-- Also update in home repo -->
   <div id="timeline-nav" style="margin-bottom: 8px; font-family: Arial, sans-serif;"><!-- Links are populated here --></div>
   
@@ -395,9 +399,10 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 </div>
 </div>
+<!-- /heroTransparent -->
+
 <div class="content contentpadding large-list">
   <div id="readmeDiv"></div>
-  </div>
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
